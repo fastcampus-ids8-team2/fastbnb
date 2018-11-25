@@ -12,6 +12,7 @@
 		2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55B21AAD31B00D869DF /* Main.storyboard */; };
 		2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55E21AAD31B00D869DF /* Assets.xcassets */; };
 		2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */; };
+		8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2E63C55E21AAD31B00D869DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E63C56121AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E63C56321AAD31B00D869DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastbnb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.release.xcconfig"; sourceTree = "<group>"; };
+		ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2E63C55621AAD31B00D869DF /* fastbnb */,
 				2E63C55521AAD31B00D869DF /* Products */,
+				7DF911FA73109CE17C93F7CB /* Pods */,
+				4B7166D4AB3AB2F220F4313C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = fastbnb;
 			sourceTree = "<group>";
 		};
+		4B7166D4AB3AB2F220F4313C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DF911FA73109CE17C93F7CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */,
+				CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E63C56621AAD31B00D869DF /* Build configuration list for PBXNativeTarget "fastbnb" */;
 			buildPhases = (
+				1CB8781F4A5986DA12EF3023 /* [CP] Check Pods Manifest.lock */,
 				2E63C55021AAD31B00D869DF /* Sources */,
 				2E63C55121AAD31B00D869DF /* Frameworks */,
 				2E63C55221AAD31B00D869DF /* Resources */,
+				8BBD8D9CF227B5A4DA69AAC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB8781F4A5986DA12EF3023 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fastbnb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BBD8D9CF227B5A4DA69AAC3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E63C55021AAD31B00D869DF /* Sources */ = {
@@ -280,6 +355,7 @@
 		};
 		2E63C56721AAD31B00D869DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +374,7 @@
 		};
 		2E63C56821AAD31B00D869DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
