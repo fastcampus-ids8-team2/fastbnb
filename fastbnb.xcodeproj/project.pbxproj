@@ -8,21 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55721AAD31B00D869DF /* AppDelegate.swift */; };
-		2E63C55A21AAD31B00D869DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55921AAD31B00D869DF /* ViewController.swift */; };
+		2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55921AAD31B00D869DF /* LoginViewController.swift */; };
 		2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55B21AAD31B00D869DF /* Main.storyboard */; };
 		2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55E21AAD31B00D869DF /* Assets.xcassets */; };
 		2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */; };
+		2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56B21AADA7300D869DF /* Login.storyboard */; };
 		8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E63C55421AAD31B00D869DF /* fastbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E63C55721AAD31B00D869DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E63C55921AAD31B00D869DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E63C55921AAD31B00D869DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2E63C55C21AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E63C55E21AAD31B00D869DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E63C56121AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E63C56321AAD31B00D869DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E63C56B21AADA7300D869DF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastbnb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.release.xcconfig"; sourceTree = "<group>"; };
 		ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +63,31 @@
 		2E63C55621AAD31B00D869DF /* fastbnb */ = {
 			isa = PBXGroup;
 			children = (
+				2E63C56A21AADA0D00D869DF /* Storyboard */,
+				2E63C56921AAD99600D869DF /* ViewController */,
 				2E63C55721AAD31B00D869DF /* AppDelegate.swift */,
-				2E63C55921AAD31B00D869DF /* ViewController.swift */,
-				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
 				2E63C55E21AAD31B00D869DF /* Assets.xcassets */,
 				2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */,
 				2E63C56321AAD31B00D869DF /* Info.plist */,
 			);
 			path = fastbnb;
+			sourceTree = "<group>";
+		};
+		2E63C56921AAD99600D869DF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2E63C56A21AADA0D00D869DF /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
+				2E63C56B21AADA7300D869DF /* Login.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		4B7166D4AB3AB2F220F4313C /* Frameworks */ = {
@@ -148,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */,
 				2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */,
 				2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */,
 				2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */,
@@ -189,6 +209,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AloeStackView/AloeStackView.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -196,6 +217,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AloeStackView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,7 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E63C55A21AAD31B00D869DF /* ViewController.swift in Sources */,
+				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
 				2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

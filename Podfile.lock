@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.0)
+  - AloeStackView (1.0.1)
   - Kingfisher (4.10.1)
 
 DEPENDENCIES:
   - Alamofire
+  - AloeStackView
   - Kingfisher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - AloeStackView
     - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  AloeStackView: d22c006da4510db5e220968234174654b5ed6ea5
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
 
-PODFILE CHECKSUM: ee98e4fde581789da49f91cbe412a382563f6cc9
+PODFILE CHECKSUM: da2455102e8a58beb362d8fce0f8481d5b7de632
 
 COCOAPODS: 1.5.3

@@ -8,4 +8,5 @@ target 'fastbnb' do
   # Pods for fastbnb
   pod 'Alamofire'
   pod 'Kingfisher'
+  pod 'AloeStackView'
 end
