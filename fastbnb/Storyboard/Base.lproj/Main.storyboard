@@ -10,65 +10,65 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--탐색하기-->
+        <!--EXPLORE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExploreViewController" id="BYZ-38-t0r" customClass="ExploreViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="탐색하기" id="3Cm-re-3Xl" userLabel="탐색하기"/>
+                    <tabBarItem key="tabBarItem" title="EXPLORE" id="3Cm-re-3Xl" userLabel="탐색하기"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="125"/>
         </scene>
-        <!--메시지-->
+        <!--INBOX-->
         <scene sceneID="FBU-jN-KKM">
             <objects>
-                <viewController id="5Pr-0g-p9I" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InboxViewController" id="5Pr-0g-p9I" customClass="InboxViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2v2-cD-DxJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fQF-wy-kY1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="메시지" id="JbD-ox-q7f"/>
+                    <tabBarItem key="tabBarItem" title="INBOX" id="JbD-ox-q7f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s45-iQ-0sw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-736" y="886"/>
         </scene>
-        <!--여행-->
+        <!--TRIPS-->
         <scene sceneID="oVf-5r-Eci">
             <objects>
-                <viewController id="xy4-qc-7D4" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TripsViewController" id="xy4-qc-7D4" customClass="TripsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nQL-u9-tEi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b3V-6u-tvF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="여행" id="S7t-IQ-bU2"/>
+                    <tabBarItem key="tabBarItem" title="TRIPS" id="S7t-IQ-bU2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytM-CN-KEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="121" y="893"/>
         </scene>
-        <!--저장 목록-->
+        <!--SAVED-->
         <scene sceneID="f5U-kP-oV4">
             <objects>
-                <viewController id="h7Z-UX-ZjS" sceneMemberID="viewController">
+                <viewController id="h7Z-UX-ZjS" customClass="SavedViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hpo-kO-UJC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TeM-Af-JGz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="저장 목록" id="Owg-pe-EPb"/>
+                    <tabBarItem key="tabBarItem" title="SAVED" id="Owg-pe-EPb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceo-cy-h1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,6 +96,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L4T-oD-qoy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8wh-r0-f52">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
