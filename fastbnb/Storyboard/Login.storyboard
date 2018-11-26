@@ -38,7 +38,31 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-3j-qgc">
                                 <rect key="frame" x="0.0" y="235.5" width="375" height="216"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-rd-yZR" customClass="FBSDKLoginButton">
+                                        <rect key="frame" x="30" y="30" width="315" height="30"/>
+                                        <state key="normal" title="페이스북 로그인 버튼"/>
+                                        <connections>
+                                            <action selector="facebookLogin:" destination="w9A-uJ-cvh" eventType="touchUpInside" id="Qej-Qf-Nuz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZO-5V-x0t">
+                                        <rect key="frame" x="30" y="90" width="315" height="30"/>
+                                        <state key="normal" title="구글 로그인 버튼"/>
+                                        <connections>
+                                            <action selector="googleLogin:" destination="w9A-uJ-cvh" eventType="touchUpInside" id="XSJ-QA-jo5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HnR-rd-yZR" secondAttribute="trailing" constant="30" id="5sC-98-DCf"/>
+                                    <constraint firstItem="HnR-rd-yZR" firstAttribute="top" secondItem="Ptu-3j-qgc" secondAttribute="top" constant="30" id="8BS-Iv-6eO"/>
+                                    <constraint firstItem="PZO-5V-x0t" firstAttribute="top" secondItem="HnR-rd-yZR" secondAttribute="bottom" constant="30" id="9dv-RP-uAj"/>
+                                    <constraint firstItem="HnR-rd-yZR" firstAttribute="leading" secondItem="Ptu-3j-qgc" secondAttribute="leading" constant="30" id="SNE-0i-8qx"/>
+                                    <constraint firstItem="PZO-5V-x0t" firstAttribute="leading" secondItem="Ptu-3j-qgc" secondAttribute="leading" constant="30" id="uaZ-4Q-fDc"/>
+                                    <constraint firstAttribute="trailing" secondItem="PZO-5V-x0t" secondAttribute="trailing" constant="30" id="w1z-bl-kB0"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIW-DW-r0p">
                                 <rect key="frame" x="0.0" y="451.5" width="375" height="215.5"/>
@@ -64,6 +88,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wyU-gb-U1B"/>
                     </view>
+                    <connections>
+                        <outlet property="facebookLoginButton" destination="HnR-rd-yZR" id="pqw-1Q-d81"/>
+                        <outlet property="googleLoginButton" destination="PZO-5V-x0t" id="0Ew-jk-MKa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2el-9S-TTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
