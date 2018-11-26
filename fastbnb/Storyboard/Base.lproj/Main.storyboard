@@ -74,17 +74,17 @@
             </objects>
             <point key="canvasLocation" x="1076" y="873"/>
         </scene>
-        <!--프로필-->
+        <!--PROFILE-->
         <scene sceneID="laR-WR-QTb">
             <objects>
-                <viewController id="CCG-rS-yZo" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="CCG-rS-yZo" customClass="ProfileViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bFx-Sm-R0c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="B16-6J-Kmc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="프로필" id="NQa-AA-9Yv"/>
+                    <tabBarItem key="tabBarItem" title="PROFILE" id="NQa-AA-9Yv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jg-Fg-Pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
