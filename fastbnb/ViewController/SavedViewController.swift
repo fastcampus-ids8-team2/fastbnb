@@ -7,14 +7,25 @@
 //
 
 import UIKit
+import AloeStackView
+
 
 class SavedViewController: UIViewController {
 
+    let aloeStackView = AloeStackView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+//        let savedView = SavedView()
+//        savedView.labelView(view: view)
+        
+        
+        
+        
     }
+    
+
     
 
    
