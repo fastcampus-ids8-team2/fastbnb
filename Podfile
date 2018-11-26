@@ -9,6 +9,8 @@ target 'fastbnb' do
   pod 'Alamofire'
   pod 'Kingfisher'
   pod 'AloeStackView'
+  pod 'FacebookCore'
   pod 'FacebookLogin'
+  pod 'FacebookShare'
   pod 'GoogleSignIn'
 end
