@@ -1,533 +1,503 @@
 // !$*UTF8*$!
 {
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 50;
-	objects = {
+archiveVersion = 1;
+classes = {
+};
+objectVersion = 50;
+objects = {
 
 /* Begin PBXBuildFile section */
-		2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55721AAD31B00D869DF /* AppDelegate.swift */; };
-		2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55921AAD31B00D869DF /* LoginViewController.swift */; };
-		2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55B21AAD31B00D869DF /* Main.storyboard */; };
-		2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55E21AAD31B00D869DF /* Assets.xcassets */; };
-		2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */; };
-		2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56B21AADA7300D869DF /* Login.storyboard */; };
-		6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */; };
-		6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F021AB995D00E641D5 /* ExploreViewController.swift */; };
-		6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F221AB999900E641D5 /* TripsViewController.swift */; };
-		6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F421AB99CA00E641D5 /* InboxViewController.swift */; };
-<<<<<<< HEAD
-		6A9374F821AB9BFE00E641D5 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F721AB9BFE00E641D5 /* SavedView.swift */; };
-		6A9374FB21ABB85B00E641D5 /* saveViewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374FA21ABB85B00E641D5 /* saveViewItemCell.swift */; };
-=======
-		7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E830CEB21ABA3130061C816 /* ProfileViewController.swift */; };
->>>>>>> 91ed48b10e323df74ecec2e31c98620ac393bc79
-		8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */; };
+2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55721AAD31B00D869DF /* AppDelegate.swift */; };
+2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55921AAD31B00D869DF /* LoginViewController.swift */; };
+2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55B21AAD31B00D869DF /* Main.storyboard */; };
+2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55E21AAD31B00D869DF /* Assets.xcassets */; };
+2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */; };
+2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56B21AADA7300D869DF /* Login.storyboard */; };
+6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */; };
+6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F021AB995D00E641D5 /* ExploreViewController.swift */; };
+6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F221AB999900E641D5 /* TripsViewController.swift */; };
+6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F421AB99CA00E641D5 /* InboxViewController.swift */; };
+7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E830CEB21ABA3130061C816 /* ProfileViewController.swift */; };
+8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E63C55421AAD31B00D869DF /* fastbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E63C55721AAD31B00D869DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E63C55921AAD31B00D869DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2E63C55C21AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E63C55E21AAD31B00D869DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2E63C56121AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E63C56321AAD31B00D869DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2E63C56B21AADA7300D869DF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
-		6A9374F021AB995D00E641D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
-		6A9374F221AB999900E641D5 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
-		6A9374F421AB99CA00E641D5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		6A9374F721AB9BFE00E641D5 /* SavedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
-		6A9374FA21ABB85B00E641D5 /* saveViewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveViewItemCell.swift; sourceTree = "<group>"; };
-=======
-		7E830CEB21ABA3130061C816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
->>>>>>> 91ed48b10e323df74ecec2e31c98620ac393bc79
-		8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastbnb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.release.xcconfig"; sourceTree = "<group>"; };
-		ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.debug.xcconfig"; sourceTree = "<group>"; };
+2E63C55421AAD31B00D869DF /* fastbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+2E63C55721AAD31B00D869DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+2E63C55921AAD31B00D869DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+2E63C55C21AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+2E63C55E21AAD31B00D869DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+2E63C56121AAD31B00D869DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+2E63C56321AAD31B00D869DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+2E63C56B21AADA7300D869DF /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+6A9374F021AB995D00E641D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+6A9374F221AB999900E641D5 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+6A9374F421AB99CA00E641D5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+7E830CEB21ABA3130061C816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastbnb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.release.xcconfig"; sourceTree = "<group>"; };
+ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2E63C55121AAD31B00D869DF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+2E63C55121AAD31B00D869DF /* Frameworks */ = {
+isa = PBXFrameworksBuildPhase;
+buildActionMask = 2147483647;
+files = (
+8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E63C54B21AAD31B00D869DF = {
-			isa = PBXGroup;
-			children = (
-				2E63C55621AAD31B00D869DF /* fastbnb */,
-				2E63C55521AAD31B00D869DF /* Products */,
-				7DF911FA73109CE17C93F7CB /* Pods */,
-				4B7166D4AB3AB2F220F4313C /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		2E63C55521AAD31B00D869DF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2E63C55421AAD31B00D869DF /* fastbnb.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2E63C55621AAD31B00D869DF /* fastbnb */ = {
-			isa = PBXGroup;
-			children = (
-				2E63C56A21AADA0D00D869DF /* Storyboard */,
-				6A9374F621AB9BE000E641D5 /* View */,
-				6A9374F921ABB82A00E641D5 /* Model */,
-				2E63C56921AAD99600D869DF /* ViewController */,
-				2E63C55721AAD31B00D869DF /* AppDelegate.swift */,
-				2E63C55E21AAD31B00D869DF /* Assets.xcassets */,
-				2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */,
-				2E63C56321AAD31B00D869DF /* Info.plist */,
-			);
-			path = fastbnb;
-			sourceTree = "<group>";
-		};
-		2E63C56921AAD99600D869DF /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
-				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
-				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
-				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
-				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
-				6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		2E63C56A21AADA0D00D869DF /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
-				2E63C56B21AADA7300D869DF /* Login.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		4B7166D4AB3AB2F220F4313C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6A9374F621AB9BE000E641D5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				6A9374F721AB9BFE00E641D5 /* SavedView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6A9374F921ABB82A00E641D5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				6A9374FA21ABB85B00E641D5 /* saveViewItemCell.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7DF911FA73109CE17C93F7CB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */,
-				CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
+2E63C54B21AAD31B00D869DF = {
+isa = PBXGroup;
+children = (
+2E63C55621AAD31B00D869DF /* fastbnb */,
+2E63C55521AAD31B00D869DF /* Products */,
+7DF911FA73109CE17C93F7CB /* Pods */,
+4B7166D4AB3AB2F220F4313C /* Frameworks */,
+);
+sourceTree = "<group>";
+};
+2E63C55521AAD31B00D869DF /* Products */ = {
+isa = PBXGroup;
+children = (
+2E63C55421AAD31B00D869DF /* fastbnb.app */,
+);
+name = Products;
+sourceTree = "<group>";
+};
+2E63C55621AAD31B00D869DF /* fastbnb */ = {
+isa = PBXGroup;
+children = (
+2E63C56A21AADA0D00D869DF /* Storyboard */,
+2E63C56921AAD99600D869DF /* ViewController */,
+2E63C55721AAD31B00D869DF /* AppDelegate.swift */,
+2E63C55E21AAD31B00D869DF /* Assets.xcassets */,
+2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */,
+2E63C56321AAD31B00D869DF /* Info.plist */,
+);
+path = fastbnb;
+sourceTree = "<group>";
+};
+2E63C56921AAD99600D869DF /* ViewController */ = {
+isa = PBXGroup;
+children = (
+7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
+2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
+6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
+6A9374F221AB999900E641D5 /* TripsViewController.swift */,
+6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
+6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
+);
+path = ViewController;
+sourceTree = "<group>";
+};
+2E63C56A21AADA0D00D869DF /* Storyboard */ = {
+isa = PBXGroup;
+children = (
+2E63C55B21AAD31B00D869DF /* Main.storyboard */,
+2E63C56B21AADA7300D869DF /* Login.storyboard */,
+);
+path = Storyboard;
+sourceTree = "<group>";
+};
+4B7166D4AB3AB2F220F4313C /* Frameworks */ = {
+isa = PBXGroup;
+children = (
+8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */,
+);
+name = Frameworks;
+sourceTree = "<group>";
+};
+7DF911FA73109CE17C93F7CB /* Pods */ = {
+isa = PBXGroup;
+children = (
+ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */,
+CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */,
+);
+name = Pods;
+sourceTree = "<group>";
+};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2E63C55321AAD31B00D869DF /* fastbnb */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2E63C56621AAD31B00D869DF /* Build configuration list for PBXNativeTarget "fastbnb" */;
-			buildPhases = (
-				1CB8781F4A5986DA12EF3023 /* [CP] Check Pods Manifest.lock */,
-				2E63C55021AAD31B00D869DF /* Sources */,
-				2E63C55121AAD31B00D869DF /* Frameworks */,
-				2E63C55221AAD31B00D869DF /* Resources */,
-				8BBD8D9CF227B5A4DA69AAC3 /* [CP] Embed Pods Frameworks */,
-				0E04D72EC82E85DE01080DAE /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = fastbnb;
-			productName = fastbnb;
-			productReference = 2E63C55421AAD31B00D869DF /* fastbnb.app */;
-			productType = "com.apple.product-type.application";
-		};
+2E63C55321AAD31B00D869DF /* fastbnb */ = {
+isa = PBXNativeTarget;
+buildConfigurationList = 2E63C56621AAD31B00D869DF /* Build configuration list for PBXNativeTarget "fastbnb" */;
+buildPhases = (
+1CB8781F4A5986DA12EF3023 /* [CP] Check Pods Manifest.lock */,
+2E63C55021AAD31B00D869DF /* Sources */,
+2E63C55121AAD31B00D869DF /* Frameworks */,
+2E63C55221AAD31B00D869DF /* Resources */,
+8BBD8D9CF227B5A4DA69AAC3 /* [CP] Embed Pods Frameworks */,
+0E04D72EC82E85DE01080DAE /* [CP] Copy Pods Resources */,
+);
+buildRules = (
+);
+dependencies = (
+);
+name = fastbnb;
+productName = fastbnb;
+productReference = 2E63C55421AAD31B00D869DF /* fastbnb.app */;
+productType = "com.apple.product-type.application";
+};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2E63C54C21AAD31B00D869DF /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = fastcampus;
-				TargetAttributes = {
-					2E63C55321AAD31B00D869DF = {
-						CreatedOnToolsVersion = 10.1;
-					};
-				};
-			};
-			buildConfigurationList = 2E63C54F21AAD31B00D869DF /* Build configuration list for PBXProject "fastbnb" */;
-			compatibilityVersion = "Xcode 9.3";
-			developmentRegion = en;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 2E63C54B21AAD31B00D869DF;
-			productRefGroup = 2E63C55521AAD31B00D869DF /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				2E63C55321AAD31B00D869DF /* fastbnb */,
-			);
-		};
+2E63C54C21AAD31B00D869DF /* Project object */ = {
+isa = PBXProject;
+attributes = {
+LastSwiftUpdateCheck = 1010;
+LastUpgradeCheck = 1010;
+ORGANIZATIONNAME = fastcampus;
+TargetAttributes = {
+2E63C55321AAD31B00D869DF = {
+CreatedOnToolsVersion = 10.1;
+};
+};
+};
+buildConfigurationList = 2E63C54F21AAD31B00D869DF /* Build configuration list for PBXProject "fastbnb" */;
+compatibilityVersion = "Xcode 9.3";
+developmentRegion = en;
+hasScannedForEncodings = 0;
+knownRegions = (
+en,
+Base,
+);
+mainGroup = 2E63C54B21AAD31B00D869DF;
+productRefGroup = 2E63C55521AAD31B00D869DF /* Products */;
+projectDirPath = "";
+projectRoot = "";
+targets = (
+2E63C55321AAD31B00D869DF /* fastbnb */,
+);
+};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2E63C55221AAD31B00D869DF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */,
-				2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */,
-				2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */,
-				2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+2E63C55221AAD31B00D869DF /* Resources */ = {
+isa = PBXResourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */,
+2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */,
+2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */,
+2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0E04D72EC82E85DE01080DAE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1CB8781F4A5986DA12EF3023 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-fastbnb-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8BBD8D9CF227B5A4DA69AAC3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AloeStackView/AloeStackView.framework",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AloeStackView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
+0E04D72EC82E85DE01080DAE /* [CP] Copy Pods Resources */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-resources.sh",
+"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+);
+name = "[CP] Copy Pods Resources";
+outputFileListPaths = (
+);
+outputPaths = (
+"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-resources.sh\"\n";
+showEnvVarsInLog = 0;
+};
+1CB8781F4A5986DA12EF3023 /* [CP] Check Pods Manifest.lock */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+"${PODS_ROOT}/Manifest.lock",
+);
+name = "[CP] Check Pods Manifest.lock";
+outputFileListPaths = (
+);
+outputPaths = (
+"$(DERIVED_FILE_DIR)/Pods-fastbnb-checkManifestLockResult.txt",
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+showEnvVarsInLog = 0;
+};
+8BBD8D9CF227B5A4DA69AAC3 /* [CP] Embed Pods Frameworks */ = {
+isa = PBXShellScriptBuildPhase;
+buildActionMask = 2147483647;
+files = (
+);
+inputFileListPaths = (
+);
+inputPaths = (
+"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh",
+"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+"${BUILT_PRODUCTS_DIR}/AloeStackView/AloeStackView.framework",
+"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+);
+name = "[CP] Embed Pods Frameworks";
+outputFileListPaths = (
+);
+outputPaths = (
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AloeStackView.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+);
+runOnlyForDeploymentPostprocessing = 0;
+shellPath = /bin/sh;
+shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-frameworks.sh\"\n";
+showEnvVarsInLog = 0;
+};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2E63C55021AAD31B00D869DF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
-				6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
-				6A9374FB21ABB85B00E641D5 /* saveViewItemCell.swift in Sources */,
-				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
-				6A9374F821AB9BFE00E641D5 /* SavedView.swift in Sources */,
-				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
-				7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
-				2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */,
-				6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
+2E63C55021AAD31B00D869DF /* Sources */ = {
+isa = PBXSourcesBuildPhase;
+buildActionMask = 2147483647;
+files = (
+6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
+6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
+6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
+2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
+7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
+2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */,
+6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */,
+);
+runOnlyForDeploymentPostprocessing = 0;
+};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2E63C55B21AAD31B00D869DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E63C55C21AAD31B00D869DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E63C56121AAD31B00D869DF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
+2E63C55B21AAD31B00D869DF /* Main.storyboard */ = {
+isa = PBXVariantGroup;
+children = (
+2E63C55C21AAD31B00D869DF /* Base */,
+);
+name = Main.storyboard;
+sourceTree = "<group>";
+};
+2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */ = {
+isa = PBXVariantGroup;
+children = (
+2E63C56121AAD31B00D869DF /* Base */,
+);
+name = LaunchScreen.storyboard;
+sourceTree = "<group>";
+};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2E63C56421AAD31B00D869DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		2E63C56521AAD31B00D869DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		2E63C56721AAD31B00D869DF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
-				INFOPLIST_FILE = fastbnb/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.fastcampus.fastbnb;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2E63C56821AAD31B00D869DF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G4MM77V7NH;
-				INFOPLIST_FILE = fastbnb/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = kr.fastcampus.fastbnb;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
+2E63C56421AAD31B00D869DF /* Debug */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+CLANG_CXX_LIBRARY = "libc++";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = dwarf;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+ENABLE_TESTABILITY = YES;
+GCC_C_LANGUAGE_STANDARD = gnu11;
+GCC_DYNAMIC_NO_PIC = NO;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_OPTIMIZATION_LEVEL = 0;
+GCC_PREPROCESSOR_DEFINITIONS = (
+"DEBUG=1",
+"$(inherited)",
+);
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+MTL_FAST_MATH = YES;
+ONLY_ACTIVE_ARCH = YES;
+SDKROOT = iphoneos;
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+};
+name = Debug;
+};
+2E63C56521AAD31B00D869DF /* Release */ = {
+isa = XCBuildConfiguration;
+buildSettings = {
+ALWAYS_SEARCH_USER_PATHS = NO;
+CLANG_ANALYZER_NONNULL = YES;
+CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+CLANG_CXX_LIBRARY = "libc++";
+CLANG_ENABLE_MODULES = YES;
+CLANG_ENABLE_OBJC_ARC = YES;
+CLANG_ENABLE_OBJC_WEAK = YES;
+CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+CLANG_WARN_BOOL_CONVERSION = YES;
+CLANG_WARN_COMMA = YES;
+CLANG_WARN_CONSTANT_CONVERSION = YES;
+CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+CLANG_WARN_EMPTY_BODY = YES;
+CLANG_WARN_ENUM_CONVERSION = YES;
+CLANG_WARN_INFINITE_RECURSION = YES;
+CLANG_WARN_INT_CONVERSION = YES;
+CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+CLANG_WARN_STRICT_PROTOTYPES = YES;
+CLANG_WARN_SUSPICIOUS_MOVE = YES;
+CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+CLANG_WARN_UNREACHABLE_CODE = YES;
+CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+CODE_SIGN_IDENTITY = "iPhone Developer";
+COPY_PHASE_STRIP = NO;
+DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+ENABLE_NS_ASSERTIONS = NO;
+ENABLE_STRICT_OBJC_MSGSEND = YES;
+GCC_C_LANGUAGE_STANDARD = gnu11;
+GCC_NO_COMMON_BLOCKS = YES;
+GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+GCC_WARN_UNDECLARED_SELECTOR = YES;
+GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+GCC_WARN_UNUSED_FUNCTION = YES;
+GCC_WARN_UNUSED_VARIABLE = YES;
+IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+MTL_ENABLE_DEBUG_INFO = NO;
+MTL_FAST_MATH = YES;
+SDKROOT = iphoneos;
+SWIFT_COMPILATION_MODE = wholemodule;
+SWIFT_OPTIMIZATION_LEVEL = "-O";
+VALIDATE_PRODUCT = YES;
+};
+name = Release;
+};
+2E63C56721AAD31B00D869DF /* Debug */ = {
+isa = XCBuildConfiguration;
+baseConfigurationReference = ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = G4MM77V7NH;
+INFOPLIST_FILE = fastbnb/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = kr.fastcampus.fastbnb;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 4.2;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Debug;
+};
+2E63C56821AAD31B00D869DF /* Release */ = {
+isa = XCBuildConfiguration;
+baseConfigurationReference = CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */;
+buildSettings = {
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+CODE_SIGN_STYLE = Automatic;
+DEVELOPMENT_TEAM = G4MM77V7NH;
+INFOPLIST_FILE = fastbnb/Info.plist;
+LD_RUNPATH_SEARCH_PATHS = (
+"$(inherited)",
+"@executable_path/Frameworks",
+);
+PRODUCT_BUNDLE_IDENTIFIER = kr.fastcampus.fastbnb;
+PRODUCT_NAME = "$(TARGET_NAME)";
+SWIFT_VERSION = 4.2;
+TARGETED_DEVICE_FAMILY = "1,2";
+};
+name = Release;
+};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2E63C54F21AAD31B00D869DF /* Build configuration list for PBXProject "fastbnb" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E63C56421AAD31B00D869DF /* Debug */,
-				2E63C56521AAD31B00D869DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2E63C56621AAD31B00D869DF /* Build configuration list for PBXNativeTarget "fastbnb" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E63C56721AAD31B00D869DF /* Debug */,
-				2E63C56821AAD31B00D869DF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
+2E63C54F21AAD31B00D869DF /* Build configuration list for PBXProject "fastbnb" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+2E63C56421AAD31B00D869DF /* Debug */,
+2E63C56521AAD31B00D869DF /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
+2E63C56621AAD31B00D869DF /* Build configuration list for PBXNativeTarget "fastbnb" */ = {
+isa = XCConfigurationList;
+buildConfigurations = (
+2E63C56721AAD31B00D869DF /* Debug */,
+2E63C56821AAD31B00D869DF /* Release */,
+);
+defaultConfigurationIsVisible = 0;
+defaultConfigurationName = Release;
+};
 /* End XCConfigurationList section */
-	};
-	rootObject = 2E63C54C21AAD31B00D869DF /* Project object */;
+};
+rootObject = 2E63C54C21AAD31B00D869DF /* Project object */;
 }
