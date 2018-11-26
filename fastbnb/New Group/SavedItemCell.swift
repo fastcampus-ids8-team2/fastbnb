@@ -25,19 +25,24 @@ final class SavedItemCell: UITableViewCell {
     
     
     var cityName: String?
-    var numberSaved = 0 {
-        didSet {
-            numberOfSavedCityLabel.text = "\(numberSaved)"
-        }
-    }
+    var numberSaved: Int?
+    
+        
     
     // MARK: Action Handler
     
     func setupCell(cityName: String, savedImageName: String) {
         cityNameLabel.text = cityName
         itemSavedImageView.image = UIImage(named: savedImageName)
+//        numberOfSavedCityLabel.text = ""
         print("cell has been setup")
         
+    }
+    
+    func setupCell2(cityName: String, savedImageName: String, numberSaved: Int) {
+        cityNameLabel.text = cityName
+        itemSavedImageView.image = UIImage(named: savedImageName)
+        numberOfSavedCityLabel.text = "\(numberSaved)"
     }
 
 }

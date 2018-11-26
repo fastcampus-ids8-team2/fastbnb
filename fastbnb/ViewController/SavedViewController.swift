@@ -16,6 +16,8 @@ class SavedViewController: UIViewController {
     let aloeStackView = AloeStackView()
     private var cityNames : [String] = []
     private var cityImage : [String] = []
+    private var numberOfCitySaved: [Int] = []
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -25,10 +27,6 @@ class SavedViewController: UIViewController {
         super.viewDidLoad()
         tableView.rowHeight = 300
        
-        
-        
-//        let savedView = SavedView()
-//        savedView.labelView(view: view)
         cityNames.append("London")
         cityImage.append("airbnbImage")
         cityNames.append("London")
@@ -58,7 +56,7 @@ class SavedViewController: UIViewController {
         cityNames.append("London")
         cityImage.append("airbnbImage")
         
-        print(cityNames)
+   
         
         
     }
@@ -75,9 +73,15 @@ extension SavedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SavedItemCell.identifier, for: indexPath) as! SavedItemCell
         
-        cell.setupCell(cityName: cityNames[indexPath.row], savedImageName: cityImage[indexPath.row])
+        if numberOfCitySaved.count > 0 {
+            cell.setupCell2(cityName: cityNames[indexPath.row], savedImageName: cityImage[indexPath.row], numberSaved: numberOfCitySaved[indexPath.row])
+        } else {
         
-        print("tableView")
+            cell.setupCell(cityName: cityNames[indexPath.row], savedImageName: cityImage[indexPath.row])
+            
+        
+        }
+        
         return cell
         
         

@@ -20,7 +20,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="EXPLORE" id="3Cm-re-3Xl" userLabel="탐색하기"/>
+                    <tabBarItem key="tabBarItem" title="EXPLORE" image="explore" id="3Cm-re-3Xl" userLabel="탐색하기"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fQF-wy-kY1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="INBOX" id="JbD-ox-q7f"/>
+                    <tabBarItem key="tabBarItem" title="INBOX" image="inbox" id="JbD-ox-q7f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s45-iQ-0sw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +52,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="b3V-6u-tvF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="TRIPS" id="S7t-IQ-bU2"/>
+                    <tabBarItem key="tabBarItem" title="TRIPS" image="airbnbLogo" id="S7t-IQ-bU2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ytM-CN-KEC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +134,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TeM-Af-JGz"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SAVED" image="savedUnClick" id="Owg-pe-EPb">
+                    <tabBarItem key="tabBarItem" title="SAVED" image="emptyHeart" id="Owg-pe-EPb">
                         <color key="badgeColor" red="0.94670552019999998" green="0.69240101799999998" blue="0.72703597590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBarItem>
                     <connections>
@@ -155,7 +155,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="B16-6J-Kmc"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="PROFILE" id="NQa-AA-9Yv"/>
+                    <tabBarItem key="tabBarItem" title="PROFILE" image="profile" id="NQa-AA-9Yv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jg-Fg-Pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -186,6 +186,10 @@
     </scenes>
     <resources>
         <image name="airbnbImage" width="1500" height="844"/>
-        <image name="savedUnClick" width="60" height="60"/>
+        <image name="airbnbLogo" width="48" height="48"/>
+        <image name="emptyHeart" width="48" height="48"/>
+        <image name="explore" width="48" height="48"/>
+        <image name="inbox" width="64" height="64"/>
+        <image name="profile" width="48" height="48"/>
     </resources>
 </document>
