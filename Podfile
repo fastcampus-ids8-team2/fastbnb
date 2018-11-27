@@ -13,4 +13,5 @@ target 'fastbnb' do
   pod 'FacebookLogin'
   pod 'FacebookShare'
   pod 'GoogleSignIn'
+  pod 'SnapKit'
 end

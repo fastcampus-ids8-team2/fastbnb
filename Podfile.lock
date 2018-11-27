@@ -47,6 +47,7 @@ PODS:
   - GTMSessionFetcher/Full (1.2.1):
     - GTMSessionFetcher/Core (= 1.2.1)
   - Kingfisher (4.10.1)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - FacebookShare
   - GoogleSignIn
   - Kingfisher
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -73,6 +75,7 @@ SPEC REPOS:
     - GTMOAuth2
     - GTMSessionFetcher
     - Kingfisher
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
@@ -89,7 +92,8 @@ SPEC CHECKSUMS:
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 974ee3777f3d73b018375e9306dae794ea4cc910
+PODFILE CHECKSUM: 007eeabc08c2d0c507c087448763da34ac326e6a
 
 COCOAPODS: 1.5.3
