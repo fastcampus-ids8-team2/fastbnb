@@ -10,89 +10,50 @@ import UIKit
 import FacebookLogin
 import AloeStackView
 import FBSDKCoreKit
+import FBSDKLoginKit
 import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet private weak var headerView: UIView!
-    @IBOutlet private weak var contentsView: UIView!
-    @IBOutlet private weak var footerView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let aloeStackView = AloeStackView()
-        contentsView.addSubview(aloeStackView)
-        
-        aloeStackView.translatesAutoresizingMaskIntoConstraints = false
-        aloeStackView.topAnchor.constraint(equalTo: contentsView.topAnchor, constant: 0).isActive = true
-        aloeStackView.leadingAnchor.constraint(equalTo: contentsView.leadingAnchor, constant: 0).isActive = true
-        aloeStackView.bottomAnchor.constraint(equalTo: contentsView.bottomAnchor, constant: 0).isActive = true
-        aloeStackView.trailingAnchor.constraint(equalTo: contentsView.trailingAnchor, constant: 0).isActive = true
-        aloeStackView.hidesSeparatorsByDefault = true
-        
-        let facebookLoginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
-        facebookLoginButton.delegate = self
-        aloeStackView.addRow(facebookLoginButton)
-        
-        let googleLoginButton = GIDSignInButton()
-        GIDSignIn.sharedInstance().uiDelegate = self
-        GIDSignIn.sharedInstance().signInSilently()
-        aloeStackView.addRow(googleLoginButton)
-        
-        let googleLogoutButton = UIButton()
-        googleLogoutButton.setTitle("Google Logout", for: .normal)
-        googleLogoutButton.backgroundColor = .blue
-        googleLogoutButton.addTarget(self, action: #selector(googleLogoutAction), for: .touchUpInside)
-        aloeStackView.addRow(googleLogoutButton)
-        
     }
     
-    @objc func googleLogoutAction() {
-        GIDSignIn.sharedInstance().signOut()
-    }
-}
-
-extension LoginViewController: LoginButtonDelegate {
-    func loginButtonDidCompleteLogin(_ loginButton: LoginButton, result: LoginResult) {
-        switch result {
-        case .success(_, _, let token):
-            print(token.authenticationToken)
-            
-            let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields":"id, email, name"])
-            graphRequest.start(completionHandler: { (connection, result, error) in
-                if let error = error {
-                    print(error.localizedDescription)
-                    return
+    @IBAction private func facebookLoginAction(_ sender: UIButton) {
+        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+        fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+            if (error == nil){
+                guard let fbloginresult: FBSDKLoginManagerLoginResult = result else { return }
+                if(fbloginresult.grantedPermissions.contains("email"))
+                {
+                    if((FBSDKAccessToken.current()) != nil){
+                        FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email"]).start(completionHandler: { (connection, result, error) in
+                            if (error == nil){
+                                guard let result = result as? [String:String] else { return }
+                                print(result)
+                            }
+                        })
+                    }
                 }
-                let fbData = result as! [String:AnyObject]
-                let userName = fbData["name"]! as? NSString
-                let userEmail = fbData["email"]! as? NSString
-                
-                print("userName:",userName!)
-                print("userEmail",userEmail!)
-            })
-        case .failed(let error):
-            print(error.localizedDescription)
-        case .cancelled:
-            print("cancelled")
+            }
         }
     }
     
-    func loginButtonDidLogOut(_ loginButton: LoginButton) {
-        print("loginButtonDidLogOut")
+    @IBAction private func googleLoginAction(_ sender: UIButton) {
+        GIDSignIn.sharedInstance().clientID = "979972481022-fsvh0i19939uv48008am9e0sop0kt894.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signIn()
     }
 }
 
-extension LoginViewController: GIDSignInUIDelegate {
-    // Present a view that prompts the user to sign in with Google
-    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
-        self.present(viewController, animated: true, completion: nil)
-    }
-    
-    // Dismiss the "Sign in with Google" view
-    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
-        self.dismiss(animated: true, completion: nil)
+extension LoginViewController: GIDSignInDelegate, GIDSignInUIDelegate {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if (error == nil) {
+            print(user.profile.name)
+            GIDSignIn.sharedInstance()?.signOut()
+        } else {
+            print(error.localizedDescription)
+        }
     }
 }
-
