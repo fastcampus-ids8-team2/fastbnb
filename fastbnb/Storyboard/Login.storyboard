@@ -21,7 +21,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mky-FP-Hul">
                                 <rect key="frame" x="0.0" y="20" width="375" height="194"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJH-xs-BBe">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJH-xs-BBe">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
                                         <attributedString key="attributedText">
                                             <fragment content="에어비앤비에">
@@ -81,24 +81,43 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-3j-qgc">
                                 <rect key="frame" x="0.0" y="214" width="375" height="453"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-65-l9T">
-                                        <rect key="frame" x="30" y="30" width="315" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eok-65-l9T" customClass="SocialLoginButton" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="30" width="315" height="48"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="페이스북 계정으로 로그인하기"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="LvT-in-0MW"/>
+                                        </constraints>
+                                        <state key="normal" title="페이스북 계정으로 로그인하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="facebookLoginAction:" destination="w9A-uJ-cvh" eventType="touchUpInside" id="adV-C7-CbK"/>
+                                            <action selector="facebookLoginAction:" destination="w9A-uJ-cvh" eventType="touchUpInside" id="Ye4-Yl-FyO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qo-I4-0MG">
-                                        <rect key="frame" x="30" y="94" width="315" height="34"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Qo-I4-0MG" customClass="SocialLoginButton" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="108" width="315" height="48"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="구글 계정으로 로그인하기"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="HvL-xR-Qh0"/>
+                                        </constraints>
+                                        <state key="normal" title="구글 계정으로 로그인하기">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="googleLoginAction:" destination="w9A-uJ-cvh" eventType="touchUpInside" id="Wav-IQ-t1b"/>
+                                            <action selector="googleLoginAction:" destination="w9A-uJ-cvh" eventType="touchUpInside" id="Oql-7f-XvY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -131,6 +150,159 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2el-9S-TTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="78" y="115"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="qmj-Nz-bIh">
+            <objects>
+                <viewController id="Puv-ur-kRy" customClass="SignInViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c0d-Ub-tln">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ama-vm-ARx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="194"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아 보이나요?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r5-4o-EQt">
+                                        <rect key="frame" x="30" y="50" width="315" height="72"/>
+                                        <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계속 진행하기 전에 정보가 올바른지 확인하세요." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dcj-8I-NTV">
+                                        <rect key="frame" x="30" y="122" width="315" height="72"/>
+                                        <fontDescription key="fontDescription" name=".AppleSDGothicNeoI-Regular" family=".Apple SD Gothic NeoI" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9r5-4o-EQt" secondAttribute="trailing" constant="30" id="2Ds-Bj-EbZ"/>
+                                    <constraint firstItem="Dcj-8I-NTV" firstAttribute="top" secondItem="9r5-4o-EQt" secondAttribute="bottom" id="3yk-wM-qXe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dcj-8I-NTV" secondAttribute="bottom" id="JiJ-38-0zZ"/>
+                                    <constraint firstItem="Dcj-8I-NTV" firstAttribute="top" secondItem="9r5-4o-EQt" secondAttribute="bottom" id="R4a-N9-mYh"/>
+                                    <constraint firstItem="Dcj-8I-NTV" firstAttribute="leading" secondItem="ama-vm-ARx" secondAttribute="leading" constant="30" id="k8a-hJ-KrN"/>
+                                    <constraint firstItem="9r5-4o-EQt" firstAttribute="leading" secondItem="ama-vm-ARx" secondAttribute="leading" constant="30" id="luO-AK-nrm"/>
+                                    <constraint firstItem="9r5-4o-EQt" firstAttribute="height" secondItem="Dcj-8I-NTV" secondAttribute="height" id="mlD-Vm-nnj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Dcj-8I-NTV" secondAttribute="trailing" constant="30" id="pjY-aU-HUa"/>
+                                    <constraint firstItem="9r5-4o-EQt" firstAttribute="top" secondItem="ama-vm-ARx" secondAttribute="top" constant="50" id="qB4-Ts-02M"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibK-ef-pFA">
+                                <rect key="frame" x="0.0" y="214" width="375" height="453"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ama-vm-ARx" firstAttribute="leading" secondItem="Fel-uf-wUJ" secondAttribute="leading" id="5af-vb-PC3"/>
+                            <constraint firstItem="Fel-uf-wUJ" firstAttribute="bottom" secondItem="ibK-ef-pFA" secondAttribute="bottom" id="AAt-Lg-ww2"/>
+                            <constraint firstItem="ibK-ef-pFA" firstAttribute="leading" secondItem="Fel-uf-wUJ" secondAttribute="leading" id="BiL-X6-V5O"/>
+                            <constraint firstItem="ibK-ef-pFA" firstAttribute="top" secondItem="ama-vm-ARx" secondAttribute="bottom" id="RVn-MG-Wfw"/>
+                            <constraint firstItem="Fel-uf-wUJ" firstAttribute="trailing" secondItem="ibK-ef-pFA" secondAttribute="trailing" id="YTi-1X-5vd"/>
+                            <constraint firstItem="ama-vm-ARx" firstAttribute="height" secondItem="ibK-ef-pFA" secondAttribute="height" multiplier="3:7" id="eLO-xj-qiK"/>
+                            <constraint firstItem="ibK-ef-pFA" firstAttribute="top" secondItem="ama-vm-ARx" secondAttribute="bottom" id="gce-hj-tg2"/>
+                            <constraint firstItem="ama-vm-ARx" firstAttribute="top" secondItem="Fel-uf-wUJ" secondAttribute="top" id="iaz-Yd-n69"/>
+                            <constraint firstItem="Fel-uf-wUJ" firstAttribute="trailing" secondItem="ama-vm-ARx" secondAttribute="trailing" id="ny2-yf-Qc2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fel-uf-wUJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ihv-3Z-r22" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="935" y="115"/>
+        </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="9vA-ye-Exs">
+            <objects>
+                <viewController id="Yd7-H3-hQe" customClass="TermsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZpF-U0-QZv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dw7-B9-l1T">
+                                <rect key="frame" x="0.0" y="20" width="375" height="129.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가입하시기 전에..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiE-KK-q4D">
+                                        <rect key="frame" x="30" y="0.0" width="315" height="129.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="fiE-KK-q4D" firstAttribute="leading" secondItem="Dw7-B9-l1T" secondAttribute="leading" constant="30" id="FPg-QD-brG"/>
+                                    <constraint firstAttribute="trailing" secondItem="fiE-KK-q4D" secondAttribute="trailing" constant="30" id="JKR-jx-mWt"/>
+                                    <constraint firstAttribute="bottom" secondItem="fiE-KK-q4D" secondAttribute="bottom" id="XIq-Mo-hRd"/>
+                                    <constraint firstItem="fiE-KK-q4D" firstAttribute="top" secondItem="Dw7-B9-l1T" secondAttribute="top" id="tue-KC-baJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="81p-Hv-xIx">
+                                <rect key="frame" x="0.0" y="149.5" width="375" height="517.5"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ne2-UM-LWf">
+                                        <rect key="frame" x="30" y="0.0" width="315" height="258.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">에어비앤비에 새로 가입하신 회원님과 기존 회원님 모든 분께 에어비앤비 커뮤니티 상의 모든 구성원을 존중하고 포용하겠다는 약속을 해주실 것을 요청드립니다.
+
+모든 에어비앤비 커뮤니티 회원을 인종, 종교, 출신 국가, 민족, 장애, 성별, 성적 정체성, 성적 취향 또는 연령에 상관없이 존중하여 개인적 판단이나 편견 없이 대하겠습니다.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-U0-PZI">
+                                        <rect key="frame" x="30" y="258.5" width="315" height="259"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfI-cH-Gur">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="수락"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lz-zs-wDZ">
+                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="거절"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="1lz-zs-wDZ" firstAttribute="leading" secondItem="HfI-cH-Gur" secondAttribute="trailing" constant="30" id="Awd-CK-mhM"/>
+                                            <constraint firstItem="HfI-cH-Gur" firstAttribute="leading" secondItem="Kg2-U0-PZI" secondAttribute="leading" id="IbY-0n-uvT"/>
+                                            <constraint firstItem="HfI-cH-Gur" firstAttribute="top" secondItem="Kg2-U0-PZI" secondAttribute="top" id="OdX-Vh-Sz3"/>
+                                            <constraint firstItem="1lz-zs-wDZ" firstAttribute="top" secondItem="Kg2-U0-PZI" secondAttribute="top" id="ijs-eG-K48"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Ne2-UM-LWf" firstAttribute="leading" secondItem="81p-Hv-xIx" secondAttribute="leading" constant="30" id="2Ub-w2-ve2"/>
+                                    <constraint firstItem="Ne2-UM-LWf" firstAttribute="height" secondItem="Kg2-U0-PZI" secondAttribute="height" id="HFG-WB-l2q"/>
+                                    <constraint firstItem="Ne2-UM-LWf" firstAttribute="top" secondItem="81p-Hv-xIx" secondAttribute="top" id="MUo-Kb-0e2"/>
+                                    <constraint firstItem="Kg2-U0-PZI" firstAttribute="top" secondItem="Ne2-UM-LWf" secondAttribute="bottom" id="NAa-JF-PJy"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kg2-U0-PZI" secondAttribute="trailing" constant="30" id="QVw-jb-wqe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ne2-UM-LWf" secondAttribute="trailing" constant="30" id="fAa-ar-TXb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Kg2-U0-PZI" secondAttribute="bottom" id="kIn-0D-Pgs"/>
+                                    <constraint firstItem="Kg2-U0-PZI" firstAttribute="top" secondItem="Ne2-UM-LWf" secondAttribute="bottom" id="pVH-a5-KQQ"/>
+                                    <constraint firstItem="Kg2-U0-PZI" firstAttribute="leading" secondItem="81p-Hv-xIx" secondAttribute="leading" constant="30" id="yjz-fv-h8q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dw7-B9-l1T" firstAttribute="top" secondItem="Xtr-F1-d3H" secondAttribute="top" id="4gV-T3-1pZ"/>
+                            <constraint firstItem="81p-Hv-xIx" firstAttribute="top" secondItem="Dw7-B9-l1T" secondAttribute="bottom" id="4sW-UC-hpc"/>
+                            <constraint firstItem="Xtr-F1-d3H" firstAttribute="trailing" secondItem="Dw7-B9-l1T" secondAttribute="trailing" id="Krf-vf-go8"/>
+                            <constraint firstItem="Xtr-F1-d3H" firstAttribute="trailing" secondItem="81p-Hv-xIx" secondAttribute="trailing" id="Ocq-0l-oEr"/>
+                            <constraint firstItem="Xtr-F1-d3H" firstAttribute="bottom" secondItem="81p-Hv-xIx" secondAttribute="bottom" id="YVn-X2-HMO"/>
+                            <constraint firstItem="81p-Hv-xIx" firstAttribute="top" secondItem="Dw7-B9-l1T" secondAttribute="bottom" id="Z34-nP-lte"/>
+                            <constraint firstItem="81p-Hv-xIx" firstAttribute="leading" secondItem="Xtr-F1-d3H" secondAttribute="leading" id="mMq-Qh-aiV"/>
+                            <constraint firstItem="Dw7-B9-l1T" firstAttribute="leading" secondItem="Xtr-F1-d3H" secondAttribute="leading" id="uh4-AS-v58"/>
+                            <constraint firstItem="Dw7-B9-l1T" firstAttribute="height" secondItem="81p-Hv-xIx" secondAttribute="height" multiplier="2:8" id="xA8-Zj-wQn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xtr-F1-d3H"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jXW-st-be6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1752.8" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>

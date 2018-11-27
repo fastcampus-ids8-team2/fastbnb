@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction private func facebookLoginAction(_ sender: UIButton) {
+    @IBAction private func facebookLoginAction(_ sender: SocialLoginButton) {
         let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
         fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if (error == nil){
@@ -39,7 +39,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction private func googleLoginAction(_ sender: UIButton) {
+    @IBAction private func googleLoginAction(_ sender: SocialLoginButton) {
         GIDSignIn.sharedInstance().clientID = "979972481022-fsvh0i19939uv48008am9e0sop0kt894.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance().uiDelegate = self
