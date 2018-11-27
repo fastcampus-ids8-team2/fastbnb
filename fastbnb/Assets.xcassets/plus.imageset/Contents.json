@@ -6,7 +6,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "iconfinder_Airbnb_692153.png",
+      "filename" : "iconfinder_add-70px_510874.png",
       "scale" : "2x"
     },
     {
@@ -17,8 +17,5 @@
   "info" : {
     "version" : 1,
     "author" : "xcode"
-  },
-  "properties" : {
-    "template-rendering-intent" : "template"
   }
 }
