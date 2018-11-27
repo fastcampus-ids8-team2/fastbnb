@@ -94,12 +94,12 @@
 		2E63C56921AAD99600D869DF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
 				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
-				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
-				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
-				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
 				6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
+				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
+				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
+				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
+				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -107,8 +107,8 @@
 		2E63C56A21AADA0D00D869DF /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
 				2E63C56B21AADA7300D869DF /* Login.storyboard */,
+				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -132,8 +132,8 @@
 		6A01658221ABC6FF00F69171 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
 				6A261FD021ACFC23008CB42A /* CalendarCustomCell.swift */,
+				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
 			);
 			name = Model;
 			path = "New Group";
