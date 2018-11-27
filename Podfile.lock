@@ -46,6 +46,7 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - GTMSessionFetcher/Full (1.2.1):
     - GTMSessionFetcher/Core (= 1.2.1)
+  - JTAppleCalendar (7.1.6)
   - Kingfisher (4.10.1)
   - SnapKit (4.2.0)
 
@@ -56,6 +57,7 @@ DEPENDENCIES:
   - FacebookLogin
   - FacebookShare
   - GoogleSignIn
+  - JTAppleCalendar
   - Kingfisher
   - SnapKit
 
@@ -74,6 +76,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMOAuth2
     - GTMSessionFetcher
+    - JTAppleCalendar
     - Kingfisher
     - SnapKit
 
@@ -91,9 +94,10 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 007eeabc08c2d0c507c087448763da34ac326e6a
+PODFILE CHECKSUM: 6c7987fa4cb2501c969d1cd70e96ba14afa0df54
 
 COCOAPODS: 1.5.3

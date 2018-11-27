@@ -14,4 +14,5 @@ target 'fastbnb' do
   pod 'FacebookShare'
   pod 'GoogleSignIn'
   pod 'SnapKit'
+  pod 'JTAppleCalendar'
 end

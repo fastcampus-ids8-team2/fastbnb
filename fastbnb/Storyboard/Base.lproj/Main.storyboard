@@ -17,14 +17,74 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBR-vq-W7d" userLabel="searchBarView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="r9P-8t-9wW">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-rZ-Lrn">
+                                        <rect key="frame" x="0.0" y="55" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Dates"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRt-OO-qCk">
+                                        <rect key="frame" x="80" y="54" width="72" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Guests"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="r9P-8t-9wW" firstAttribute="leading" secondItem="JBR-vq-W7d" secondAttribute="leading" id="1J8-0V-F3y"/>
+                                    <constraint firstAttribute="trailing" secondItem="r9P-8t-9wW" secondAttribute="trailing" id="3Zc-ba-L7s"/>
+                                    <constraint firstAttribute="height" constant="128" id="BfR-og-2YO"/>
+                                    <constraint firstItem="r9P-8t-9wW" firstAttribute="top" secondItem="JBR-vq-W7d" secondAttribute="top" id="uOl-w6-IU7"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-s8-mNi">
+                                <rect key="frame" x="0.0" y="128" width="375" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="oYQ-yN-hIH">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYQ-yN-hIH" id="vhh-8D-6Zr">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="H0s-0t-sf2">
+                                        <rect key="frame" x="0.0" y="103" width="375" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H0s-0t-sf2" id="ci7-Zs-Ush">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ly1-s8-mNi" firstAttribute="top" secondItem="JBR-vq-W7d" secondAttribute="bottom" id="3RU-9r-l4z"/>
+                            <constraint firstItem="JBR-vq-W7d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ahf-lg-pe8"/>
+                            <constraint firstItem="JBR-vq-W7d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DkU-le-iKX"/>
+                            <constraint firstItem="ly1-s8-mNi" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Z6u-FL-Sts"/>
+                            <constraint firstItem="ly1-s8-mNi" firstAttribute="top" secondItem="JBR-vq-W7d" secondAttribute="bottom" id="ZN8-v8-hEb"/>
+                            <constraint firstItem="ly1-s8-mNi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f61-dB-vrs"/>
+                            <constraint firstItem="ly1-s8-mNi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hE6-wU-dRc"/>
+                            <constraint firstItem="JBR-vq-W7d" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w2G-ch-6dj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="EXPLORE" image="explore" id="3Cm-re-3Xl" userLabel="탐색하기"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2426" y="893"/>
+            <point key="canvasLocation" x="-2426.4000000000001" y="892.80359820089961"/>
         </scene>
         <!--INBOX-->
         <scene sceneID="FBU-jN-KKM">

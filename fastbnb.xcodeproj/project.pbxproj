@@ -90,10 +90,10 @@
 			isa = PBXGroup;
 			children = (
 				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
-				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
-				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
-				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
 				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
+				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
+				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
+				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
 				6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
 			);
 			path = ViewController;
@@ -270,6 +270,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
@@ -289,6 +290,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
