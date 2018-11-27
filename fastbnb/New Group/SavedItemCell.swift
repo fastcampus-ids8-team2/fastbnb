@@ -42,7 +42,14 @@ final class SavedItemCell: UITableViewCell {
     func setupCell2(cityName: String, savedImageName: String, numberSaved: Int) {
         cityNameLabel.text = cityName
         itemSavedImageView.image = UIImage(named: savedImageName)
-        numberOfSavedCityLabel.text = "\(numberSaved)"
+        if numberSaved == 0 {
+            numberOfSavedCityLabel.text = ""
+        } else if numberSaved == 1 {
+            numberOfSavedCityLabel.text = "\(numberSaved) Home"
+        } else if numberSaved > 1 {
+            numberOfSavedCityLabel.text = "\(numberSaved) Homes"
+        }
+        
     }
 
 }

@@ -83,8 +83,8 @@
                                                         <constraint firstAttribute="height" constant="200" id="yem-CM-xCw"/>
                                                     </constraints>
                                                 </imageView>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="G4d-R5-gi7">
-                                                    <rect key="frame" x="15" y="222" width="279" height="20.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="86" translatesAutoresizingMaskIntoConstraints="NO" id="G4d-R5-gi7">
+                                                    <rect key="frame" x="15" y="222" width="230" height="20.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CitiName:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMM-3v-TBL">
                                                             <rect key="frame" x="0.0" y="0.0" width="75" height="20.5"/>
@@ -92,8 +92,8 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number Saved:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-D2-BB3">
-                                                            <rect key="frame" x="161" y="0.0" width="118" height="20.5"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 Homes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIh-D2-BB3">
+                                                            <rect key="frame" x="161" y="0.0" width="69" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -109,6 +109,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="8pj-Ia-ACA" secondAttribute="trailing" constant="15" id="Xr0-sU-g9Y"/>
                                                 <constraint firstItem="8pj-Ia-ACA" firstAttribute="leading" secondItem="vwd-Yk-N7U" secondAttribute="leading" constant="15" id="iQR-7W-BDM"/>
                                                 <constraint firstItem="G4d-R5-gi7" firstAttribute="top" secondItem="8pj-Ia-ACA" secondAttribute="bottom" constant="12" id="wQ8-3U-rGC"/>
+                                                <constraint firstItem="G4d-R5-gi7" firstAttribute="leading" secondItem="8pj-Ia-ACA" secondAttribute="leading" id="wwJ-BM-F6H"/>
                                                 <constraint firstItem="G4d-R5-gi7" firstAttribute="top" secondItem="8pj-Ia-ACA" secondAttribute="bottom" constant="12" id="yIz-iS-oV9"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -170,6 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.4861258222" blue="0.4431085528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="EiQ-fA-IpV"/>

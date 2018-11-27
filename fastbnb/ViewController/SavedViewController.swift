@@ -27,34 +27,13 @@ class SavedViewController: UIViewController {
         super.viewDidLoad()
         tableView.rowHeight = 300
        
-        cityNames.append("London")
+       numberOfCitySaved.append(1)
+        numberOfCitySaved.append(2)
+        
         cityImage.append("airbnbImage")
         cityNames.append("London")
         cityImage.append("airbnbImage")
         cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
-        cityNames.append("London")
-        cityImage.append("airbnbImage")
         
    
         
@@ -73,14 +52,8 @@ extension SavedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SavedItemCell.identifier, for: indexPath) as! SavedItemCell
         
-        if numberOfCitySaved.count > 0 {
-            cell.setupCell2(cityName: cityNames[indexPath.row], savedImageName: cityImage[indexPath.row], numberSaved: numberOfCitySaved[indexPath.row])
-        } else {
-        
-            cell.setupCell(cityName: cityNames[indexPath.row], savedImageName: cityImage[indexPath.row])
-            
-        
-        }
+    
+        cell.setupCell2(cityName: cityNames[indexPath.row], savedImageName: cityImage[indexPath.row], numberSaved: numberOfCitySaved[indexPath.row])
         
         return cell
         
