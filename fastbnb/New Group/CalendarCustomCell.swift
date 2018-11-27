@@ -10,8 +10,9 @@ import UIKit
 import JTAppleCalendar
 
 class CalendarCustomCell: JTAppleCell {
-    @IBOutlet private weak var dataLabel: UILabel!
-
+    @IBOutlet weak var dataLabel: UILabel!
+    let identifier = "CustomCalendarCell"
    
+    
 
 }
