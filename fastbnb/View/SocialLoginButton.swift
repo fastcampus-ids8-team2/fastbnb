@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-final class LoginButton: UIButton {
+final class SocialLoginButton: UIButton {
     
     @IBInspectable var cornerRadius: CGFloat {
         get { return layer.cornerRadius }
