@@ -10,6 +10,7 @@ import UIKit
 import FacebookLogin
 import AloeStackView
 import FBSDKCoreKit
+import GoogleSignIn
 
 class LoginViewController: UIViewController {
     
@@ -33,6 +34,22 @@ class LoginViewController: UIViewController {
         let facebookLoginButton = LoginButton(readPermissions: [ .publicProfile, .email ])
         facebookLoginButton.delegate = self
         aloeStackView.addRow(facebookLoginButton)
+        
+        let googleLoginButton = GIDSignInButton()
+        GIDSignIn.sharedInstance().uiDelegate = self
+        GIDSignIn.sharedInstance().signInSilently()
+        aloeStackView.addRow(googleLoginButton)
+        
+        let googleLogoutButton = UIButton()
+        googleLogoutButton.setTitle("Google Logout", for: .normal)
+        googleLogoutButton.backgroundColor = .blue
+        googleLogoutButton.addTarget(self, action: #selector(googleLogoutAction), for: .touchUpInside)
+        aloeStackView.addRow(googleLogoutButton)
+        
+    }
+    
+    @objc func googleLogoutAction() {
+        GIDSignIn.sharedInstance().signOut()
     }
 }
 
@@ -65,6 +82,17 @@ extension LoginViewController: LoginButtonDelegate {
     func loginButtonDidLogOut(_ loginButton: LoginButton) {
         print("loginButtonDidLogOut")
     }
-    
-    
 }
+
+extension LoginViewController: GIDSignInUIDelegate {
+    // Present a view that prompts the user to sign in with Google
+    func sign(_ signIn: GIDSignIn!, present viewController: UIViewController!) {
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
+    // Dismiss the "Sign in with Google" view
+    func sign(_ signIn: GIDSignIn!, dismiss viewController: UIViewController!) {
+        self.dismiss(animated: true, completion: nil)
+    }
+}
+
