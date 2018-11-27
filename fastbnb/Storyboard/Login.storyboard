@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mky-FP-Hul">
-                                <rect key="frame" x="0.0" y="20" width="375" height="215.5"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="194"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="에어비앤비에 오신 것을 환영합니다" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2Hk-OE-Pxj">
-                                        <rect key="frame" x="50" y="50" width="275" height="115.5"/>
+                                        <rect key="frame" x="50" y="50" width="275" height="94"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -37,36 +37,26 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ptu-3j-qgc">
-                                <rect key="frame" x="0.0" y="235.5" width="375" height="216"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lIW-DW-r0p">
-                                <rect key="frame" x="0.0" y="451.5" width="375" height="215.5"/>
+                                <rect key="frame" x="0.0" y="214" width="375" height="453"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="leading" secondItem="wyU-gb-U1B" secondAttribute="leading" id="14E-uK-SlH"/>
-                            <constraint firstItem="lIW-DW-r0p" firstAttribute="leading" secondItem="wyU-gb-U1B" secondAttribute="leading" id="1Cz-hq-x6c"/>
-                            <constraint firstItem="wyU-gb-U1B" firstAttribute="bottom" secondItem="lIW-DW-r0p" secondAttribute="bottom" id="B3U-Mu-KzS"/>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="top" secondItem="Mky-FP-Hul" secondAttribute="bottom" id="M34-Fc-v92"/>
-                            <constraint firstItem="lIW-DW-r0p" firstAttribute="top" secondItem="Ptu-3j-qgc" secondAttribute="bottom" id="OXC-u4-WHd"/>
                             <constraint firstItem="wyU-gb-U1B" firstAttribute="trailing" secondItem="Mky-FP-Hul" secondAttribute="trailing" id="UTt-UV-i6b"/>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="top" secondItem="Mky-FP-Hul" secondAttribute="bottom" id="UgY-Sn-okq"/>
-                            <constraint firstItem="wyU-gb-U1B" firstAttribute="trailing" secondItem="lIW-DW-r0p" secondAttribute="trailing" id="bWf-b5-ryC"/>
-                            <constraint firstItem="Ptu-3j-qgc" firstAttribute="height" secondItem="lIW-DW-r0p" secondAttribute="height" id="bXm-9D-v3f"/>
                             <constraint firstItem="Mky-FP-Hul" firstAttribute="top" secondItem="wyU-gb-U1B" secondAttribute="top" id="e7g-17-kxb"/>
                             <constraint firstItem="Mky-FP-Hul" firstAttribute="leading" secondItem="wyU-gb-U1B" secondAttribute="leading" id="g85-9Q-I7P"/>
-                            <constraint firstItem="Mky-FP-Hul" firstAttribute="height" secondItem="Ptu-3j-qgc" secondAttribute="height" id="gmF-Pu-eJ1"/>
+                            <constraint firstItem="Mky-FP-Hul" firstAttribute="height" secondItem="Ptu-3j-qgc" secondAttribute="height" multiplier="3:7" id="gmF-Pu-eJ1"/>
                             <constraint firstItem="wyU-gb-U1B" firstAttribute="trailing" secondItem="Ptu-3j-qgc" secondAttribute="trailing" id="jjn-WH-gTy"/>
-                            <constraint firstItem="lIW-DW-r0p" firstAttribute="top" secondItem="Ptu-3j-qgc" secondAttribute="bottom" id="twK-Rd-idi"/>
+                            <constraint firstItem="wyU-gb-U1B" firstAttribute="bottom" secondItem="Ptu-3j-qgc" secondAttribute="bottom" id="sPx-2T-8YP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wyU-gb-U1B"/>
                     </view>
                     <connections>
                         <outlet property="contentsView" destination="Ptu-3j-qgc" id="3F6-sY-IVI"/>
-                        <outlet property="footerView" destination="lIW-DW-r0p" id="P1U-91-Feo"/>
                         <outlet property="headerView" destination="Mky-FP-Hul" id="zOH-Ex-vJj"/>
                     </connections>
                 </viewController>
