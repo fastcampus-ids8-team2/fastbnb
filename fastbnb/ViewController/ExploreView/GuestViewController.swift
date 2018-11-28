@@ -17,13 +17,22 @@ class GuestViewController: UIViewController {
     @IBOutlet weak var infantPlusButton: UIButton!
     @IBOutlet weak var infantMinusButton: UIButton!
     
+    @IBOutlet private weak var adultNumberLable: UILabel!
+    @IBOutlet private weak var childrenNumberLable: UILabel!
+    @IBOutlet private weak var infantNumberLable: UILabel!
+    
+    var adultLabelNumber = 1
+    var childrenLabelNumber = 0
+    var infantLabelNumber = 0
+    
+    
     
     @IBOutlet weak var masterGuestView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         masterViewSetUp()
-        self.buttonChangeToCircleBorder(adultPlusButton)
+    
         
         
         
@@ -42,11 +51,54 @@ class GuestViewController: UIViewController {
         masterGuestView.layer.masksToBounds = true
     }
     
-    func buttonChangeToCircleBorder(_ object: UIButton) {
-//        object.layer.cornerRadius = object.frame.size.width / 2
-//        object. = UIColor(named: #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))
-//        object.layer?.masksToBounds = true
-//
+    @IBAction func plusButtonTaped(_ sender: UIButton) {
+        
+        adultLabelNumber += 1
+        adultNumberLable.text = "\(adultLabelNumber)"
+        
     }
+    
+    @IBAction func minusButtonTapped(_ sender: UIButton) {
+        
+        if adultLabelNumber == 1 {
+            adultNumberLable.text = "\(adultLabelNumber)"
+        } else {
+        adultLabelNumber -= 1
+        adultNumberLable.text = "\(adultLabelNumber)"
+        }
+    }
+    
+    
+    @IBAction func childrenPlusButtonTapped(_ sender: UIButton) {
+        childrenLabelNumber += 1
+        childrenNumberLable.text = "\(childrenLabelNumber)"
+    }
+    
+    @IBAction func childrenMinusButtonTapped(_ sender: UIButton) {
+        if childrenLabelNumber == 0 {
+            childrenNumberLable.text = "\(childrenLabelNumber)"
+        } else {
+            childrenLabelNumber -= 1
+            childrenNumberLable.text = "\(childrenLabelNumber)"
+        }
+        
+    }
+    
+    @IBAction func infantPlusButtonTapped(_ sender: UIButton) {
+        infantLabelNumber += 1
+        infantNumberLable.text = "\(infantLabelNumber)"
+        
+    }
+    
+    @IBAction func infantMinusButtonTapped(_ sender: UIButton) {
+        if infantLabelNumber == 0 {
+            infantNumberLable.text = "\(infantLabelNumber)"
+        } else {
+            infantLabelNumber -= 1
+            infantNumberLable.text = "\(infantLabelNumber)"
+        }
+        
+    }
+    
     
 }
