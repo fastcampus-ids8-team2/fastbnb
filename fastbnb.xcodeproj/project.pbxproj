@@ -102,14 +102,12 @@
 		2E63C56921AAD99600D869DF /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6A021DA521AD3D350094A298 /* ExploreViewController */,
-				6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
-				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
-				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
-				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
-				2E63C57821AD3A6D00D869DF /* SignInViewController.swift */,
-				2E63C57A21AD3D8400D869DF /* TermsViewController.swift */,
-				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
+				6A021DA521AD3D350094A298 /* ExploreView */,
+				6AAAFC5B21AE2726006EAEB7 /* InboxView */,
+				6AAAFC5C21AE2750006EAEB7 /* ProfileView */,
+				6AAAFC5D21AE2775006EAEB7 /* SavedView */,
+				6AAAFC5E21AE277E006EAEB7 /* LogInView */,
+				6AAAFC5F21AE27BB006EAEB7 /* TripView */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -149,14 +147,56 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		6A021DA521AD3D350094A298 /* ExploreViewController */ = {
+		6A021DA521AD3D350094A298 /* ExploreView */ = {
 			isa = PBXGroup;
 			children = (
 				6A021DA321AD39D80094A298 /* CalenderViewController.swift */,
 				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
 				6A021DA621AD3D6E0094A298 /* GuestViewController.swift */,
 			);
-			path = ExploreViewController;
+			path = ExploreView;
+			sourceTree = "<group>";
+		};
+		6AAAFC5B21AE2726006EAEB7 /* InboxView */ = {
+			isa = PBXGroup;
+			children = (
+				6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
+			);
+			path = InboxView;
+			sourceTree = "<group>";
+		};
+		6AAAFC5C21AE2750006EAEB7 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		6AAAFC5D21AE2775006EAEB7 /* SavedView */ = {
+			isa = PBXGroup;
+			children = (
+				6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */,
+			);
+			path = SavedView;
+			sourceTree = "<group>";
+		};
+		6AAAFC5E21AE277E006EAEB7 /* LogInView */ = {
+			isa = PBXGroup;
+			children = (
+				2E63C57A21AD3D8400D869DF /* TermsViewController.swift */,
+				2E63C55921AAD31B00D869DF /* LoginViewController.swift */,
+				2E63C57821AD3A6D00D869DF /* SignInViewController.swift */,
+			);
+			path = LogInView;
+			sourceTree = "<group>";
+		};
+		6AAAFC5F21AE27BB006EAEB7 /* TripView */ = {
+			isa = PBXGroup;
+			children = (
+				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
+			);
+			path = TripView;
 			sourceTree = "<group>";
 		};
 		7DF911FA73109CE17C93F7CB /* Pods */ = {
