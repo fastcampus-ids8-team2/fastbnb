@@ -152,8 +152,8 @@
 		6A021DA521AD3D350094A298 /* ExploreViewController */ = {
 			isa = PBXGroup;
 			children = (
-				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
 				6A021DA321AD39D80094A298 /* CalenderViewController.swift */,
+				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
 				6A021DA621AD3D6E0094A298 /* GuestViewController.swift */,
 			);
 			path = ExploreViewController;
@@ -347,12 +347,9 @@
 				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
 				6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
-<<<<<<< HEAD
-				2E63C57721AD2A3700D869DF /* LoginButton.swift in Sources */,
-				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
-=======
 				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
->>>>>>> e1ab69306e3138b3587350251e8b02b6a7efba12
+				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
+				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
 				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
 				7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
 				2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */,
