@@ -8,7 +8,6 @@
 
 import UIKit
 import FacebookLogin
-import AloeStackView
 import FBSDKCoreKit
 import FBSDKLoginKit
 import GoogleSignIn
@@ -20,6 +19,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction private func facebookLoginAction(_ sender: SocialLoginButton) {
+        
         let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
         fbLoginManager.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
             if (error == nil){
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
                         FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email"]).start(completionHandler: { (connection, result, error) in
                             if (error == nil){
                                 guard let result = result as? [String:String] else { return }
-                                print(result)
+                                self.gotoNextViewController(firstName: result["first_name"], lastName: result["last_name"], email: result["email"])
                             }
                         })
                     }
@@ -45,13 +45,20 @@ class LoginViewController: UIViewController {
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().signIn()
     }
+    
+    func gotoNextViewController(firstName: String?, lastName: String?, email: String?){
+        guard let nextVC = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else { return }
+        nextVC.firstName = firstName
+        nextVC.lastName = lastName
+        nextVC.email = email
+        present(nextVC, animated: true)
+    }
 }
 
 extension LoginViewController: GIDSignInDelegate, GIDSignInUIDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
-            print(user.profile.name)
-            GIDSignIn.sharedInstance()?.signOut()
+            gotoNextViewController(firstName: user.profile.givenName, lastName: user.profile.familyName, email: user.profile.email)
         } else {
             print(error.localizedDescription)
         }

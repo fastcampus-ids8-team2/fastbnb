@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="3r0-Uw-O44">
             <objects>
-                <viewController id="w9A-uJ-cvh" customClass="LoginViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="w9A-uJ-cvh" customClass="LoginViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yuY-vA-stE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="leading" secondItem="wyU-gb-U1B" secondAttribute="leading" id="14E-uK-SlH"/>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="top" secondItem="Mky-FP-Hul" secondAttribute="bottom" id="M34-Fc-v92"/>
@@ -146,9 +146,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wyU-gb-U1B"/>
                     </view>
-                    <connections>
-                        <segue destination="Puv-ur-kRy" kind="show" id="WdR-0f-gqd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2el-9S-TTz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +154,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="qmj-Nz-bIh">
             <objects>
-                <viewController id="Puv-ur-kRy" customClass="SignInViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="Puv-ur-kRy" customClass="SignInViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0d-Ub-tln">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,6 +244,9 @@
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInAction:" destination="Puv-ur-kRy" eventType="touchUpInside" id="Efa-JK-wvB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -281,7 +281,9 @@
                         <viewLayoutGuide key="safeArea" id="Fel-uf-wUJ"/>
                     </view>
                     <connections>
-                        <segue destination="Yd7-H3-hQe" kind="show" id="Y7l-J4-Vv9"/>
+                        <outlet property="emailTextField" destination="7Pj-Kc-aXx" id="Lq8-YI-hir"/>
+                        <outlet property="firstNameTextField" destination="0dW-7H-a5V" id="cpx-k7-f4c"/>
+                        <outlet property="lastNameTextField" destination="dSX-7f-K3m" id="TDM-Mo-g1b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihv-3Z-r22" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -291,7 +293,7 @@
         <!--Terms View Controller-->
         <scene sceneID="9vA-ye-Exs">
             <objects>
-                <viewController id="Yd7-H3-hQe" customClass="TermsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TermsViewController" id="Yd7-H3-hQe" customClass="TermsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZpF-U0-QZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -350,6 +352,9 @@
                                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="acceptAction:" destination="Yd7-H3-hQe" eventType="touchUpInside" id="Dvv-QZ-JDF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lz-zs-wDZ" customClass="SocialLoginButton" customModule="fastbnb" customModuleProvider="target">
                                                 <rect key="frame" x="110" y="0.0" width="80" height="48"/>
@@ -369,6 +374,9 @@
                                                         <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="declineAction:" destination="Yd7-H3-hQe" eventType="touchUpInside" id="U36-mI-h6R"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
