@@ -9,15 +9,47 @@
 import UIKit
 import JTAppleCalendar
 
+
+struct Storyboard {
+   
+    static let homesAroundTheWorldCell = "homesAroundTheWorldCell"
+    static let newIdentificer = "newIdentifier"
+}
+
+
+
+
 class ExploreViewController: UIViewController {
     let formatter = DateFormatter()
+    var DummyImagee = [UIImage]()
     
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        let data1 = UIImage(named: "airbnbImage")
+        let data2 = UIImage(named: "airbnbImage")
+        let data3 = UIImage(named: "airbnbImage")
+        let data4 = UIImage(named: "airbnbImage")
+        let data5 = UIImage(named: "airbnbImage")
+        let data6 = UIImage(named: "airbnbImage")
+        let data7 = UIImage(named: "airbnbImage")
+        let data8 = UIImage(named: "airbnbImage")
+        DummyImagee.append(data1!)
+        DummyImagee.append(data2!)
+        DummyImagee.append(data3!)
+        DummyImagee.append(data4!)
+        DummyImagee.append(data5!)
+        DummyImagee.append(data6!)
+        DummyImagee.append(data7!)
+        DummyImagee.append(data8!)
+        
+        
+        
+        print("Dummy Images", DummyImagee)
+        
     }
     
     @IBAction func datesCalendarOpen(_ sender: Any) {
@@ -68,4 +100,27 @@ extension ExploreViewController: JTAppleCalendarViewDelegate, JTAppleCalendarVie
  
 }
 
+extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.homesAroundTheWorldCell, for: indexPath) as! HomesAroundTheWorldTableViewCell
+           
+            
+            return cell
+        }
+        
+        return UITableViewCell()
+        
+    }
+    
+    
+    
+}
 

@@ -54,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="128" width="375" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="211" id="oYQ-yN-hIH" customClass="HomesAroundTheWorldTableViewCell" customModule="fastbnb" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homesAroundTheWorldCell" rowHeight="211" id="oYQ-yN-hIH" customClass="HomesAroundTheWorldTableViewCell" customModule="fastbnb" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="211"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYQ-yN-hIH" id="vhh-8D-6Zr">
@@ -71,7 +71,7 @@
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nyw-Zy-926">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nyw-Zy-926" customClass="HomesAroundTheWorldCollectionViewCell" customModule="fastbnb" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="120" height="106"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -89,6 +89,9 @@
                                                                 <constraint firstAttribute="bottom" secondItem="iXS-JS-UdE" secondAttribute="bottom" id="e3Z-kY-m55"/>
                                                                 <constraint firstItem="iXS-JS-UdE" firstAttribute="leading" secondItem="Nyw-Zy-926" secondAttribute="leading" id="ezF-9z-QBo"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="iXS-JS-UdE" id="Gbf-a8-D0f"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
@@ -114,6 +117,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="o0N-oy-oFg"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="bKg-ge-2ZJ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -132,6 +139,7 @@
                     <tabBarItem key="tabBarItem" title="EXPLORE" image="explore" id="3Cm-re-3Xl" userLabel="탐색하기"/>
                     <connections>
                         <outlet property="calendarView" destination="ma7-xG-PQC" id="qIH-be-8EG"/>
+                        <outlet property="tableView" destination="ly1-s8-mNi" id="GBM-UO-hiu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,7 +197,7 @@
                     <viewLayoutGuide key="safeArea" id="7G3-GS-3PW"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="-2426.4000000000001" y="892.80359820089961"/>
+            <point key="canvasLocation" x="-2713" y="913"/>
         </scene>
         <!--Calender View Controller-->
         <scene sceneID="sAF-NF-44S">
