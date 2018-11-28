@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="3r0-Uw-O44">
             <objects>
-                <viewController id="w9A-uJ-cvh" customClass="LoginViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="w9A-uJ-cvh" customClass="LoginViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yuY-vA-stE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="leading" secondItem="wyU-gb-U1B" secondAttribute="leading" id="14E-uK-SlH"/>
                             <constraint firstItem="Ptu-3j-qgc" firstAttribute="top" secondItem="Mky-FP-Hul" secondAttribute="bottom" id="M34-Fc-v92"/>
@@ -154,7 +154,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="qmj-Nz-bIh">
             <objects>
-                <viewController id="Puv-ur-kRy" customClass="SignInViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignInViewController" id="Puv-ur-kRy" customClass="SignInViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0d-Ub-tln">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,7 +190,80 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ibK-ef-pFA">
                                 <rect key="frame" x="0.0" y="214" width="375" height="453"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0dW-7H-a5V" customClass="SocialLoginTextField" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="30" width="315" height="17"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="leftLabel" value="이름 :"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSX-7f-K3m" customClass="SocialLoginTextField" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="77" width="315" height="17"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="honorifix-prefix"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="leftLabel" value="성 :"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Pj-Kc-aXx" customClass="SocialLoginTextField" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="124" width="315" height="17"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="leftLabel" value="이메일 :"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="underlineWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jn-fL-9fY" customClass="SocialLoginButton" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="171" width="315" height="48"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="Yro-Vc-HZj"/>
+                                        </constraints>
+                                        <state key="normal" title="회원 가입">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="signInAction:" destination="Puv-ur-kRy" eventType="touchUpInside" id="Efa-JK-wvB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7Pj-Kc-aXx" secondAttribute="trailing" constant="30" id="84T-nd-TMs"/>
+                                    <constraint firstItem="dSX-7f-K3m" firstAttribute="leading" secondItem="ibK-ef-pFA" secondAttribute="leading" constant="30" id="B2a-0o-8xn"/>
+                                    <constraint firstItem="7Pj-Kc-aXx" firstAttribute="leading" secondItem="ibK-ef-pFA" secondAttribute="leading" constant="30" id="BpT-bm-quC"/>
+                                    <constraint firstItem="0dW-7H-a5V" firstAttribute="top" secondItem="ibK-ef-pFA" secondAttribute="top" constant="30" id="Jna-s2-vmV"/>
+                                    <constraint firstAttribute="trailing" secondItem="dSX-7f-K3m" secondAttribute="trailing" constant="30" id="MNB-CR-3yL"/>
+                                    <constraint firstItem="2Jn-fL-9fY" firstAttribute="leading" secondItem="ibK-ef-pFA" secondAttribute="leading" constant="30" id="Nzr-7f-teh"/>
+                                    <constraint firstAttribute="trailing" secondItem="0dW-7H-a5V" secondAttribute="trailing" constant="30" id="WHz-lr-fbb"/>
+                                    <constraint firstItem="dSX-7f-K3m" firstAttribute="top" secondItem="0dW-7H-a5V" secondAttribute="bottom" constant="30" id="fgX-rq-XgF"/>
+                                    <constraint firstItem="0dW-7H-a5V" firstAttribute="leading" secondItem="ibK-ef-pFA" secondAttribute="leading" constant="30" id="hdD-QP-jgS"/>
+                                    <constraint firstItem="2Jn-fL-9fY" firstAttribute="top" secondItem="7Pj-Kc-aXx" secondAttribute="bottom" constant="30" id="olM-nV-8pP"/>
+                                    <constraint firstItem="7Pj-Kc-aXx" firstAttribute="top" secondItem="dSX-7f-K3m" secondAttribute="bottom" constant="30" id="qzR-Wu-c2C"/>
+                                    <constraint firstAttribute="trailing" secondItem="2Jn-fL-9fY" secondAttribute="trailing" constant="30" id="r6m-Y6-HGO"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,6 +280,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Fel-uf-wUJ"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="7Pj-Kc-aXx" id="Lq8-YI-hir"/>
+                        <outlet property="firstNameTextField" destination="0dW-7H-a5V" id="cpx-k7-f4c"/>
+                        <outlet property="lastNameTextField" destination="dSX-7f-K3m" id="TDM-Mo-g1b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihv-3Z-r22" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,7 +293,7 @@
         <!--Terms View Controller-->
         <scene sceneID="9vA-ye-Exs">
             <objects>
-                <viewController id="Yd7-H3-hQe" customClass="TermsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TermsViewController" id="Yd7-H3-hQe" customClass="TermsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZpF-U0-QZv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,13 +331,52 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kg2-U0-PZI">
                                         <rect key="frame" x="30" y="258.5" width="315" height="259"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfI-cH-Gur">
-                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                                <state key="normal" title="수락"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfI-cH-Gur" customClass="SocialLoginButton" customModule="fastbnb" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="48"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="IKJ-Ms-TKB"/>
+                                                    <constraint firstAttribute="height" constant="48" id="o9X-bc-F8x"/>
+                                                </constraints>
+                                                <state key="normal" title="수락">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="acceptAction:" destination="Yd7-H3-hQe" eventType="touchUpInside" id="Dvv-QZ-JDF"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lz-zs-wDZ">
-                                                <rect key="frame" x="60" y="0.0" width="30" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lz-zs-wDZ" customClass="SocialLoginButton" customModule="fastbnb" customModuleProvider="target">
+                                                <rect key="frame" x="110" y="0.0" width="80" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Pqv-v0-iMF"/>
+                                                    <constraint firstAttribute="height" constant="48" id="hIf-th-5MZ"/>
+                                                </constraints>
                                                 <state key="normal" title="거절"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="24"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="declineAction:" destination="Yd7-H3-hQe" eventType="touchUpInside" id="U36-mI-h6R"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
