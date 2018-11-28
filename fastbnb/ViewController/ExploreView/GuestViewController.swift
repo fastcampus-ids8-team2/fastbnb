@@ -40,9 +40,11 @@ class GuestViewController: UIViewController {
      
     }
     
+    // Mark: showButton for the result search
 
     @IBAction func showResultsButtonTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
+        
         
     }
     
@@ -51,6 +53,9 @@ class GuestViewController: UIViewController {
         masterGuestView.layer.masksToBounds = true
     }
     
+    
+    
+    // Mark: Plus and minus Button has tapped to increase and decrease the number
     @IBAction func plusButtonTaped(_ sender: UIButton) {
         
         adultLabelNumber += 1

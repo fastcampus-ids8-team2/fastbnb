@@ -54,21 +54,64 @@
                                 <rect key="frame" x="0.0" y="128" width="375" height="490"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="75" id="oYQ-yN-hIH">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="211" id="oYQ-yN-hIH" customClass="HomesAroundTheWorldTableViewCell" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="211"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYQ-yN-hIH" id="vhh-8D-6Zr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="210.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e4A-uw-AeW">
+                                                    <rect key="frame" x="0.0" y="42" width="375" height="168.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XbR-mx-JRV">
+                                                        <size key="itemSize" width="120" height="106"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Nyw-Zy-926">
+                                                            <rect key="frame" x="0.0" y="0.0" width="120" height="106"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="120" height="106"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airbnbProtypeHome" translatesAutoresizingMaskIntoConstraints="NO" id="iXS-JS-UdE">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="106"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstItem="iXS-JS-UdE" firstAttribute="top" secondItem="Nyw-Zy-926" secondAttribute="top" id="2wP-Y0-vgh"/>
+                                                                <constraint firstAttribute="trailing" secondItem="iXS-JS-UdE" secondAttribute="trailing" id="5cT-Fs-hQu"/>
+                                                                <constraint firstAttribute="bottom" secondItem="iXS-JS-UdE" secondAttribute="bottom" id="e3Z-kY-m55"/>
+                                                                <constraint firstItem="iXS-JS-UdE" firstAttribute="leading" secondItem="Nyw-Zy-926" secondAttribute="leading" id="ezF-9z-QBo"/>
+                                                            </constraints>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homes around the world" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYs-lp-dBi">
+                                                    <rect key="frame" x="50" y="7" width="275" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e4A-uw-AeW" firstAttribute="leading" secondItem="vhh-8D-6Zr" secondAttribute="leading" id="AYt-ms-9Re"/>
+                                                <constraint firstItem="PYs-lp-dBi" firstAttribute="top" secondItem="vhh-8D-6Zr" secondAttribute="top" constant="7" id="EX2-4a-3l9"/>
+                                                <constraint firstAttribute="trailing" secondItem="e4A-uw-AeW" secondAttribute="trailing" id="KQK-5R-0wU"/>
+                                                <constraint firstItem="PYs-lp-dBi" firstAttribute="leading" secondItem="vhh-8D-6Zr" secondAttribute="leading" constant="50" id="VMB-rc-0K5"/>
+                                                <constraint firstAttribute="trailing" secondItem="PYs-lp-dBi" secondAttribute="trailing" constant="50" id="Wsp-HP-jUj"/>
+                                                <constraint firstItem="e4A-uw-AeW" firstAttribute="top" secondItem="PYs-lp-dBi" secondAttribute="bottom" constant="14" id="hcA-81-eV0"/>
+                                                <constraint firstAttribute="bottom" secondItem="e4A-uw-AeW" secondAttribute="bottom" id="pSX-gl-Hhd"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="H0s-0t-sf2">
-                                        <rect key="frame" x="0.0" y="103" width="375" height="70"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H0s-0t-sf2" id="ci7-Zs-Ush">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="e4A-uw-AeW" id="Jt1-pL-pwF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -625,7 +668,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="faR-nF-pWn">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="L4T-oD-qoy" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabbarController" automaticallyAdjustsScrollViewInsets="NO" id="L4T-oD-qoy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8wh-r0-f52">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -652,6 +695,7 @@
         <image name="006-minus" width="41.890907287597656" height="41.890907287597656"/>
         <image name="airbnbImage" width="1500" height="844"/>
         <image name="airbnbLogo" width="48" height="48"/>
+        <image name="airbnbProtypeHome" width="768" height="512.25"/>
         <image name="emptyHeart" width="48" height="48"/>
         <image name="explore" width="48" height="48"/>
         <image name="inbox" width="64" height="64"/>
