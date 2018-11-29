@@ -21,7 +21,7 @@ struct Storyboard {
 
 
 class ExploreViewController: UIViewController {
-    let formatter = DateFormatter()
+   
     var DummyImagee = [UIImage]()
     
     
@@ -107,43 +107,6 @@ class ExploreViewController: UIViewController {
 }
 
 // extension start from here
-extension ExploreViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
-    func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
-        guard cell is CalendarCustomCell else {return}
-     
-        
-        
-    }
-    
-   
-    
-    func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        
-        formatter.dateFormat = "yyyy MM dd"
-        formatter.timeZone = Calendar.current.timeZone
-        formatter.locale = Calendar.current.locale
-        
-        let startDate = formatter.date(from: "2018 11 01")!
-        let endDate = formatter.date(from: "2019 11 30")!
-        
-        let parameters = ConfigurationParameters(startDate: startDate
-            , endDate: endDate)
-        
-        
-        return parameters
-        
-    }
-    func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CustomCalendarCell", for: indexPath) as! CalendarCustomCell
-        cell.dataLabel.text = cellState.text
-        return cell
-        
-    }
- 
-}
-
-
-
 // tableView Controller setting
 extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
