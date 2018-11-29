@@ -16,16 +16,6 @@ struct Storyboard {
     static let newIdentificer = "newIdentifier"
 }
 
-//struct ListingInfo {
-//    var pk: [Int] = []
-//    var bathrooms: [Int] = []
-//    var bedrooms: [Int] = []
-//    var beds: [Int] = []
-//    var personCapacity: [Int] = []
-//
-//
-//
-//}
 
 
 
@@ -66,8 +56,14 @@ class ExploreViewController: UIViewController {
         
         
         print("Dummy Images", DummyImagee)
-        listingAPIFetch()
+        listingAPIFetch { num in
+            print(num)
+        }
         
+        print("pk:",pk)
+        
+        
+        //
     }
     
     @IBAction func datesCalendarOpen(_ sender: Any) {
@@ -80,7 +76,7 @@ class ExploreViewController: UIViewController {
     
     
     
-    private func listingAPIFetch() {
+    private func listingAPIFetch(with completionHandler: @escaping ([Int]) -> Void) {
         guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
         let request = URLRequest(url: url)
         
@@ -89,18 +85,18 @@ class ExploreViewController: UIViewController {
             guard let data = data else { return }
             
             guard let listing = try? JSONDecoder().decode(Welcome.self, from: data) else { return }
-//            guard let listingInfo = listing as? [String : Any] else { return }
-            print("item listing", listing)
+
           
-            DispatchQueue.main.async {
-                for i in 0...(listing.count) {
-                    listing[i].bathrooms
-                    
-                    
+                for i in 0...(listing.count - 1) {
+                    self.bathrooms.append(listing[i].bathrooms)
+                    self.pk.append(listing[i].pk)
                     
                 }
-                
-            }
+            
+            print(self.pk)
+            completionHandler(self.pk)
+            
+            
             
             
             
@@ -167,10 +163,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
         return UITableViewCell()
-        
     }
-    
-    
-    
+  
 }
 
