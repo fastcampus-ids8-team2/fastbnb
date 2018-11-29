@@ -94,7 +94,7 @@ class ExploreViewController: UIViewController {
           
             DispatchQueue.main.async {
                 for i in 0...(listing.count) {
-                    listing[i].bathrooms
+                    //listing[i].bathrooms
                     
                     
                     

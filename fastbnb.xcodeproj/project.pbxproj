@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46FE0921AFCF8B0046E5E7 /* InboxDetailViewController.swift */; };
 		2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55721AAD31B00D869DF /* AppDelegate.swift */; };
 		2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55921AAD31B00D869DF /* LoginViewController.swift */; };
 		2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55B21AAD31B00D869DF /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E46FE0921AFCF8B0046E5E7 /* InboxDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxDetailViewController.swift; sourceTree = "<group>"; };
 		2E63C55421AAD31B00D869DF /* fastbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E63C55721AAD31B00D869DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E63C55921AAD31B00D869DF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		6AAAFC5B21AE2726006EAEB7 /* InboxView */ = {
 			isa = PBXGroup;
 			children = (
+				2E46FE0921AFCF8B0046E5E7 /* InboxDetailViewController.swift */,
 				6A9374F421AB99CA00E641D5 /* InboxViewController.swift */,
 			);
 			path = InboxView;
@@ -408,6 +411,7 @@
 				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
 				6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */,
 				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
+				2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */,
 				7EEBD97521AFC591009B534A /* test.swift in Sources */,
 				6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */,
 				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,

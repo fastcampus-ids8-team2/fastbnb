@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let oldVC = window?.rootViewController
             window?.rootViewController = newVC
             oldVC?.dismiss(animated: true)
+        } else {
+            let newVC = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+            let oldVC = window?.rootViewController
+            window?.rootViewController = newVC
+            oldVC?.dismiss(animated: true)
         }
     }
 }
