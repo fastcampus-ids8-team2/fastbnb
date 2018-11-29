@@ -701,6 +701,9 @@
                         <viewLayoutGuide key="safeArea" id="B16-6J-Kmc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROFILE" image="profile" id="NQa-AA-9Yv"/>
+                    <connections>
+                        <outlet property="tableView" destination="7oX-pz-28d" id="Cbv-Rh-meS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jg-Fg-Pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
