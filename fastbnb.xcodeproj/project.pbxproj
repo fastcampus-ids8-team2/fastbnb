@@ -32,6 +32,7 @@
 		7E19C65421B017C500684D18 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65321B017C500684D18 /* ProfileCell.swift */; };
 		7E19C65621B01A2100684D18 /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65521B01A2100684D18 /* ProfileItem.swift */; };
 		7E19C65821B01A9C00684D18 /* ProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65721B01A9C00684D18 /* ProfileList.swift */; };
+		7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C6A121B06E4200684D18 /* ProfileButton.swift */; };
 		7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E830CEB21ABA3130061C816 /* ProfileViewController.swift */; };
 		8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		7E19C65321B017C500684D18 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		7E19C65521B01A2100684D18 /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
 		7E19C65721B01A9C00684D18 /* ProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileList.swift; sourceTree = "<group>"; };
+		7E19C6A121B06E4200684D18 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		7E830CEB21ABA3130061C816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastbnb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.release.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				7E19C65521B01A2100684D18 /* ProfileItem.swift */,
 				7E19C65721B01A9C00684D18 /* ProfileList.swift */,
 				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
+				7E19C6A121B06E4200684D18 /* ProfileButton.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
+				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */,
 				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
