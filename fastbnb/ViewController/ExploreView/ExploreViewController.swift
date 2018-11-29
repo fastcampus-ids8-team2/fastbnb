@@ -16,6 +16,17 @@ struct Storyboard {
     static let newIdentificer = "newIdentifier"
 }
 
+//struct ListingInfo {
+//    var pk: [Int] = []
+//    var bathrooms: [Int] = []
+//    var bedrooms: [Int] = []
+//    var beds: [Int] = []
+//    var personCapacity: [Int] = []
+//
+//
+//
+//}
+
 
 
 
@@ -23,6 +34,12 @@ class ExploreViewController: UIViewController {
     let formatter = DateFormatter()
     var DummyImagee = [UIImage]()
     
+    
+    var pk: [Int] = []
+    var bathrooms: [Int] = []
+    var bedrooms: [Int] = []
+    var beds: [Int] = []
+    var personCapacity: [Int] = []
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
@@ -49,6 +66,7 @@ class ExploreViewController: UIViewController {
         
         
         print("Dummy Images", DummyImagee)
+        listingAPIFetch()
         
     }
     
@@ -61,10 +79,39 @@ class ExploreViewController: UIViewController {
     }
     
     
-
-   
+    
+    private func listingAPIFetch() {
+        guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
+        let request = URLRequest(url: url)
+        
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            guard error == nil else { return }
+            guard let data = data else { return }
+            
+            guard let listing = try? JSONDecoder().decode(Welcome.self, from: data) else { return }
+//            guard let listingInfo = listing as? [String : Any] else { return }
+            print("item listing", listing)
+          
+            DispatchQueue.main.async {
+                for i in 0...(listing.count) {
+                    listing[i].bathrooms
+                    
+                    
+                    
+                }
+                
+            }
+            
+            
+            
+        }
+        task.resume()
+    }
+    
+ 
 }
 
+// extension start from here
 extension ExploreViewController: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource {
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
         guard cell is CalendarCustomCell else {return}
@@ -100,6 +147,9 @@ extension ExploreViewController: JTAppleCalendarViewDelegate, JTAppleCalendarVie
  
 }
 
+
+
+// tableView Controller setting
 extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
