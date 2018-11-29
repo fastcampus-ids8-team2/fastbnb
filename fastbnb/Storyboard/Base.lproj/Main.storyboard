@@ -650,7 +650,54 @@
                     <view key="view" contentMode="scaleToFill" id="bFx-Sm-R0c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7oX-pz-28d">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="65" id="v1f-Ma-9Pg" customClass="ProfileCell" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v1f-Ma-9Pg" id="4cy-7C-UC3">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bk-8t-h7S">
+                                                    <rect key="frame" x="32" y="20" width="48" height="24"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u47-pt-xOT">
+                                                    <rect key="frame" x="310" y="12" width="40" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpc-Bn-skt">
+                                                    <rect key="frame" x="88" y="24" width="38" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ProfileExplanationLabel" destination="Hpc-Bn-skt" id="DAH-iL-b5q"/>
+                                            <outlet property="ProfileIconImage" destination="u47-pt-xOT" id="iG0-b2-HnT"/>
+                                            <outlet property="ProfileTitleLabel" destination="1bk-8t-h7S" id="CVs-I9-cca"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="B16-6J-Kmc" firstAttribute="trailing" secondItem="7oX-pz-28d" secondAttribute="trailing" id="K6w-Y4-kKW"/>
+                            <constraint firstItem="7oX-pz-28d" firstAttribute="leading" secondItem="B16-6J-Kmc" secondAttribute="leading" id="O7O-cF-mfe"/>
+                            <constraint firstItem="7oX-pz-28d" firstAttribute="top" secondItem="B16-6J-Kmc" secondAttribute="top" id="kEe-nP-LZ3"/>
+                            <constraint firstItem="B16-6J-Kmc" firstAttribute="bottom" secondItem="7oX-pz-28d" secondAttribute="bottom" id="lbg-83-Ggj"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="B16-6J-Kmc"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="PROFILE" image="profile" id="NQa-AA-9Yv"/>
