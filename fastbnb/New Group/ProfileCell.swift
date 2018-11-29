@@ -20,6 +20,7 @@ final class ProfileCell: UITableViewCell{
     
     func setupCell(title: String, imageName: String) {
         ProfileTitleLabel.text = title
+//        ProfileExplanationLabel.text = explanation
         ProfileIconImage.image = UIImage(named: imageName)
         
     }
