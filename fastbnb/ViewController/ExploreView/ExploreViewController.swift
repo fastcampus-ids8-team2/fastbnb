@@ -90,8 +90,7 @@ class ExploreViewController: UIViewController {
                 for i in 0...(listing.count - 1) {
                     self.bathrooms.append(listing[i].bathrooms)
                     self.pk.append(listing[i].pk)
-                    
-                }
+            }
             
             print(self.pk)
             completionHandler(self.pk)
