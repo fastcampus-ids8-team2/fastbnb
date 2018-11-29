@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupRootViewController()
         return true
+    }
+    
+    func setupRootViewController() {
+        if UserDefaults.standard.string(forKey: "FASTBNB_USERID") == nil {
+            let newVC = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController()
+            let oldVC = window?.rootViewController
+            window?.rootViewController = newVC
+            oldVC?.dismiss(animated: true)
+        }
     }
 }

@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
                         FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, email"]).start(completionHandler: { (connection, result, error) in
                             if (error == nil){
                                 guard let result = result as? [String:String] else { return }
-                                self.gotoNextViewController(firstName: result["first_name"], lastName: result["last_name"], email: result["email"])
+                                self.gotoNextViewController(firstName: result["first_name"], lastName: result["last_name"], email: result["email"], userId: result["id"])
                             }
                         })
                     }
@@ -46,11 +46,12 @@ class LoginViewController: UIViewController {
         GIDSignIn.sharedInstance().signIn()
     }
     
-    func gotoNextViewController(firstName: String?, lastName: String?, email: String?){
+    func gotoNextViewController(firstName: String?, lastName: String?, email: String?, userId: String?){
         guard let nextVC = UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "SignInViewController") as? SignInViewController else { return }
         nextVC.firstName = firstName
         nextVC.lastName = lastName
         nextVC.email = email
+        nextVC.userId = userId
         present(nextVC, animated: true)
     }
 }
@@ -58,7 +59,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController: GIDSignInDelegate, GIDSignInUIDelegate {
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
         if (error == nil) {
-            gotoNextViewController(firstName: user.profile.givenName, lastName: user.profile.familyName, email: user.profile.email)
+            gotoNextViewController(firstName: user.profile.givenName, lastName: user.profile.familyName, email: user.profile.email, userId: user.userID)
         } else {
             print(error.localizedDescription)
         }
