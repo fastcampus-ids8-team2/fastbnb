@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "profileMedal.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "profileMedal.png",
       "scale" : "2x"
     },
     {
