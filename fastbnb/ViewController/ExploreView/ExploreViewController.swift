@@ -13,7 +13,7 @@ import JTAppleCalendar
 struct Storyboard {
    
     static let homesAroundTheWorldCell = "homesAroundTheWorldCell"
-    static let newIdentificer = "newIdentifier"
+    static let homeAroundTheWorldCellImage = "homeAroundTheWorldCellImage"
 }
 
 
@@ -59,11 +59,11 @@ class ExploreViewController: UIViewController {
         listingAPIFetch { num in
             print(num)
         }
-        
-        print("pk:",pk)
-        
-        
+
         //
+//        
+        self.tableView.estimatedRowHeight = self.tableView.rowHeight
+        self.tableView.rowHeight = UITableView.automaticDimension
     }
     
     @IBAction func datesCalendarOpen(_ sender: Any) {
@@ -116,7 +116,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
+        // home around the world cell
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.homesAroundTheWorldCell, for: indexPath) as! HomesAroundTheWorldTableViewCell
            
@@ -127,5 +127,59 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         return UITableViewCell()
     }
   
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        // home around the world cell
+        if indexPath.row == 0 {
+            if let cell = cell as? HomesAroundTheWorldTableViewCell {
+                cell.collectionView.dataSource = self
+                cell.collectionView.reloadData()
+                cell.collectionView.isScrollEnabled = false
+                cell.collectionView.delegate = self
+                
+                
+            }
+            
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+          
+         
+            return tableView.bounds.width + 20.0
+          
+        } else {
+            return UITableView.automaticDimension
+            
+        }
+    }
+    
 }
 
+
+extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.homeAroundTheWorldCellImage, for: indexPath) as! HomesAroundTheWorldCollectionViewCell
+        
+        // Todo - get your data model...
+        cell.image = DummyImagee[indexPath.item].images?.first
+        print("Dummy Image:", DummyImagee)
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        layout.minimumLineSpacing = 10.0
+        layout.minimumInteritemSpacing = 5.0
+        let numberOfItemPerRow: CGFloat = 2.0
+        let itemWidth = (collectionView.bounds.width - layout.minimumInteritemSpacing) / numberOfItemPerRow
+        
+        return CGSize(width: itemWidth, height: itemWidth)
+    }
+}
