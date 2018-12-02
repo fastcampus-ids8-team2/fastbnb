@@ -16,8 +16,8 @@ class CalenderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calendarPopupView.layer.cornerRadius = 10
-        calendarPopupView.layer.masksToBounds = true
+//        calendarPopupView.layer.cornerRadius = 10
+//        calendarPopupView.layer.masksToBounds = true
         
 
     }
