@@ -9,7 +9,7 @@
 import UIKit
 @IBDesignable
 
-class Button: UIButton {
+class ProfileButton: UIButton {
     @IBInspectable var cornerRadius: CGFloat {
         get { return layer.cornerRadius}
         set { layer.cornerRadius = newValue}
