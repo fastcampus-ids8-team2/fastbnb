@@ -7,23 +7,13 @@
 //
 
 import UIKit
-final class ProfileCell: UITableViewCell{
+
+class ProfileCell: UITableViewCell{
     
+    @IBOutlet var title: UILabel!
+    @IBOutlet var explain: UILabel!
+    @IBOutlet var icon: UIImageView!
     
-    @IBOutlet weak var ProfileIconImage: UIImageView!
-    
-    @IBOutlet weak var ProfileTitleLabel: UILabel!
-    
-    @IBOutlet weak var ProfileExplanationLabel: UILabel!
- 
-    static let identifier: String = "ProfileCell"
-    
-    func setupCell(title: String, imageName: String) {
-        ProfileTitleLabel.text = title
-//        ProfileExplanationLabel.text = explanation
-        ProfileIconImage.image = UIImage(named: imageName)
-        
-    }
     
     
 }

@@ -5,71 +5,81 @@
 //  Created by wonsik on 26/11/2018.
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
-// ProfileItem(title: "알림", imageName: "profileBell", explanation: ""),
-//ProfileItem(title: "친구를 초대하세요", imageName: "profilegiftbox", explanation: ""),
-//ProfileItem(title: "호스트 초대하기", imageName: "profilegiftbox", explanation: "호스트를 추천하고 한 명당 16,946을 적립하세요"),
-//ProfileItem(title: "여행 크레딧과 쿠폰", imageName: "profileMedal", explanation: ""),
-//ProfileItem(title: "트립 호스팅하기", imageName: "profileTree", explanation: ""),
-//ProfileItem(title: "결제", imageName: "profileCard", explanation: ""),
-//ProfileItem(title: "설정", imageName: "profileSetting", explanation: ""),
-//ProfileItem(title: "도움말", imageName: "profileQuestion", explanation: ""),
-//ProfileItem(title: "호스팅에 관해 알아보기", imageName: "profileHouse", explanation: "월간 최대 1,656,519의 수입을 올리세요"),
-//ProfileItem(title: "숙소 등록하기", imageName: "profileHouse", explanation: ""),
-//ProfileItem(title: "피드백 남기기", imageName: "profileCard", explanation: ""),
-
 
 import UIKit
 @IBDesignable
 
-class ProfileViewController: UIViewController,UITableViewDelegate {
+class ProfileViewController: UITableViewController{
     
-    @IBOutlet weak var tableView: UITableView!
+    var dataset = [
+        ("알림","", "profileBell.png"),
+        ("친구를 초대하세요","","profilegiftbox.png"),
+        ("호스트 추천하기","호스트를 추천하고 한명당 16,802을 적립하세요","profilegiftbox.png"),
+        ("여행 크레딧과 쿠폰","","profileMedal.png"),
+        ("트립 호스팅하기","","profileTree.png"),
+        ("결제","","profileCard.png"),
+        ("설정","","profileBell.png"),
+        ("도움말","","profileQuestion.png"),
+        ("호스팅에 관해 알아보기","월간 최대 1681663의 수입을 올리세요","profileHouse.png"),
+        ("숙소등록하기","","profileHouse.png"),
+        ("피드백 남기기","","profileCard.png")
+    ]
     
-//    var dataset = [
-//    ("알림","profileBell"),("친구를 초대하세요", "profilegiftbox"),("호스트 초대하기","profilegiftbox"),("여행 크레딧과 쿠폰","profileMedal"),("트립 호스팅하기","profileTree"),("결제","profileCard"),("설정","profileSetting"),("도움말","profileQusetion"),("호스팅에 관해 알아보기","profileHouse"),("숙소 등록하기","profileHouse"),("피드백 남기기","profileCard")
-//    ]
     
     
-    private let profileList = ProfileList()
-    private var items: [ProfileItem] = []
     
+    lazy var list: [ProfileList] = {
+        var datalist = [ProfileList]()
+        
+        
+        for (title, explain, icon) in self.dataset {
+            let mvo = ProfileList()
+            mvo.title = title
+            mvo.explain = explain
+            mvo.icon = icon
+            datalist.append(mvo)
+            
+        }
+        return datalist
+    }()
+
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        items = profileList.items
-        tableView.rowHeight = 65
-        
-      
+        tableView.rowHeight = 70
     }
 
-}
-
-extension ProfileViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        items.append(items)
-        return items.count
-        
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.list.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let row = self.profileList[indexPath.row]
-
-        let cell = tableView.dequeueReusableCell(withIdentifier: ProfileCell.identifier, for: indexPath) as! ProfileCell
+    
+    override func tableView(_ tableview: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
-        cell.setupCell(title: items[indexPath.row].title, imageName: items[indexPath.row].imageName)
-       
+        
+        let row = self.list[indexPath.row]
+        //
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! ProfileCell
+        
+        let title = cell.viewWithTag(101) as? UILabel
+        let explain = cell.viewWithTag(102) as? UILabel
+        cell.title?.text = row.title
+        
+        
+        cell.title?.text = row.title
+        cell.explain?.text = row.explain
+        cell.icon.image = UIImage(named: row.icon!)
+        
         return cell
         
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
+    }
+    
     
     
     
 }
-
-
-
-
-
