@@ -30,6 +30,7 @@ class ExploreViewController: UIViewController {
     var bedrooms: [Int] = []
     var beds: [Int] = []
     var personCapacity: [Int] = []
+    var hostImages: [ String ] = []
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
@@ -90,9 +91,14 @@ class ExploreViewController: UIViewController {
                 for i in 0...(listing.count - 1) {
                     self.bathrooms.append(listing[i].bathrooms)
                     self.pk.append(listing[i].pk)
+                    self.hostImages.append(listing[i].hostimages.hostThumbnailURL)
+                    
             }
             
             print(self.pk)
+            print("hostImages:", self.hostImages)
+            
+            
             completionHandler(self.pk)
             
             
@@ -134,7 +140,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
             if let cell = cell as? HomesAroundTheWorldTableViewCell {
                 cell.collectionView.dataSource = self
                 cell.collectionView.reloadData()
-                cell.collectionView.isScrollEnabled = false
+                cell.collectionView.isScrollEnabled = true
                 cell.collectionView.delegate = self
                 
                 
@@ -168,6 +174,13 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         
         // Todo - get your data model...
         cell.image = DummyImagee[indexPath.item].images?.first
+        cell.typeOfHome.text = "Entire"
+        cell.dot.text = "•"
+        cell.cityName.text = "Los Angeles"
+        
+        cell.homeDescription.text = "This is the most beatiful home in the southern california. Come and enjoy"
+        cell.numberOfStar.text = "★★★★★"
+        cell.numberOfStarLabel.text = "\(231)"
         print("Dummy Image:", DummyImagee)
         
         return cell
@@ -175,7 +188,7 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
-        layout.minimumLineSpacing = 10.0
+        layout.minimumLineSpacing = 0.0
         layout.minimumInteritemSpacing = 5.0
         let numberOfItemPerRow: CGFloat = 2.0
         let itemWidth = (collectionView.bounds.width - layout.minimumInteritemSpacing) / numberOfItemPerRow
