@@ -15,7 +15,9 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dot: UILabel!
     @IBOutlet weak var cityName: UILabel!
     
-    @IBOutlet weak var homeDescription: UILabel!
+    
+    @IBOutlet weak var roomName: UILabel!
+    @IBOutlet weak var roomPrice: UILabel!
     @IBOutlet weak var numberOfStar: UILabel!
     @IBOutlet weak var numberOfStarLabel: UILabel!
     
@@ -27,12 +29,14 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     
     
     
-    func setupCell(homeType: String, city: String, description: String, numStar: String, numberOfStarLabel: Int, image: String) {
+    func setupCell(homeType: String, city: String, roomPriceInfo: Int,roomTitle: String, /*numStar: String,numSLabel: Int,*/ image: String) {
         
         typeOfHome.text = homeType
         cityName.text = city
-        homeDescription.text = description
-        numberOfStarLabel.text 
+        roomName.text = roomTitle
+        roomPrice.text = "\(roomPriceInfo) per night. Free cancellation"
+//        numberOfStar.text = numStar
+//        numberOfStarLabel.text = "\(numSLabel)"
         
         
         guard let imageUrl = URL(string: image) else { return }
@@ -41,13 +45,17 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
             guard error == nil else { return }
             guard let data = data else { return }
             DispatchQueue.main.async {
-                self.itemImageView.image = UIImage(data: data)
+                self.imageView.image = UIImage(data: data)
             }
             
             
         }
         task.resume()
         
+    }
+    
+    func setUpCell1(homeType: String) {
+        typeOfHome.text = homeType
     }
     
     

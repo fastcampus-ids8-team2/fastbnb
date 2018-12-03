@@ -32,6 +32,14 @@ class ExploreViewController: UIViewController {
     var personCapacity: [Int] = []
     var hostImages: [ String ] = []
     
+    // Explore main page collectionView variables
+    var room1Images: [ String ] = []
+    var room2Images: [String ] = []
+    var roomType: [ String ] = []
+    var cities: [ String ] = []
+    var roomName: [ String ] = []
+    var roomPrice: [ Int ] = []
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
     
@@ -57,10 +65,22 @@ class ExploreViewController: UIViewController {
         
         
         print("Dummy Images", DummyImagee)
-        listingAPIFetch { num in
-            print(num)
+        listingAPIFetch { room1Images, roomType, cityName, roomName, Price in
+//            print("room1Image:", room1Images)
+            print("room1Images:", room1Images)
+            print("roomType:", roomType)
+            print("cityName:", cityName)
+            print("roomName:", roomName)
+            print("price:", Price)
+            
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        
         }
 
+        
+        
         //
 //        
         self.tableView.estimatedRowHeight = self.tableView.rowHeight
@@ -77,7 +97,7 @@ class ExploreViewController: UIViewController {
     
     
     
-    private func listingAPIFetch(with completionHandler: @escaping ([Int]) -> Void) {
+    private func listingAPIFetch(with completionHandler: @escaping ([String], [String], [String], [String], [Int]) -> Void) {
         guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
         let request = URLRequest(url: url)
         
@@ -93,13 +113,27 @@ class ExploreViewController: UIViewController {
                     self.pk.append(listing[i].pk)
                     self.hostImages.append(listing[i].hostimages.hostThumbnailURL)
                     
+                    // collectionView Information from backend Server
+                    self.room1Images.append(listing[i].roominfo.roomPhoto1)
+                    self.roomType.append(listing[i].roomType.rawValue)
+                    self.cities.append(listing[i].city)
+                    self.roomName.append(listing[i].roomName)
+                    self.roomPrice.append(listing[i].price)
+                    
+                    
             }
             
-            print(self.pk)
-            print("hostImages:", self.hostImages)
+      
+//            print("hostImages:", self.hostImages)
+            print("roomtype:", self.roomType)
             
             
-            completionHandler(self.pk)
+            completionHandler(self.room1Images ,
+                              self.roomType,
+                              self.cities,
+                              self.roomName,
+                              self.roomPrice)
+            
             
             
             
@@ -166,22 +200,40 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
-    }
+        return 4    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.homeAroundTheWorldCellImage, for: indexPath) as! HomesAroundTheWorldCollectionViewCell
         
         // Todo - get your data model...
+//
+       
+        
+    
+        print("\n===============[roomPrice]========================\n")
+        print("romPrice:",roomPrice)
+        
+        
+        if indexPath.row < 4 {
+//        cell.setUpCell1(homeType: roomType[indexPath.row])
+        print("\n===============[roomType in collectionView]========================\n")
+         print(" i need to fix this part later")
+        
+            // why this is the out of range?? 
+//        print(roomPrice[3])
+        }
+        
+        
+        
         cell.image = DummyImagee[indexPath.item].images?.first
-        cell.typeOfHome.text = "Entire"
+//        cell.typeOfHome.text = "Entire"
         cell.dot.text = "•"
         cell.cityName.text = "Los Angeles"
         
-        cell.homeDescription.text = "This is the most beatiful home in the southern california. Come and enjoy"
+        cell.roomPrice.text = "This is the most beatiful home in the southern california. Come and enjoy"
         cell.numberOfStar.text = "★★★★★"
         cell.numberOfStarLabel.text = "\(231)"
-        print("Dummy Image:", DummyImagee)
+//        print("Dummy Image:", DummyImagee)
         
         return cell
     }
