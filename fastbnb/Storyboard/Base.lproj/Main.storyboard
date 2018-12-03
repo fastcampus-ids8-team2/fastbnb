@@ -723,17 +723,55 @@
         <!--Inbox Detail View Controller-->
         <scene sceneID="bHM-RT-su9">
             <objects>
-                <viewController id="HS4-Yd-gep" customClass="InboxDetailViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="HS4-Yd-gep" customClass="InboxDetailViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M3J-jy-yYf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1Y-w2-95A">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Mh-vG-3ad">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3Mh-vG-3ad" firstAttribute="top" secondItem="j1Y-w2-95A" secondAttribute="top" id="9B9-lR-q5K"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Mh-vG-3ad" secondAttribute="trailing" id="C6y-Yg-tVa"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Mh-vG-3ad" secondAttribute="bottom" id="DIK-fv-IMt"/>
+                                    <constraint firstItem="3Mh-vG-3ad" firstAttribute="leading" secondItem="j1Y-w2-95A" secondAttribute="leading" id="iTQ-yL-qYL"/>
+                                    <constraint firstAttribute="height" constant="40" id="n7f-fT-VPh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-G5-TLN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="H5h-G5-TLN" firstAttribute="top" secondItem="3gL-Zn-P6M" secondAttribute="top" id="29V-aG-9gn"/>
+                            <constraint firstItem="3gL-Zn-P6M" firstAttribute="trailing" secondItem="H5h-G5-TLN" secondAttribute="trailing" id="B1V-w6-Uev"/>
+                            <constraint firstItem="H5h-G5-TLN" firstAttribute="leading" secondItem="3gL-Zn-P6M" secondAttribute="leading" id="EYP-cx-Nhx"/>
+                            <constraint firstItem="j1Y-w2-95A" firstAttribute="top" secondItem="H5h-G5-TLN" secondAttribute="bottom" id="HLA-g3-1Bt"/>
+                            <constraint firstItem="3gL-Zn-P6M" firstAttribute="trailing" secondItem="j1Y-w2-95A" secondAttribute="trailing" id="Pcb-8G-0IJ"/>
+                            <constraint firstItem="j1Y-w2-95A" firstAttribute="leading" secondItem="3gL-Zn-P6M" secondAttribute="leading" id="ej4-gq-8eu"/>
+                            <constraint firstItem="3gL-Zn-P6M" firstAttribute="bottom" secondItem="j1Y-w2-95A" secondAttribute="bottom" id="nhR-g5-x9B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3gL-Zn-P6M"/>
                     </view>
+                    <connections>
+                        <outlet property="messageTextField" destination="3Mh-vG-3ad" id="Jyf-dF-WBw"/>
+                        <outlet property="messageView" destination="H5h-G5-TLN" id="Rl9-4v-rZu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uU9-2Q-2p5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1084" y="1657"/>
+            <point key="canvasLocation" x="1084" y="1656.521739130435"/>
         </scene>
         <!--TRIPS-->
         <scene sceneID="oVf-5r-Eci">

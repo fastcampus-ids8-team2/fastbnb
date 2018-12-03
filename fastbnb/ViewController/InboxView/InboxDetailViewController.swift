@@ -7,10 +7,38 @@
 //
 
 import UIKit
+import AloeStackView
+import SnapKit
 
 class InboxDetailViewController: UIViewController {
 
+    @IBOutlet private weak var messageTextField: UITextField!
+    @IBOutlet private weak var messageView: UIView!
+    let aloeStackView = AloeStackView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        messageView.addSubview(aloeStackView)
+        aloeStackView.snp.makeConstraints { make in
+            make.size.equalTo(messageView)
+        }
+        
+        let sendButton = UIButton()
+        sendButton.setTitle("Send", for: .normal)
+        sendButton.setTitleColor(view.tintColor, for: .normal)
+        sendButton.frame = CGRect(x: 0, y: 0, width: 50, height: 40)
+        sendButton.addTarget(self, action: #selector(touchSendButton), for: .touchUpInside)
+        messageTextField.rightView = sendButton
+        messageTextField.rightViewMode = .always
+    }
+    
+    @objc func touchSendButton(_ sender: UIButton) {
+        if messageTextField.text != "" {
+            let label = UILabel()
+            label.text = messageTextField.text
+            aloeStackView.addRow(label)
+            messageTextField.text = ""
+        }
     }
 }
