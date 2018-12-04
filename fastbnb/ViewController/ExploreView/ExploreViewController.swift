@@ -23,128 +23,35 @@ struct Storyboard {
 class ExploreViewController: UIViewController {
    
     var DummyImagee = [UIImage]()
+    var arrayOfCellData: Listing = []
     
-    
-    var pk: [Int] = []
-    var bathrooms: [Int] = []
-    var bedrooms: [Int] = []
-    var beds: [Int] = []
-    var personCapacity: [Int] = []
-    var hostImages: [ String ] = []
-    
-    // Explore main page collectionView variables
-    var room1Images: [ String ] = []
-    var room2Images: [String ] = []
-    var roomType: [ String ] = []
-    var cities: [ String ] = []
-    var roomName: [ String ] = []
-    var roomPrice: [ Int ] = []
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let data1 = UIImage(named: "airbnbImage")
-        let data2 = UIImage(named: "airbnbImage")
-        let data3 = UIImage(named: "airbnbImage")
-        let data4 = UIImage(named: "airbnbImage")
-        let data5 = UIImage(named: "airbnbImage")
-        let data6 = UIImage(named: "airbnbImage")
-        let data7 = UIImage(named: "airbnbImage")
-        let data8 = UIImage(named: "airbnbImage")
-        DummyImagee.append(data1!)
-        DummyImagee.append(data2!)
-        DummyImagee.append(data3!)
-        DummyImagee.append(data4!)
-        DummyImagee.append(data5!)
-        DummyImagee.append(data6!)
-        DummyImagee.append(data7!)
-        DummyImagee.append(data8!)
         
-        
-        
-        print("Dummy Images", DummyImagee)
-        listingAPIFetch { room1Images, roomType, cityName, roomName, Price in
-//            print("room1Image:", room1Images)
-            print("room1Images:", room1Images)
-            print("roomType:", roomType)
-            print("cityName:", cityName)
-            print("roomName:", roomName)
-            print("price:", Price)
-            
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        
-        }
+        arrayOfCellData = ListingData.shared.arrayOfCellData
 
         
-        
-        //
-//        
-        self.tableView.estimatedRowHeight = self.tableView.rowHeight
-        self.tableView.rowHeight = UITableView.automaticDimension
-    }
-    
-    @IBAction func datesCalendarOpen(_ sender: Any) {
-        self.view.addSubview(calendarView)
-        calendarView.center = self.view.center
-        
-        
-        
-    }
-    
-    
-    
-    private func listingAPIFetch(with completionHandler: @escaping ([String], [String], [String], [String], [Int]) -> Void) {
-        guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
-        let request = URLRequest(url: url)
-        
-        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            guard error == nil else { return }
-            guard let data = data else { return }
-            
-            guard let listing = try? JSONDecoder().decode(Welcome.self, from: data) else { return }
-
-          
-                for i in 0...(listing.count - 1) {
-                    self.bathrooms.append(listing[i].bathrooms)
-                    self.pk.append(listing[i].pk)
-                    self.hostImages.append(listing[i].hostimages.hostThumbnailURL)
-                    
-                    // collectionView Information from backend Server
-                    self.room1Images.append(listing[i].roominfo.roomPhoto1)
-                    self.roomType.append(listing[i].roomType.rawValue)
-                    self.cities.append(listing[i].city)
-                    self.roomName.append(listing[i].roomName)
-                    self.roomPrice.append(listing[i].price)
-                    
-                    
-            }
-            
-      
-//            print("hostImages:", self.hostImages)
-            print("roomtype:", self.roomType)
-            
-            
-            completionHandler(self.room1Images ,
-                              self.roomType,
-                              self.cities,
-                              self.roomName,
-                              self.roomPrice)
-            
-            
-            
-            
-            
-            
         }
-        task.resume()
-    }
     
- 
-}
+//        self.tableView.estimatedRowHeight = self.tableView.rowHeight
+//        self.tableView.rowHeight = UITableView.automaticDimension
+    }
+
+
+
+    // Calendar View
+
+//    @IBAction func datesCalendarOpen(_ sender: Any) {
+//        self.view.addSubview(calendarView)
+//        calendarView.center = self.view.center
+//
+//
+//
+//    }
 
 // extension start from here
 // tableView Controller setting
@@ -206,34 +113,19 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.homeAroundTheWorldCellImage, for: indexPath) as! HomesAroundTheWorldCollectionViewCell
         
         // Todo - get your data model...
-//
-       
-        
-    
-        print("\n===============[roomPrice]========================\n")
-        print("romPrice:",roomPrice)
-        
         
         if indexPath.row < 4 {
-//        cell.setUpCell1(homeType: roomType[indexPath.row])
-        print("\n===============[roomType in collectionView]========================\n")
-         print(" i need to fix this part later")
-        
-            // why this is the out of range?? 
-//        print(roomPrice[3])
+            cell.dot.text = "•"
+            cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
+                           city: arrayOfCellData[indexPath.row].city,
+                           roomPriceInfo: arrayOfCellData[indexPath.row].price,
+                           roomTitle: arrayOfCellData[indexPath.row].roomName,
+                           image: arrayOfCellData[indexPath.row].roominfo.roomPhoto1)
         }
         
-        
-        
-        cell.image = DummyImagee[indexPath.item].images?.first
-//        cell.typeOfHome.text = "Entire"
-        cell.dot.text = "•"
-        cell.cityName.text = "Los Angeles"
-        
-        cell.roomPrice.text = "This is the most beatiful home in the southern california. Come and enjoy"
         cell.numberOfStar.text = "★★★★★"
-        cell.numberOfStarLabel.text = "\(231)"
-//        print("Dummy Image:", DummyImagee)
+        cell.numberOfStarLabel.text = "\(Int.random(in: 0 ..< 500))"
+
         
         return cell
     }

@@ -57,7 +57,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     func setUpCell1(homeType: String) {
         typeOfHome.text = homeType
     }
-    
+  
     
 
 }

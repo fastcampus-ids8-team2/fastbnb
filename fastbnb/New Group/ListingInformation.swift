@@ -8,9 +8,9 @@
 
 import Foundation
 
-typealias Welcome = [WelcomeElement]
+typealias Listing = [ListingElement]
 
-struct WelcomeElement: Codable {
+struct ListingElement: Codable {
     let pk, bathrooms, bedrooms, beds: Int
     let personCapacity: Int
     let roomName: String
@@ -66,4 +66,23 @@ struct Roominfo: Codable {
         case roomPhoto4 = "room_photo_4"
         case roomPhoto5 = "room_photo_5"
     }
+}
+
+final class ListingData {
+    static let shared = ListingData()
+    var arrayOfCellData: Listing = []
+    
+    func getDataFromServer() { // 서버에서 데이터 가져오는 펑션
+        
+        guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
+        guard let data = try? Data(contentsOf: url) else { return }
+        
+        let listingData = try! JSONDecoder().decode(Listing.self, from: data)
+        arrayOfCellData = listingData
+    
+
+        
+        
+    }
+    
 }

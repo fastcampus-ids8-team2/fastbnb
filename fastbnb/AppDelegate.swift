@@ -17,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupRootViewController()
+        
+        
         return true
     }
     
@@ -31,6 +33,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let oldVC = window?.rootViewController
             window?.rootViewController = newVC
             oldVC?.dismiss(animated: true)
+            
+            // add data from the server
+            ListingData.shared.getDataFromServer()
         }
     }
 }
