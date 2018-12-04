@@ -134,7 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				2E63C56B21AADA7300D869DF /* Login.storyboard */,
-				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
+				6AFD1EE621B6390B00DB1A96 /* Main.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -224,6 +224,14 @@
 				6A9374F221AB999900E641D5 /* TripsViewController.swift */,
 			);
 			path = TripView;
+			sourceTree = "<group>";
+		};
+		6AFD1EE621B6390B00DB1A96 /* Main.storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2E63C55B21AAD31B00D869DF /* Main.storyboard */,
+			);
+			path = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		7DF911FA73109CE17C93F7CB /* Pods */ = {
