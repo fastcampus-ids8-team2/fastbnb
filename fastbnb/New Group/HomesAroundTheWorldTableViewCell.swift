@@ -8,12 +8,18 @@
 
 import UIKit
 
+
+
 class HomesAroundTheWorldTableViewCell: UITableViewCell {
+    
+  
 
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var homesAroundTheWorld: UILabel!
     @IBOutlet weak var showAll: UIButton!
+    
+    
     
     
 }

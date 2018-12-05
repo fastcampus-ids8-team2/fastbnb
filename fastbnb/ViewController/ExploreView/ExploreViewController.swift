@@ -19,9 +19,9 @@ struct Storyboard {
 
 
 
-
 class ExploreViewController: UIViewController {
    
+    
     var DummyImagee = [UIImage]()
     var arrayOfCellData: Listing = []
     
@@ -81,7 +81,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
             if let cell = cell as? HomesAroundTheWorldTableViewCell {
                 cell.collectionView.dataSource = self
                 cell.collectionView.reloadData()
-                cell.collectionView.isScrollEnabled = true
+                cell.collectionView.isScrollEnabled = false
                 cell.collectionView.delegate = self
                 
                 
@@ -105,6 +105,8 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
 }
 
 
+
+
 extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4    }
@@ -114,15 +116,16 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         
         // Todo - get your data model...
         
+        
         if indexPath.row < 4 {
-            cell.dot.text = "•"
+            
             cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roominfo.roomPhoto1)
         }
-        
+        cell.dot.text = "•"
         cell.numberOfStar.text = "★★★★★"
         cell.numberOfStarLabel.text = "\(Int.random(in: 0 ..< 500))"
 
@@ -139,4 +142,20 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         
         return CGSize(width: itemWidth, height: itemWidth)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print(indexPath.item,"this has been tapped")
+        
+     
+        
+   
+        // delegate?.didSelectRoom(data)
+    }
 }
+
+
+// func didSelectRoom(data) {
+//    // performSegue()
+//    // vc.data = data
+// }
+
