@@ -12,7 +12,8 @@ public class InboxMessageView: UIView {
 
     // MARK: Lifecycle
     
-    public init(_ message: String) {
+    public init(_ message: String, isMyMessage: Bool = false) {
+        self.isMyMessage = isMyMessage
         super.init(frame: .zero)
         label.text = message
         setUpViews()
@@ -28,6 +29,7 @@ public class InboxMessageView: UIView {
     private let label = UILabel()
     private let labelTextMaxLength = 25
     private let imageView = UIImageView()
+    private var isMyMessage: Bool
     
     
     private func setUpViews() {
@@ -53,17 +55,17 @@ public class InboxMessageView: UIView {
     }
     
     private func setUpImageView() {
-        imageView.image = UIImage(named: "bubble")
+        imageView.image = isMyMessage ? UIImage(named: "bubbleR") : UIImage(named: "bubble")
         addSubview(imageView)
     }
     
     private func setUpConstraints() {
         guard let image = imageView.image else { return }
         let labelSize = (label.text! as NSString).size(withAttributes: [.font: label.font])
-        label.frame = CGRect(x: 0, y: 0, width: labelSize.width, height: labelSize.height)
+        label.frame = CGRect(x: (isMyMessage ? UIScreen.main.bounds.width - labelSize.width - 30 : 0), y: 0, width: labelSize.width, height: labelSize.height)
         imageView.frame = CGRect(x: label.frame.minX - 10, y: label.frame.minY - 10, width: label.frame.width + 22, height: label.frame.height + 30)
         
-        let size = CGSize(width: image.size.width * 0.6, height: image.size.height * 0.6)
+        let size = CGSize(width: image.size.width * (isMyMessage ? 0.4 : 0.6), height: image.size.height * 0.6)
         let edgeInset = UIEdgeInsets(top: size.height - 1, left: size.width - 1, bottom: image.size.height - size.height, right: image.size.width - size.width)
         let resizedImage = image.resizableImage(withCapInsets: edgeInset, resizingMode: .stretch)
         
@@ -72,6 +74,12 @@ public class InboxMessageView: UIView {
         NSLayoutConstraint.activate([
             imageView.bottomAnchor.constraint(equalTo: bottomAnchor)
             ])
+        
+        if isMyMessage {
+            NSLayoutConstraint.activate([
+                label.trailingAnchor.constraint(equalTo: trailingAnchor)
+            ])
+        }
     }
 
 }
