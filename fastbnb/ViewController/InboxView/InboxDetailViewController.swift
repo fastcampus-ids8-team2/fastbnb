@@ -20,6 +20,7 @@ class InboxDetailViewController: UIViewController {
         super.viewDidLoad()
         
         messageView.addSubview(aloeStackView)
+        aloeStackView.hidesSeparatorsByDefault = true
         aloeStackView.snp.makeConstraints { make in
             make.size.equalTo(messageView)
         }
@@ -34,11 +35,10 @@ class InboxDetailViewController: UIViewController {
     }
     
     @objc func touchSendButton(_ sender: UIButton) {
-        if messageTextField.text != "" {
-            let label = UILabel()
-            label.text = messageTextField.text
-            aloeStackView.addRow(label)
-            messageTextField.text = ""
+        guard let message = messageTextField.text else { return }
+        if message != "" {
+            aloeStackView.addRow(InboxMessageView(message))
         }
+        messageTextField.text = ""
     }
 }

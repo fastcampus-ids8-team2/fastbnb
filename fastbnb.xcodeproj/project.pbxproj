@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AC98221B7B4DD009E666D /* InboxMessageView.swift */; };
 		2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46FE0921AFCF8B0046E5E7 /* InboxDetailViewController.swift */; };
 		2E46FE0C21B4BD4F0046E5E7 /* InboxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E46FE0B21B4BD4F0046E5E7 /* InboxTableViewCell.swift */; };
 		2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C55721AAD31B00D869DF /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E0AC98221B7B4DD009E666D /* InboxMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxMessageView.swift; sourceTree = "<group>"; };
 		2E46FE0921AFCF8B0046E5E7 /* InboxDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxDetailViewController.swift; sourceTree = "<group>"; };
 		2E46FE0B21B4BD4F0046E5E7 /* InboxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewCell.swift; sourceTree = "<group>"; };
 		2E63C55421AAD31B00D869DF /* fastbnb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fastbnb.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,10 +169,11 @@
 		2E63C57521AD2A1F00D869DF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */,
+				2E0AC98221B7B4DD009E666D /* InboxMessageView.swift */,
 				2E46FE0B21B4BD4F0046E5E7 /* InboxTableViewCell.swift */,
 				2E63C57621AD2A3700D869DF /* SocialLoginButton.swift */,
 				2E63C57C21AE29E400D869DF /* SocialLoginTextField.swift */,
-				6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
 				7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */,
+				2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */,
