@@ -29,7 +29,10 @@
 		6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F021AB995D00E641D5 /* ExploreViewController.swift */; };
 		6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F221AB999900E641D5 /* TripsViewController.swift */; };
 		6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F421AB99CA00E641D5 /* InboxViewController.swift */; };
+		6AA6300D21B7962000E888AD /* DetailExploreViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */; };
 		6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */; };
+		6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */; };
+		6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2E3121B7872200CADD5D /* TestViewController.swift */; };
 		7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29B821B711AF00AA44F6 /* InviteFriendTableViewController.swift */; };
 		7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BA21B711C900AA44F6 /* InviteFriendCell.swift */; };
 		7E0E29BD21B711DE00AA44F6 /* InviteFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BC21B711DE00AA44F6 /* InviteFriendList.swift */; };
@@ -71,7 +74,10 @@
 		6A9374F021AB995D00E641D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		6A9374F221AB999900E641D5 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		6A9374F421AB99CA00E641D5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
+		6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExploreViewTableViewCell.swift; sourceTree = "<group>"; };
 		6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesAroundTheWorldTableViewCell.swift; sourceTree = "<group>"; };
+		6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6AFF2E3121B7872200CADD5D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		7E0E29B821B711AF00AA44F6 /* InviteFriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendTableViewController.swift; sourceTree = "<group>"; };
 		7E0E29BA21B711C900AA44F6 /* InviteFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendCell.swift; sourceTree = "<group>"; };
 		7E0E29BC21B711DE00AA44F6 /* InviteFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendList.swift; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 				6AAAFC5D21AE2775006EAEB7 /* SavedView */,
 				6AAAFC5E21AE277E006EAEB7 /* LogInView */,
 				6AAAFC5F21AE27BB006EAEB7 /* TripView */,
+				6AFF2E3121B7872200CADD5D /* TestViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -163,6 +170,7 @@
 				2E46FE0B21B4BD4F0046E5E7 /* InboxTableViewCell.swift */,
 				2E63C57621AD2A3700D869DF /* SocialLoginButton.swift */,
 				2E63C57C21AE29E400D869DF /* SocialLoginTextField.swift */,
+				6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				6A021DA321AD39D80094A298 /* CalenderViewController.swift */,
 				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
 				6A021DA621AD3D6E0094A298 /* GuestViewController.swift */,
+				6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */,
 			);
 			path = ExploreView;
 			sourceTree = "<group>";
@@ -464,7 +473,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */,
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
+				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
 				7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
@@ -493,6 +504,7 @@
 				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
 				7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
 				7E0E29BD21B711DE00AA44F6 /* InviteFriendList.swift in Sources */,
+				6AA6300D21B7962000E888AD /* DetailExploreViewTableViewCell.swift in Sources */,
 				2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */,
 				2E63C57B21AD3D8400D869DF /* TermsViewController.swift in Sources */,
 				7E0E29C221B714DE00AA44F6 /* RecommendHostsCell.swift in Sources */,

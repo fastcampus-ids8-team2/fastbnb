@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         setupRootViewController()
-        
+         ListingData.shared.getDataFromServer()
         
         return true
     }
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             oldVC?.dismiss(animated: true)
             
             // add data from the server
-            ListingData.shared.getDataFromServer()
+           
         }
     }
 }
