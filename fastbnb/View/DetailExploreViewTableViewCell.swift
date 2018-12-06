@@ -11,8 +11,8 @@ import UIKit
 class DetailExploreViewTableViewCell: UITableViewCell {
     
     @IBOutlet weak var homeFirstImage: UIImageView!
-    @IBOutlet weak var homeSecondImage: UIImageView!
-    @IBOutlet weak var homeThirdImage: UIImageView!
+//    @IBOutlet weak var homeSecondImage: UIImageView!
+//    @IBOutlet weak var homeThirdImage: UIImageView!
     
     
 }

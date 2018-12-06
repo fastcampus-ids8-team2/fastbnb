@@ -10,13 +10,6 @@ import UIKit
 import JTAppleCalendar
 
 
-struct Storyboard {
-   
-    static let homesAroundTheWorldCell = "homesAroundTheWorldCell"
-    static let homeAroundTheWorldCellImage = "homeAroundTheWorldCellImage"
-}
-
-
 
 
 class ExploreViewController: UIViewController {
