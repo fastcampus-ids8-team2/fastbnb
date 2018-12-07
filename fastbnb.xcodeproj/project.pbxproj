@@ -35,6 +35,9 @@
 		6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */; };
 		6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */; };
 		6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2E3121B7872200CADD5D /* TestViewController.swift */; };
+		6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F421BA562900E42797 /* TestScrollViewController.swift */; };
+		6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */; };
+		6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */; };
 		7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29B821B711AF00AA44F6 /* InviteFriendTableViewController.swift */; };
 		7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BA21B711C900AA44F6 /* InviteFriendCell.swift */; };
 		7E0E29BD21B711DE00AA44F6 /* InviteFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BC21B711DE00AA44F6 /* InviteFriendList.swift */; };
@@ -82,6 +85,9 @@
 		6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesAroundTheWorldTableViewCell.swift; sourceTree = "<group>"; };
 		6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6AFF2E3121B7872200CADD5D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		6AFF38F421BA562900E42797 /* TestScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollViewController.swift; sourceTree = "<group>"; };
+		6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuViewCell.swift; sourceTree = "<group>"; };
+		6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuView.swift; sourceTree = "<group>"; };
 		7E0E29B821B711AF00AA44F6 /* InviteFriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendTableViewController.swift; sourceTree = "<group>"; };
 		7E0E29BA21B711C900AA44F6 /* InviteFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendCell.swift; sourceTree = "<group>"; };
 		7E0E29BC21B711DE00AA44F6 /* InviteFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendList.swift; sourceTree = "<group>"; };
@@ -210,6 +216,9 @@
 				6A9374F021AB995D00E641D5 /* ExploreViewController.swift */,
 				6A021DA621AD3D6E0094A298 /* GuestViewController.swift */,
 				6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */,
+				6AFF38F421BA562900E42797 /* TestScrollViewController.swift */,
+				6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */,
+				6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */,
 			);
 			path = ExploreView;
 			sourceTree = "<group>";
@@ -484,12 +493,15 @@
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
 				7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */,
 				2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */,
+				6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
+				6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */,
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */,
+				6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */,
 				6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */,
 				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
 				7E0E29C921B719A100AA44F6 /* SettingCell.swift in Sources */,

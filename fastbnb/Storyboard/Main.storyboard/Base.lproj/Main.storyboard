@@ -270,6 +270,7 @@
                                         <connections>
                                             <outlet property="cityName" destination="mfl-tI-wmU" id="Dk9-ob-HHU"/>
                                             <outlet property="homeFirstImage" destination="zFP-tM-Dcx" id="4NN-2w-sfT"/>
+                                            <outlet property="numberOfReview" destination="cJR-sL-dPh" id="dda-s8-H3q"/>
                                             <outlet property="numberOfStar" destination="Exi-gq-vS0" id="B1g-bb-vHx"/>
                                             <outlet property="roomName" destination="bNy-Zn-nAX" id="2cU-ak-7to"/>
                                             <outlet property="roomPrice" destination="wl2-jw-GOs" id="Ez3-fu-nN3"/>
@@ -300,6 +301,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzp-LG-qd6">
                                         <rect key="frame" x="149" y="0.0" width="35" height="30"/>
                                         <state key="normal" title="Filter"/>
+                                        <connections>
+                                            <segue destination="sqY-Nm-ygs" kind="show" id="VdK-pk-4ca"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -326,6 +330,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoI-Hp-Kni" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-5108" y="2450.8245877061472"/>
+        </scene>
+        <!--Test Scroll View Controller-->
+        <scene sceneID="r9K-pc-N1e">
+            <objects>
+                <viewController id="sqY-Nm-ygs" customClass="TestScrollViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zEo-r2-irw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-sJ-79E">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="LjS-AY-fr9">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LjS-AY-fr9" id="R7i-Xh-lsm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="sqY-Nm-ygs" id="CyX-ES-MOV"/>
+                                    <outlet property="delegate" destination="sqY-Nm-ygs" id="byZ-dZ-A2T"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LzI-sJ-79E" firstAttribute="top" secondItem="t09-bJ-p8N" secondAttribute="top" id="5f1-C2-p1I"/>
+                            <constraint firstItem="LzI-sJ-79E" firstAttribute="leading" secondItem="t09-bJ-p8N" secondAttribute="leading" id="DwN-Xb-9YU"/>
+                            <constraint firstItem="t09-bJ-p8N" firstAttribute="bottom" secondItem="LzI-sJ-79E" secondAttribute="bottom" id="G2F-zB-vDb"/>
+                            <constraint firstItem="t09-bJ-p8N" firstAttribute="trailing" secondItem="LzI-sJ-79E" secondAttribute="trailing" id="e1e-KK-EEN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="t09-bJ-p8N"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="LzI-sJ-79E" id="c9s-UB-rBP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ei-9n-6VO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4346" y="2451"/>
         </scene>
         <!--Explore View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -552,6 +600,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="NUE-39-U5T"/>
                     <connections>
+                        <outlet property="citySearchSliderBar" destination="r9P-8t-9wW" id="qW4-wa-eQX"/>
+                        <outlet property="guestButton" destination="FRt-OO-qCk" id="Qvd-Ao-q4e"/>
                         <outlet property="tableView" destination="ly1-s8-mNi" id="GBM-UO-hiu"/>
                     </connections>
                 </viewController>

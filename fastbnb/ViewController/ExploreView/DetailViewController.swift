@@ -35,7 +35,8 @@ class DetailViewController: UIViewController {
 
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return arrayOfCellData.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -55,7 +56,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
        
         cell.numberOfStar.text = "★★★★★"
-        cell.numberOfReview.text = "\(Int.random(in: 1 ..< 500))"
+        let randomNumber = Int.random(in: 0...500)
+        cell.numberOfReview.text = "\(randomNumber)"
         
         
         

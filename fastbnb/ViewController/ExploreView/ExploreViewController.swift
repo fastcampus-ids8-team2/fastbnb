@@ -12,41 +12,55 @@ import JTAppleCalendar
 
 
 
-class ExploreViewController: UIViewController {
+class ExploreViewController: UIViewController, UISearchBarDelegate {
    
     
-    var DummyImagee = [UIImage]()
+    @IBOutlet weak var guestButton: UIButton!
     var arrayOfCellData: Listing = []
+    var newArrayOfCellData: Listing = []
+    var searchText: String?
     
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
     
+    
+    @IBOutlet weak var citySearchSliderBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        citySearchSliderBar.delegate = self
         arrayOfCellData = ListingData.shared.arrayOfCellData
         arrayOfCellData.reverse()
+        
+       
         
 
         
         }
     
-//        self.tableView.estimatedRowHeight = self.tableView.rowHeight
-//        self.tableView.rowHeight = UITableView.automaticDimension
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        
+        self.searchText = searchBar.text ?? ""
+        
+        for i in 0...arrayOfCellData.count - 1 {
+            if self.searchText == arrayOfCellData[i].city {
+            newArrayOfCellData.append(arrayOfCellData[i])
+            }
+            
+            
+        }
+//        print("newArrayOfCellData: ",newArrayOfCellData)
+        tableView.reloadData()
+        citySearchSliderBar.resignFirstResponder()
     }
+    
+    
+    
+}
 
 
 
-    // Calendar View
-
-//    @IBAction func datesCalendarOpen(_ sender: Any) {
-//        self.view.addSubview(calendarView)
-//        calendarView.center = self.view.center
-//
-//
-//
-//    }
 
 // extension start from here
 // tableView Controller setting
@@ -104,7 +118,16 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4    }
+        
+        if newArrayOfCellData.count == 0 {
+            return arrayOfCellData.count
+        } else {
+            return newArrayOfCellData.count
+        }
+        
+        
+        
+    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.homeAroundTheWorldCellImage, for: indexPath) as! HomesAroundTheWorldCollectionViewCell
@@ -112,13 +135,26 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         // Todo - get your data model...
         
         
-        if indexPath.row < 4 {
+        if  newArrayOfCellData.count == 0 {
             
             cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roominfo.roomPhoto1)
+            
+            } else if  newArrayOfCellData.count > 0 {
+            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
+                           city: newArrayOfCellData[indexPath.row].city,
+                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
+                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
+                           image: newArrayOfCellData[indexPath.row].roominfo.roomPhoto1)
+            
+            newArrayOfCellData.removeAll()
+            
+            //bug for the second image is showing up. Data is empty, yet it shows 마포구 house at the second column
+            print("newArrayOfCellData: ",newArrayOfCellData)
+            
         }
         cell.dot.text = "•"
         cell.numberOfStar.text = "★★★★★"
