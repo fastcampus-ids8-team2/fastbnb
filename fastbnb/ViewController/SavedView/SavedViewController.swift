@@ -35,7 +35,7 @@ class SavedViewController: UIViewController {
         cityImage.append("airbnbImage")
         cityNames.append("London")
         
-   
+        print("\(SavedRoomData.shared.arrayOfData)")
         
         
     }

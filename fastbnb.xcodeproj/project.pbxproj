@@ -20,6 +20,7 @@
 		2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57821AD3A6D00D869DF /* SignInViewController.swift */; };
 		2E63C57B21AD3D8400D869DF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57A21AD3D8400D869DF /* TermsViewController.swift */; };
 		2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57C21AE29E400D869DF /* SocialLoginTextField.swift */; };
+		2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */; };
 		6A00BAE721B8AEA400DE07AC /* ExploreViewStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A00BAE621B8AEA400DE07AC /* ExploreViewStoryBoard.swift */; };
 		6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A01658321ABC73600F69171 /* SavedItemCell.swift */; };
 		6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A021DA321AD39D80094A298 /* CalenderViewController.swift */; };
@@ -67,6 +68,7 @@
 		2E63C57821AD3A6D00D869DF /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		2E63C57A21AD3D8400D869DF /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		2E63C57C21AE29E400D869DF /* SocialLoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginTextField.swift; sourceTree = "<group>"; };
+		2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedInformation.swift; sourceTree = "<group>"; };
 		6A00BAE621B8AEA400DE07AC /* ExploreViewStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewStoryBoard.swift; sourceTree = "<group>"; };
 		6A01658321ABC73600F69171 /* SavedItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItemCell.swift; sourceTree = "<group>"; };
 		6A021DA321AD39D80094A298 /* CalenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
@@ -191,12 +193,13 @@
 		6A01658221ABC6FF00F69171 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6A00BAE621B8AEA400DE07AC /* ExploreViewStoryBoard.swift */,
 				6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */,
+				6A00BAE621B8AEA400DE07AC /* ExploreViewStoryBoard.swift */,
 				6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */,
 				6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */,
 				6A08BC9B21AF79A200266A58 /* ListingInformation.swift */,
 				7E19C65321B017C500684D18 /* ProfileCell.swift */,
+				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
 			);
 			name = Model;
@@ -488,6 +491,7 @@
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
+				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */,
 				6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */,
