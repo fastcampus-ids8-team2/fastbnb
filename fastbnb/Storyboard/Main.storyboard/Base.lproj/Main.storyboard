@@ -268,7 +268,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="cityName" destination="mfl-tI-wmU" id="Dk9-ob-HHU"/>
                                             <outlet property="homeFirstImage" destination="zFP-tM-Dcx" id="4NN-2w-sfT"/>
+                                            <outlet property="numberOfStar" destination="Exi-gq-vS0" id="B1g-bb-vHx"/>
+                                            <outlet property="roomName" destination="bNy-Zn-nAX" id="2cU-ak-7to"/>
+                                            <outlet property="roomPrice" destination="wl2-jw-GOs" id="Ez3-fu-nN3"/>
+                                            <outlet property="roomType" destination="s5f-fo-DOd" id="50A-li-z0g"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -766,7 +771,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nek-nB-uWd">
-                                                <rect key="frame" x="20" y="145" width="64" height="35.5"/>
+                                                <rect key="frame" x="20" y="144.5" width="64" height="35.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukz-yi-DJC">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="21"/>
@@ -895,6 +900,14 @@
                                                     <action selector="infantMinusButtonTapped:" destination="fht-5A-6nU" eventType="touchUpInside" id="q3B-hi-0V6"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHb-XD-YCL">
+                                                <rect key="frame" x="142" y="245" width="46" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="showResultsButtonTap:" destination="fht-5A-6nU" eventType="touchUpInside" id="h68-20-65h"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.21837542808219179" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -933,37 +946,15 @@
                                             <constraint firstItem="D2p-jG-A9R" firstAttribute="top" secondItem="XPg-hp-gxp" secondAttribute="top" constant="74" id="zT5-dI-bya"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7P1-4F-be0" userLabel="ShowResultView">
-                                        <rect key="frame" x="0.0" y="275" width="331" height="0.0"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWn-8b-6sW">
-                                                <rect key="frame" x="20" y="8" width="291" height="30"/>
-                                                <state key="normal" title="Show results"/>
-                                                <connections>
-                                                    <action selector="showResultsButtonTap:" destination="fht-5A-6nU" eventType="touchUpInside" id="Uy6-Pv-DnQ"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="kWn-8b-6sW" firstAttribute="top" secondItem="7P1-4F-be0" secondAttribute="top" constant="8" id="0hI-L0-uqO"/>
-                                            <constraint firstItem="kWn-8b-6sW" firstAttribute="leading" secondItem="7P1-4F-be0" secondAttribute="leading" constant="20" id="hY0-lD-Vbx"/>
-                                            <constraint firstAttribute="trailing" secondItem="kWn-8b-6sW" secondAttribute="trailing" constant="20" id="iSc-gF-tkN"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="7P1-4F-be0" firstAttribute="leading" secondItem="nOw-z7-Xib" secondAttribute="leading" id="Aab-s7-0gi"/>
                                     <constraint firstAttribute="height" constant="275" id="Agl-6H-YFH"/>
                                     <constraint firstItem="XPg-hp-gxp" firstAttribute="top" secondItem="nOw-z7-Xib" secondAttribute="top" id="Gs3-wk-l1b"/>
-                                    <constraint firstItem="7P1-4F-be0" firstAttribute="top" secondItem="XPg-hp-gxp" secondAttribute="bottom" id="M00-p0-Qz9"/>
-                                    <constraint firstAttribute="bottom" secondItem="7P1-4F-be0" secondAttribute="bottom" id="Rd6-di-Vz3"/>
                                     <constraint firstItem="XPg-hp-gxp" firstAttribute="leading" secondItem="nOw-z7-Xib" secondAttribute="leading" id="TYu-Cx-hV9"/>
                                     <constraint firstAttribute="bottom" secondItem="XPg-hp-gxp" secondAttribute="bottom" id="UfV-8I-05u"/>
                                     <constraint firstAttribute="trailing" secondItem="XPg-hp-gxp" secondAttribute="trailing" id="kyb-NP-cAg"/>
-                                    <constraint firstAttribute="trailing" secondItem="7P1-4F-be0" secondAttribute="trailing" id="lGe-jc-53r"/>
                                 </constraints>
                             </view>
                         </subviews>

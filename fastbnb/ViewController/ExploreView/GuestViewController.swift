@@ -7,6 +7,10 @@
 //
 
 import UIKit
+//
+//protocol  {
+//    <#requirements#>
+//}
 
 class GuestViewController: UIViewController {
 
@@ -25,13 +29,18 @@ class GuestViewController: UIViewController {
     var childrenLabelNumber = 0
     var infantLabelNumber = 0
     
+    var arrayOfCellData: Listing = []
+    var arrayOfNewData: Listing = []
     
     
     @IBOutlet weak var masterGuestView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        arrayOfCellData = ListingData.shared.arrayOfCellData
         masterViewSetUp()
+        
+        
     
         
         
@@ -43,6 +52,15 @@ class GuestViewController: UIViewController {
     // Mark: showButton for the result search
 
     @IBAction func showResultsButtonTap(_ sender: Any) {
+        
+//        for i in 0...arrayOfCellData.count {
+//            if adultLabelNumber >= arrayOfCellData[i].personCapacity {
+//                arrayOfNewData.append(arrayOfCellData[i])
+//                
+//            }
+//        }
+//        
+        
         dismiss(animated: true, completion: nil)
         
         

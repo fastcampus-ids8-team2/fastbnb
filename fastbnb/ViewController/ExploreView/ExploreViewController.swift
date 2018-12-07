@@ -26,6 +26,8 @@ class ExploreViewController: UIViewController {
         super.viewDidLoad()
         
         arrayOfCellData = ListingData.shared.arrayOfCellData
+        arrayOfCellData.reverse()
+        
 
         
         }

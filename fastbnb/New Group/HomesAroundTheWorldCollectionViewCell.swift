@@ -35,9 +35,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
         cityName.text = city
         roomName.text = roomTitle
         roomPrice.text = "\(roomPriceInfo) per night. Free cancellation"
-//        numberOfStar.text = numStar
-//        numberOfStarLabel.text = "\(numSLabel)"
-        
+
         
         guard let imageUrl = URL(string: image) else { return }
     
