@@ -18,6 +18,7 @@ class InboxDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "John Doe"
         
         messageView.addSubview(aloeStackView)
         aloeStackView.hidesSeparatorsByDefault = true
@@ -40,5 +41,13 @@ class InboxDetailViewController: UIViewController {
             aloeStackView.addRow(InboxMessageView(message, isMyMessage: Bool.random()))
         }
         messageTextField.text = ""
+    }
+}
+
+extension InboxDetailViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        touchSendButton(UIButton())
+        messageTextField.resignFirstResponder()
+        return true
     }
 }

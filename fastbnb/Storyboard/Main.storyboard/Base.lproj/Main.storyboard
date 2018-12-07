@@ -1140,6 +1140,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="HS4-Yd-gep" id="cqT-qL-KIc"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1152,13 +1155,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-G5-TLN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="H5h-G5-TLN" firstAttribute="top" secondItem="3gL-Zn-P6M" secondAttribute="top" id="29V-aG-9gn"/>
+                            <constraint firstItem="H5h-G5-TLN" firstAttribute="top" secondItem="3gL-Zn-P6M" secondAttribute="top" constant="15" id="29V-aG-9gn"/>
                             <constraint firstItem="3gL-Zn-P6M" firstAttribute="trailing" secondItem="H5h-G5-TLN" secondAttribute="trailing" id="B1V-w6-Uev"/>
                             <constraint firstItem="H5h-G5-TLN" firstAttribute="leading" secondItem="3gL-Zn-P6M" secondAttribute="leading" id="EYP-cx-Nhx"/>
                             <constraint firstItem="j1Y-w2-95A" firstAttribute="top" secondItem="H5h-G5-TLN" secondAttribute="bottom" id="HLA-g3-1Bt"/>
