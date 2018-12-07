@@ -501,11 +501,11 @@
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
-<<<<<<< HEAD
+
 				6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */,
-=======
+
 				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
->>>>>>> f2a26a5c41d7031fe0f7688b72a8db3a5aff12fb
+
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */,
 				6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */,
