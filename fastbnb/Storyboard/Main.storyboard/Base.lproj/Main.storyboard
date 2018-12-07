@@ -766,7 +766,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Nek-nB-uWd">
-                                                <rect key="frame" x="20" y="145" width="64" height="35.5"/>
+                                                <rect key="frame" x="20" y="144.5" width="64" height="35.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Children" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukz-yi-DJC">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="21"/>
@@ -1149,6 +1149,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="HS4-Yd-gep" id="cqT-qL-KIc"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1161,13 +1164,13 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5h-G5-TLN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="563"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="548"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="H5h-G5-TLN" firstAttribute="top" secondItem="3gL-Zn-P6M" secondAttribute="top" id="29V-aG-9gn"/>
+                            <constraint firstItem="H5h-G5-TLN" firstAttribute="top" secondItem="3gL-Zn-P6M" secondAttribute="top" constant="15" id="29V-aG-9gn"/>
                             <constraint firstItem="3gL-Zn-P6M" firstAttribute="trailing" secondItem="H5h-G5-TLN" secondAttribute="trailing" id="B1V-w6-Uev"/>
                             <constraint firstItem="H5h-G5-TLN" firstAttribute="leading" secondItem="3gL-Zn-P6M" secondAttribute="leading" id="EYP-cx-Nhx"/>
                             <constraint firstItem="j1Y-w2-95A" firstAttribute="top" secondItem="H5h-G5-TLN" secondAttribute="bottom" id="HLA-g3-1Bt"/>
