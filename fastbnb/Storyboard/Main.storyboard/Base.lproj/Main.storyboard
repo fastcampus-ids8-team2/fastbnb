@@ -403,7 +403,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Guests"/>
                                         <connections>
-                                            <segue destination="fht-5A-6nU" kind="presentation" id="ndY-n1-T9c"/>
+                                            <segue destination="fht-5A-6nU" kind="presentation" identifier="toGuestViewController" id="ndY-n1-T9c"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -955,7 +955,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
-                                                    <action selector="showResultsButtonTap:" destination="fht-5A-6nU" eventType="touchUpInside" id="h68-20-65h"/>
+                                                    <action selector="resultButton:" destination="fht-5A-6nU" eventType="touchUpInside" id="C9P-hZ-TAb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1032,7 +1032,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2h-9m-HvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2239.1999999999998" y="1624.1379310344828"/>
+            <point key="canvasLocation" x="-1273" y="1623"/>
         </scene>
         <!--Inbox View Controller-->
         <scene sceneID="FBU-jN-KKM">

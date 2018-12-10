@@ -52,7 +52,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
-                           image: arrayOfCellData[indexPath.row].roomPhoto[1])
+                           image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
         
        
         cell.numberOfStar.text = "★★★★★"

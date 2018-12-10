@@ -19,6 +19,8 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     var arrayOfCellData: Listing = []
     var newArrayOfCellData: Listing = []
     var searchText: String?
+    var adultGuestNumber = 0
+    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -50,6 +52,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
             
             
         }
+        print("adultGuestNumber: ", adultGuestNumber)
         print("newArrayOfCellData: ",newArrayOfCellData)
         tableView.reloadData()
         citySearchSliderBar.resignFirstResponder()
@@ -103,14 +106,14 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
           
          
-            return tableView.bounds.width + 20.0
+            return tableView.bounds.width + 32.5
           
         } else {
             return UITableView.automaticDimension
             
         }
     }
-    
+
 }
 
 
@@ -141,14 +144,14 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
-                           image: arrayOfCellData[indexPath.row].roomPhoto[1])
+                           image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
             
             } else if  newArrayOfCellData.count > 0 {
             cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
                            city: newArrayOfCellData[indexPath.row].city,
                            roomPriceInfo: newArrayOfCellData[indexPath.row].price,
                            roomTitle: newArrayOfCellData[indexPath.row].roomName,
-                           image: newArrayOfCellData[indexPath.row].roomPhoto[1])
+                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
             
             newArrayOfCellData.removeAll()
             
@@ -182,6 +185,7 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
    
         // delegate?.didSelectRoom(data)
     }
+    
 }
 
 

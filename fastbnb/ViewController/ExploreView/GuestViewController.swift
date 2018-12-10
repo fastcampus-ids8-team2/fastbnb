@@ -25,6 +25,8 @@ class GuestViewController: UIViewController {
     @IBOutlet private weak var childrenNumberLable: UILabel!
     @IBOutlet private weak var infantNumberLable: UILabel!
     
+    let toExploreViewController = "toExploreViewController"
+    
     var adultLabelNumber = 1
     var childrenLabelNumber = 0
     var infantLabelNumber = 0
@@ -32,6 +34,7 @@ class GuestViewController: UIViewController {
     var arrayOfCellData: Listing = []
     var arrayOfNewData: Listing = []
     
+    var exploreVC: ExploreViewController?
     
     @IBOutlet weak var masterGuestView: UIView!
     override func viewDidLoad() {
@@ -49,22 +52,33 @@ class GuestViewController: UIViewController {
      
     }
     
-    // Mark: showButton for the result search
-
-    @IBAction func showResultsButtonTap(_ sender: Any) {
+    
+    @IBAction func resultButton(_ sender: UIButton) {
         
-//        for i in 0...arrayOfCellData.count {
-//            if adultLabelNumber >= arrayOfCellData[i].personCapacity {
-//                arrayOfNewData.append(arrayOfCellData[i])
-//                
-//            }
-//        }
-//        
-        
+        exploreVC?.adultGuestNumber = adultLabelNumber
+        print(exploreVC?.adultGuestNumber as Any)
         dismiss(animated: true, completion: nil)
         
-        
     }
+    
+    
+    // Mark: showButton for the result search
+
+   
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == toExploreViewController {
+//            let exploreVC = segue.destination as! ExploreViewController
+//            exploreVC.adultGuestNumber = adultLabelNumber
+//
+//        }
+//    }
+    
+    
+//    @IBAction func showResultsButtonTap(_ sender: Any) {
+//
+//
+//        dismiss(animated: true, completion: nil)
+//    }
     
     private func masterViewSetUp() {
         masterGuestView.layer.cornerRadius = 10
