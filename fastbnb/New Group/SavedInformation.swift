@@ -22,11 +22,11 @@ struct SavedRoom: Codable {
     let city: String
     let price: Int
     let lat, lng: Double
+    let roomInfo1, roomInfo2, roomInfo3, roomInfo4: String
     let createdAt: String
     let amenities: [String]
-    let roominfo: SavedRoominfo
-    let hostimages: SavedHostimages
-    let bookingInfo: [SavedBookingInfo]
+    let hostimages: SavedRoomHostimages
+    let roomPhotos: [SavedRoomRoomPhoto]
     
     enum CodingKeys: String, CodingKey {
         case pk, bathrooms, bedrooms, beds
@@ -36,35 +36,17 @@ struct SavedRoom: Codable {
         case roomAndPropertyType = "room_and_property_type"
         case publicAddress = "public_address"
         case city, price, lat, lng
+        case roomInfo1 = "room_info_1"
+        case roomInfo2 = "room_info_2"
+        case roomInfo3 = "room_info_3"
+        case roomInfo4 = "room_info_4"
         case createdAt = "created_at"
-        case amenities, roominfo, hostimages
-        case bookingInfo = "booking_info"
+        case amenities, hostimages
+        case roomPhotos = "room_photos"
     }
 }
 
-struct SavedBookingInfo: Codable {
-    let id, room, guest, numGuest: Int
-    let checkInDate, checkOutDate: String
-    let reservedDates: [SavedReservedDate]
-    
-    enum CodingKeys: String, CodingKey {
-        case id, room, guest
-        case numGuest = "num_guest"
-        case checkInDate = "check_in_date"
-        case checkOutDate = "check_out_date"
-        case reservedDates = "reserved_dates"
-    }
-}
-
-struct SavedReservedDate: Codable {
-    let reservedDate: String
-    
-    enum CodingKeys: String, CodingKey {
-        case reservedDate = "reserved_date"
-    }
-}
-
-struct SavedHostimages: Codable {
+struct SavedRoomHostimages: Codable {
     let hostThumbnailURL, hostThumbnailURLSmall: String
     
     enum CodingKeys: String, CodingKey {
@@ -73,21 +55,11 @@ struct SavedHostimages: Codable {
     }
 }
 
-struct SavedRoominfo: Codable {
-    let roomInfo1, roomInfo2, roomInfo3, roomInfo4: String
-    let roomPhoto1, roomPhoto2, roomPhoto3, roomPhoto4: String
-    let roomPhoto5: String
+struct SavedRoomRoomPhoto: Codable {
+    let roomPhoto: String
     
     enum CodingKeys: String, CodingKey {
-        case roomInfo1 = "room_info_1"
-        case roomInfo2 = "room_info_2"
-        case roomInfo3 = "room_info_3"
-        case roomInfo4 = "room_info_4"
-        case roomPhoto1 = "room_photo_1"
-        case roomPhoto2 = "room_photo_2"
-        case roomPhoto3 = "room_photo_3"
-        case roomPhoto4 = "room_photo_4"
-        case roomPhoto5 = "room_photo_5"
+        case roomPhoto = "room_photo"
     }
 }
 
@@ -99,14 +71,20 @@ final class SavedRoomData {
         guard let url = URL(string: "https://backends.xyz/api/user/saved/") else { return }
         
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer c02dcc25e4abeef0f2500302b02e647155222f79"
+            "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
         ]
         
         Alamofire.request(url, method: .get, headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
-                let savedRoomData = try! JSONDecoder().decode(SavedRooms.self, from: data)
-                self.arrayOfData = savedRoomData
+                do {
+                    let savedRoomData = try JSONDecoder().decode(SavedRooms.self, from: data)
+                    self.arrayOfData = savedRoomData
+                } catch {
+                    print("[[\(error.localizedDescription)]]")
+                    self.arrayOfData = []
+                }
+                
             case .failure(let error):
                 print ("failed get logs: \(error)")
             }
