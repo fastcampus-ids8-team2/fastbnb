@@ -8,17 +8,22 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UISearchBarDelegate {
 
     var arrayOfCellData: Listing = []
-    
+    @IBOutlet weak var searchBarForDetailVC: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    
+    var searchText: String?
+    var newArrayOfCellData: Listing = []
+    var emptyArrayOfCellData: Listing = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         arrayOfCellData = ListingData.shared.arrayOfCellData
+        searchBarForDetailVC.delegate = self
 //        arrayOfCellData.reverse()
-        
         
         
         tableView.rowHeight = 300
@@ -27,6 +32,24 @@ class DetailViewController: UIViewController {
         
     }
     
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.searchText = searchBar.text ?? ""
+        
+        for i in 0...arrayOfCellData.count - 1 {
+            if self.searchText == arrayOfCellData[i].city {
+                arrayOfCellData.append(self.arrayOfCellData[i])
+        }
+        
+            DispatchQueue.main.async {
+//                print("newArrayOfCellData: ",self.newArrayOfCellData)
+                self.tableView.reloadData()
+                self.searchBarForDetailVC.resignFirstResponder()
+            }
+        
+        }
+        
+    }
 
 
  
@@ -47,14 +70,25 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
       
         
-        
         cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
         
-       
+        
+//        else if newArrayOfCellData.count >= 0 {
+//            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
+//                           city: newArrayOfCellData[indexPath.row].city,
+//                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
+//                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
+//                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
+//
+//
+//        }
+        
+        
+        
         cell.numberOfStar.text = "★★★★★"
         let randomNumber = Int.random(in: 0...500)
         cell.numberOfReview.text = "\(randomNumber)"

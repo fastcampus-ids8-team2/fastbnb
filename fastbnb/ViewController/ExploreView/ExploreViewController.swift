@@ -33,7 +33,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         citySearchSliderBar.delegate = self
         arrayOfCellData = ListingData.shared.arrayOfCellData
-//        arrayOfCellData.reverse()
+
         
        
         
@@ -46,14 +46,14 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         self.searchText = searchBar.text ?? ""
         
         for i in 0...arrayOfCellData.count - 1 {
-            if self.searchText == arrayOfCellData[i].city {
-            newArrayOfCellData.append(arrayOfCellData[i])
+            if self.searchText == arrayOfCellData[i].city && adultGuestNumber >= arrayOfCellData[i].personCapacity {
+                newArrayOfCellData.append(self.arrayOfCellData[i])
             }
             
             
         }
         print("adultGuestNumber: ", adultGuestNumber)
-//        print("newArrayOfCellData: ",newArrayOfCellData)
+        print("newArrayOfCellData: ",newArrayOfCellData)
         tableView.reloadData()
         citySearchSliderBar.resignFirstResponder()
     }
@@ -100,7 +100,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
             if let cell = cell as? HomesAroundTheWorldTableViewCell {
                 cell.collectionView.dataSource = self
                 cell.collectionView.reloadData()
-                cell.collectionView.isScrollEnabled = false
+                cell.collectionView.isScrollEnabled = true
                 cell.collectionView.delegate = self
                 
                 

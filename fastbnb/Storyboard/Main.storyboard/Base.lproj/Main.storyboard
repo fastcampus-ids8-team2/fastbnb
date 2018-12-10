@@ -324,6 +324,7 @@
                         <viewLayoutGuide key="safeArea" id="SKc-VN-FMh"/>
                     </view>
                     <connections>
+                        <outlet property="searchBarForDetailVC" destination="AZK-cN-ygy" id="zut-xH-DyH"/>
                         <outlet property="tableView" destination="hIW-mG-F53" id="H8W-2U-xMg"/>
                     </connections>
                 </viewController>
@@ -773,15 +774,15 @@
         <scene sceneID="S7x-Ue-6hK">
             <objects>
                 <viewController storyboardIdentifier="guestViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="fht-5A-6nU" customClass="GuestViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="CsF-TY-Dqj">
+                    <view key="view" contentMode="scaleToFill" id="CsF-TY-Dqj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-z7-Xib" userLabel="MasterGuestView">
-                                <rect key="frame" x="22" y="68" width="331" height="275"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-z7-Xib" userLabel="MasterGuestView">
+                                <rect key="frame" x="22" y="68" width="331" height="324"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-hp-gxp" userLabel="GeustsView">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="275"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-hp-gxp" userLabel="GeustsView">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="324"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Guests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2r-WW-z7y">
                                                 <rect key="frame" x="138" y="8" width="54" height="20.5"/>
