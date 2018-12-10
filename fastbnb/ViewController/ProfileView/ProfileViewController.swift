@@ -25,6 +25,11 @@ class ProfileViewController: UITableViewController{
         ("피드백 남기기","","profileCard.png")
     ]
     
+//    var topdataset = [
+//    ("test", "테스트", "profileBell.png"),
+//    ("test2", "입니다", "profileBell.png")
+//    ]
+    
     
     
     
@@ -42,6 +47,22 @@ class ProfileViewController: UITableViewController{
         }
         return datalist
     }()
+//
+//    lazy var toplist: [TopProfileList] = {
+//        var datalist = [TopProfileList]()
+//
+//
+//        for (toptitle, topexplain, topicon) in self.topdataset {
+//            let mvo = TopProfileList()
+//            mvo.toptitle = toptitle
+//            mvo.topexplain = topexplain
+//            mvo.topicon = topicon
+//            topdatalist.append(mvo)
+//
+//        }
+//        return topdatalist
+//    }()
+
 
     
     override func viewDidLoad() {
@@ -59,11 +80,15 @@ class ProfileViewController: UITableViewController{
         let row = self.list[indexPath.row]
         //
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! ProfileCell
+//        let topcell = tableView.dequeueReusableCell(withIdentifier: "TopListCell") as! TopProfileCell
         
         let title = cell.viewWithTag(101) as? UILabel
         let explain = cell.viewWithTag(102) as? UILabel
         cell.title?.text = row.title
         
+//        let toptitle = cell.viewWithTag(103) as? UILabel
+//        let topexplain = cell.viewWithTag(104) as? UILabel
+//
         
         cell.title?.text = row.title
         cell.explain?.text = row.explain
@@ -75,11 +100,43 @@ class ProfileViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+         tableView.deselectRow(at: indexPath, animated: true)
         NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
+        
+        switch indexPath.row {
+            
+                    case 0: self.performSegue(withIdentifier: "Notification", sender: nil)
+            
+                    case 1: self.performSegue(withIdentifier: "InviteFriend", sender: nil)
+            
+                    case 2: self.performSegue(withIdentifier: "RecommendHosts", sender: nil)
+            
+                    case 3: self.performSegue(withIdentifier: "TravelCreditsAndCoupons", sender: nil)
+            
+                    case 4: self.performSegue(withIdentifier: "Payment", sender: nil)
+            
+                    case 5: self.performSegue(withIdentifier: "Setting", sender: nil)
+            
+                    case 6: self.performSegue(withIdentifier: "Notification", sender: nil)
+            
+                    case 7: self.performSegue(withIdentifier: "InviteFriend", sender: nil)
+            
+                    case 8: self.performSegue(withIdentifier: "RecommendHosts", sender: nil)
+            
+                    case 9: self.performSegue(withIdentifier: "LeaveFeedback", sender: nil)
+            
+      
+            
+            
+            
+            
+                    default:
+            
+                        return
+        
     }
     
-    
+    }
     
     
 }

@@ -48,6 +48,8 @@
 		7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29C621B7199500AA44F6 /* SettingTableViewController.swift */; };
 		7E0E29C921B719A100AA44F6 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29C821B719A100AA44F6 /* SettingCell.swift */; };
 		7E0E29CB21B719BA00AA44F6 /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29CA21B719BA00AA44F6 /* SettingList.swift */; };
+		7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */; };
+		7E10273121BDBC4200EB33A7 /* TopProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E10273021BDBC4200EB33A7 /* TopProfileCell.swift */; };
 		7E19C65421B017C500684D18 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65321B017C500684D18 /* ProfileCell.swift */; };
 		7E19C65621B01A2100684D18 /* ProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65521B01A2100684D18 /* ProfileList.swift */; };
 		7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C6A121B06E4200684D18 /* ProfileButton.swift */; };
@@ -99,6 +101,8 @@
 		7E0E29C621B7199500AA44F6 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		7E0E29C821B719A100AA44F6 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 		7E0E29CA21B719BA00AA44F6 /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
+		7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileList.swift; sourceTree = "<group>"; };
+		7E10273021BDBC4200EB33A7 /* TopProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileCell.swift; sourceTree = "<group>"; };
 		7E19C65321B017C500684D18 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		7E19C65521B01A2100684D18 /* ProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileList.swift; sourceTree = "<group>"; };
 		7E19C6A121B06E4200684D18 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
 				7E0E29BE21B714B400AA44F6 /* RecommendHosts */,
 				7E0E29C521B7197D00AA44F6 /* Setting */,
+				7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */,
+				7E10273021BDBC4200EB33A7 /* TopProfileCell.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -501,11 +507,8 @@
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
-
 				6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */,
-
 				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
-
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */,
 				6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */,
@@ -520,6 +523,8 @@
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
 				7E0E29C021B714D400AA44F6 /* RecommendHostsTableViewController.swift in Sources */,
 				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
+				7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */,
+				7E10273121BDBC4200EB33A7 /* TopProfileCell.swift in Sources */,
 				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
 				6A1CE40821AFDF7E00C30FCF /* CustomCalendarCell.swift in Sources */,
 				7E19C65621B01A2100684D18 /* ProfileList.swift in Sources */,

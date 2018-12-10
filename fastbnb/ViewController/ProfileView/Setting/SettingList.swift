@@ -11,3 +11,4 @@ import Foundation
 class SettingList {
  var title: String?
 }
+
