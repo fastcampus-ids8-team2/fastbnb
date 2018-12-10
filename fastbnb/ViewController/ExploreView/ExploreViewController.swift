@@ -50,7 +50,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
             
             
         }
-//        print("newArrayOfCellData: ",newArrayOfCellData)
+        print("newArrayOfCellData: ",newArrayOfCellData)
         tableView.reloadData()
         citySearchSliderBar.resignFirstResponder()
     }

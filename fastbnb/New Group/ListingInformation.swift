@@ -77,7 +77,7 @@ final class ListingData {
         guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
         guard let data = try? Data(contentsOf: url) else { return }
         
-        let listingData = try! JSONDecoder().decode(Listing.self, from: data)
+        guard let listingData = try? JSONDecoder().decode(Listing.self, from: data) else { return }
         arrayOfCellData = listingData
     
 
