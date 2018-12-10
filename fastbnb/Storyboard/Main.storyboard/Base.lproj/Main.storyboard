@@ -1302,9 +1302,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cityNameLabel" destination="tMM-3v-TBL" id="rTo-MQ-Rdc"/>
-                                            <outlet property="itemSavedImageView" destination="8pj-Ia-ACA" id="KR0-iP-0cL"/>
-                                            <outlet property="numberOfSavedCityLabel" destination="eIh-D2-BB3" id="PGN-zJ-dqx"/>
+                                            <outlet property="cityImageView" destination="8pj-Ia-ACA" id="hMQ-aD-pOa"/>
+                                            <outlet property="countLabel" destination="eIh-D2-BB3" id="8iu-ic-14b"/>
+                                            <outlet property="nameLabel" destination="tMM-3v-TBL" id="Aey-oF-zXv"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
