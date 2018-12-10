@@ -8,9 +8,9 @@
 
 import UIKit
 //
-//protocol  {
-//    <#requirements#>
-//}
+protocol  SelectNumberDelegate: class {
+    func selectNumberOfAdult(number: Int)
+}
 
 class GuestViewController: UIViewController {
 
@@ -35,6 +35,7 @@ class GuestViewController: UIViewController {
     var arrayOfNewData: Listing = []
     
     var exploreVC: ExploreViewController?
+    var guestViewDelegate: SelectNumberDelegate?
     
     @IBOutlet weak var masterGuestView: UIView!
     override func viewDidLoad() {
@@ -55,8 +56,9 @@ class GuestViewController: UIViewController {
     
     @IBAction func resultButton(_ sender: UIButton) {
         
-        exploreVC?.adultGuestNumber = adultLabelNumber
-        print(exploreVC?.adultGuestNumber as Any)
+//        exploreVC?.adultGuestNumber = adultLabelNumber
+//        print(exploreVC?.adultGuestNumber as Any)
+      guestViewDelegate?.selectNumberOfAdult(number: adultLabelNumber)
         dismiss(animated: true, completion: nil)
         
     }
@@ -139,3 +141,5 @@ class GuestViewController: UIViewController {
     
     
 }
+
+

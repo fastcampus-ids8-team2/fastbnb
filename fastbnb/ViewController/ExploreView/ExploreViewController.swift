@@ -33,7 +33,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         citySearchSliderBar.delegate = self
         arrayOfCellData = ListingData.shared.arrayOfCellData
-        arrayOfCellData.reverse()
+//        arrayOfCellData.reverse()
         
        
         
@@ -53,11 +53,18 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
             
         }
         print("adultGuestNumber: ", adultGuestNumber)
-        print("newArrayOfCellData: ",newArrayOfCellData)
+//        print("newArrayOfCellData: ",newArrayOfCellData)
         tableView.reloadData()
         citySearchSliderBar.resignFirstResponder()
     }
     
+    
+    @IBAction func didTapGestViewController(_ sender: UIButton) {
+        let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
+        guestViewVC.guestViewDelegate = self
+        present(guestViewVC, animated: true, completion: nil)
+        
+    }
     
     
 }
@@ -113,6 +120,8 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
             
         }
     }
+    
+
 
 }
 
@@ -188,9 +197,11 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
     
 }
 
+extension ExploreViewController: SelectNumberDelegate {
+    func selectNumberOfAdult(number: Int) {
+        adultGuestNumber = number
+        print(adultGuestNumber)
+    }
 
-// func didSelectRoom(data) {
-//    // performSegue()
-//    // vc.data = data
-// }
-
+    
+}
