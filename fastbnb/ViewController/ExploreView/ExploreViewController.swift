@@ -141,14 +141,14 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
-                           image: arrayOfCellData[indexPath.row].roominfo.roomPhoto1)
+                           image: arrayOfCellData[indexPath.row].roomPhoto[1])
             
             } else if  newArrayOfCellData.count > 0 {
             cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
                            city: newArrayOfCellData[indexPath.row].city,
                            roomPriceInfo: newArrayOfCellData[indexPath.row].price,
                            roomTitle: newArrayOfCellData[indexPath.row].roomName,
-                           image: newArrayOfCellData[indexPath.row].roominfo.roomPhoto1)
+                           image: newArrayOfCellData[indexPath.row].roomPhoto[1])
             
             newArrayOfCellData.removeAll()
             
