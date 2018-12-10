@@ -17,39 +17,9 @@ final class SavedItemCell: UITableViewCell {
     
     // MARK: Properties
     
-    @IBOutlet private weak var itemSavedImageView: UIImageView!
-    @IBOutlet private weak var cityNameLabel: UILabel!
-    @IBOutlet private weak var numberOfSavedCityLabel: UILabel!
+    @IBOutlet weak var cityImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var countLabel: UILabel!
     
     static let identifier: String = "savedItemCell"
-    
-    
-    var cityName: String?
-    var numberSaved: Int?
-    
-        
-    
-    // MARK: Action Handler
-    
-    func setupCell(cityName: String, savedImageName: String) {
-        cityNameLabel.text = cityName
-        itemSavedImageView.image = UIImage(named: savedImageName)
-//        numberOfSavedCityLabel.text = ""
-        print("cell has been setup")
-        
-    }
-    
-    func setupCell2(cityName: String, savedImageName: String, numberSaved: Int) {
-        cityNameLabel.text = cityName
-        itemSavedImageView.image = UIImage(named: savedImageName)
-        if numberSaved == 0 {
-            numberOfSavedCityLabel.text = ""
-        } else if numberSaved == 1 {
-            numberOfSavedCityLabel.text = "\(numberSaved) Home"
-        } else if numberSaved > 1 {
-            numberOfSavedCityLabel.text = "\(numberSaved) Homes"
-        }
-        
-    }
-
 }
