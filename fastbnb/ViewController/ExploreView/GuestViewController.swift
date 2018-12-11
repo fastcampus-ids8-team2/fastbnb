@@ -31,8 +31,8 @@ class GuestViewController: UIViewController {
     var childrenLabelNumber = 0
     var infantLabelNumber = 0
     
-    var arrayOfCellData: Listing = []
-    var arrayOfNewData: Listing = []
+    var arrayOfCellData: [Result] = []
+    var arrayOfNewData: [Result] = []
     
     var exploreVC: ExploreViewController?
     var guestViewDelegate: SelectNumberDelegate?

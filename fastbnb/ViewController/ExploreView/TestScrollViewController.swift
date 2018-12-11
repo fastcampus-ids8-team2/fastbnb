@@ -42,6 +42,14 @@ class TestScrollViewController: UIViewController {
 
 extension TestScrollViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        switch tableView.tag {
+//        case 0:
+//            return 1
+//        case 1:
+//            return 2
+//        default:
+//            <#code#>
+//        }
         return 10
     }
     

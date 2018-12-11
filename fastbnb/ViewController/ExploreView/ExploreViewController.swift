@@ -16,8 +16,8 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
    
     
     @IBOutlet weak var guestButton: UIButton!
-    var arrayOfCellData: Listing = []
-    var newArrayOfCellData: Listing = []
+    var arrayOfCellData: [Result] = []
+    var newArrayOfCellData: [Result] = []
     var searchText: String?
     var adultGuestNumber = 0
     
@@ -58,7 +58,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         citySearchSliderBar.resignFirstResponder()
     }
     
-    
+    // guest number select method
     @IBAction func didTapGestViewController(_ sender: UIButton) {
         let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
         guestViewVC.guestViewDelegate = self
@@ -77,6 +77,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
 extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
+        
         
     }
     

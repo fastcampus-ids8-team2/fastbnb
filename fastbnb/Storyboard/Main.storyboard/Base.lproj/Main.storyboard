@@ -275,6 +275,7 @@
                                             <outlet property="roomName" destination="bNy-Zn-nAX" id="2cU-ak-7to"/>
                                             <outlet property="roomPrice" destination="wl2-jw-GOs" id="Ez3-fu-nN3"/>
                                             <outlet property="roomType" destination="s5f-fo-DOd" id="50A-li-z0g"/>
+                                            <segue destination="CgU-vA-kKC" kind="show" id="Sll-6W-XI3"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -297,6 +298,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27n-dP-cYB">
                                         <rect key="frame" x="79" y="0.0" width="40" height="30"/>
                                         <state key="normal" title="Dates"/>
+                                        <connections>
+                                            <action selector="didTapGestViewController:" destination="nmP-Cf-n8Y" eventType="touchUpInside" id="tZr-b1-TzW"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzp-LG-qd6">
                                         <rect key="frame" x="149" y="0.0" width="35" height="30"/>
@@ -332,6 +336,72 @@
             </objects>
             <point key="canvasLocation" x="-5108" y="2450.8245877061472"/>
         </scene>
+        <!--Booking View Controller-->
+        <scene sceneID="hlR-zZ-BCA">
+            <objects>
+                <viewController storyboardIdentifier="BookingViewController" id="CgU-vA-kKC" customClass="BookingViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iMM-nb-3kt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MK8-Wq-WXi">
+                                <rect key="frame" x="0.0" y="540" width="375" height="78"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="xzb-Ir-gWS">
+                                        <rect key="frame" x="29" y="18.5" width="118" height="41"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="₩80000 / Night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShI-nl-8VG">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9g3-gt-m2L">
+                                                <rect key="frame" x="0.0" y="20.5" width="75.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkZ-li-wic">
+                                        <rect key="frame" x="204" y="18" width="134" height="45"/>
+                                        <color key="backgroundColor" red="1" green="0.48982899279999997" blue="0.44681109149999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Check availability">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wkZ-li-wic" secondAttribute="trailing" constant="37" id="9I3-fp-RYx"/>
+                                    <constraint firstItem="xzb-Ir-gWS" firstAttribute="centerY" secondItem="MK8-Wq-WXi" secondAttribute="centerY" id="9Zs-Ee-p7l"/>
+                                    <constraint firstItem="xzb-Ir-gWS" firstAttribute="centerX" secondItem="MK8-Wq-WXi" secondAttribute="centerX" constant="-99.5" id="GSS-yQ-IrD"/>
+                                    <constraint firstItem="wkZ-li-wic" firstAttribute="centerY" secondItem="MK8-Wq-WXi" secondAttribute="centerY" constant="1.5" id="IbL-sa-iTI"/>
+                                    <constraint firstAttribute="height" constant="78" id="KGq-t3-OBx"/>
+                                    <constraint firstItem="xzb-Ir-gWS" firstAttribute="top" secondItem="wkZ-li-wic" secondAttribute="top" id="KXI-va-w92"/>
+                                    <constraint firstItem="wkZ-li-wic" firstAttribute="leading" secondItem="xzb-Ir-gWS" secondAttribute="trailing" constant="57" id="UD9-ta-7tN"/>
+                                    <constraint firstItem="xzb-Ir-gWS" firstAttribute="leading" secondItem="MK8-Wq-WXi" secondAttribute="leading" constant="29" id="gAU-fl-JIY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MK8-Wq-WXi" firstAttribute="trailing" secondItem="WJp-2V-w8o" secondAttribute="trailing" id="FWi-zs-tJP"/>
+                            <constraint firstItem="MK8-Wq-WXi" firstAttribute="leading" secondItem="WJp-2V-w8o" secondAttribute="leading" id="Fd1-mk-4co"/>
+                            <constraint firstItem="MK8-Wq-WXi" firstAttribute="bottom" secondItem="WJp-2V-w8o" secondAttribute="bottom" id="PmF-Wq-IfD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WJp-2V-w8o"/>
+                    </view>
+                    <connections>
+                        <outlet property="checkAvailability" destination="wkZ-li-wic" id="RtW-UT-iK8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARr-bF-D3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5108" y="3152.4737631184412"/>
+        </scene>
         <!--Test Scroll View Controller-->
         <scene sceneID="r9K-pc-N1e">
             <objects>
@@ -348,6 +418,14 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LjS-AY-fr9" id="R7i-Xh-lsm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Lkk-PR-RdB">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lkk-PR-RdB" id="A74-eW-NdD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>

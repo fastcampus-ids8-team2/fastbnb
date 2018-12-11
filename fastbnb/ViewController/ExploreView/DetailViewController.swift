@@ -10,20 +10,23 @@ import UIKit
 
 class DetailViewController: UIViewController, UISearchBarDelegate {
 
-    var arrayOfCellData: Listing = []
+    var arrayOfCellData: [Result] = []
     @IBOutlet weak var searchBarForDetailVC: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
     var searchText: String?
-    var newArrayOfCellData: Listing = []
-    var emptyArrayOfCellData: Listing = []
+    var newArrayOfCellData: [Result] = []
+    var emptyArrayOfCellData: [Result] = []
+    
+    // number from guestViewcontroller
+    var adultGuestNumber = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         arrayOfCellData = ListingData.shared.arrayOfCellData
         searchBarForDetailVC.delegate = self
-//        arrayOfCellData.reverse()
+
         
         
         tableView.rowHeight = 300
@@ -48,6 +51,14 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
             }
         
         }
+        
+    }
+    
+    // guest number select method
+    @IBAction func didTapGestViewController(_ sender: UIButton) {
+        let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
+        guestViewVC.guestViewDelegate = self
+        present(guestViewVC, animated: true, completion: nil)
         
     }
 
@@ -76,19 +87,6 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
         
-        
-//        else if newArrayOfCellData.count >= 0 {
-//            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
-//                           city: newArrayOfCellData[indexPath.row].city,
-//                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
-//                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
-//                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
-//
-//
-//        }
-        
-        
-        
         cell.numberOfStar.text = "★★★★★"
         let randomNumber = Int.random(in: 0...500)
         cell.numberOfReview.text = "\(randomNumber)"
@@ -96,6 +94,20 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
         
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
+        
+    }
+    
+    
+}
+
+extension DetailViewController: SelectNumberDelegate {
+    func selectNumberOfAdult(number: Int) {
+        adultGuestNumber = number
+        print(adultGuestNumber)
     }
     
     
