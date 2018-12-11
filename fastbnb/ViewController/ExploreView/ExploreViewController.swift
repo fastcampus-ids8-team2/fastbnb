@@ -66,6 +66,10 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         
     }
     
+    @IBAction func unwindToDetailViewController(_ unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
     
 }
 
@@ -163,6 +167,8 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
                            roomTitle: newArrayOfCellData[indexPath.row].roomName,
                            image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
             
+            
+            
             newArrayOfCellData.removeAll()
             
             //bug for the second image is showing up. Data is empty, yet it shows 마포구 house at the second column
@@ -170,9 +176,20 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
             
         }
         cell.dot.text = "•"
-        cell.numberOfStar.text = "★★★★★"
+        
+        let starRandomNumber = Int.random(in: 3...5)
+        
+        if starRandomNumber == 3 {
+            cell.numberOfStar.text = "⭐️⭐️⭐️"
+        } else if starRandomNumber == 4 {
+            cell.numberOfStar.text = "⭐️⭐️⭐️⭐️"
+        } else if starRandomNumber == 5 {
+            cell.numberOfStar.text = "⭐️⭐️⭐️⭐️⭐️"
+        }
+        
         cell.numberOfStarLabel.text = "\(Int.random(in: 0 ..< 500))"
-
+        cell.pk = arrayOfCellData[indexPath.row].pk
+        
         
         return cell
     }
@@ -190,10 +207,14 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.item,"this has been tapped")
         
-     
         
-   
-        // delegate?.didSelectRoom(data)
+        let bookingVC = storyboard?.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
+        
+        bookingVC.data = arrayOfCellData[indexPath.row]
+        
+        //MARK:  네비게이션 컴트롤러가 앞에 있을 때
+        navigationController?.pushViewController(bookingVC, animated: true)
+    
     }
     
 }

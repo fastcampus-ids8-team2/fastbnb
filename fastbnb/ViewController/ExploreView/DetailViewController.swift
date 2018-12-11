@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class DetailViewController: UIViewController, UISearchBarDelegate {
 
     var arrayOfCellData: [Result] = []
@@ -17,6 +18,9 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
     var searchText: String?
     var newArrayOfCellData: [Result] = []
     var emptyArrayOfCellData: [Result] = []
+    
+
+    
     
     // number from guestViewcontroller
     var adultGuestNumber = 0
@@ -58,8 +62,16 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
     @IBAction func didTapGestViewController(_ sender: UIButton) {
         let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
         guestViewVC.guestViewDelegate = self
+        
+        
+        
+        
         present(guestViewVC, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func unwindToDetailViewController(_ unwindSegue: UIStoryboardSegue) {
+
     }
 
 
@@ -87,7 +99,16 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
         
-        cell.numberOfStar.text = "★★★★★"
+        let starRandomNumber = Int.random(in: 3...5)
+        
+        if starRandomNumber == 3 {
+            cell.numberOfStar.text = "⭐️⭐️⭐️"
+        } else if starRandomNumber == 4 {
+            cell.numberOfStar.text = "⭐️⭐️⭐️⭐️"
+        } else if starRandomNumber == 5 {
+            cell.numberOfStar.text = "⭐️⭐️⭐️⭐️⭐️"
+        }
+        
         let randomNumber = Int.random(in: 0...500)
         cell.numberOfReview.text = "\(randomNumber)"
         
@@ -97,7 +118,15 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let bookingVC = storyboard?.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
         
+        // passing data to the bookingVC
+        bookingVC.data = arrayOfCellData[indexPath.row]
+        
+//        tableViewSelectDelegate?.indexInformation(indexPath: indexPath)
+        //MARK:  네비게이션 컴트롤러가 앞에 있을 때
+        navigationController?.pushViewController(bookingVC, animated: true)
+
         
     }
     

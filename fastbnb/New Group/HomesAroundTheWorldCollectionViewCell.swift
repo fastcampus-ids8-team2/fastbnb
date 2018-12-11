@@ -24,8 +24,17 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     
     var image: UIImage?
 
+    var pk = Int()
+    
     
 
+    @IBAction func buttonDidTap(_ sender: UIButton) {
+//        print(self)
+        print(pk)
+        
+        
+        //toServer.sendRoomName
+    }
     
     
     
@@ -35,6 +44,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
         cityName.text = city
         roomName.text = roomTitle
         roomPrice.text = "\(roomPriceInfo) per night. Free cancellation"
+        
 
         
         guard let imageUrl = URL(string: image) else { return }

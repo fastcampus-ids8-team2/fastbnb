@@ -29,12 +29,16 @@
 		6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08BC9B21AF79A200266A58 /* ListingInformation.swift */; };
 		6A1CE40821AFDF7E00C30FCF /* CustomCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */; };
 		6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */; };
+		6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */; };
+		6A7F7E1321BFB91200285571 /* BookingImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */; };
 		6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */; };
 		6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F021AB995D00E641D5 /* ExploreViewController.swift */; };
 		6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F221AB999900E641D5 /* TripsViewController.swift */; };
 		6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F421AB99CA00E641D5 /* InboxViewController.swift */; };
 		6AA6300D21B7962000E888AD /* DetailExploreViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */; };
 		6AFAE88E21BF591A003DA76E /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE88D21BF591A003DA76E /* BookingViewController.swift */; };
+		6AFAE89921BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */; };
+		6AFAE89A21BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */; };
 		6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */; };
 		6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */; };
 		6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2E3121B7872200CADD5D /* TestViewController.swift */; };
@@ -84,12 +88,16 @@
 		6A08BC9B21AF79A200266A58 /* ListingInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInformation.swift; sourceTree = "<group>"; };
 		6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarCell.swift; sourceTree = "<group>"; };
 		6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesAroundTheWorldCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingImageTableViewCell.swift; sourceTree = "<group>"; };
+		6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingImageTableViewCell.xib; sourceTree = "<group>"; };
 		6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		6A9374F021AB995D00E641D5 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		6A9374F221AB999900E641D5 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		6A9374F421AB99CA00E641D5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExploreViewTableViewCell.swift; sourceTree = "<group>"; };
 		6AFAE88D21BF591A003DA76E /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRoomHostInfoTableViewCell.swift; sourceTree = "<group>"; };
+		6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingRoomHostInfoTableViewCell.xib; sourceTree = "<group>"; };
 		6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesAroundTheWorldTableViewCell.swift; sourceTree = "<group>"; };
 		6AFF2E2F21B77DDE00CADD5D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		6AFF2E3121B7872200CADD5D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
@@ -215,6 +223,10 @@
 				7E19C65321B017C500684D18 /* ProfileCell.swift */,
 				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
+				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
+				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
+				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
+				6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */,
 			);
 			name = Model;
 			path = "New Group";
@@ -395,6 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */,
+				6A7F7E1321BFB91200285571 /* BookingImageTableViewCell.xib in Resources */,
+				6AFAE89A21BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib in Resources */,
 				2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */,
 				2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */,
 				2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */,
@@ -507,6 +521,7 @@
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
 				7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */,
+				6AFAE89921BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift in Sources */,
 				2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */,
 				6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
@@ -527,6 +542,7 @@
 				2EE2E29221BE311D00B48DDA /* SavedDetailViewController.swift in Sources */,
 				7E0E29C421B714EA00AA44F6 /* RecommendHostsList.swift in Sources */,
 				6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
+				6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */,
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
 				7E0E29C021B714D400AA44F6 /* RecommendHostsTableViewController.swift in Sources */,
 				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,

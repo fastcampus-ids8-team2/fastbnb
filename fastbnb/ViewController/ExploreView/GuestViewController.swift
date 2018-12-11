@@ -8,7 +8,7 @@
 
 import UIKit
 //
-protocol  SelectNumberDelegate: class {
+protocol  SelectNumberDelegate : class{
     func selectNumberOfAdult(number: Int)
 }
 
