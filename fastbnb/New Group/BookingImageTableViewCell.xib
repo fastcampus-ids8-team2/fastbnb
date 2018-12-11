@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="107" id="KGk-i7-Jjw" customClass="BookingImageTableViewCell" customModule="fastbnb" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="107"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="BookingImageTableViewCell" customModule="fastbnb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="116"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="106.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="BookingImageTableViewCell" image="airbnbImage" translatesAutoresizingMaskIntoConstraints="NO" id="2T8-eg-kJv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="106.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
                     </imageView>
                 </subviews>
                 <constraints>
@@ -34,7 +34,7 @@
             <connections>
                 <outlet property="mainImage" destination="2T8-eg-kJv" id="ycS-IA-F0r"/>
             </connections>
-            <point key="canvasLocation" x="94" y="104"/>
+            <point key="canvasLocation" x="90.400000000000006" y="107.94602698650675"/>
         </tableViewCell>
     </objects>
     <resources>

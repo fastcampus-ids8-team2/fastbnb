@@ -9,63 +9,6 @@
 import Foundation
 
 
-//typealias Listing = [ListingElement]
-//
-//struct ListingElement: Codable {
-//    let pk, bathrooms, bedrooms, beds: Int
-//    let personCapacity: Int
-//    let roomName: String
-//    let roomType: RoomType
-//    let roomAndPropertyType, publicAddress, city: String
-//    let price: Int
-//    let lat, lng: Double
-//    let roomInfo1, roomInfo2, roomInfo3, roomInfo4: String
-//    let createdAt: String
-//    let amenities: [String]
-//    let hostimages: Hostimages
-//    let roomPhotos: [RoomPhoto]
-//
-//    enum CodingKeys: String, CodingKey {
-//        case pk, bathrooms, bedrooms, beds
-//        case personCapacity = "person_capacity"
-//        case roomName = "room_name"
-//        case roomType = "room_type"
-//        case roomAndPropertyType = "room_and_property_type"
-//        case publicAddress = "public_address"
-//        case city, price, lat, lng
-//        case roomInfo1 = "room_info_1"
-//        case roomInfo2 = "room_info_2"
-//        case roomInfo3 = "room_info_3"
-//        case roomInfo4 = "room_info_4"
-//        case createdAt = "created_at"
-//        case amenities, hostimages
-//        case roomPhotos = "room_photos"
-//    }
-//}
-//
-//struct Hostimages: Codable {
-//    let hostThumbnailURL, hostThumbnailURLSmall: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case hostThumbnailURL = "host_thumbnail_url"
-//        case hostThumbnailURLSmall = "host_thumbnail_url_small"
-//    }
-//}
-//
-//struct RoomPhoto: Codable {
-//    let roomPhoto: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case roomPhoto = "room_photo"
-//    }
-//}
-//
-//enum RoomType: String, Codable {
-//    case 개인실 = "개인실"
-//    case 다인실 = "다인실"
-//    case 집전체 = "집 전체"
-//}
-
 struct Listing: Codable {
     let count: Int
     let next: String
