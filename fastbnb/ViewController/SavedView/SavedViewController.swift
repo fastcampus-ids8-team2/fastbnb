@@ -34,3 +34,10 @@ extension SavedViewController: UITableViewDataSource {
         return cell
     }
 }
+
+extension SavedViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        SavedRoomData.shared.selectRow = indexPath.row
+        return indexPath
+    }
+}

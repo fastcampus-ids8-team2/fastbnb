@@ -21,6 +21,15 @@ class SavedDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let room = SavedRoomData.shared.arrayOfData[SavedRoomData.shared.selectRow]
+        label1.text = room.roomAndPropertyType
+        label2.text = room.publicAddress
+        label3.text = "\(room.personCapacity) Available Homes"
+        label4.text = "\(room.bathrooms) bathrooms, \(room.bedrooms) bedrooms, \(room.beds) beds"
+        label5.text = room.roomName
+        label6.text = "$\(Int.random(in: 10...1000)) per night"
+        label7.text = "\(String(repeating: "⭐️", count: Int.random(in: 1...5))) \(Int.random(in: 1...1000)) \(Bool.random() ? "Superhost" : "")"
     }
 
 }
