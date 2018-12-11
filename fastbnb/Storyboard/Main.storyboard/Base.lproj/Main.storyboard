@@ -1042,14 +1042,103 @@
                     <view key="view" contentMode="scaleToFill" id="bGq-eh-WLm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big  Bear Lake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knq-US-mHe">
+                                <rect key="frame" x="30" y="94" width="182.5" height="36"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AnyTime, 1 Guest, Invite only" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xeb-BL-BiU">
+                                <rect key="frame" x="30" y="140" width="196" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMs-A4-cLz">
+                                <rect key="frame" x="16" y="188" width="343" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="4n7-y6-vxm"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Available Homes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JV-MF-KjU">
+                                <rect key="frame" x="30" y="219" width="147" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgl-HU-36f">
+                                <rect key="frame" x="30" y="255" width="315" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="uhu-Q3-Qs2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Cabin, 6 Beds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bau-AU-Gm5">
+                                <rect key="frame" x="30" y="420" width="112.5" height="14.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bear Pouse Cabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-51-jCy">
+                                <rect key="frame" x="30" y="439.5" width="199" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100 per night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vX-7q-Eik">
+                                <rect key="frame" x="30" y="476.5" width="101" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️⭐️⭐️⭐️⭐️ 20 Superhost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-zc-Tbm">
+                                <rect key="frame" x="30" y="499.5" width="154" height="13.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cMs-A4-cLz" firstAttribute="top" secondItem="Xeb-BL-BiU" secondAttribute="bottom" constant="30" id="8I7-Ui-oXo"/>
+                            <constraint firstItem="8JV-MF-KjU" firstAttribute="top" secondItem="cMs-A4-cLz" secondAttribute="bottom" constant="30" id="El4-8f-yY5"/>
+                            <constraint firstItem="bau-AU-Gm5" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="G8A-M7-hI8"/>
+                            <constraint firstItem="Knq-US-mHe" firstAttribute="top" secondItem="HnR-lr-Rdd" secondAttribute="top" constant="30" id="IXh-5B-0hV"/>
+                            <constraint firstItem="Knq-US-mHe" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="P0a-vF-PoN"/>
+                            <constraint firstItem="bxu-zc-Tbm" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="R6K-Pd-gXZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cMs-A4-cLz" secondAttribute="trailing" id="UNl-Xo-npL"/>
+                            <constraint firstItem="Xeb-BL-BiU" firstAttribute="top" secondItem="Knq-US-mHe" secondAttribute="bottom" constant="10" id="VK7-1z-STy"/>
+                            <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="rgl-HU-36f" secondAttribute="trailing" constant="30" id="WEc-Yk-GPe"/>
+                            <constraint firstItem="cMs-A4-cLz" firstAttribute="leading" secondItem="bGq-eh-WLm" secondAttribute="leadingMargin" id="Wu1-wc-l9b"/>
+                            <constraint firstItem="5vX-7q-Eik" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="aFv-xQ-tIB"/>
+                            <constraint firstItem="rgl-HU-36f" firstAttribute="top" secondItem="8JV-MF-KjU" secondAttribute="bottom" constant="15" id="cdO-2k-OiC"/>
+                            <constraint firstItem="fzq-51-jCy" firstAttribute="top" secondItem="bau-AU-Gm5" secondAttribute="bottom" constant="5" id="ebd-pe-exw"/>
+                            <constraint firstItem="bau-AU-Gm5" firstAttribute="top" secondItem="rgl-HU-36f" secondAttribute="bottom" constant="15" id="joe-ua-yl1"/>
+                            <constraint firstItem="fzq-51-jCy" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="mde-Xa-FJK"/>
+                            <constraint firstItem="8JV-MF-KjU" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="nZo-it-IeH"/>
+                            <constraint firstItem="5vX-7q-Eik" firstAttribute="top" secondItem="fzq-51-jCy" secondAttribute="bottom" constant="5" id="odS-g1-cO4"/>
+                            <constraint firstItem="rgl-HU-36f" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="rFB-fR-9es"/>
+                            <constraint firstItem="Xeb-BL-BiU" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="s5G-AA-e4y"/>
+                            <constraint firstItem="bxu-zc-Tbm" firstAttribute="top" secondItem="5vX-7q-Eik" secondAttribute="bottom" constant="5" id="t1a-ob-p6X"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HnR-lr-Rdd"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="rgl-HU-36f" id="LGO-9c-oJF"/>
+                        <outlet property="label1" destination="Knq-US-mHe" id="kYI-2e-ktC"/>
+                        <outlet property="label2" destination="Xeb-BL-BiU" id="roe-4v-otq"/>
+                        <outlet property="label3" destination="8JV-MF-KjU" id="xkZ-FZ-c8b"/>
+                        <outlet property="label4" destination="bau-AU-Gm5" id="J8Q-V9-T8g"/>
+                        <outlet property="label5" destination="fzq-51-jCy" id="yRh-cz-Jvm"/>
+                        <outlet property="label6" destination="5vX-7q-Eik" id="Jic-pG-7pD"/>
+                        <outlet property="label7" destination="bxu-zc-Tbm" id="HB8-Qm-fSF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qD6-Bc-oOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-231" y="1621"/>
+            <point key="canvasLocation" x="-231.19999999999999" y="1620.5397301349326"/>
         </scene>
         <!--Inbox View Controller-->
         <scene sceneID="FBU-jN-KKM">

@@ -16,7 +16,6 @@ class SavedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 260
-        print("\(SavedRoomData.shared.arrayOfData)")
     }
 }
 
