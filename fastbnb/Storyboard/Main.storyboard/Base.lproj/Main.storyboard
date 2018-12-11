@@ -1160,7 +1160,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big  Bear Lake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knq-US-mHe">
-                                <rect key="frame" x="30" y="94" width="182.5" height="36"/>
+                                <rect key="frame" x="30" y="94" width="315" height="36"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1196,20 +1196,20 @@
                                 <color key="textColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bear Pouse Cabin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-51-jCy">
-                                <rect key="frame" x="30" y="439.5" width="199" height="32"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bear Pouse Cabin" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzq-51-jCy">
+                                <rect key="frame" x="30" y="439.5" width="315" height="31.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100 per night" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vX-7q-Eik">
-                                <rect key="frame" x="30" y="476.5" width="101" height="18"/>
+                                <rect key="frame" x="30" y="476" width="101" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️⭐️⭐️⭐️⭐️ 20 Superhost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxu-zc-Tbm">
-                                <rect key="frame" x="30" y="499.5" width="154" height="13.5"/>
+                                <rect key="frame" x="30" y="499" width="154" height="13.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1230,6 +1230,8 @@
                             <constraint firstItem="5vX-7q-Eik" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="aFv-xQ-tIB"/>
                             <constraint firstItem="rgl-HU-36f" firstAttribute="top" secondItem="8JV-MF-KjU" secondAttribute="bottom" constant="15" id="cdO-2k-OiC"/>
                             <constraint firstItem="fzq-51-jCy" firstAttribute="top" secondItem="bau-AU-Gm5" secondAttribute="bottom" constant="5" id="ebd-pe-exw"/>
+                            <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="fzq-51-jCy" secondAttribute="trailing" constant="30" id="hKa-xy-bXt"/>
+                            <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="Knq-US-mHe" secondAttribute="trailing" constant="30" id="iGi-rO-gdm"/>
                             <constraint firstItem="bau-AU-Gm5" firstAttribute="top" secondItem="rgl-HU-36f" secondAttribute="bottom" constant="15" id="joe-ua-yl1"/>
                             <constraint firstItem="fzq-51-jCy" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="mde-Xa-FJK"/>
                             <constraint firstItem="8JV-MF-KjU" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="nZo-it-IeH"/>

@@ -66,6 +66,7 @@ struct SavedRoomRoomPhoto: Codable {
 final class SavedRoomData {
     static let shared = SavedRoomData()
     var arrayOfData: SavedRooms = []
+    var selectRow: Int = 0
     
     func getDataFromServer() {
         guard let url = URL(string: "https://backends.xyz/api/user/saved/") else { return }
