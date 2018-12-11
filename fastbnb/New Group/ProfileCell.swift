@@ -2,19 +2,15 @@
 //  ProfileCell.swift
 //  fastbnb
 //
-//  Created by wonsik on 29/11/2018.
+//  Created by wonsik on 12/12/2018.
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
 import UIKit
 
-class ProfileCell: UITableViewCell{
-    
-    @IBOutlet var title: UILabel!
-    @IBOutlet var explain: UILabel!
-    @IBOutlet var icon: UIImageView!
-    
-    
-    
+class ProfileCell: UITableViewCell {
+  
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var explain: UILabel!
+    @IBOutlet weak var icon: UIImageView!
 }
-

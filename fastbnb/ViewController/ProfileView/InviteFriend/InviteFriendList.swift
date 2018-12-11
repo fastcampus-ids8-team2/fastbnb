@@ -8,7 +8,16 @@
 
 import Foundation
 
-class InviteFriendList {
-    var title: String?
+struct InviteFriendList {
+    var title: String
     
 }
+
+
+struct InviteFriendData {
+    let list = [
+        InviteFriendList(title: "나의 여행 크레딧"),
+        InviteFriendList(title: "이용약관 보기")
+    ]
+}
+

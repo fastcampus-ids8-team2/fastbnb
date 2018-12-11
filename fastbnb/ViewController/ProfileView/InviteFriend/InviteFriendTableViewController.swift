@@ -8,52 +8,44 @@
 
 import UIKit
 
-class InviteFriendTableViewController: UITableViewController {
+class InviteFriendViewController: UIViewController{
+   
+    @IBOutlet weak var tableView: UITableView!
     
-    var dataset = [
-        ("나의 여행 크레딧"),
-        ("이용약관 보기")
-    ]
-    
-    lazy var list: [InviteFriendList] = {
-        var datalist = [InviteFriendList]()
-        
-        for (title) in self.dataset {
-            let mvo = InviteFriendList()
-            mvo.title = title
-            datalist.append(mvo)
-            
-        }
-        return datalist
-    }()
-    
-    
+  
     override func viewDidLoad() {
         tableView.rowHeight = 50
+       
+        self.tableView.tableFooterView = UIView(frame: .zero)
+        
     }
+    let data = InviteFriendData()
+}
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.list.count
+    extension InviteFriendViewController: UITableViewDelegate, UITableViewDataSource{
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return self.data.list.count
     }
+        
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InviteFriendCell
+            let list = self.data.list[indexPath.row]
+            cell.title?.text = list.title
+            
+            return cell
+        }
     
-    override func tableView(_ tableview: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+            tableView.deselectRow(at: indexPath, animated: true)
+            NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
+            
+             switch indexPath.row {
+            case 0: self.performSegue(withIdentifier: "a", sender: nil)
+            
+            default:
+            return
+            }
         
-        
-        let row = self.list[indexPath.row]
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! InviteFriendCell
-        
-        let title = cell.viewWithTag(101) as? UILabel
-        cell.title?.text = row.title
-        
-        
-        
-        return cell
-        
-        
-    }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
-    }
+}
 }
