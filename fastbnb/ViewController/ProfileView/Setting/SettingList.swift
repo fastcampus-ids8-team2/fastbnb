@@ -12,7 +12,6 @@ struct SettingsList {
     var title: String
 }
 
-
 struct SettingData {
     let list = [
         SettingsList(title: "알림"),
