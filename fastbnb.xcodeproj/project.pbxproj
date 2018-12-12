@@ -263,7 +263,7 @@
 				7E10283021C043AF00EB33A7 /* ProfileCell.swift */,
 				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
-<<<<<<< HEAD
+
 				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
 				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
 				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
@@ -274,8 +274,7 @@
 				6AFE6C4A21C0E7260058B7CF /* BookingAmenityTableViewCell.xib */,
 				6AFE6C4D21C102EE0058B7CF /* BookingMinimumStayTableViewCell.swift */,
 				6AFE6C4E21C102EE0058B7CF /* BookingMinimumStayTableViewCell.xib */,
-=======
->>>>>>> 87260ecaa95b53922250c8d69e841c1aa704578a
+
 			);
 			name = Model;
 			path = "New Group";
