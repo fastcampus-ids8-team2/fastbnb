@@ -2,14 +2,12 @@
 //  SettingCell.swift
 //  fastbnb
 //
-//  Created by wonsik on 05/12/2018.
+//  Created by wonsik on 12/12/2018.
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
 import UIKit
 
 class SettingCell: UITableViewCell {
-
-    @IBOutlet var title: UILabel!
-    
+    @IBOutlet weak var title: UILabel!
 }

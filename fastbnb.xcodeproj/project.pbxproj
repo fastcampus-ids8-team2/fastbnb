@@ -51,18 +51,30 @@
 		6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F421BA562900E42797 /* TestScrollViewController.swift */; };
 		6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */; };
 		6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */; };
+		7E0B58F521C08BD200321F10 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F421C08BD200321F10 /* NotificationViewController.swift */; };
+		7E0B58F721C08BDF00321F10 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F621C08BDF00321F10 /* NotificationCell.swift */; };
+		7E0B58F921C08BE700321F10 /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F821C08BE700321F10 /* NotificationList.swift */; };
+		7E0B58FC21C091E600321F10 /* FeedbackList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58FB21C091E600321F10 /* FeedbackList.swift */; };
+		7E0B58FE21C091F000321F10 /* FeedbackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58FD21C091F000321F10 /* FeedbackCell.swift */; };
+		7E0B590021C091FF00321F10 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58FF21C091FF00321F10 /* FeedbackViewController.swift */; };
+		7E0D2AB121C06D1500D9E10C /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2AB021C06D1500D9E10C /* IncomeViewController.swift */; };
+		7E0D2AB321C06D2000D9E10C /* IncomeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2AB221C06D2000D9E10C /* IncomeList.swift */; };
+		7E0D2AB521C06D3300D9E10C /* IncomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2AB421C06D3300D9E10C /* IncomeCell.swift */; };
+		7E0D2AB821C0703400D9E10C /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2AB721C0703400D9E10C /* PaymentViewController.swift */; };
+		7E0D2ABA21C076AD00D9E10C /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2AB921C076AD00D9E10C /* PaymentCell.swift */; };
+		7E0D2ABC21C076B500D9E10C /* PaymentList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2ABB21C076B500D9E10C /* PaymentList.swift */; };
+		7E0D2ABE21C0858100D9E10C /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0D2ABD21C0858100D9E10C /* SettingList.swift */; };
 		7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29B821B711AF00AA44F6 /* InviteFriendTableViewController.swift */; };
 		7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BA21B711C900AA44F6 /* InviteFriendCell.swift */; };
 		7E0E29BD21B711DE00AA44F6 /* InviteFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BC21B711DE00AA44F6 /* InviteFriendList.swift */; };
-		7E0E29C021B714D400AA44F6 /* RecommendHostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BF21B714D400AA44F6 /* RecommendHostsTableViewController.swift */; };
+		7E0E29C021B714D400AA44F6 /* RecommendHostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29BF21B714D400AA44F6 /* RecommendHostsViewController.swift */; };
 		7E0E29C221B714DE00AA44F6 /* RecommendHostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29C121B714DE00AA44F6 /* RecommendHostsCell.swift */; };
 		7E0E29C421B714EA00AA44F6 /* RecommendHostsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29C321B714EA00AA44F6 /* RecommendHostsList.swift */; };
-		7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29C621B7199500AA44F6 /* SettingTableViewController.swift */; };
-		7E0E29C921B719A100AA44F6 /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29C821B719A100AA44F6 /* SettingCell.swift */; };
-		7E0E29CB21B719BA00AA44F6 /* SettingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E29CA21B719BA00AA44F6 /* SettingList.swift */; };
+		7E0E690721C0863B00E5124E /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E690621C0863B00E5124E /* SettingCell.swift */; };
+		7E0E690921C0865900E5124E /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0E690821C0865900E5124E /* SettingTableViewController.swift */; };
 		7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */; };
 		7E10273121BDBC4200EB33A7 /* TopProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E10273021BDBC4200EB33A7 /* TopProfileCell.swift */; };
-		7E19C65421B017C500684D18 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65321B017C500684D18 /* ProfileCell.swift */; };
+		7E10283121C043AF00EB33A7 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E10283021C043AF00EB33A7 /* ProfileCell.swift */; };
 		7E19C65621B01A2100684D18 /* ProfileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C65521B01A2100684D18 /* ProfileList.swift */; };
 		7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E19C6A121B06E4200684D18 /* ProfileButton.swift */; };
 		7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E830CEB21ABA3130061C816 /* ProfileViewController.swift */; };
@@ -116,18 +128,30 @@
 		6AFF38F421BA562900E42797 /* TestScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollViewController.swift; sourceTree = "<group>"; };
 		6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuViewCell.swift; sourceTree = "<group>"; };
 		6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuView.swift; sourceTree = "<group>"; };
+		7E0B58F421C08BD200321F10 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		7E0B58F621C08BDF00321F10 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		7E0B58F821C08BE700321F10 /* NotificationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
+		7E0B58FB21C091E600321F10 /* FeedbackList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackList.swift; sourceTree = "<group>"; };
+		7E0B58FD21C091F000321F10 /* FeedbackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackCell.swift; sourceTree = "<group>"; };
+		7E0B58FF21C091FF00321F10 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		7E0D2AB021C06D1500D9E10C /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		7E0D2AB221C06D2000D9E10C /* IncomeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeList.swift; sourceTree = "<group>"; };
+		7E0D2AB421C06D3300D9E10C /* IncomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeCell.swift; sourceTree = "<group>"; };
+		7E0D2AB721C0703400D9E10C /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		7E0D2AB921C076AD00D9E10C /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		7E0D2ABB21C076B500D9E10C /* PaymentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentList.swift; sourceTree = "<group>"; };
+		7E0D2ABD21C0858100D9E10C /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
 		7E0E29B821B711AF00AA44F6 /* InviteFriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendTableViewController.swift; sourceTree = "<group>"; };
 		7E0E29BA21B711C900AA44F6 /* InviteFriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendCell.swift; sourceTree = "<group>"; };
 		7E0E29BC21B711DE00AA44F6 /* InviteFriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InviteFriendList.swift; sourceTree = "<group>"; };
-		7E0E29BF21B714D400AA44F6 /* RecommendHostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendHostsTableViewController.swift; sourceTree = "<group>"; };
+		7E0E29BF21B714D400AA44F6 /* RecommendHostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendHostsViewController.swift; sourceTree = "<group>"; };
 		7E0E29C121B714DE00AA44F6 /* RecommendHostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendHostsCell.swift; sourceTree = "<group>"; };
 		7E0E29C321B714EA00AA44F6 /* RecommendHostsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendHostsList.swift; sourceTree = "<group>"; };
-		7E0E29C621B7199500AA44F6 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
-		7E0E29C821B719A100AA44F6 /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
-		7E0E29CA21B719BA00AA44F6 /* SettingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingList.swift; sourceTree = "<group>"; };
+		7E0E690621C0863B00E5124E /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
+		7E0E690821C0865900E5124E /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileList.swift; sourceTree = "<group>"; };
 		7E10273021BDBC4200EB33A7 /* TopProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopProfileCell.swift; sourceTree = "<group>"; };
-		7E19C65321B017C500684D18 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		7E10283021C043AF00EB33A7 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		7E19C65521B01A2100684D18 /* ProfileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileList.swift; sourceTree = "<group>"; };
 		7E19C6A121B06E4200684D18 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
 		7E830CEB21ABA3130061C816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -227,14 +251,19 @@
 		6A01658221ABC6FF00F69171 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
+				6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */,
+				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
+				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
 				6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */,
 				6A00BAE621B8AEA400DE07AC /* ExploreViewStoryBoard.swift */,
 				6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */,
 				6AFCCF5721AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift */,
 				6A08BC9B21AF79A200266A58 /* ListingInformation.swift */,
-				7E19C65321B017C500684D18 /* ProfileCell.swift */,
+				7E10283021C043AF00EB33A7 /* ProfileCell.swift */,
 				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
+<<<<<<< HEAD
 				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
 				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
 				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
@@ -245,6 +274,8 @@
 				6AFE6C4A21C0E7260058B7CF /* BookingAmenityTableViewCell.xib */,
 				6AFE6C4D21C102EE0058B7CF /* BookingMinimumStayTableViewCell.swift */,
 				6AFE6C4E21C102EE0058B7CF /* BookingMinimumStayTableViewCell.xib */,
+=======
+>>>>>>> 87260ecaa95b53922250c8d69e841c1aa704578a
 			);
 			name = Model;
 			path = "New Group";
@@ -277,14 +308,16 @@
 		6AAAFC5C21AE2750006EAEB7 /* ProfileView */ = {
 			isa = PBXGroup;
 			children = (
+				7E0B58FA21C091D800321F10 /* Feedback */,
 				7E0E29AF21B7100C00AA44F6 /* InviteFriend */,
+				7E0D2AB621C06FFA00D9E10C /* Payment */,
 				7E19C6A121B06E4200684D18 /* ProfileButton.swift */,
 				7E19C65521B01A2100684D18 /* ProfileList.swift */,
 				7E830CEB21ABA3130061C816 /* ProfileViewController.swift */,
 				7E0E29BE21B714B400AA44F6 /* RecommendHosts */,
 				7E0E29C521B7197D00AA44F6 /* Setting */,
-				7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */,
 				7E10273021BDBC4200EB33A7 /* TopProfileCell.swift */,
+				7E10272E21BDBBDF00EB33A7 /* TopProfileList.swift */,
 			);
 			path = ProfileView;
 			sourceTree = "<group>";
@@ -333,6 +366,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		7E0B58F321C08A3800321F10 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7E0B58F621C08BDF00321F10 /* NotificationCell.swift */,
+				7E0B58F821C08BE700321F10 /* NotificationList.swift */,
+				7E0B58F421C08BD200321F10 /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		7E0B58FA21C091D800321F10 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				7E0B58FD21C091F000321F10 /* FeedbackCell.swift */,
+				7E0B58FB21C091E600321F10 /* FeedbackList.swift */,
+				7E0B58FF21C091FF00321F10 /* FeedbackViewController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
+		7E0D2AAF21C06D0000D9E10C /* Income */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D2AB421C06D3300D9E10C /* IncomeCell.swift */,
+				7E0D2AB221C06D2000D9E10C /* IncomeList.swift */,
+				7E0D2AB021C06D1500D9E10C /* IncomeViewController.swift */,
+			);
+			path = Income;
+			sourceTree = "<group>";
+		};
+		7E0D2AB621C06FFA00D9E10C /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				7E0D2AB921C076AD00D9E10C /* PaymentCell.swift */,
+				7E0D2ABB21C076B500D9E10C /* PaymentList.swift */,
+				7E0D2AB721C0703400D9E10C /* PaymentViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 		7E0E29AF21B7100C00AA44F6 /* InviteFriend */ = {
 			isa = PBXGroup;
 			children = (
@@ -346,9 +419,10 @@
 		7E0E29BE21B714B400AA44F6 /* RecommendHosts */ = {
 			isa = PBXGroup;
 			children = (
+				7E0D2AAF21C06D0000D9E10C /* Income */,
 				7E0E29C121B714DE00AA44F6 /* RecommendHostsCell.swift */,
 				7E0E29C321B714EA00AA44F6 /* RecommendHostsList.swift */,
-				7E0E29BF21B714D400AA44F6 /* RecommendHostsTableViewController.swift */,
+				7E0E29BF21B714D400AA44F6 /* RecommendHostsViewController.swift */,
 			);
 			path = RecommendHosts;
 			sourceTree = "<group>";
@@ -356,9 +430,10 @@
 		7E0E29C521B7197D00AA44F6 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				7E0E29C821B719A100AA44F6 /* SettingCell.swift */,
-				7E0E29CA21B719BA00AA44F6 /* SettingList.swift */,
-				7E0E29C621B7199500AA44F6 /* SettingTableViewController.swift */,
+				7E0B58F321C08A3800321F10 /* Notification */,
+				7E0E690621C0863B00E5124E /* SettingCell.swift */,
+				7E0D2ABD21C0858100D9E10C /* SettingList.swift */,
+				7E0E690821C0865900E5124E /* SettingTableViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -541,14 +616,16 @@
 				6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */,
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
-				7E0E29C721B7199500AA44F6 /* SettingTableViewController.swift in Sources */,
+				7E0D2AB321C06D2000D9E10C /* IncomeList.swift in Sources */,
 				6AFAE89921BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift in Sources */,
 				2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */,
 				6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendTableViewController.swift in Sources */,
+				7E0B58FC21C091E600321F10 /* FeedbackList.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
+				7E0D2ABC21C076B500D9E10C /* PaymentList.swift in Sources */,
 				6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */,
 				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
@@ -558,16 +635,16 @@
 				6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */,
 				6AFE6C4B21C0E7260058B7CF /* BookingAmenityTableViewCell.swift in Sources */,
 				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
-				7E0E29C921B719A100AA44F6 /* SettingCell.swift in Sources */,
-				7E0E29CB21B719BA00AA44F6 /* SettingList.swift in Sources */,
 				6A00BAE721B8AEA400DE07AC /* ExploreViewStoryBoard.swift in Sources */,
-				7E19C65421B017C500684D18 /* ProfileCell.swift in Sources */,
 				2EE2E29221BE311D00B48DDA /* SavedDetailViewController.swift in Sources */,
 				7E0E29C421B714EA00AA44F6 /* RecommendHostsList.swift in Sources */,
 				6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
 				6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */,
+				7E0D2AB121C06D1500D9E10C /* IncomeViewController.swift in Sources */,
+				7E0D2AB821C0703400D9E10C /* PaymentViewController.swift in Sources */,
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
-				7E0E29C021B714D400AA44F6 /* RecommendHostsTableViewController.swift in Sources */,
+				7E0E29C021B714D400AA44F6 /* RecommendHostsViewController.swift in Sources */,
+				7E0B58FE21C091F000321F10 /* FeedbackCell.swift in Sources */,
 				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
 				7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */,
 				6AFE6C4721C0996F0058B7CF /* BookingRoomTitleTableViewCell.swift in Sources */,
@@ -575,18 +652,28 @@
 				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
 				6A1CE40821AFDF7E00C30FCF /* CustomCalendarCell.swift in Sources */,
 				7E19C65621B01A2100684D18 /* ProfileList.swift in Sources */,
+				7E0D2ABE21C0858100D9E10C /* SettingList.swift in Sources */,
 				2E46FE0C21B4BD4F0046E5E7 /* InboxTableViewCell.swift in Sources */,
 				6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */,
+				7E0E690721C0863B00E5124E /* SettingCell.swift in Sources */,
 				6AFAE88E21BF591A003DA76E /* BookingViewController.swift in Sources */,
 				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
 				2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */,
+				7E0B590021C091FF00321F10 /* FeedbackViewController.swift in Sources */,
 				6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */,
+				7E0E690921C0865900E5124E /* SettingTableViewController.swift in Sources */,
 				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
 				7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
+				7E0B58F521C08BD200321F10 /* NotificationViewController.swift in Sources */,
+				7E0B58F921C08BE700321F10 /* NotificationList.swift in Sources */,
+				7E0D2AB521C06D3300D9E10C /* IncomeCell.swift in Sources */,
 				7E0E29BD21B711DE00AA44F6 /* InviteFriendList.swift in Sources */,
+				7E0B58F721C08BDF00321F10 /* NotificationCell.swift in Sources */,
+				7E0D2ABA21C076AD00D9E10C /* PaymentCell.swift in Sources */,
 				6AA6300D21B7962000E888AD /* DetailExploreViewTableViewCell.swift in Sources */,
 				2E63C55821AAD31B00D869DF /* AppDelegate.swift in Sources */,
 				2E63C57B21AD3D8400D869DF /* TermsViewController.swift in Sources */,
+				7E10283121C043AF00EB33A7 /* ProfileCell.swift in Sources */,
 				7E0E29C221B714DE00AA44F6 /* RecommendHostsCell.swift in Sources */,
 				6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */,
 			);

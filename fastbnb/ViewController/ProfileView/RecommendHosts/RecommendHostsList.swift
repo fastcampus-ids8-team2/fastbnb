@@ -8,7 +8,15 @@
 
 import Foundation
 
-class RecommendHostsList {
-    var title: String?
-    var icon: String?
+struct RecommendHostsList {
+    var title: String
+    var icon: String
+}
+
+
+struct RecommendHostsData {
+    
+    let list = [
+        RecommendHostsList(title: "수입 내역", icon: "profileCard.png")
+    ]
 }

@@ -10,7 +10,7 @@ import UIKit
 
 class InviteFriendCell: UITableViewCell {
 
+    @IBOutlet weak var title: UILabel!
     
-    @IBOutlet var title: UILabel!
     
 }
