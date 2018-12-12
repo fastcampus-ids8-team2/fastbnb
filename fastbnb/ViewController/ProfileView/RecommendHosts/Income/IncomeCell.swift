@@ -1,5 +1,5 @@
 //
-//  SettingCell.swift
+//  IncomeCell.swift
 //  fastbnb
 //
 //  Created by wonsik on 12/12/2018.
@@ -8,9 +8,8 @@
 
 import UIKit
 
-class SettingCell: UITableViewCell {
+class IncomeCell: UITableViewCell {
+
     @IBOutlet weak var title: UILabel!
-    
- 
-    
+    @IBOutlet weak var explain: UILabel!
 }

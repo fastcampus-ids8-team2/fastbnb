@@ -16,12 +16,11 @@ class ProfileViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         self.bottomTableView.tableFooterView = UIView(frame: .zero)
-        bottomTableView.rowHeight = 80
-        
+        bottomTableView.rowHeight = 70
     }
     let data = ProfileData()
     
-}
+    }
 
 
 extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
@@ -41,15 +40,14 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
         
-        switch indexPath.row {
-            
+        switch indexPath.row {            
         case 0: self.performSegue(withIdentifier: "a", sender: nil)
-            
         case 1: self.performSegue(withIdentifier: "b", sender: nil)
-            
         case 2: self.performSegue(withIdentifier: "c", sender: nil)
-            
-            
+        case 3: self.performSegue(withIdentifier: "d", sender: nil)
+        case 4: self.performSegue(withIdentifier: "e", sender: nil)
+        case 5: self.performSegue(withIdentifier: "f", sender: nil)
+        
         default:
             return
         }
