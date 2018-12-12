@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="BookingRoomTitleTableViewCell" customModule="fastbnb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Title: this is the room title for the AirBNB" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klS-1u-6zM">
+                        <rect key="frame" x="0.0" y="30" width="310" height="39.5"/>
+                        <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-04-RmS">
+                        <rect key="frame" x="0.0" y="11" width="64" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="klS-1u-6zM" firstAttribute="top" secondItem="t9e-04-RmS" secondAttribute="bottom" constant="4" id="1Jp-qJ-nQZ"/>
+                    <constraint firstItem="t9e-04-RmS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3lp-vN-nbW"/>
+                    <constraint firstAttribute="trailing" secondItem="klS-1u-6zM" secondAttribute="trailing" constant="10" id="AHX-pZ-wh6"/>
+                    <constraint firstItem="t9e-04-RmS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Wcy-Mm-FPk"/>
+                    <constraint firstItem="klS-1u-6zM" firstAttribute="top" secondItem="t9e-04-RmS" secondAttribute="bottom" constant="4" id="ovi-J5-3io"/>
+                    <constraint firstItem="klS-1u-6zM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pRe-Ai-Ohd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="roomTitle" destination="klS-1u-6zM" id="h4Q-Ep-G9g"/>
+                <outlet property="roomType" destination="t9e-04-RmS" id="bDJ-kN-ePS"/>
+            </connections>
+            <point key="canvasLocation" x="126.40000000000001" y="123.68815592203899"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -11,17 +11,25 @@ import UIKit
 class BookingRoomHostInfoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var hostImage: UIImageView!
-    @IBOutlet weak var roomTitle: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    @IBOutlet weak var roomAddress: UILabel!
+ 
+  
+    func setupCell(image: String) {
+        
+        
+        guard let imageUrl = URL(string: image) else { return }
+        
+        let task = URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
+            guard error == nil else { return }
+            guard let data = data else { return }
+            DispatchQueue.main.async {
+                self.hostImage.image = UIImage(data: data)
+            }
+            
+            
+        }
+        task.resume()
+        
     }
     
 }
