@@ -895,7 +895,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-z7-Xib" userLabel="MasterGuestView">
+
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-z7-Xib" userLabel="MasterGuestView">
+
                                 <rect key="frame" x="22" y="92" width="370" height="495"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-hp-gxp" userLabel="GeustsView">
@@ -1184,12 +1186,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rgl-HU-36f">
-                                <rect key="frame" x="30" y="279" width="354" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="uhu-Q3-Qs2"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Cabin, 6 Beds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bau-AU-Gm5">
                                 <rect key="frame" x="30" y="444" width="112.5" height="14.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
@@ -1214,29 +1210,36 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2l-ly-Geh" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="30" y="279" width="354" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZJM-Bh-aDn"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bau-AU-Gm5" firstAttribute="top" secondItem="R2l-ly-Geh" secondAttribute="bottom" constant="15" id="3EM-9L-kiP"/>
+                            <constraint firstItem="R2l-ly-Geh" firstAttribute="top" secondItem="8JV-MF-KjU" secondAttribute="bottom" constant="15" id="3rF-hf-0bH"/>
                             <constraint firstItem="cMs-A4-cLz" firstAttribute="top" secondItem="Xeb-BL-BiU" secondAttribute="bottom" constant="30" id="8I7-Ui-oXo"/>
                             <constraint firstItem="8JV-MF-KjU" firstAttribute="top" secondItem="cMs-A4-cLz" secondAttribute="bottom" constant="30" id="El4-8f-yY5"/>
                             <constraint firstItem="bau-AU-Gm5" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="G8A-M7-hI8"/>
                             <constraint firstItem="Knq-US-mHe" firstAttribute="top" secondItem="HnR-lr-Rdd" secondAttribute="top" constant="30" id="IXh-5B-0hV"/>
                             <constraint firstItem="Knq-US-mHe" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="P0a-vF-PoN"/>
                             <constraint firstItem="bxu-zc-Tbm" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="R6K-Pd-gXZ"/>
+                            <constraint firstItem="R2l-ly-Geh" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="Tfj-mU-m04"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cMs-A4-cLz" secondAttribute="trailing" id="UNl-Xo-npL"/>
                             <constraint firstItem="Xeb-BL-BiU" firstAttribute="top" secondItem="Knq-US-mHe" secondAttribute="bottom" constant="10" id="VK7-1z-STy"/>
-                            <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="rgl-HU-36f" secondAttribute="trailing" constant="30" id="WEc-Yk-GPe"/>
                             <constraint firstItem="cMs-A4-cLz" firstAttribute="leading" secondItem="bGq-eh-WLm" secondAttribute="leadingMargin" id="Wu1-wc-l9b"/>
+                            <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="R2l-ly-Geh" secondAttribute="trailing" constant="30" id="ZBI-ib-sBN"/>
                             <constraint firstItem="5vX-7q-Eik" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="aFv-xQ-tIB"/>
-                            <constraint firstItem="rgl-HU-36f" firstAttribute="top" secondItem="8JV-MF-KjU" secondAttribute="bottom" constant="15" id="cdO-2k-OiC"/>
                             <constraint firstItem="fzq-51-jCy" firstAttribute="top" secondItem="bau-AU-Gm5" secondAttribute="bottom" constant="5" id="ebd-pe-exw"/>
                             <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="fzq-51-jCy" secondAttribute="trailing" constant="30" id="hKa-xy-bXt"/>
                             <constraint firstItem="HnR-lr-Rdd" firstAttribute="trailing" secondItem="Knq-US-mHe" secondAttribute="trailing" constant="30" id="iGi-rO-gdm"/>
-                            <constraint firstItem="bau-AU-Gm5" firstAttribute="top" secondItem="rgl-HU-36f" secondAttribute="bottom" constant="15" id="joe-ua-yl1"/>
                             <constraint firstItem="fzq-51-jCy" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="mde-Xa-FJK"/>
                             <constraint firstItem="8JV-MF-KjU" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="nZo-it-IeH"/>
                             <constraint firstItem="5vX-7q-Eik" firstAttribute="top" secondItem="fzq-51-jCy" secondAttribute="bottom" constant="5" id="odS-g1-cO4"/>
-                            <constraint firstItem="rgl-HU-36f" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="rFB-fR-9es"/>
                             <constraint firstItem="Xeb-BL-BiU" firstAttribute="leading" secondItem="HnR-lr-Rdd" secondAttribute="leading" constant="30" id="s5G-AA-e4y"/>
                             <constraint firstItem="bxu-zc-Tbm" firstAttribute="top" secondItem="5vX-7q-Eik" secondAttribute="bottom" constant="5" id="t1a-ob-p6X"/>
                         </constraints>
@@ -1244,7 +1247,6 @@
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="imageView" destination="rgl-HU-36f" id="LGO-9c-oJF"/>
                         <outlet property="label1" destination="Knq-US-mHe" id="kYI-2e-ktC"/>
                         <outlet property="label2" destination="Xeb-BL-BiU" id="roe-4v-otq"/>
                         <outlet property="label3" destination="8JV-MF-KjU" id="xkZ-FZ-c8b"/>
@@ -1252,6 +1254,7 @@
                         <outlet property="label5" destination="fzq-51-jCy" id="yRh-cz-Jvm"/>
                         <outlet property="label6" destination="5vX-7q-Eik" id="Jic-pG-7pD"/>
                         <outlet property="label7" destination="bxu-zc-Tbm" id="HB8-Qm-fSF"/>
+                        <outlet property="slide" destination="R2l-ly-Geh" id="iYv-3e-brL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qD6-Bc-oOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
