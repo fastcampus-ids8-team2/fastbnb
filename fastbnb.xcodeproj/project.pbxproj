@@ -263,7 +263,6 @@
 				7E10283021C043AF00EB33A7 /* ProfileCell.swift */,
 				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
-
 				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
 				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
 				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
@@ -274,7 +273,6 @@
 				6AFE6C4A21C0E7260058B7CF /* BookingAmenityTableViewCell.xib */,
 				6AFE6C4D21C102EE0058B7CF /* BookingMinimumStayTableViewCell.swift */,
 				6AFE6C4E21C102EE0058B7CF /* BookingMinimumStayTableViewCell.xib */,
-
 			);
 			name = Model;
 			path = "New Group";
@@ -577,6 +575,7 @@
 				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework",
 				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -596,6 +595,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImageSlideshow.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",

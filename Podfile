@@ -15,4 +15,6 @@ target 'fastbnb' do
   pod 'GoogleSignIn'
   pod 'SnapKit'
   pod 'JTAppleCalendar'
+  pod 'ImageSlideshow'
+  pod 'ImageSlideshow/Kingfisher'
 end
