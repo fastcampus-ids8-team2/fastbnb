@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupRootViewController()
         ListingData.shared.getDataFromServer()
         SavedRoomData.shared.getDataFromServer()
+        TripRoomData.shared.getDataFromServer()
         
         return true
     }
