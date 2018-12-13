@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Fakery
 
 class InboxViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
+    let faker = Faker(locale: "en-US")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +26,10 @@ extension InboxViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InboxTableViewCell
-        cell.userImageView.image = UIImage(named: "inbox")
-        cell.userNameLabel.text = "John Doe"
-        cell.dateLabel.text = "어제"
-        cell.contentsTextView.text = "lorem ipsum"
+        cell.userImageView.kf.setImage(with: URL(string: "https://api.adorable.io/avatars/50/]\(Int.random(in: 1...1000)).png"))
+        cell.userNameLabel.text = faker.name.name()
+        cell.dateLabel.text = "2018-\(Int.random(in: 1...12))-\(Int.random(in: 1...28)) >"
+        cell.contentsTextView.text = faker.lorem.sentences()
         return cell
     }
 }

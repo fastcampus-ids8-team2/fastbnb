@@ -19,5 +19,5 @@ target 'fastbnb' do
   pod 'GooglePlaces'
   pod 'ImageSlideshow'
   pod 'ImageSlideshow/Kingfisher'
-
+  pod 'Fakery'
 end
