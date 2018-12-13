@@ -9,6 +9,9 @@
 import UIKit
 import FBSDKCoreKit
 import GoogleSignIn
+import GoogleMaps
+import GooglePlaces
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+
+        //google Map APIs: AIzaSyC3hLFgaZajecmCxQ9G7oIzhEpoeXKgVU4
+        GMSServices.provideAPIKey("AIzaSyC3hLFgaZajecmCxQ9G7oIzhEpoeXKgVU4")
+        GMSPlacesClient.provideAPIKey("AIzaSyC3hLFgaZajecmCxQ9G7oIzhEpoeXKgVU4")
+        
         setupRootViewController()
         ListingData.shared.getDataFromServer()
         SavedRoomData.shared.getDataFromServer()

@@ -29,6 +29,8 @@
 		6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A08BC9B21AF79A200266A58 /* ListingInformation.swift */; };
 		6A1CE40821AFDF7E00C30FCF /* CustomCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */; };
 		6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */; };
+		6A6E6CC621C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6E6CC421C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift */; };
+		6A6E6CC721C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6E6CC521C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib */; };
 		6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */; };
 		6A7F7E1321BFB91200285571 /* BookingImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */; };
 		6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */; };
@@ -106,6 +108,8 @@
 		6A08BC9B21AF79A200266A58 /* ListingInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingInformation.swift; sourceTree = "<group>"; };
 		6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarCell.swift; sourceTree = "<group>"; };
 		6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesAroundTheWorldCollectionViewCell.swift; sourceTree = "<group>"; };
+		6A6E6CC421C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMapViewTableViewCell.swift; sourceTree = "<group>"; };
+		6A6E6CC521C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingMapViewTableViewCell.xib; sourceTree = "<group>"; };
 		6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingImageTableViewCell.swift; sourceTree = "<group>"; };
 		6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingImageTableViewCell.xib; sourceTree = "<group>"; };
 		6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
@@ -251,10 +255,6 @@
 		6A01658221ABC6FF00F69171 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
-				6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */,
-				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
-				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
 				6A1CE40721AFDF7E00C30FCF /* CustomCalendarCell.swift */,
 				6A00BAE621B8AEA400DE07AC /* ExploreViewStoryBoard.swift */,
 				6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */,
@@ -263,7 +263,6 @@
 				7E10283021C043AF00EB33A7 /* ProfileCell.swift */,
 				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
-
 				6AFAE89721BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift */,
 				6AFAE89821BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.xib */,
 				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
@@ -274,7 +273,8 @@
 				6AFE6C4A21C0E7260058B7CF /* BookingAmenityTableViewCell.xib */,
 				6AFE6C4D21C102EE0058B7CF /* BookingMinimumStayTableViewCell.swift */,
 				6AFE6C4E21C102EE0058B7CF /* BookingMinimumStayTableViewCell.xib */,
-
+				6A6E6CC421C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift */,
+				6A6E6CC521C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib */,
 			);
 			name = Model;
 			path = "New Group";
@@ -505,6 +505,7 @@
 				6AFE6C4C21C0E7260058B7CF /* BookingAmenityTableViewCell.xib in Resources */,
 				2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */,
 				2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */,
+				6A6E6CC721C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib in Resources */,
 				6AFE6C4821C0996F0058B7CF /* BookingRoomTitleTableViewCell.xib in Resources */,
 				2E63C55D21AAD31B00D869DF /* Main.storyboard in Resources */,
 			);
@@ -522,12 +523,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +620,7 @@
 				6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */,
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
+				6A6E6CC621C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift in Sources */,
 				7E0D2AB321C06D2000D9E10C /* IncomeList.swift in Sources */,
 				6AFAE89921BFB6E0003DA76E /* BookingRoomHostInfoTableViewCell.swift in Sources */,
 				2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */,

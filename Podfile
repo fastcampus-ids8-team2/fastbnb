@@ -15,4 +15,7 @@ target 'fastbnb' do
   pod 'GoogleSignIn'
   pod 'SnapKit'
   pod 'JTAppleCalendar'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+
 end
