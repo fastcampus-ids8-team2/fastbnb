@@ -16,7 +16,6 @@ class BookingRoomHostInfoTableViewCell: UITableViewCell {
   
     func setupCell(image: String) {
         
-        
         guard let imageUrl = URL(string: image) else { return }
         
         let task = URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
@@ -24,6 +23,7 @@ class BookingRoomHostInfoTableViewCell: UITableViewCell {
             guard let data = data else { return }
             DispatchQueue.main.async {
                 self.hostImage.image = UIImage(data: data)
+                print(self.hostImage.frame)
             }
             
             
@@ -31,5 +31,6 @@ class BookingRoomHostInfoTableViewCell: UITableViewCell {
         task.resume()
         
     }
+    
     
 }

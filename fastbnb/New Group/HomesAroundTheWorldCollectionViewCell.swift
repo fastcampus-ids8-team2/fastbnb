@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     
@@ -31,10 +32,37 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     @IBAction func buttonDidTap(_ sender: UIButton) {
 //        print(self)
         print(pk)
+       
+        
+            guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
+            
+            let headers: HTTPHeaders = [
+                "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
+            ]
+        let parameters: Parameters = ["room_id": pk]
+        
+            Alamofire.request(url, method: .post, parameters: parameters, headers: headers).validate().responseData { (response) in
+                switch response.result {
+                case .success(let data):
+                    do {
+                       print(data)
+                    } catch {
+                        
+                    }
+                    
+                case .failure(let error):
+                    print ("failed get logs: \(error)")
+                }
+                
+                
+            }
+        
+
         
         
         //toServer.sendRoomName
     }
+    
     
     
     

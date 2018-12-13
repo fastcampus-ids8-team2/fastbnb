@@ -121,13 +121,13 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             
             return cell
         } else if arrayOfNumberOfRow[indexPath.row] == 3 {
-       
-            
             
             let cell = Bundle.main.loadNibNamed("BookingRoomHostInfoTableViewCell", owner: self, options: nil)?.first as! BookingRoomHostInfoTableViewCell
             cell.roomAddress.text = roomAddress
             cell.setupCell(image: hostImage)
-            cell.hostImage.layer.cornerRadius = cell.hostImage.frame.width / 2
+            print(cell.frame)
+            print(cell.hostImage.frame)
+//            cell.hostImage.layer.cornerRadius = cell.hostImage.frame.width / 2
             return cell
             
             
@@ -148,9 +148,7 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
         
              let cell = Bundle.main.loadNibNamed("BookingMinimumStayTableViewCell", owner: self, options: nil)?.first as! BookingMinimumStayTableViewCell
             
-            
             return cell
-            
         
         } else if arrayOfNumberOfRow[indexPath.row] == 6 {
             
@@ -172,16 +170,68 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
 //            marker.snippet = "Australia"
             marker.map = mapView
             
+
+            return cell
             
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 7 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingCheckInNOutTableViewCell", owner: self, options: nil)?.first as! BookingCheckInNOutTableViewCell
+        
+            
+            
+            return cell
+
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 8 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
+            
+            cell.mainLabel.text = "House Rules"
+            cell.subLabel.text = ""
+            return cell
+
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 9 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
+            
+            cell.mainLabel.text = "Strct(grace period) CancellationPolicy"
+            cell.subLabel.text = "Free cancellation for 48 hours"
+            return cell
+ 
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
+            
+            cell.mainLabel.text = "Additional Prices"
+            cell.subLabel.text = ""
+            return cell
+     
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 12 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
+            
+            cell.mainLabel.text = "Availability Calendar"
+            cell.subLabel.text = ""
+            return cell
+            
+            
+        }else if arrayOfNumberOfRow[indexPath.row] == 13 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
+            
+            cell.mainLabel.text = "Contact Host"
+            cell.subLabel.text = ""
             return cell
             
             
         } else {
       
             let cell = Bundle.main.loadNibNamed("BookingMinimumStayTableViewCell", owner: self, options: nil)?.first as! BookingMinimumStayTableViewCell
-//            cell.roomAddress.text = roomAddress
-//            cell.setupCell(image: hostImage)
-//            cell.hostImage.layer.cornerRadius = cell.hostImage.frame.width / 2
+
             return cell
             
         }
@@ -189,10 +239,80 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+      
         
-        return 150
+        if arrayOfNumberOfRow[indexPath.row] == 1 {
+           
+            return 150
+        } else if arrayOfNumberOfRow[indexPath.row] == 2 {
+            
+          
+            
+            return 50
+        } else if arrayOfNumberOfRow[indexPath.row] == 3 {
+            
+          
+            return 50
+            
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 4 {
+            
         
+            
+            
+            return 50
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 5 {
+            
+         
+            return 50
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 6 {
+            
+          
+            return 150
+            
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 7 {
+            
+           
+            return 50
+            
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 8 {
+            
+          
+            return 50
+            
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 9 {
+            
         
+            return 50
+            
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
+            
+          
+            return 50
+            
+            
+        } else if arrayOfNumberOfRow[indexPath.row] == 12 {
+            
+   
+            return 50
+            
+            
+        }else if arrayOfNumberOfRow[indexPath.row] == 13 {
+     
+            return 50
+            
+            
+        } else {
+            
+          
+            return 50
+            
+        }
     }
-    
 }
