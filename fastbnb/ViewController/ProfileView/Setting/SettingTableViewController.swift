@@ -38,7 +38,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource{
         case 0: self.performSegue(withIdentifier: "a", sender: nil)
         case 1: self.performSegue(withIdentifier: "b", sender: nil)
         case 2: self.performSegue(withIdentifier: "c", sender: nil)
-        case 3: self.performSegue(withIdentifier: "d", sender: nil)
+        case 3: UIApplication.shared.openURL(NSURL(string: "https://www.airbnb.co.kr/terms")! as URL)
         default:
             return
         }

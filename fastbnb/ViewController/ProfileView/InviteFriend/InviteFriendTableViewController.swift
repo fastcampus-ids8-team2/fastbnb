@@ -42,7 +42,8 @@ class InviteFriendViewController: UIViewController{
             
              switch indexPath.row {
             case 0: self.performSegue(withIdentifier: "a", sender: nil)
-            
+             case 1:
+                UIApplication.shared.openURL(NSURL(string: "https://www.airbnb.co.kr/help/article/2269/airbnb-referral-program-terms-and-conditions?q=%EC%97%90%EC%96%B4%EB%B9%84%EC%95%A4%EB%B9%84%20%EC%B6%94%EC%B2%9C%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8")! as URL)
             default:
             return
             }

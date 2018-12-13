@@ -10,6 +10,9 @@ import UIKit
 
 class RecommendHostsViewController: UIViewController{
     
+    @IBAction func pageGo(_ sender: UIButton) {
+        UIApplication.shared.openURL(NSURL(string: "https://www.airbnb.co.kr/help/article/1129/host-referral-program-terms-and-conditions---referring-host?ibbe=0")! as URL)
+    }
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

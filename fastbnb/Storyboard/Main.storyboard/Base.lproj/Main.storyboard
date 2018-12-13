@@ -2342,7 +2342,7 @@
             </objects>
             <point key="canvasLocation" x="4821.739130434783" y="1709.5982142857142"/>
         </scene>
-        <!--Recommend Hosts View Controller-->
+        <!--Title-->
         <scene sceneID="MK9-kq-PSs">
             <objects>
                 <viewController id="lm2-ra-VGe" customClass="RecommendHostsViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
@@ -2432,6 +2432,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HIi-Eg-tvF"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="Nbx-2C-6LI">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="sR7-wJ-36w">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4U1-2i-VeG">
+                                <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="약관 읽기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pageGo:" destination="lm2-ra-VGe" eventType="touchUpInside" id="JnF-wc-XZt"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="4o1-HG-PXg" id="4b9-Qu-kQV"/>
                         <segue destination="AQW-dc-HBj" kind="show" identifier="a" id="VAc-Rh-jk5"/>
