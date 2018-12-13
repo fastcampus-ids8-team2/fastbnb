@@ -293,7 +293,7 @@
 				7E10283021C043AF00EB33A7 /* ProfileCell.swift */,
 				2E95B70C21BA4FF7002C7EA4 /* SavedInformation.swift */,
 				6A01658321ABC73600F69171 /* SavedItemCell.swift */,
-<<<<<<< HEAD
+
 				6A28088621C245CB001F86A3 /* BookingRoomHostInfoTableViewCell.swift */,
 				6A28088721C245CB001F86A3 /* BookingRoomHostInfoTableViewCell.xib */,
 				6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */,
