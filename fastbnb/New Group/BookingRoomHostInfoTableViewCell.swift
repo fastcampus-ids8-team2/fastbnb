@@ -2,7 +2,7 @@
 //  BookingRoomHostInfoTableViewCell.swift
 //  fastbnb
 //
-//  Created by Isaac Kim on 11/12/2018.
+//  Created by Isaac Kim on 13/12/2018.
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
@@ -10,27 +10,20 @@ import UIKit
 
 class BookingRoomHostInfoTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var hostImage: UIImageView!
+    @IBOutlet weak var hostImageView: UIImageView!
     @IBOutlet weak var roomAddress: UILabel!
- 
-  
-    func setupCell(image: String) {
+    
+    func setupCell(imageName: String) {
         
-        guard let imageUrl = URL(string: image) else { return }
-        
-        let task = URLSession.shared.dataTask(with: imageUrl) { (data, response, error) in
-            guard error == nil else { return }
+        guard let url = URL(string: imageName) else { return }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             guard let data = data else { return }
             DispatchQueue.main.async {
-                self.hostImage.image = UIImage(data: data)
-                print(self.hostImage.frame)
+                self.hostImageView.image = UIImage(data: data)
+                self.hostImageView.layer.cornerRadius = self.hostImageView.frame.width / 2
+                self.hostImageView.layer.masksToBounds = true
             }
-            
-            
-        }
-        task.resume()
+        }.resume()
         
     }
-    
-    
 }

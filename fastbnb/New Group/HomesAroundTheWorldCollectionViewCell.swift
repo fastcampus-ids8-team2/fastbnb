@@ -22,8 +22,10 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var numberOfStar: UILabel!
     @IBOutlet weak var numberOfStarLabel: UILabel!
     
+    @IBOutlet weak var saveButton: UIButton!
     
     var image: UIImage?
+    var buttonHasPressed = true
 
     var pk = Int()
     
@@ -33,7 +35,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
 //        print(self)
         print(pk)
        
-        
+        buttonPressed()
             guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             
             let headers: HTTPHeaders = [
@@ -46,6 +48,8 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 case .success(let data):
                     do {
                        print(data)
+//                        self.saveButton.imageView?.image = UIImage(contentsOfFile: "loveTapped")
+                        
                     } catch {
                         
                     }
@@ -63,6 +67,17 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
         //toServer.sendRoomName
     }
     
+    private func buttonPressed() {
+        
+        if buttonHasPressed == true {
+            
+            
+            
+        }
+        
+        buttonHasPressed = !buttonHasPressed
+        
+    }
     
     
     

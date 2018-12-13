@@ -631,10 +631,13 @@
                                                                             </stackView>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-nu-Hyr">
-                                                                        <rect key="frame" x="82" y="9" width="46" height="30"/>
-                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                        <state key="normal" title="Button"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-nu-Hyr">
+                                                                        <rect key="frame" x="113" y="0.0" width="15" height="15"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="15" id="aUx-7Z-JJg"/>
+                                                                            <constraint firstAttribute="width" constant="15" id="gaf-4q-2Ex"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="loveUntapped"/>
                                                                         <connections>
                                                                             <action selector="buttonDidTap:" destination="Nyw-Zy-926" eventType="touchUpInside" id="j9n-2p-87O"/>
                                                                         </connections>
@@ -644,7 +647,9 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="LrS-zq-s0x" secondAttribute="trailing" id="6VM-uv-xsN"/>
                                                                 <constraint firstAttribute="bottom" secondItem="LrS-zq-s0x" secondAttribute="bottom" id="8Wf-4D-wna"/>
+                                                                <constraint firstItem="vA5-nu-Hyr" firstAttribute="top" secondItem="Nyw-Zy-926" secondAttribute="top" id="AJ1-Ws-9J1"/>
                                                                 <constraint firstItem="iXS-JS-UdE" firstAttribute="top" secondItem="Nyw-Zy-926" secondAttribute="top" id="AKT-cf-i8G"/>
+                                                                <constraint firstAttribute="trailing" secondItem="vA5-nu-Hyr" secondAttribute="trailing" id="AsB-A2-dYW"/>
                                                                 <constraint firstItem="LrS-zq-s0x" firstAttribute="top" secondItem="iXS-JS-UdE" secondAttribute="bottom" constant="2" id="Zm2-Za-qlf"/>
                                                                 <constraint firstAttribute="trailing" secondItem="iXS-JS-UdE" secondAttribute="trailing" id="eI4-np-MiL"/>
                                                                 <constraint firstItem="LrS-zq-s0x" firstAttribute="leading" secondItem="Nyw-Zy-926" secondAttribute="leading" id="h1L-vj-6g2"/>
@@ -659,6 +664,7 @@
                                                                 <outlet property="numberOfStarLabel" destination="AyH-n4-ql1" id="56y-jq-kOH"/>
                                                                 <outlet property="roomName" destination="1WR-Z8-TOZ" id="kpJ-bV-aZa"/>
                                                                 <outlet property="roomPrice" destination="Hkx-lg-lrQ" id="a2f-N6-FrB"/>
+                                                                <outlet property="saveButton" destination="vA5-nu-Hyr" id="uwO-TA-8bG"/>
                                                                 <outlet property="typeOfHome" destination="j2H-q0-A0P" id="WBx-pr-klj"/>
                                                             </connections>
                                                         </collectionViewCell>
@@ -717,7 +723,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1775.2" y="912.5937031484259"/>
+            <point key="canvasLocation" x="-1775.3623188405797" y="912.05357142857133"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sAF-NF-44S">
@@ -3362,6 +3368,7 @@
         <image name="emptyHeart" width="48" height="48"/>
         <image name="explore" width="48" height="48"/>
         <image name="inbox" width="64" height="64"/>
+        <image name="loveUntapped" width="32" height="32"/>
         <image name="profile" width="48" height="48"/>
         <image name="profilegiftbox" width="60" height="60"/>
     </resources>

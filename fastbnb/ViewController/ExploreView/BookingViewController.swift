@@ -122,13 +122,21 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
         } else if arrayOfNumberOfRow[indexPath.row] == 3 {
             
-            let cell = Bundle.main.loadNibNamed("BookingRoomHostInfoTableViewCell", owner: self, options: nil)?.first as! BookingRoomHostInfoTableViewCell
-            cell.roomAddress.text = roomAddress
-            cell.setupCell(image: hostImage)
-            print(cell.frame)
-            print(cell.hostImage.frame)
-//            cell.hostImage.layer.cornerRadius = cell.hostImage.frame.width / 2
-            return cell
+            var cell = tableView.dequeueReusableCell(withIdentifier: "BookingRoomHostInfoTableViewCell") as? BookingRoomHostInfoTableViewCell
+            if cell == nil {
+                let xib = UINib(nibName: "BookingRoomHostInfoTableViewCell", bundle: nil)
+                tableView.register(xib, forCellReuseIdentifier: "BookingRoomHostInfoTableViewCellXib")
+                cell = tableView.dequeueReusableCell(withIdentifier: "BookingRoomHostInfoTableViewCellXib") as? BookingRoomHostInfoTableViewCell
+            }
+            cell!.roomAddress.text = roomAddress
+            cell!.setupCell(imageName: hostImage)
+            
+            return cell!
+            
+//            BookingRoomHostInfoTableViewCell
+            
+//            let cell = Bundle.main.loadNibNamed("BookingRoomHostInfoTableViewCell", owner: self, options: nil)?.first as! BookingRoomHostInfoTableViewCell
+//            return cell
             
             
         } else if arrayOfNumberOfRow[indexPath.row] == 4 {
