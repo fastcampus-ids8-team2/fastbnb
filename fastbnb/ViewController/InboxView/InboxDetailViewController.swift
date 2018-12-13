@@ -9,16 +9,18 @@
 import UIKit
 import AloeStackView
 import SnapKit
+import Fakery
 
 class InboxDetailViewController: UIViewController {
 
     @IBOutlet private weak var messageTextField: UITextField!
     @IBOutlet private weak var messageView: UIView!
     let aloeStackView = AloeStackView()
+    let faker = Faker(locale: "en-US")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "John Doe"
+        self.title = "Inbox"
         
         messageView.addSubview(aloeStackView)
         aloeStackView.hidesSeparatorsByDefault = true
@@ -33,6 +35,10 @@ class InboxDetailViewController: UIViewController {
         sendButton.addTarget(self, action: #selector(touchSendButton), for: .touchUpInside)
         messageTextField.rightView = sendButton
         messageTextField.rightViewMode = .always
+        
+        for _ in 0...faker.number.randomInt(min: 1, max: 5) {
+            aloeStackView.addRow(InboxMessageView(faker.lorem.sentence(wordsAmount: Int.random(in: 1...4)), isMyMessage: Bool.random()))
+        }
     }
     
     @objc func touchSendButton(_ sender: UIButton) {

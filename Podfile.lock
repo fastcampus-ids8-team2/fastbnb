@@ -20,6 +20,7 @@ PODS:
     - FacebookCore (~> 0.5)
     - FBSDKCoreKit (~> 4.37)
     - FBSDKShareKit (~> 4.37)
+  - Fakery (3.4.0)
   - FBSDKCoreKit (4.38.1):
     - Bolts (~> 1.9)
   - FBSDKLoginKit (4.38.1):
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - FacebookCore
   - FacebookLogin
   - FacebookShare
+  - Fakery
   - GoogleSignIn
   - ImageSlideshow
   - ImageSlideshow/Kingfisher
@@ -70,6 +72,7 @@ SPEC REPOS:
     - FacebookCore
     - FacebookLogin
     - FacebookShare
+    - Fakery
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
@@ -88,6 +91,7 @@ SPEC CHECKSUMS:
   FacebookCore: 74288d0add931d361b1596beae787ab72c438249
   FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
   FacebookShare: 963b4bb1124a64a395b1e428163d70b5774116e8
+  Fakery: 885e894a3e7c392e1da96c6e46a1abe5a0b28686
   FBSDKCoreKit: 8d47857400e2f5bdea697a80daff882e91c84ef6
   FBSDKLoginKit: 4621c690d9dd8628031a4791497062183ea34b0d
   FBSDKShareKit: 6ffe22f0a0618eb7424d4104ab0ef3ce9643d42a
@@ -99,6 +103,6 @@ SPEC CHECKSUMS:
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 1a1598109cfa4dea3485fada44d201c93bd9cb6b
+PODFILE CHECKSUM: 77ee18ff0e0d03bd2269a1112059f8d26bf69b4a
 
 COCOAPODS: 1.5.3

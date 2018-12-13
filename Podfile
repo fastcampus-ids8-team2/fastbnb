@@ -17,4 +17,5 @@ target 'fastbnb' do
   pod 'JTAppleCalendar'
   pod 'ImageSlideshow'
   pod 'ImageSlideshow/Kingfisher'
+  pod 'Fakery'
 end
