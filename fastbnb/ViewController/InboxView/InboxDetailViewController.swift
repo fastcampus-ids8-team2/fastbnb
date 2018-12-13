@@ -44,7 +44,7 @@ class InboxDetailViewController: UIViewController {
     @objc func touchSendButton(_ sender: UIButton) {
         guard let message = messageTextField.text else { return }
         if message != "" {
-            aloeStackView.addRow(InboxMessageView(message, isMyMessage: Bool.random()))
+            aloeStackView.addRow(InboxMessageView(message, isMyMessage: false))
         }
         messageTextField.text = ""
     }
