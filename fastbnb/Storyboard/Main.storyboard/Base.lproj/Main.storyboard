@@ -891,14 +891,16 @@
         <scene sceneID="S7x-Ue-6hK">
             <objects>
                 <viewController storyboardIdentifier="guestViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="fht-5A-6nU" customClass="GuestViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="CsF-TY-Dqj">
+                    <view key="view" contentMode="scaleToFill" id="CsF-TY-Dqj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nOw-z7-Xib" userLabel="MasterGuestView">
+
                                 <rect key="frame" x="22" y="92" width="370" height="495"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-hp-gxp" userLabel="GeustsView">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XPg-hp-gxp" userLabel="GeustsView">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="495"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Guests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2r-WW-z7y">
@@ -1118,7 +1120,6 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.0" green="0.56904578210000001" blue="0.57461684940000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="275" id="Agl-6H-YFH"/>
                                     <constraint firstItem="XPg-hp-gxp" firstAttribute="top" secondItem="nOw-z7-Xib" secondAttribute="top" id="Gs3-wk-l1b"/>
                                     <constraint firstItem="XPg-hp-gxp" firstAttribute="leading" secondItem="nOw-z7-Xib" secondAttribute="leading" id="TYu-Cx-hV9"/>
                                     <constraint firstAttribute="bottom" secondItem="XPg-hp-gxp" secondAttribute="bottom" id="UfV-8I-05u"/>
@@ -1128,9 +1129,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nOw-z7-Xib" firstAttribute="top" secondItem="qad-5c-MWO" secondAttribute="top" constant="48" id="4Tc-o0-0ia"/>
-                            <constraint firstItem="qad-5c-MWO" firstAttribute="bottom" secondItem="nOw-z7-Xib" secondAttribute="bottom" constant="275" id="Rra-mY-9Ee"/>
+                            <constraint firstItem="nOw-z7-Xib" firstAttribute="top" secondItem="qad-5c-MWO" secondAttribute="top" constant="48" id="aKd-rM-4hg"/>
                             <constraint firstItem="nOw-z7-Xib" firstAttribute="centerX" secondItem="CsF-TY-Dqj" secondAttribute="centerX" id="efI-8l-Q9t"/>
+                            <constraint firstItem="qad-5c-MWO" firstAttribute="bottom" secondItem="nOw-z7-Xib" secondAttribute="bottom" constant="275" id="gJa-ME-DGm"/>
                             <constraint firstItem="nOw-z7-Xib" firstAttribute="leading" secondItem="qad-5c-MWO" secondAttribute="leading" constant="22" id="ivf-ZZ-luH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qad-5c-MWO"/>

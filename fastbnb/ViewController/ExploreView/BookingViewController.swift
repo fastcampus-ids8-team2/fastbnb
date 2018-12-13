@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import GoogleMaps
+
+
 
 class BookingViewController: UIViewController {
 
@@ -28,6 +31,10 @@ class BookingViewController: UIViewController {
     var numberofBedRoom = Int()
     var numberOfBed = Int()
     var numberOfBathroom = Int()
+    
+    var latitude = Double()
+    var longtitude = Double()
+    
     
    
     @IBOutlet weak var tableView: UITableView!
@@ -59,6 +66,11 @@ class BookingViewController: UIViewController {
         numberofBedRoom = bookingData.bedrooms
         numberOfBed = bookingData.beds
         numberOfBathroom = bookingData.bathrooms
+        
+        
+        // latitude and longtitude for the map
+        longtitude = bookingData.lng
+        latitude = bookingData.lat
         
         
         
@@ -140,12 +152,36 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
             
         
+        } else if arrayOfNumberOfRow[indexPath.row] == 6 {
+            
+            let cell = Bundle.main.loadNibNamed("BookingMapViewTableViewCell", owner: self, options: nil)?.first as! BookingMapViewTableViewCell
+            
+            let bounds = UIScreen.main.bounds
+            let width = bounds.size.width
+            // Create a GMSCameraPosition that tells the map to display the
+            // coordinate -33.86,151.20 at zoom level 6.
+            let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longtitude, zoom: 16.0)
+            let mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0, width: width, height: 150), camera: camera)
+            cell.mapViewBase.addSubview(mapView)
+            
+            
+            // Creates a marker in the center of the map.
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
+//            marker.title = "Sydney"
+//            marker.snippet = "Australia"
+            marker.map = mapView
+            
+            
+            return cell
+            
+            
         } else {
       
-            let cell = Bundle.main.loadNibNamed("BookingRoomHostInfoTableViewCell", owner: self, options: nil)?.first as! BookingRoomHostInfoTableViewCell
-            cell.roomAddress.text = roomAddress
-            cell.setupCell(image: hostImage)
-            cell.hostImage.layer.cornerRadius = cell.hostImage.frame.width / 2
+            let cell = Bundle.main.loadNibNamed("BookingMinimumStayTableViewCell", owner: self, options: nil)?.first as! BookingMinimumStayTableViewCell
+//            cell.roomAddress.text = roomAddress
+//            cell.setupCell(image: hostImage)
+//            cell.hostImage.layer.cornerRadius = cell.hostImage.frame.width / 2
             return cell
             
         }
