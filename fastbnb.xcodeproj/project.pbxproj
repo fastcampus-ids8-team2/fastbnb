@@ -16,7 +16,6 @@
 		2E63C55F21AAD31B00D869DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C55E21AAD31B00D869DF /* Assets.xcassets */; };
 		2E63C56221AAD31B00D869DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */; };
 		2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E63C56B21AADA7300D869DF /* Login.storyboard */; };
-		2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57621AD2A3700D869DF /* SocialLoginButton.swift */; };
 		2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57821AD3A6D00D869DF /* SignInViewController.swift */; };
 		2E63C57B21AD3D8400D869DF /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57A21AD3D8400D869DF /* TermsViewController.swift */; };
 		2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57C21AE29E400D869DF /* SocialLoginTextField.swift */; };
@@ -31,6 +30,7 @@
 		6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6C3C1521AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift */; };
 		6A6E6CC621C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6E6CC421C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift */; };
 		6A6E6CC721C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A6E6CC521C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib */; };
+		6A6E6CCA21C20D8200EDAD2A /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E63C57621AD2A3700D869DF /* SocialLoginButton.swift */; };
 		6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7F7E1021BFB91200285571 /* BookingImageTableViewCell.swift */; };
 		6A7F7E1321BFB91200285571 /* BookingImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A7F7E1121BFB91200285571 /* BookingImageTableViewCell.xib */; };
 		6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374EE21AB98EF00E641D5 /* SavedViewController.swift */; };
@@ -275,7 +275,6 @@
 				6AFE6C4E21C102EE0058B7CF /* BookingMinimumStayTableViewCell.xib */,
 				6A6E6CC421C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift */,
 				6A6E6CC521C1F9E300EDAD2A /* BookingMapViewTableViewCell.xib */,
-
 			);
 			name = Model;
 			path = "New Group";
@@ -653,7 +652,7 @@
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
 				7E0E29C021B714D400AA44F6 /* RecommendHostsViewController.swift in Sources */,
 				7E0B58FE21C091F000321F10 /* FeedbackCell.swift in Sources */,
-				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
+				6A6E6CCA21C20D8200EDAD2A /* SocialLoginButton.swift in Sources */,
 				7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */,
 				6AFE6C4721C0996F0058B7CF /* BookingRoomTitleTableViewCell.swift in Sources */,
 				7E10273121BDBC4200EB33A7 /* TopProfileCell.swift in Sources */,
@@ -665,7 +664,6 @@
 				6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */,
 				7E0E690721C0863B00E5124E /* SettingCell.swift in Sources */,
 				6AFAE88E21BF591A003DA76E /* BookingViewController.swift in Sources */,
-				2E63C57721AD2A3700D869DF /* SocialLoginButton.swift in Sources */,
 				2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */,
 				7E0B590021C091FF00321F10 /* FeedbackViewController.swift in Sources */,
 				6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */,
