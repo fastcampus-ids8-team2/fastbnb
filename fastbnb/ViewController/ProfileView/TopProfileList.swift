@@ -6,11 +6,19 @@
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
-//import Foundation
-//
-//class TopProfileList {
-//    var topicon: String?
-//    var toptitle: String?
-//    var topexplain: String?
-//    
-//}
+import Foundation
+
+
+struct TopProfileList {
+
+    var title: String
+
+}
+
+struct TopProfileData {
+    let list = [
+    TopProfileList(title: "테스트1"),
+    TopProfileList(title: "테스트2")
+    ]
+    
+}

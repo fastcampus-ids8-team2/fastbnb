@@ -8,12 +8,6 @@
 
 //import UIKit
 //
-//class TopProfileCell: UITableViewCell {
-//
-//
-////
-//@IBOutlet var toptitle: UILabel!
-//@IBOutlet var topexplain: UILabel!
-//@IBOutlet var topicon: UIImageView!
-
-//}
+class TopProfileCell: UITableViewCell {
+    @IBOutlet weak var topTitle: UILabel!
+}
