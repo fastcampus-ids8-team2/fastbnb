@@ -48,9 +48,10 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 case .success(let data):
                     do {
                        print(data)
-//                        self.saveButton.imageView?.image = UIImage(contentsOfFile: "loveTapped")
+//                        
                         
                     } catch {
+                        print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
                         
                     }
                     
@@ -60,12 +61,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 
                 
             }
-        
-
-        
-        
-        //toServer.sendRoomName
-    }
+     }
     
     private func buttonPressed() {
         
