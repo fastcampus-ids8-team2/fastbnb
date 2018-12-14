@@ -87,8 +87,13 @@ class BookingViewController: UIViewController {
         
         
         print("images:", images)
+    }
+    
+    @IBAction func didTapCheckAvailability(_ sender: UIButton) {
+        let checkAvailabilityVC = storyboard?.instantiateViewController(withIdentifier: "CheckAvailabilityViewController") as! CheckAvailabilityViewController
         
         
+        present(checkAvailabilityVC, animated: true, completion: nil)
         
     }
     

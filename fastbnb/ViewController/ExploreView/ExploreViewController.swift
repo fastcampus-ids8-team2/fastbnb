@@ -101,6 +101,8 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         if cityArray[indexPath.row] == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.homesAroundTheWorldCell, for: indexPath) as! HomesAroundTheWorldTableViewCell
             cell.homesAroundTheWorld.text = "Homes In Korea"
+            cell.showAll.layer.borderWidth = 1
+            cell.showAll.layer.borderColor = #colorLiteral(red: 0, green: 0.5690457821, blue: 0.5746168494, alpha: 1)
            
             
             return cell

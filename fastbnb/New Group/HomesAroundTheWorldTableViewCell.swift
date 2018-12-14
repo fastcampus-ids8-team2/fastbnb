@@ -20,4 +20,6 @@ class HomesAroundTheWorldTableViewCell: UITableViewCell {
     @IBOutlet weak var showAll: UIButton!
     
     
+    
+    
 }

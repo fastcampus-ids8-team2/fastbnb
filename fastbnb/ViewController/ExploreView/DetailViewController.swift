@@ -62,13 +62,17 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
     @IBAction func didTapGestViewController(_ sender: UIButton) {
         let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
         guestViewVC.guestViewDelegate = self
-        
-        
-        
-        
         present(guestViewVC, animated: true, completion: nil)
         
     }
+    
+    @IBAction func didTapCalendarViewController(_ sender: UIButton) {
+        let calendarViewVC = storyboard?.instantiateViewController(withIdentifier: "CalenderViewController") as! CalenderViewController
+        
+        present(calendarViewVC, animated: true, completion: nil)
+        
+    }
+    
     
     @IBAction func unwindToDetailViewController(_ unwindSegue: UIStoryboardSegue) {
 
