@@ -1848,9 +1848,8 @@
                         <segue destination="okQ-OA-HOT" kind="show" identifier="InviteFriend" id="nR1-m5-na7"/>
                         <segue destination="lm2-ra-VGe" kind="show" identifier="RecommendHosts" id="sZw-uE-hzt"/>
                         <segue destination="Db3-Gh-d8e" kind="show" identifier="TravelCreditsAndCoupons" id="sxR-Ym-V2z"/>
-                        <segue destination="YWF-0v-tUK" kind="show" identifier="e" id="6qk-dO-2ae"/>
+                        <segue destination="YWF-0v-tUK" kind="show" identifier="Payment" id="6qk-dO-2ae"/>
                         <segue destination="LW7-dN-xa4" kind="show" identifier="Setting" id="LTW-jd-vUB"/>
-                        <segue destination="5YM-Nh-JD1" kind="show" identifier="HostTrip" id="CML-7a-GbT"/>
                         <segue destination="mzT-zU-FUY" kind="show" identifier="Help" id="Mzh-ly-OMF"/>
                         <segue destination="AIN-eY-NdM" kind="show" identifier="LearnAboutHosting" id="QQA-m2-0cc"/>
                         <segue destination="1FP-cq-OgZ" kind="show" identifier="RegisteringAccommodation" id="HEK-uM-xoq"/>
@@ -1860,30 +1859,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jg-Fg-Pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4823.188405797102" y="912.05357142857133"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="ZfX-aH-fys">
-            <objects>
-                <viewController id="5YM-Nh-JD1" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gxj-9R-mMi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="트립 호스팅하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agr-NE-fdW">
-                                <rect key="frame" x="151" y="419" width="108" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="MY9-fc-Edg"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4NT-7G-DnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4290" y="73"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="SZz-vl-cda">
@@ -3142,7 +3117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaE-ND-Lxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5874" y="2731"/>
+            <point key="canvasLocation" x="5932" y="2629"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="6eU-ge-quL">
