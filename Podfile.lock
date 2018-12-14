@@ -47,12 +47,6 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GTMSessionFetcher/Core (1.2.1)
-  - ImageSlideshow (1.7.0):
-    - ImageSlideshow/Core (= 1.7.0)
-  - ImageSlideshow/Core (1.7.0)
-  - ImageSlideshow/Kingfisher (1.7.0):
-    - ImageSlideshow/Core
-    - Kingfisher (> 3.0)
   - JTAppleCalendar (7.1.6)
   - Kingfisher (5.0.0)
   - SnapKit (4.2.0)
@@ -67,8 +61,6 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlaces
   - GoogleSignIn
-  - ImageSlideshow
-  - ImageSlideshow/Kingfisher
   - JTAppleCalendar
   - Kingfisher
   - SnapKit
@@ -90,7 +82,6 @@ SPEC REPOS:
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
-    - ImageSlideshow
     - JTAppleCalendar
     - Kingfisher
     - SnapKit
@@ -111,11 +102,10 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
-  ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
   JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
   Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: d90c2911a7a22e05211b857c3b22a1f69407dcce
+PODFILE CHECKSUM: c1abe106c032e2ca6275de9acf1daa849a4a53bd
 
 COCOAPODS: 1.5.3

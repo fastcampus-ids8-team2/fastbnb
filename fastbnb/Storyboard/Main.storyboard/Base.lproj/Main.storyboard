@@ -1206,7 +1206,7 @@
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2l-ly-Geh" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2l-ly-Geh">
                                 <rect key="frame" x="30" y="279" width="354" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1250,7 +1250,6 @@
                         <outlet property="label5" destination="fzq-51-jCy" id="yRh-cz-Jvm"/>
                         <outlet property="label6" destination="5vX-7q-Eik" id="Jic-pG-7pD"/>
                         <outlet property="label7" destination="bxu-zc-Tbm" id="HB8-Qm-fSF"/>
-                        <outlet property="slide" destination="R2l-ly-Geh" id="iYv-3e-brL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qD6-Bc-oOd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1682,7 +1681,7 @@
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-p1-lp1" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0SC-p1-lp1">
                                         <rect key="frame" x="30" y="279" width="354" height="150"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1735,7 +1734,6 @@
                         <outlet property="label5" destination="Cdw-3q-Yc0" id="D0G-dM-Hki"/>
                         <outlet property="label6" destination="cpm-h5-F0H" id="Sen-Dv-0AL"/>
                         <outlet property="label7" destination="c3B-Yk-2pI" id="5IG-WY-Yqq"/>
-                        <outlet property="slide" destination="0SC-p1-lp1" id="jR9-wa-8Sj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="boj-UV-ctt" userLabel="First Responder" sceneMemberID="firstResponder"/>

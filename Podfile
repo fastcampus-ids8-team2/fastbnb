@@ -17,7 +17,5 @@ target 'fastbnb' do
   pod 'JTAppleCalendar'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'ImageSlideshow'
-  pod 'ImageSlideshow/Kingfisher'
   pod 'Fakery'
 end
