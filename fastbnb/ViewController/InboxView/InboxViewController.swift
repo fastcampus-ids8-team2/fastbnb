@@ -26,7 +26,7 @@ extension InboxViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! InboxTableViewCell
-        cell.userImageView.kf.setImage(with: URL(string: "https://api.adorable.io/avatars/50/]\(Int.random(in: 1...1000)).png"))
+        cell.userImageView.kf.setImage(with: URL(string: "https://randomuser.me/api/portraits/thumb/\(Bool.random() ? "men" : "women")/\(Int.random(in: 1...99)).jpg"))
         cell.userNameLabel.text = faker.name.name()
         cell.dateLabel.text = "2018-\(Int.random(in: 1...12))-\(Int.random(in: 1...28)) >"
         cell.contentsTextView.text = faker.lorem.sentences()
