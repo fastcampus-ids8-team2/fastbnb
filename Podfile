@@ -18,4 +18,6 @@ target 'fastbnb' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Fakery'
+  pod 'moa'
+  pod 'Auk'
 end

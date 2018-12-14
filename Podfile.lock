@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (4.8.0)
   - AloeStackView (1.0.1)
+  - Auk (9.0.0):
+    - moa
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -49,11 +51,13 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - JTAppleCalendar (7.1.6)
   - Kingfisher (5.0.0)
+  - moa (10.0.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - AloeStackView
+  - Auk
   - FacebookCore
   - FacebookLogin
   - FacebookShare
@@ -63,12 +67,14 @@ DEPENDENCIES:
   - GoogleSignIn
   - JTAppleCalendar
   - Kingfisher
+  - moa
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AloeStackView
+    - Auk
     - Bolts
     - FacebookCore
     - FacebookLogin
@@ -84,11 +90,13 @@ SPEC REPOS:
     - GTMSessionFetcher
     - JTAppleCalendar
     - Kingfisher
+    - moa
     - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   AloeStackView: d22c006da4510db5e220968234174654b5ed6ea5
+  Auk: 13f9bbb5a2f554b4e5b2502982188a4982bc9398
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   FacebookCore: 74288d0add931d361b1596beae787ab72c438249
   FacebookLogin: ebcf34714a1cb9f0759d9f071cfb01ed500996cf
@@ -104,8 +112,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
   Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
+  moa: 95c863fd1059e6b5c7f6be30627823bb07ebca25
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: c1abe106c032e2ca6275de9acf1daa849a4a53bd
+PODFILE CHECKSUM: 633d77c8f9c22b4057a73902793e6306849d1f30
 
 COCOAPODS: 1.5.3

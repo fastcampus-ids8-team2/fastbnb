@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import ImageSlideshow
+import Auk
 
 class TripDetailViewController: UIViewController {
     
@@ -18,7 +18,7 @@ class TripDetailViewController: UIViewController {
     @IBOutlet private weak var label5: UILabel!
     @IBOutlet private weak var label6: UILabel!
     @IBOutlet private weak var label7: UILabel!
-    //@IBOutlet private weak var slide: ImageSlideshow!
+    @IBOutlet private weak var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +31,9 @@ class TripDetailViewController: UIViewController {
         label5.text = room.roomName
         label6.text = "$\(Int.random(in: 10...1000)) per night"
         label7.text = "\(String(repeating: "⭐️", count: Int.random(in: 1...5))) \(Int.random(in: 1...1000)) \(Bool.random() ? "Superhost" : "")"
-//        var roomSources = [InputSource]()
-//        for item in room.roomPhotos {
-//            if let source = KingfisherSource(urlString: item.roomPhoto) {
-//                roomSources.append(source)
-//            }
-//        }
-//        slide.setImageInputs(roomSources)
+        for item in room.roomPhotos {
+            scrollView.auk.show(url: item.roomPhoto)
+        }
     }
     
 }
