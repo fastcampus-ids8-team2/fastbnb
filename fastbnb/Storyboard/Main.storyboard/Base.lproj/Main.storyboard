@@ -1844,19 +1844,46 @@
                     <navigationItem key="navigationItem" id="yFW-Kj-24Y"/>
                     <connections>
                         <outlet property="bottomTableView" destination="tFv-RJ-faC" id="7mF-Oc-c7C"/>
-                        <segue destination="vOq-Y6-H86" kind="show" identifier="a" id="OWV-aJ-XwN"/>
-                        <segue destination="okQ-OA-HOT" kind="show" identifier="b" id="nR1-m5-na7"/>
-                        <segue destination="lm2-ra-VGe" kind="show" identifier="c" id="sZw-uE-hzt"/>
-                        <segue destination="Db3-Gh-d8e" kind="show" identifier="d" id="sxR-Ym-V2z"/>
+                        <segue destination="vOq-Y6-H86" kind="show" identifier="Notification" id="OWV-aJ-XwN"/>
+                        <segue destination="okQ-OA-HOT" kind="show" identifier="InviteFriend" id="nR1-m5-na7"/>
+                        <segue destination="lm2-ra-VGe" kind="show" identifier="RecommendHosts" id="sZw-uE-hzt"/>
+                        <segue destination="Db3-Gh-d8e" kind="show" identifier="TravelCreditsAndCoupons" id="sxR-Ym-V2z"/>
                         <segue destination="YWF-0v-tUK" kind="show" identifier="e" id="6qk-dO-2ae"/>
-                        <segue destination="LW7-dN-xa4" kind="show" identifier="f" id="LTW-jd-vUB"/>
-                        <segue destination="Db3-Gh-d8e" kind="show" id="Bau-aF-nLM"/>
-                        <segue destination="Db3-Gh-d8e" kind="show" id="vIv-b4-YP6"/>
+                        <segue destination="LW7-dN-xa4" kind="show" identifier="Setting" id="LTW-jd-vUB"/>
+                        <segue destination="5YM-Nh-JD1" kind="show" identifier="HostTrip" id="CML-7a-GbT"/>
+                        <segue destination="mzT-zU-FUY" kind="show" identifier="Help" id="Mzh-ly-OMF"/>
+                        <segue destination="AIN-eY-NdM" kind="show" identifier="LearnAboutHosting" id="QQA-m2-0cc"/>
+                        <segue destination="1FP-cq-OgZ" kind="show" identifier="RegisteringAccommodation" id="HEK-uM-xoq"/>
+                        <segue destination="jeY-Of-CWH" kind="show" identifier="LeaveFeedback" id="I5p-te-ilD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jg-Fg-Pmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4823.188405797102" y="912.05357142857133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZfX-aH-fys">
+            <objects>
+                <viewController id="5YM-Nh-JD1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gxj-9R-mMi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="트립 호스팅하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agr-NE-fdW">
+                                <rect key="frame" x="151" y="419" width="108" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="MY9-fc-Edg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NT-7G-DnI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4290" y="73"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="SZz-vl-cda">
@@ -2189,6 +2216,21 @@
             </objects>
             <point key="canvasLocation" x="7401.449275362319" y="261.16071428571428"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="oba-o6-l7z">
+            <objects>
+                <viewController id="1FP-cq-OgZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KeT-P8-UWE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ZT4-3Y-x71"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8I-s1-DYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9483" y="373"/>
+        </scene>
         <!--알림-->
         <scene sceneID="KpJ-mF-kcR">
             <objects>
@@ -2219,7 +2261,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Unz-6H-Csn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6413.04347826087" y="911.38392857142856"/>
+            <point key="canvasLocation" x="6036" y="931"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OnF-Yt-umz">
+            <objects>
+                <viewController id="mzT-zU-FUY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SI9-sV-xuA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="도움말" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kk-uC-6A0">
+                                <rect key="frame" x="132" y="438" width="45" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zGG-0W-79e"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPY-Tc-TLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8165" y="893"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="l2l-Fg-loL">
@@ -2378,7 +2444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9u-wd-uM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4821.739130434783" y="1709.5982142857142"/>
+            <point key="canvasLocation" x="4588" y="1725"/>
         </scene>
         <!--Title-->
         <scene sceneID="MK9-kq-PSs">
@@ -2561,6 +2627,30 @@
             <point key="canvasLocation" x="7331.884057971015" y="1709.5982142857142"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="gcl-DV-gHQ">
+            <objects>
+                <viewController id="AIN-eY-NdM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fN6-4p-Dbe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOI-qy-dHA">
+                                <rect key="frame" x="186" y="279" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VJC-aD-Mji"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LGU-c4-9sw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8537.68115942029" y="1648.6607142857142"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="Gnx-yZ-wmz">
             <objects>
                 <viewController id="i0L-Io-s5W" sceneMemberID="viewController">
@@ -2619,9 +2709,6 @@
                                 <state key="normal" title="친구를 초대하고 여행 크레딧을 추가로 받으세요">
                                     <color key="titleColor" red="0.2123457269" green="0.33333334329999997" blue="0.31656176879999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <segue destination="okQ-OA-HOT" kind="show" id="57X-GE-uMh"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3055,7 +3142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaE-ND-Lxh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6318.840579710145" y="2505.1339285714284"/>
+            <point key="canvasLocation" x="5874" y="2731"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="6eU-ge-quL">
@@ -3115,6 +3202,21 @@
             </objects>
             <point key="canvasLocation" x="5106" y="6964"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="LWq-xd-QhP">
+            <objects>
+                <viewController id="eta-og-3gh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p7c-Ug-dJW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="a9L-ok-4NO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEG-5n-fSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4654" y="5481"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="GkH-6c-lKa">
             <objects>
@@ -3171,7 +3273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmG-vt-PxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5047" y="7169"/>
+            <point key="canvasLocation" x="5026" y="6477"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="k3U-39-G7J">
@@ -3220,7 +3322,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UV-2c-qaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4946.3999999999996" y="6928.7856071964025"/>
+            <point key="canvasLocation" x="4207" y="6568"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="gpR-wx-b97">
@@ -3730,8 +3832,4 @@
         <image name="profile" width="48" height="48"/>
         <image name="profilegiftbox" width="60" height="60"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="vIv-b4-YP6"/>
-        <segue reference="nR1-m5-na7"/>
-    </inferredMetricsTieBreakers>
 </document>
