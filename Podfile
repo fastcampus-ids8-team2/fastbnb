@@ -14,10 +14,11 @@ target 'fastbnb' do
   pod 'FacebookShare'
   pod 'GoogleSignIn'
   pod 'SnapKit'
-  pod 'JTAppleCalendar'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'Fakery'
   pod 'moa'
   pod 'Auk'
+  pod 'FSCalendar'
+
 end

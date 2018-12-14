@@ -29,6 +29,7 @@ PODS:
     - FBSDKCoreKit
   - FBSDKShareKit (4.39.0):
     - FBSDKCoreKit
+  - FSCalendar (2.8.0)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -49,7 +50,6 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GTMSessionFetcher/Core (1.2.1)
-  - JTAppleCalendar (7.1.6)
   - Kingfisher (5.0.0)
   - moa (10.0.0)
   - SnapKit (4.2.0)
@@ -62,10 +62,10 @@ DEPENDENCIES:
   - FacebookLogin
   - FacebookShare
   - Fakery
+  - FSCalendar
   - GoogleMaps
   - GooglePlaces
   - GoogleSignIn
-  - JTAppleCalendar
   - Kingfisher
   - moa
   - SnapKit
@@ -83,12 +83,12 @@ SPEC REPOS:
     - FBSDKCoreKit
     - FBSDKLoginKit
     - FBSDKShareKit
+    - FSCalendar
     - GoogleMaps
     - GooglePlaces
     - GoogleSignIn
     - GoogleToolboxForMac
     - GTMSessionFetcher
-    - JTAppleCalendar
     - Kingfisher
     - moa
     - SnapKit
@@ -105,16 +105,16 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: 1e3981faefab8c88edfaa9eecd94aab02d99a9bc
   FBSDKLoginKit: 30ba5039a2c53d65a75103889bc2deebdacd5a1f
   FBSDKShareKit: 5a0021c30abb64df9eeba87351dd8a627874543b
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
-  JTAppleCalendar: abb30678f42a4ef8a340a932b1dcb8c85a33dac2
   Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
   moa: 95c863fd1059e6b5c7f6be30627823bb07ebca25
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 633d77c8f9c22b4057a73902793e6306849d1f30
+PODFILE CHECKSUM: d282cc39329efdd9a195998d90cb3662aa1eb806
 
 COCOAPODS: 1.5.3

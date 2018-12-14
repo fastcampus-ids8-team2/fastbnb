@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import JTAppleCalendar
+
 
 
 
@@ -21,7 +21,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     var searchText: String?
     var adultGuestNumber = 0
     
-    
+    var cityArray = [Int]()
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet var calendarView: UIView!
@@ -34,6 +34,8 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         citySearchSliderBar.delegate = self
         arrayOfCellData = ListingData.shared.arrayOfCellData
 
+        cityArray = [1,2,3,4,5]
+        
         
        
         
@@ -47,7 +49,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         
         for i in 0...arrayOfCellData.count - 1 {
             if (self.searchText?.contains(arrayOfCellData[i].city))! && adultGuestNumber >= arrayOfCellData[i].personCapacity {
-                newArrayOfCellData.append(self.arrayOfCellData[i])
+                arrayOfCellData.append(self.arrayOfCellData[i])
             }
             
             
@@ -95,8 +97,10 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // home around the world cell
-        if indexPath.row == 0 {
+        
+        if cityArray[indexPath.row] == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: Storyboard.homesAroundTheWorldCell, for: indexPath) as! HomesAroundTheWorldTableViewCell
+            cell.homesAroundTheWorld.text = "Homes In Korea"
            
             
             return cell
@@ -108,17 +112,31 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         // home around the world cell
-        if indexPath.row == 0 {
-            if let cell = cell as? HomesAroundTheWorldTableViewCell {
-                cell.collectionView.dataSource = self
-                cell.collectionView.reloadData()
-                cell.collectionView.isScrollEnabled = false
-                cell.collectionView.delegate = self
+        let cell = cell as? HomesAroundTheWorldTableViewCell
+        cell?.collectionView.dataSource = self
+        cell?.collectionView.delegate = self
+        
+        
+        if cityArray[indexPath.row] == 1 {
+//            if let cell = cell as? HomesAroundTheWorldTableViewCell {
+            
+//                cell.collectionView.dataSource = self
+            cell!.collectionView.reloadData()
+            cell!.collectionView.isScrollEnabled = true
+//                cell.collectionView.delegate = self
+                
+                
+        } else if cityArray[indexPath.row] == 2 {
+//            if let cell = cell as? HomesAroundTheWorldTableViewCell {
+//                cell.collectionView.dataSource = self
+            cell!.collectionView.reloadData()
+            cell!.collectionView.isScrollEnabled = false
+//                cell.collectionView.delegate = self
                 
                 
             }
             
-        }
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -142,44 +160,35 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        if newArrayOfCellData.count == 0 {
-            return arrayOfCellData.count
-        } else {
-            return newArrayOfCellData.count
-        }
+//
+//        if newArrayOfCellData.count == 0 {
+//            return arrayOfCellData.count
+//        } else {
+//            return newArrayOfCellData.count
+//        }
+        return arrayOfCellData.count
         
         
         
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        
+//        if cityArray[indexPath.row] == 1 {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.homeAroundTheWorldCellImage, for: indexPath) as! HomesAroundTheWorldCollectionViewCell
         
         // Todo - get your data model...
         
         
-        if  newArrayOfCellData.count == 0 {
-            
-            cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
+
+        
+        cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
-            
-            } else if  newArrayOfCellData.count > 0 {
-            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
-                           city: newArrayOfCellData[indexPath.row].city,
-                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
-                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
-                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
-            
-            
-            
-            newArrayOfCellData.removeAll()
-            
-            
-        }
+        
         cell.dot.text = "•"
         
         let starRandomNumber = Int.random(in: 3...5)

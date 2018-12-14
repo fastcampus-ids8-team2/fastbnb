@@ -14,6 +14,7 @@ struct Storyboard {
     static let homesAroundTheWorldCell = "homesAroundTheWorldCell"
     static let homeAroundTheWorldCellImage = "homeAroundTheWorldCellImage"
     static let detailViewTableViewCell = "detailViewTableViewCell"
+    static let homesInBusanTableViewCell = "homesInBusan"
 }
 
 
