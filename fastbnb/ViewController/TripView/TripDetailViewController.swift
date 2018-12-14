@@ -23,7 +23,10 @@ class TripDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let room = TripRoomData.shared.arrayOfData[TripRoomData.shared.selectRow]
+        let trip = TripRoomData.shared.arrayOfData[TripRoomData.shared.selectRow]
+        let room = ListingData.shared.arrayOfCellData.filter { data -> Bool in
+            return data.pk == trip.room
+            }[0]
         label1.text = room.roomAndPropertyType
         label2.text = room.publicAddress
         label3.text = "\(room.personCapacity) Available Homes"
