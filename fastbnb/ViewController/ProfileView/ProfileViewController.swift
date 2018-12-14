@@ -40,8 +40,8 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         cell.explain?.text = list.explain
         cell.icon?.image = UIImage(named: list.icon)
         
-        let topList = self.topData.list[indexPath.row]
-        topCell.topTitle?.text = list.title
+//        let topList = self.topData.list[indexPath.row]
+//        topCell.topTitle?.text = list.title
         
         return cell
     }
@@ -52,12 +52,16 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
         
         switch indexPath.row {
-        case 0: self.performSegue(withIdentifier: "a", sender: nil)
-        case 1: self.performSegue(withIdentifier: "b", sender: nil)
-        case 2: self.performSegue(withIdentifier: "c", sender: nil)
-        case 3: self.performSegue(withIdentifier: "d", sender: nil)
-        case 4: self.performSegue(withIdentifier: "e", sender: nil)
-        case 5: self.performSegue(withIdentifier: "f", sender: nil)
+        case 0: self.performSegue(withIdentifier: "Notification", sender: nil)
+        case 1: self.performSegue(withIdentifier: "InviteFriend", sender: nil)
+        case 2: self.performSegue(withIdentifier: "RecommendHosts", sender: nil)
+        case 3: self.performSegue(withIdentifier: "TravelCreditsAndCoupons", sender: nil)
+        case 4: self.performSegue(withIdentifier: "Payment", sender: nil)
+        case 5: self.performSegue(withIdentifier: "Setting", sender: nil)
+        case 6: self.performSegue(withIdentifier: "Help", sender: nil)
+        case 7: self.performSegue(withIdentifier: "LearnAboutHosting", sender: nil)
+        case 8: self.performSegue(withIdentifier: "RegisteringAccommodation", sender: nil)
+//        case 9: self.performSegue(withIdentifier: "LeaveFeedback", sender: nil)
             
         default:
             return

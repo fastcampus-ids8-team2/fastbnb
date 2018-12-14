@@ -13,55 +13,22 @@
 import Foundation
 import Alamofire
 
-typealias TripRooms = [TripRoom]
+typealias TripRooms = [TripElement]
 
-struct TripRoom: Codable {
-    let pk, bathrooms, bedrooms, beds: Int
-    let personCapacity: Int
-    let roomName, roomType, roomAndPropertyType, publicAddress: String
-    let city: String
-    let price: Int
-    let lat, lng: Double
-    let roomInfo1, roomInfo2, roomInfo3, roomInfo4: String
-    let createdAt: String
-    let amenities: [String]
-    let hostimages: TripRoomHostimages
-    let roomPhotos: [TripRoomRoomPhoto]
+struct TripElement: Codable {
+    let id, room, guest, numGuest: Int
+    let checkInDate, checkOutDate: String
+    let reservedDates: [String]
     
     enum CodingKeys: String, CodingKey {
-        case pk, bathrooms, bedrooms, beds
-        case personCapacity = "person_capacity"
-        case roomName = "room_name"
-        case roomType = "room_type"
-        case roomAndPropertyType = "room_and_property_type"
-        case publicAddress = "public_address"
-        case city, price, lat, lng
-        case roomInfo1 = "room_info_1"
-        case roomInfo2 = "room_info_2"
-        case roomInfo3 = "room_info_3"
-        case roomInfo4 = "room_info_4"
-        case createdAt = "created_at"
-        case amenities, hostimages
-        case roomPhotos = "room_photos"
+        case id, room, guest
+        case numGuest = "num_guest"
+        case checkInDate = "check_in_date"
+        case checkOutDate = "check_out_date"
+        case reservedDates = "reserved_dates"
     }
 }
 
-struct TripRoomHostimages: Codable {
-    let hostThumbnailURL, hostThumbnailURLSmall: String
-    
-    enum CodingKeys: String, CodingKey {
-        case hostThumbnailURL = "host_thumbnail_url"
-        case hostThumbnailURLSmall = "host_thumbnail_url_small"
-    }
-}
-
-struct TripRoomRoomPhoto: Codable {
-    let roomPhoto: String
-    
-    enum CodingKeys: String, CodingKey {
-        case roomPhoto = "room_photo"
-    }
-}
 
 final class TripRoomData {
     static let shared = TripRoomData()
@@ -69,7 +36,7 @@ final class TripRoomData {
     var selectRow: Int = 0
     
     func getDataFromServer() {
-        guard let url = URL(string: "https://backends.xyz/api/user/saved/") else { return }
+        guard let url = URL(string: "https://backends.xyz/api/home/booking/") else { return }
         
         let headers: HTTPHeaders = [
             "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"

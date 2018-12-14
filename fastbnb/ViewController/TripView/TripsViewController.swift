@@ -24,12 +24,15 @@ extension TripsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let room = TripRoomData.shared.arrayOfData[indexPath.row]
+        let trip = TripRoomData.shared.arrayOfData[indexPath.row]
+        let room = ListingData.shared.arrayOfCellData.filter { data -> Bool in
+            return data.pk == trip.room
+        }[0]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: TripItemCell.identifier, for: indexPath) as! TripItemCell
         cell.cityImageView.kf.setImage(with: URL(string: room.roomPhotos[0].roomPhoto))
         cell.nameLabel.text = "\(room.roomName)"
-        cell.countLabel.text = "\(room.personCapacity) home"
+        cell.countLabel.text = "\(trip.reservedDates.first ?? "") ~ \(trip.reservedDates.last ?? "")"
         return cell
     }
 }
