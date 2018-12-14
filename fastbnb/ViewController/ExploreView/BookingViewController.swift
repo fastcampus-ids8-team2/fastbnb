@@ -168,6 +168,10 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             // coordinate -33.86,151.20 at zoom level 6.
             let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longtitude, zoom: 16.0)
             let mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0, width: width, height: 150), camera: camera)
+
+            mapView.settings.scrollGestures = false
+            
+            
             cell.mapViewBase.addSubview(mapView)
             
             
@@ -176,7 +180,12 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             marker.position = CLLocationCoordinate2D(latitude: latitude, longitude: longtitude)
 //            marker.title = "Sydney"
 //            marker.snippet = "Australia"
+            
+            
             marker.map = mapView
+            
+            
+            
             
 
             return cell

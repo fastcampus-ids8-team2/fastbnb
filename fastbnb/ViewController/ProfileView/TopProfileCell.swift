@@ -6,14 +6,8 @@
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
-//import UIKit
+import UIKit
 //
-//class TopProfileCell: UITableViewCell {
-//
-//
-////
-//@IBOutlet var toptitle: UILabel!
-//@IBOutlet var topexplain: UILabel!
-//@IBOutlet var topicon: UIImageView!
-
-//}
+class TopProfileCell: UITableViewCell {
+    @IBOutlet weak var topTitle: UILabel!
+}

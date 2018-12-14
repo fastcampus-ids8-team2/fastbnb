@@ -46,7 +46,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         self.searchText = searchBar.text ?? ""
         
         for i in 0...arrayOfCellData.count - 1 {
-            if self.searchText == arrayOfCellData[i].city && adultGuestNumber >= arrayOfCellData[i].personCapacity {
+            if (self.searchText?.contains(arrayOfCellData[i].city))! && adultGuestNumber >= arrayOfCellData[i].personCapacity {
                 newArrayOfCellData.append(self.arrayOfCellData[i])
             }
             
@@ -63,6 +63,13 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
         guestViewVC.guestViewDelegate = self
         present(guestViewVC, animated: true, completion: nil)
+        
+    }
+    
+    @IBAction func didTapCalendarViewController(_ sender: UIButton) {
+        let calendarViewVC = storyboard?.instantiateViewController(withIdentifier: "CalenderViewController") as! CalenderViewController
+        
+        present(calendarViewVC, animated: true, completion: nil)
         
     }
     
@@ -105,7 +112,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
             if let cell = cell as? HomesAroundTheWorldTableViewCell {
                 cell.collectionView.dataSource = self
                 cell.collectionView.reloadData()
-                cell.collectionView.isScrollEnabled = true
+                cell.collectionView.isScrollEnabled = false
                 cell.collectionView.delegate = self
                 
                 
@@ -171,8 +178,6 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
             
             newArrayOfCellData.removeAll()
             
-            //bug for the second image is showing up. Data is empty, yet it shows 마포구 house at the second column
-            print("newArrayOfCellData: ",newArrayOfCellData)
             
         }
         cell.dot.text = "•"

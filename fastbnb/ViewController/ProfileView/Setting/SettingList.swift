@@ -20,6 +20,5 @@ struct SettingData {
         SettingsList(title: "서비스 약관"),
         SettingsList(title: "버전:18.47 (200495)"),
         SettingsList(title: "로그아웃")
-        
     ]
 }

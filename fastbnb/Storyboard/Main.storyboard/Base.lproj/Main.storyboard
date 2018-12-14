@@ -497,7 +497,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Dates"/>
                                         <connections>
-                                            <segue destination="TQ3-M0-zqn" kind="presentation" id="aMQ-pe-M8J"/>
+                                            <action selector="didTapCalendarViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVu-J8-thD"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRt-OO-qCk">
@@ -810,7 +810,7 @@
         <!--Calender View Controller-->
         <scene sceneID="djB-Uj-RMg">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="TQ3-M0-zqn" customClass="CalenderViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CalenderViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TQ3-M0-zqn" customClass="CalenderViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="acg-Pp-KUc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -883,7 +883,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O59-EU-vY3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3007.1999999999998" y="1623.2383808095954"/>
+            <point key="canvasLocation" x="-2365" y="1633"/>
         </scene>
         <!--Guest View Controller-->
         <scene sceneID="S7x-Ue-6hK">
@@ -1773,8 +1773,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="topCell" id="3Vb-dI-Daf" customClass="TopProfileCell" customModule="fastbnb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Vb-dI-Daf" id="41q-jj-dMR" customClass="TopProfileCell" customModule="fastbnb" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skm-C3-42e">
+                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="topTitle" destination="Skm-C3-42e" id="bWy-Ee-n9i"/>
+                                        </connections>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="fm0-YW-gNV" customClass="ProfileCell" customModule="fastbnb" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="72" width="374" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fm0-YW-gNV" id="ddm-eS-llh">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="79.5"/>
