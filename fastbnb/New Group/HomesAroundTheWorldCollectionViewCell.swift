@@ -25,31 +25,39 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var saveButton: UIButton!
     
     var image: UIImage?
-    var buttonHasPressed = true
+    var roomHasSavedButton = false
 
     var pk = Int()
-    
+    var roomNumber = Int()
     
 
     @IBAction func buttonDidTap(_ sender: UIButton) {
-//        print(self)
+
         print(pk)
-       
-        buttonPressed()
+        saveHasPressedButton()
+        
+     }
+    
+    // change the image of the saveButton, toggle.
+    private func saveHasPressedButton() {
+        
+        if roomHasSavedButton == false {
+            
+            saveButton.setImage(#imageLiteral(resourceName: "loveTapped"), for: .normal)
+            roomHasSavedButton.toggle()
+            
             guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             
             let headers: HTTPHeaders = [
                 "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
             ]
-        let parameters: Parameters = ["room_id": pk]
-        
+            let parameters: Parameters = ["room_id": pk]
+            
             Alamofire.request(url, method: .post, parameters: parameters, headers: headers).validate().responseData { (response) in
                 switch response.result {
                 case .success(let data):
                     do {
-                       print(data)
-//                        
-                        
+                        print(data)
                     } catch {
                         print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
                         
@@ -58,20 +66,34 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 case .failure(let error):
                     print ("failed get logs: \(error)")
                 }
-                
-                
             }
-     }
-    
-    private func buttonPressed() {
+        } else {
+            saveButton.setImage(#imageLiteral(resourceName: "loveUntapped"), for: .normal)
+            roomHasSavedButton.toggle()
+            guard let url = URL(string: "https://backends.xyz/api/user/saved_room/") else { return }
+            
+            
+            let headers: HTTPHeaders = [
+                "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
+            ]
+            let parameters: Parameters = ["room_id": pk]
+            
+            Alamofire.request(url, method: .delete, parameters: parameters, headers: headers).validate().responseData { (response) in
+                switch response.result {
+                case .success(let data):
+                    do {
+                        print(data)
+                        
+                    } catch {
+                        print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
+                    }
+                    
+                case .failure(let error):
+                    print ("failed get logs: \(error)")
+                }
+            }
+         }
         
-        if buttonHasPressed == true {
-            
-            
-            
-        }
-        
-        buttonHasPressed = !buttonHasPressed
         
     }
     

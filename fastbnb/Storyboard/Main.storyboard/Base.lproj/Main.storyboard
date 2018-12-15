@@ -256,6 +256,13 @@
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loveUntapped" translatesAutoresizingMaskIntoConstraints="NO" id="NF0-is-iNW">
+                                                    <rect key="frame" x="334" y="11" width="60" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="5a9-Yt-y1b"/>
+                                                        <constraint firstAttribute="width" constant="60" id="UYt-E1-ZiI"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="Zi4-8b-cxp" secondAttribute="trailing" id="OmB-57-3ke"/>
@@ -263,6 +270,8 @@
                                                 <constraint firstItem="Zi4-8b-cxp" firstAttribute="top" secondItem="zFP-tM-Dcx" secondAttribute="bottom" constant="11" id="Twv-Cn-eq1"/>
                                                 <constraint firstAttribute="bottom" secondItem="Zi4-8b-cxp" secondAttribute="bottom" id="Zij-OL-nAp"/>
                                                 <constraint firstItem="zFP-tM-Dcx" firstAttribute="top" secondItem="jcj-9o-fMz" secondAttribute="top" id="dmP-9m-Vyu"/>
+                                                <constraint firstItem="NF0-is-iNW" firstAttribute="top" secondItem="jcj-9o-fMz" secondAttribute="topMargin" id="iXq-xb-Lk9"/>
+                                                <constraint firstItem="NF0-is-iNW" firstAttribute="trailing" secondItem="jcj-9o-fMz" secondAttribute="trailingMargin" id="oKC-wH-IG5"/>
                                                 <constraint firstItem="zFP-tM-Dcx" firstAttribute="leading" secondItem="jcj-9o-fMz" secondAttribute="leading" id="oUv-0P-OPJ"/>
                                                 <constraint firstItem="Zi4-8b-cxp" firstAttribute="leading" secondItem="jcj-9o-fMz" secondAttribute="leading" constant="8" id="uMq-cg-Qr2"/>
                                             </constraints>
@@ -336,7 +345,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qoI-Hp-Kni" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5108" y="2450.8245877061472"/>
+            <point key="canvasLocation" x="-5108.695652173913" y="2450.2232142857142"/>
         </scene>
         <!--Booking View Controller-->
         <scene sceneID="hlR-zZ-BCA">
@@ -741,10 +750,10 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vA5-nu-Hyr">
-                                                                        <rect key="frame" x="113" y="0.0" width="15" height="15"/>
+                                                                        <rect key="frame" x="103" y="0.0" width="25" height="25"/>
                                                                         <constraints>
-                                                                            <constraint firstAttribute="height" constant="15" id="aUx-7Z-JJg"/>
-                                                                            <constraint firstAttribute="width" constant="15" id="gaf-4q-2Ex"/>
+                                                                            <constraint firstAttribute="height" constant="25" id="aUx-7Z-JJg"/>
+                                                                            <constraint firstAttribute="width" constant="25" id="gaf-4q-2Ex"/>
                                                                         </constraints>
                                                                         <state key="normal" image="loveUntapped"/>
                                                                         <connections>
