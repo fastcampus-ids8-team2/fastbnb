@@ -115,6 +115,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
         let randomNumber = Int.random(in: 0...500)
         cell.numberOfReview.text = "\(randomNumber)"
+        cell.pk = arrayOfCellData[indexPath.row].pk
+        
         
         
         

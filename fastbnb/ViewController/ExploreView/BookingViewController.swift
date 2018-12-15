@@ -35,6 +35,9 @@ class BookingViewController: UIViewController {
     var latitude = Double()
     var longtitude = Double()
     
+    var hasDate = false
+    
+    
     
    
     @IBOutlet weak var tableView: UITableView!
@@ -90,10 +93,28 @@ class BookingViewController: UIViewController {
     }
     
     @IBAction func didTapCheckAvailability(_ sender: UIButton) {
+        
+        if hasDate == false {
+        
         let checkAvailabilityVC = storyboard?.instantiateViewController(withIdentifier: "CheckAvailabilityViewController") as! CheckAvailabilityViewController
         
         
         present(checkAvailabilityVC, animated: true, completion: nil)
+            hasDate.toggle()
+            checkAvailability.setTitle("Saved", for: .normal)
+        
+        } else {
+            
+            let checkoutVC = storyboard?.instantiateViewController(withIdentifier: "CheckoutViewController") as! CheckoutViewController
+            
+            present(checkoutVC, animated: true, completion: nil)
+            
+//            navigationController?.pushViewController(checkoutVC, animated: true)
+            hasDate.toggle()
+       }
+        
+    }
+    @IBAction func unwindToBookingViewController(_ unwindSegue: UIStoryboardSegue) {
         
     }
     
@@ -260,81 +281,81 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
         
        
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      
-        
-        if arrayOfNumberOfRow[indexPath.row] == 1 {
-           
-            return 150
-        } else if arrayOfNumberOfRow[indexPath.row] == 2 {
-            
-          
-            
-            return 50
-        } else if arrayOfNumberOfRow[indexPath.row] == 3 {
-            
-          
-            return 50
-            
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 4 {
-            
-        
-            
-            
-            return 50
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 5 {
-            
-         
-            return 50
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 6 {
-            
-          
-            return 150
-            
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 7 {
-            
-           
-            return 50
-            
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 8 {
-            
-          
-            return 50
-            
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 9 {
-            
-        
-            return 50
-            
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
-            
-          
-            return 50
-            
-            
-        } else if arrayOfNumberOfRow[indexPath.row] == 12 {
-            
-   
-            return 50
-            
-            
-        }else if arrayOfNumberOfRow[indexPath.row] == 13 {
-     
-            return 50
-            
-            
-        } else {
-            
-          
-            return 50
-            
-        }
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//
+//
+//        if arrayOfNumberOfRow[indexPath.row] == 1 {
+//
+//            return 150
+//        } else if arrayOfNumberOfRow[indexPath.row] == 2 {
+//
+//
+//
+//            return 50
+//        } else if arrayOfNumberOfRow[indexPath.row] == 3 {
+//
+//
+//            return 50
+//
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 4 {
+//
+//
+//
+//
+//            return 50
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 5 {
+//
+//
+//            return 50
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 6 {
+//
+//
+//            return 150
+//
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 7 {
+//
+//
+//            return 50
+//
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 8 {
+//
+//
+//            return 50
+//
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 9 {
+//
+//
+//            return 50
+//
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
+//
+//
+//            return 50
+//
+//
+//        } else if arrayOfNumberOfRow[indexPath.row] == 12 {
+//
+//
+//            return 50
+//
+//
+//        }else if arrayOfNumberOfRow[indexPath.row] == 13 {
+//
+//            return 50
+//
+//
+//        } else {
+//
+//
+//            return 50
+//
+//        }
+//    }
 }
