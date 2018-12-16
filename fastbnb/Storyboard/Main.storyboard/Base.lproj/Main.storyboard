@@ -573,6 +573,9 @@
                                         <state key="normal" title="Request to book">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didTapRequestoBook:" destination="Ccj-G3-Oa2" eventType="touchUpInside" id="LGJ-PP-RiM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -913,6 +916,84 @@
                 <exit id="vJv-PU-uQ0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-4346.376811594203" y="3850.4464285714284"/>
+        </scene>
+        <!--Booking Confirmation View Controller-->
+        <scene sceneID="ELs-xc-Jv0">
+            <objects>
+                <viewController storyboardIdentifier="BookingConfirmationViewController" id="yjq-Dk-I0G" customClass="BookingConfirmationViewController" customModule="fastbnb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YUy-Tc-AXU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkb-Bb-ZiM" customClass="LOTAnimationView">
+                                <rect key="frame" x="0.0" y="76" width="414" height="649"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Id-9g-Hfd">
+                                <rect key="frame" x="0.0" y="807" width="414" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dra-H4-h6a">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="Thank you for Booking With Us">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="pgl-4C-9y7" kind="unwind" unwindAction="unwindToDetailViewController:" id="fb2-Qj-DgW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dra-H4-h6a" firstAttribute="leading" secondItem="6Id-9g-Hfd" secondAttribute="leading" id="gX9-3E-TNJ"/>
+                                    <constraint firstItem="dra-H4-h6a" firstAttribute="top" secondItem="6Id-9g-Hfd" secondAttribute="top" id="rw4-6V-dOE"/>
+                                    <constraint firstAttribute="trailing" secondItem="dra-H4-h6a" secondAttribute="trailing" id="uuC-t0-xmO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DX5-dP-DF5">
+                                <rect key="frame" x="0.0" y="725" width="414" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merry Christmas and Happy New Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2N-wT-Q1f">
+                                        <rect key="frame" x="0.0" y="46" width="414" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="L2N-wT-Q1f" firstAttribute="leading" secondItem="DX5-dP-DF5" secondAttribute="leading" id="20D-d0-8M2"/>
+                                    <constraint firstAttribute="trailing" secondItem="L2N-wT-Q1f" secondAttribute="trailing" id="IAN-7p-WRu"/>
+                                    <constraint firstAttribute="bottom" secondItem="L2N-wT-Q1f" secondAttribute="bottom" constant="15" id="huU-Ds-Cic"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Nkb-Bb-ZiM" firstAttribute="leading" secondItem="DX5-dP-DF5" secondAttribute="leading" id="9pO-wP-sVP"/>
+                            <constraint firstItem="DX5-dP-DF5" firstAttribute="top" secondItem="Nkb-Bb-ZiM" secondAttribute="bottom" id="BGv-zb-OsI"/>
+                            <constraint firstAttribute="bottom" secondItem="Nkb-Bb-ZiM" secondAttribute="bottom" constant="171" id="D9E-3F-S9d"/>
+                            <constraint firstItem="Nkb-Bb-ZiM" firstAttribute="trailing" secondItem="DX5-dP-DF5" secondAttribute="trailing" id="DG9-uA-Zcx"/>
+                            <constraint firstItem="zfC-OZ-PAh" firstAttribute="trailing" secondItem="6Id-9g-Hfd" secondAttribute="trailing" id="FYd-A0-kef"/>
+                            <constraint firstItem="zfC-OZ-PAh" firstAttribute="bottom" secondItem="6Id-9g-Hfd" secondAttribute="bottom" id="GJM-Y1-PKg"/>
+                            <constraint firstItem="6Id-9g-Hfd" firstAttribute="leading" secondItem="YUy-Tc-AXU" secondAttribute="leading" id="RRv-AN-DNs"/>
+                            <constraint firstItem="zfC-OZ-PAh" firstAttribute="trailing" secondItem="DX5-dP-DF5" secondAttribute="trailing" id="TVa-A1-QZR"/>
+                            <constraint firstItem="Nkb-Bb-ZiM" firstAttribute="top" secondItem="zfC-OZ-PAh" secondAttribute="top" constant="32" id="Ybf-rY-Vdj"/>
+                            <constraint firstItem="DX5-dP-DF5" firstAttribute="leading" secondItem="zfC-OZ-PAh" secondAttribute="leading" id="n5Q-SC-4pI"/>
+                            <constraint firstItem="6Id-9g-Hfd" firstAttribute="top" secondItem="Nkb-Bb-ZiM" secondAttribute="bottom" constant="82" id="pzR-ca-kv7"/>
+                            <constraint firstItem="6Id-9g-Hfd" firstAttribute="top" secondItem="DX5-dP-DF5" secondAttribute="bottom" id="xIf-A1-5Iu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zfC-OZ-PAh"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="Nkb-Bb-ZiM" id="U5J-g8-9td"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ar-Ew-54r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="pgl-4C-9y7" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-4359.420289855073" y="4502.6785714285716"/>
         </scene>
         <!--Test Scroll View Controller-->
         <scene sceneID="r9K-pc-N1e">

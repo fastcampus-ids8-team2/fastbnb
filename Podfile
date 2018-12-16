@@ -20,5 +20,7 @@ target 'fastbnb' do
   pod 'moa'
   pod 'Auk'
   pod 'FSCalendar'
+  pod 'lottie-ios'
+
 
 end

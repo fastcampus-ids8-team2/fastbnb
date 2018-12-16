@@ -77,7 +77,14 @@ class CheckoutViewController: UIViewController {
         personalTripButton.setTitleColor(#colorLiteral(red: 0, green: 0.5690457821, blue: 0.5746168494, alpha: 1), for: .normal)
         
     }
-    
+    @IBAction func didTapRequestoBook(_ sender: UIButton) {
+     
+        let bookingConfirmationVC = storyboard?.instantiateViewController(withIdentifier: "BookingConfirmationViewController") as! BookingConfirmationViewController
+        // delegation needed to pass the data
+        
+            present(bookingConfirmationVC, animated: true, completion: nil)
+
+    }
     
 }
 
