@@ -22,6 +22,7 @@ class BookingConfirmationViewController: UIViewController {
     
     private func animationForConfirmation() {
         animationView.setAnimation(named: "christmas_tree_with_gift_boxes")
+        animationView.loopAnimation = true
         animationView.play()
     }
     
@@ -30,9 +31,7 @@ class BookingConfirmationViewController: UIViewController {
     @IBAction func didTapBookingConfirmation(_ sender: UIButton) {
         
         let ExploreVC = storyboard?.instantiateViewController(withIdentifier: "ExploreViewController") as! ExploreViewController
-        // delegation needed to pass the data
-        
-//        present(ExploreVC, animated: true, completion: nil)
+
         
         navigationController?.pushViewController(ExploreVC, animated: true)
     }

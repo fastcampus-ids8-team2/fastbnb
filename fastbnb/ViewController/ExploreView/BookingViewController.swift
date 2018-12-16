@@ -102,20 +102,21 @@ class BookingViewController: UIViewController {
         present(checkAvailabilityVC, animated: true, completion: nil)
             hasDate.toggle()
             checkAvailability.setTitle("Saved", for: .normal)
+            
+            
         
         } else {
             
             let checkoutVC = storyboard?.instantiateViewController(withIdentifier: "CheckoutViewController") as! CheckoutViewController
             
             present(checkoutVC, animated: true, completion: nil)
-            
-//            navigationController?.pushViewController(checkoutVC, animated: true)
+
             hasDate.toggle()
        }
         
     }
     @IBAction func unwindToBookingViewController(_ unwindSegue: UIStoryboardSegue) {
-        
+        checkAvailability.backgroundColor = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)
     }
     
 
