@@ -617,9 +617,9 @@
                                 <rect key="frame" x="0.0" y="102" width="414" height="150"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="zQr-kh-hpp">
-                                        <rect key="frame" x="27.5" y="36.5" width="173.5" height="71"/>
+                                        <rect key="frame" x="27.5" y="39.5" width="155.5" height="71"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entire House in Seoul" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-QH-kWy">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="800" text="Entire House in Seoul" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HY9-QH-kWy">
                                                 <rect key="frame" x="0.0" y="0.0" width="155.5" height="18"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                 <color key="textColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -634,7 +634,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpw-br-hea">
                                                 <rect key="frame" x="0.0" y="60" width="130" height="11"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="⭐️⭐️⭐️⭐️⭐️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TC-IB-cTL">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="⭐️⭐️⭐️⭐️⭐️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TC-IB-cTL">
                                                         <rect key="frame" x="0.0" y="0.0" width="65" height="11"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="9"/>
                                                         <nil key="textColor"/>
@@ -651,21 +651,18 @@
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airbnbImage" translatesAutoresizingMaskIntoConstraints="NO" id="3nn-ug-0O3">
-                                        <rect key="frame" x="276" y="6" width="60" height="132"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="BMD-hV-MPq"/>
-                                        </constraints>
+                                        <rect key="frame" x="213" y="10" width="171" height="130"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="3nn-ug-0O3" secondAttribute="trailing" constant="78" id="JTp-6Q-LGq"/>
+                                    <constraint firstAttribute="trailing" secondItem="3nn-ug-0O3" secondAttribute="trailing" constant="30" id="JTp-6Q-LGq"/>
                                     <constraint firstAttribute="height" constant="150" id="LNc-3O-lxY"/>
-                                    <constraint firstAttribute="bottom" secondItem="3nn-ug-0O3" secondAttribute="bottom" constant="12" id="MPH-iC-5DK"/>
+                                    <constraint firstAttribute="bottom" secondItem="3nn-ug-0O3" secondAttribute="bottom" constant="10" id="MPH-iC-5DK"/>
                                     <constraint firstItem="zQr-kh-hpp" firstAttribute="leading" secondItem="eAT-zu-hWg" secondAttribute="leading" constant="27.5" id="f8P-Ix-tki"/>
                                     <constraint firstItem="3nn-ug-0O3" firstAttribute="centerY" secondItem="zQr-kh-hpp" secondAttribute="centerY" id="r2N-km-zI7"/>
-                                    <constraint firstItem="3nn-ug-0O3" firstAttribute="top" secondItem="eAT-zu-hWg" secondAttribute="top" constant="6" id="t9z-KK-3I3"/>
-                                    <constraint firstItem="3nn-ug-0O3" firstAttribute="leading" secondItem="zQr-kh-hpp" secondAttribute="trailing" constant="75" id="z8M-RO-Tm5"/>
+                                    <constraint firstItem="3nn-ug-0O3" firstAttribute="top" secondItem="eAT-zu-hWg" secondAttribute="top" constant="10" id="t9z-KK-3I3"/>
+                                    <constraint firstItem="3nn-ug-0O3" firstAttribute="leading" secondItem="zQr-kh-hpp" secondAttribute="trailing" constant="30" id="z8M-RO-Tm5"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsX-cF-ISA">
@@ -912,8 +909,19 @@
                     </navigationItem>
                     <connections>
                         <outlet property="businessTripButton" destination="527-Ps-q2Z" id="1cx-46-buM"/>
+                        <outlet property="checkInDate" destination="DJn-rm-q7p" id="aj8-Op-kkp"/>
+                        <outlet property="checkOutDate" destination="5hV-IA-mMf" id="ma3-br-cmX"/>
+                        <outlet property="guestNumber" destination="I8m-aH-KYx" id="JVm-Ih-Rl3"/>
+                        <outlet property="homeTypeAndCity" destination="HY9-QH-kWy" id="mac-Gq-1kw"/>
+                        <outlet property="occupancyTax" destination="MTp-Ty-pyn" id="yHk-nT-gl2"/>
                         <outlet property="personalTripButton" destination="SSt-0H-VXB" id="xXM-mf-PDM"/>
+                        <outlet property="pricePerNight" destination="8n6-ot-3eA" id="zaO-iO-CsQ"/>
+                        <outlet property="pricePerNightAndNight" destination="Jya-Hb-GiD" id="Nho-yc-lKq"/>
                         <outlet property="requestToBook" destination="Cts-MF-52M" id="pkG-mP-qm4"/>
+                        <outlet property="roomImage" destination="3nn-ug-0O3" id="CZ1-z4-XbI"/>
+                        <outlet property="roomPrice" destination="Ogf-al-XW5" id="Qwl-oY-tQz"/>
+                        <outlet property="serviceFee" destination="kXM-TE-YH5" id="pEc-gl-Z51"/>
+                        <outlet property="totalCost" destination="tOk-Wq-GCi" id="Sl2-vY-ayt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYp-Xl-UC7" userLabel="First Responder" sceneMemberID="firstResponder"/>

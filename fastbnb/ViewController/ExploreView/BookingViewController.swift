@@ -109,6 +109,8 @@ class BookingViewController: UIViewController {
             
             let checkoutVC = storyboard?.instantiateViewController(withIdentifier: "CheckoutViewController") as! CheckoutViewController
             
+            checkoutVC.data = data
+            
             present(checkoutVC, animated: true, completion: nil)
 
             hasDate.toggle()
@@ -157,6 +159,7 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             }
             cell!.roomAddress.text = roomAddress
             cell!.setupCell(imageName: hostImage)
+            
             
             return cell!
             
