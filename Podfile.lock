@@ -50,7 +50,7 @@ PODS:
     - "GoogleToolboxForMac/NSString+URLArguments (= 2.2.0)"
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GTMSessionFetcher/Core (1.2.1)
-  - Kingfisher (5.0.0)
+  - Kingfisher (5.0.1)
   - lottie-ios (2.5.2)
   - moa (10.0.0)
   - SnapKit (4.2.0)
@@ -114,7 +114,7 @@ SPEC CHECKSUMS:
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
-  Kingfisher: 2b0dd651e4fe5a07305b8242fde56f8e2d410f58
+  Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
   lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   moa: 95c863fd1059e6b5c7f6be30627823bb07ebca25
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a

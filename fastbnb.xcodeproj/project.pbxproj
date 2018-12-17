@@ -64,6 +64,24 @@
 		6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F421BA562900E42797 /* TestScrollViewController.swift */; };
 		6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */; };
 		6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */; };
+		7E0756E321C84559000A8DCA /* FrequentlyAskedQuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756E221C84559000A8DCA /* FrequentlyAskedQuestionsList.swift */; };
+		7E0756E521C84564000A8DCA /* FrequentlyAskedQuestionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756E421C84564000A8DCA /* FrequentlyAskedQuestionsCell.swift */; };
+		7E0756E821C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756E721C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift */; };
+		7E0756EA21C845AE000A8DCA /* FrequentlyAskedQuestionsbyHostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756E921C845AE000A8DCA /* FrequentlyAskedQuestionsbyHostCell.swift */; };
+		7E0756EC21C845BA000A8DCA /* FrequentlyAskedQuestionsbyHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756EB21C845BA000A8DCA /* FrequentlyAskedQuestionsbyHostViewController.swift */; };
+		7E0756EE21C845C9000A8DCA /* FrequentlyAskedQuestionsbyHostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756ED21C845C9000A8DCA /* FrequentlyAskedQuestionsbyHostList.swift */; };
+		7E0756F021C845E0000A8DCA /* FaresandReservedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756EF21C845E0000A8DCA /* FaresandReservedList.swift */; };
+		7E0756F221C845F2000A8DCA /* FaresandReservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F121C845F2000A8DCA /* FaresandReservedViewController.swift */; };
+		7E0756F421C845FD000A8DCA /* FaresandReservedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F321C845FD000A8DCA /* FaresandReservedCell.swift */; };
+		7E0756F621C84616000A8DCA /* ReservationcancellationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F521C84616000A8DCA /* ReservationcancellationCell.swift */; };
+		7E0756F821C84623000A8DCA /* ReservationcancellationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F721C84623000A8DCA /* ReservationcancellationViewController.swift */; };
+		7E0756FA21C84631000A8DCA /* ReservationcancellationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F921C84631000A8DCA /* ReservationcancellationList.swift */; };
+		7E0756FC21C8463E000A8DCA /* AddBillingInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756FB21C8463E000A8DCA /* AddBillingInformationList.swift */; };
+		7E0756FE21C84646000A8DCA /* AddBillingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756FD21C84646000A8DCA /* AddBillingInformationViewController.swift */; };
+		7E07570021C8465A000A8DCA /* AddBillingInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756FF21C8465A000A8DCA /* AddBillingInformationCell.swift */; };
+		7E07570221C84691000A8DCA /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07570121C84691000A8DCA /* HelpCell.swift */; };
+		7E07570421C8469B000A8DCA /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07570321C8469B000A8DCA /* HelpViewController.swift */; };
+		7E07570621C846A0000A8DCA /* HelpList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07570521C846A0000A8DCA /* HelpList.swift */; };
 		7E0B58F521C08BD200321F10 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F421C08BD200321F10 /* NotificationViewController.swift */; };
 		7E0B58F721C08BDF00321F10 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F621C08BDF00321F10 /* NotificationCell.swift */; };
 		7E0B58F921C08BE700321F10 /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F821C08BE700321F10 /* NotificationList.swift */; };
@@ -157,6 +175,24 @@
 		6AFF38F421BA562900E42797 /* TestScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollViewController.swift; sourceTree = "<group>"; };
 		6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuViewCell.swift; sourceTree = "<group>"; };
 		6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuView.swift; sourceTree = "<group>"; };
+		7E0756E221C84559000A8DCA /* FrequentlyAskedQuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrequentlyAskedQuestionsList.swift; path = ../../../../../../../Documents/FrequentlyAskedQuestionsList.swift; sourceTree = "<group>"; };
+		7E0756E421C84564000A8DCA /* FrequentlyAskedQuestionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrequentlyAskedQuestionsCell.swift; path = ../../../../../../../Documents/FrequentlyAskedQuestionsCell.swift; sourceTree = "<group>"; };
+		7E0756E721C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsViewController.swift; sourceTree = "<group>"; };
+		7E0756E921C845AE000A8DCA /* FrequentlyAskedQuestionsbyHostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrequentlyAskedQuestionsbyHostCell.swift; path = ../../../../../../../Documents/FrequentlyAskedQuestionsbyHostCell.swift; sourceTree = "<group>"; };
+		7E0756EB21C845BA000A8DCA /* FrequentlyAskedQuestionsbyHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrequentlyAskedQuestionsbyHostViewController.swift; path = ../../../../../../../Documents/FrequentlyAskedQuestionsbyHostViewController.swift; sourceTree = "<group>"; };
+		7E0756ED21C845C9000A8DCA /* FrequentlyAskedQuestionsbyHostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FrequentlyAskedQuestionsbyHostList.swift; path = ../../../../../../../Documents/FrequentlyAskedQuestionsbyHostList.swift; sourceTree = "<group>"; };
+		7E0756EF21C845E0000A8DCA /* FaresandReservedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FaresandReservedList.swift; path = ../../../../../../../Documents/FaresandReservedList.swift; sourceTree = "<group>"; };
+		7E0756F121C845F2000A8DCA /* FaresandReservedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FaresandReservedViewController.swift; path = ../../../../../../../Documents/FaresandReservedViewController.swift; sourceTree = "<group>"; };
+		7E0756F321C845FD000A8DCA /* FaresandReservedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReservedCell.swift; sourceTree = "<group>"; };
+		7E0756F521C84616000A8DCA /* ReservationcancellationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReservationcancellationCell.swift; path = ../../../../../../../Documents/ReservationcancellationCell.swift; sourceTree = "<group>"; };
+		7E0756F721C84623000A8DCA /* ReservationcancellationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationcancellationViewController.swift; sourceTree = "<group>"; };
+		7E0756F921C84631000A8DCA /* ReservationcancellationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReservationcancellationList.swift; path = ../../../../../../../Documents/ReservationcancellationList.swift; sourceTree = "<group>"; };
+		7E0756FB21C8463E000A8DCA /* AddBillingInformationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddBillingInformationList.swift; path = ../../../../../../../Documents/AddBillingInformationList.swift; sourceTree = "<group>"; };
+		7E0756FD21C84646000A8DCA /* AddBillingInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformationViewController.swift; sourceTree = "<group>"; };
+		7E0756FF21C8465A000A8DCA /* AddBillingInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddBillingInformationCell.swift; path = ../../../../../../../Documents/AddBillingInformationCell.swift; sourceTree = "<group>"; };
+		7E07570121C84691000A8DCA /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
+		7E07570321C8469B000A8DCA /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		7E07570521C846A0000A8DCA /* HelpList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelpList.swift; path = ../../../../../../Documents/HelpList.swift; sourceTree = "<group>"; };
 		7E0B58F421C08BD200321F10 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		7E0B58F621C08BDF00321F10 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		7E0B58F821C08BE700321F10 /* NotificationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
@@ -346,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				7E0B58FA21C091D800321F10 /* Feedback */,
+				7E0756DC21C844D0000A8DCA /* Help */,
 				7E0E29AF21B7100C00AA44F6 /* InviteFriend */,
 				7E0D2AB621C06FFA00D9E10C /* Payment */,
 				7E19C6A121B06E4200684D18 /* ProfileButton.swift */,
@@ -402,6 +439,71 @@
 				CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E0756DC21C844D0000A8DCA /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				7E0756E121C8452D000A8DCA /* Add_Billing_Information */,
+				7E0756DF21C8450A000A8DCA /* Fares_and_Reserved */,
+				7E0756DD21C844E6000A8DCA /* Frequently_Asked_Questions */,
+				7E0756DE21C844F6000A8DCA /* Frequently_Asked_Questions_by_Host */,
+				7E0756E021C8451E000A8DCA /* Reservation_cancellation */,
+				7E07570121C84691000A8DCA /* HelpCell.swift */,
+				7E07570321C8469B000A8DCA /* HelpViewController.swift */,
+				7E07570521C846A0000A8DCA /* HelpList.swift */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		7E0756DD21C844E6000A8DCA /* Frequently_Asked_Questions */ = {
+			isa = PBXGroup;
+			children = (
+				7E0756E421C84564000A8DCA /* FrequentlyAskedQuestionsCell.swift */,
+				7E0756E221C84559000A8DCA /* FrequentlyAskedQuestionsList.swift */,
+				7E0756E721C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift */,
+			);
+			path = Frequently_Asked_Questions;
+			sourceTree = "<group>";
+		};
+		7E0756DE21C844F6000A8DCA /* Frequently_Asked_Questions_by_Host */ = {
+			isa = PBXGroup;
+			children = (
+				7E0756E921C845AE000A8DCA /* FrequentlyAskedQuestionsbyHostCell.swift */,
+				7E0756ED21C845C9000A8DCA /* FrequentlyAskedQuestionsbyHostList.swift */,
+				7E0756EB21C845BA000A8DCA /* FrequentlyAskedQuestionsbyHostViewController.swift */,
+			);
+			path = Frequently_Asked_Questions_by_Host;
+			sourceTree = "<group>";
+		};
+		7E0756DF21C8450A000A8DCA /* Fares_and_Reserved */ = {
+			isa = PBXGroup;
+			children = (
+				7E0756F321C845FD000A8DCA /* FaresandReservedCell.swift */,
+				7E0756EF21C845E0000A8DCA /* FaresandReservedList.swift */,
+				7E0756F121C845F2000A8DCA /* FaresandReservedViewController.swift */,
+			);
+			path = Fares_and_Reserved;
+			sourceTree = "<group>";
+		};
+		7E0756E021C8451E000A8DCA /* Reservation_cancellation */ = {
+			isa = PBXGroup;
+			children = (
+				7E0756F521C84616000A8DCA /* ReservationcancellationCell.swift */,
+				7E0756F921C84631000A8DCA /* ReservationcancellationList.swift */,
+				7E0756F721C84623000A8DCA /* ReservationcancellationViewController.swift */,
+			);
+			path = Reservation_cancellation;
+			sourceTree = "<group>";
+		};
+		7E0756E121C8452D000A8DCA /* Add_Billing_Information */ = {
+			isa = PBXGroup;
+			children = (
+				7E0756FF21C8465A000A8DCA /* AddBillingInformationCell.swift */,
+				7E0756FB21C8463E000A8DCA /* AddBillingInformationList.swift */,
+				7E0756FD21C84646000A8DCA /* AddBillingInformationViewController.swift */,
+			);
+			path = Add_Billing_Information;
 			sourceTree = "<group>";
 		};
 		7E0B58F321C08A3800321F10 /* Notification */ = {
@@ -683,44 +785,57 @@
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
 				6A6E6CC621C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift in Sources */,
+				7E0756F421C845FD000A8DCA /* FaresandReservedCell.swift in Sources */,
 				6AE2373321C4BFD700C26B7E /* CheckoutViewController.swift in Sources */,
 				7E0D2AB321C06D2000D9E10C /* IncomeList.swift in Sources */,
 				2E0AC98321B7B4DD009E666D /* InboxMessageView.swift in Sources */,
 				6A6E6CD521C2135200EDAD2A /* BookingCheckInNOutTableViewCell.swift in Sources */,
 				6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */,
+				7E0756EA21C845AE000A8DCA /* FrequentlyAskedQuestionsbyHostCell.swift in Sources */,
 				6A6E6CD921C21BF600EDAD2A /* BookingRestTableViewCell.swift in Sources */,
 				2EE2E29821C243A200B48DDA /* TripDetailViewController.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
+				7E0756FC21C8463E000A8DCA /* AddBillingInformationList.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendViewController.swift in Sources */,
 				6AA7DA2E21C62AAB00285E23 /* BookingConfirmationViewController.swift in Sources */,
+				7E0756FE21C84646000A8DCA /* AddBillingInformationViewController.swift in Sources */,
 				7E0B58FC21C091E600321F10 /* FeedbackList.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
+				7E07570021C8465A000A8DCA /* AddBillingInformationCell.swift in Sources */,
 				7E0D2ABC21C076B500D9E10C /* PaymentList.swift in Sources */,
 				6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */,
+				7E0756E321C84559000A8DCA /* FrequentlyAskedQuestionsList.swift in Sources */,
 				7E1CDEDA21C2676C003B0A37 /* SelectCurrencyList.swift in Sources */,
 				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
+				7E0756E521C84564000A8DCA /* FrequentlyAskedQuestionsCell.swift in Sources */,
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */,
+				7E0756E821C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift in Sources */,
 				6AFE6C4F21C102EE0058B7CF /* BookingMinimumStayTableViewCell.swift in Sources */,
 				6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */,
 				6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */,
 				6AFE6C4B21C0E7260058B7CF /* BookingAmenityTableViewCell.swift in Sources */,
+				7E0756EC21C845BA000A8DCA /* FrequentlyAskedQuestionsbyHostViewController.swift in Sources */,
 				7E1CDEDC21C26777003B0A37 /* SelectCurrencyViewController.swift in Sources */,
 				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
 				6A00BAE721B8AEA400DE07AC /* ExploreViewStoryBoard.swift in Sources */,
+				7E0756F621C84616000A8DCA /* ReservationcancellationCell.swift in Sources */,
 				2EE2E29221BE311D00B48DDA /* SavedDetailViewController.swift in Sources */,
+				7E07570421C8469B000A8DCA /* HelpViewController.swift in Sources */,
 				7E0E29C421B714EA00AA44F6 /* RecommendHostsList.swift in Sources */,
 				6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
 				6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */,
 				2EE2E29621C2413000B48DDA /* TripItemCell.swift in Sources */,
 				7E0D2AB121C06D1500D9E10C /* IncomeViewController.swift in Sources */,
+				7E0756EE21C845C9000A8DCA /* FrequentlyAskedQuestionsbyHostList.swift in Sources */,
 				7E0D2AB821C0703400D9E10C /* PaymentViewController.swift in Sources */,
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
 				7E0E29C021B714D400AA44F6 /* RecommendHostsViewController.swift in Sources */,
 				7E0B58FE21C091F000321F10 /* FeedbackCell.swift in Sources */,
 				6A6E6CCA21C20D8200EDAD2A /* SocialLoginButton.swift in Sources */,
 				7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */,
+				7E0756F821C84623000A8DCA /* ReservationcancellationViewController.swift in Sources */,
 				6AFE6C4721C0996F0058B7CF /* BookingRoomTitleTableViewCell.swift in Sources */,
 				7E10273121BDBC4200EB33A7 /* TopProfileCell.swift in Sources */,
 				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
@@ -730,13 +845,18 @@
 				2E46FE0C21B4BD4F0046E5E7 /* InboxTableViewCell.swift in Sources */,
 				6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */,
 				7E0E690721C0863B00E5124E /* SettingCell.swift in Sources */,
+				7E0756F021C845E0000A8DCA /* FaresandReservedList.swift in Sources */,
 				6AFAE88E21BF591A003DA76E /* BookingViewController.swift in Sources */,
 				2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */,
 				7E0B590021C091FF00321F10 /* FeedbackViewController.swift in Sources */,
 				6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */,
+				7E07570621C846A0000A8DCA /* HelpList.swift in Sources */,
 				7E0E690921C0865900E5124E /* SettingTableViewController.swift in Sources */,
 				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
 				7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
+				7E0756FA21C84631000A8DCA /* ReservationcancellationList.swift in Sources */,
+				7E0756F221C845F2000A8DCA /* FaresandReservedViewController.swift in Sources */,
+				7E07570221C84691000A8DCA /* HelpCell.swift in Sources */,
 				7E1CDEDE21C26782003B0A37 /* SelectCurrencyCell.swift in Sources */,
 				7E0B58F521C08BD200321F10 /* NotificationViewController.swift in Sources */,
 				7E0B58F921C08BE700321F10 /* NotificationList.swift in Sources */,
