@@ -58,7 +58,8 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        newArrayOfCellData = []
+//        newArrayOfCellData = []
+        arrayOfCellData = ListingData.shared.arrayOfCellData
         self.searchText = searchBar.text ?? ""
         for i in 0..<arrayOfCellData.count {
             if self.searchText == arrayOfCellData[i].city {
@@ -91,6 +92,18 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         present(calendarViewVC, animated: true, completion: nil)
         
     }
+    
+    @IBAction func didTapShowAll(_ sender: UIButton) {
+        let detailViewVC = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+
+        if newArrayOfCellData.count == 0 {
+            detailViewVC.arrayOfCellData = arrayOfCellData
+        } else {
+        detailViewVC.arrayOfCellData = newArrayOfCellData
+        navigationController?.pushViewController(detailViewVC, animated: true)
+        }
+      }
+    
     
     @IBAction func unwindToDetailViewController(_ unwindSegue: UIStoryboardSegue) {
         

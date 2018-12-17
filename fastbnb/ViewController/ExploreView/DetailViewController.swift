@@ -33,7 +33,7 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         
         
-        arrayOfCellData = ListingData.shared.arrayOfCellData
+//        arrayOfCellData = ListingData.shared.arrayOfCellData
         searchBarForDetailVC.delegate = self
 
         

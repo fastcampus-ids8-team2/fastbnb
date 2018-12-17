@@ -189,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-mG-F53">
-                                <rect key="frame" x="0.0" y="194" width="414" height="619"/>
+                                <rect key="frame" x="0.0" y="150" width="414" height="712"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailViewTableViewCell" rowHeight="294" id="kJf-Se-usf" customClass="DetailExploreViewTableViewCell" customModule="fastbnb" customModuleProvider="target">
@@ -299,12 +299,12 @@
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" placeholder="Try 마포구" translatesAutoresizingMaskIntoConstraints="NO" id="AZK-cN-ygy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <stackView opaque="NO" contentMode="left" distribution="equalSpacing" alignment="lastBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-ib-1qt">
-                                <rect key="frame" x="10" y="154" width="147" height="30"/>
+                                <rect key="frame" x="10" y="110" width="147" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqO-vw-neJ">
                                         <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
@@ -1104,7 +1104,7 @@
                                         <color key="titleShadowColor" white="0.0" alpha="0.19595462329999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
                                     <connections>
-                                        <segue destination="nmP-Cf-n8Y" kind="show" identifier="" id="oEV-BH-cPo"/>
+                                        <action selector="didTapShowAll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TlF-of-8SW"/>
                                     </connections>
                                 </button>
                                 <prototypes>
