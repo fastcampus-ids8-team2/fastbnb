@@ -13,7 +13,11 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
 
     var arrayOfCellData: [Result] = []
     @IBOutlet weak var searchBarForDetailVC: UISearchBar!
+    @IBOutlet weak var searchBarOutlet: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var guestButton: UIButton!
+    @IBOutlet private weak var datesButton: UIButton!
     
     var searchText: String?
     var newArrayOfCellData: [Result] = []
@@ -34,8 +38,26 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
         
         
         tableView.rowHeight = 300
+        setButton()
         
         
+    }
+    
+    // setting Button below search Bar
+    private func setButton() {
+        datesButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+        datesButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        datesButton.layer.borderWidth = 1
+        datesButton.layer.cornerRadius = 5
+        datesButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        guestButton.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+        guestButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        guestButton.layer.borderWidth = 1
+        guestButton.layer.cornerRadius = 5
+        guestButton.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        searchBarOutlet.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         
     }
     
@@ -52,6 +74,7 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
 //                print("newArrayOfCellData: ",self.newArrayOfCellData)
                 self.tableView.reloadData()
                 self.searchBarForDetailVC.resignFirstResponder()
+//                print(self.arrayOfCellData)
             }
         
         }

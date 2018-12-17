@@ -14,8 +14,9 @@ import UIKit
 
 class ExploreViewController: UIViewController, UISearchBarDelegate {
    
+    @IBOutlet weak var datesButtonOutlet: UIButton!
+    @IBOutlet weak var guestButtonOutlet: UIButton!
     
-    @IBOutlet weak var guestButton: UIButton!
     var arrayOfCellData: [Result] = []
     var newArrayOfCellData: [Result] = []
     var searchText: String?
@@ -33,29 +34,45 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         super.viewDidLoad()
         citySearchSliderBar.delegate = self
         arrayOfCellData = ListingData.shared.arrayOfCellData
-
         cityArray = [1,2,3,4,5]
+        setButton()
         
-        
-       
-        
-
         
         }
     
+    private func setButton() {
+        datesButtonOutlet.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+        datesButtonOutlet.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        datesButtonOutlet.layer.borderWidth = 1
+        datesButtonOutlet.layer.cornerRadius = 5
+        datesButtonOutlet.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        guestButtonOutlet.setTitleColor(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), for: .normal)
+        guestButtonOutlet.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        guestButtonOutlet.layer.borderWidth = 1
+        guestButtonOutlet.layer.cornerRadius = 5
+        guestButtonOutlet.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+        
+        citySearchSliderBar.layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        
+    }
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
+        newArrayOfCellData = []
         self.searchText = searchBar.text ?? ""
-        
-        for i in 0...arrayOfCellData.count - 1 {
-            if (self.searchText?.contains(arrayOfCellData[i].city))! && adultGuestNumber >= arrayOfCellData[i].personCapacity {
-                arrayOfCellData.append(self.arrayOfCellData[i])
+        for i in 0..<arrayOfCellData.count {
+            if self.searchText == arrayOfCellData[i].city {
+                newArrayOfCellData.append(self.arrayOfCellData[i])
+                print("print City:", arrayOfCellData[i].city)
+                print("Hello")
             }
-            
-            
         }
-        print("adultGuestNumber: ", adultGuestNumber)
-        print("newArrayOfCellData: ",newArrayOfCellData)
+        
+     
+        
+//        print("adultGuestNumber: ", adultGuestNumber)
+        print("searchText:",searchText)
+        print("arrayOfCellData: ",newArrayOfCellData.count)
         tableView.reloadData()
         citySearchSliderBar.resignFirstResponder()
     }
@@ -145,7 +162,7 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         if indexPath.row == 0 {
           
          
-            return tableView.bounds.width + 32.5
+            return tableView.bounds.width + 115
           
         } else {
             return UITableView.automaticDimension
@@ -162,13 +179,12 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//
-//        if newArrayOfCellData.count == 0 {
-//            return arrayOfCellData.count
-//        } else {
-//            return newArrayOfCellData.count
-//        }
-        return arrayOfCellData.count
+
+        if newArrayOfCellData.count == 0 {
+            return arrayOfCellData.count
+        } else {
+            return newArrayOfCellData.count
+        }
         
         
         
@@ -184,12 +200,26 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         
         
 
-        
-        cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
+        if newArrayOfCellData.count == 0 {
+            cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
                            image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
+        } else if newArrayOfCellData.count > 0 {
+            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
+                           city: newArrayOfCellData[indexPath.row].city,
+                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
+                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
+                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
+        } else if newArrayOfCellData.count == 0 && searchText?.isEmpty == false {
+            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
+                           city: newArrayOfCellData[indexPath.row].city,
+                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
+                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
+                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
+        }
+        
         
         cell.dot.text = "•"
         

@@ -189,7 +189,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-mG-F53">
-                                <rect key="frame" x="0.0" y="174" width="414" height="639"/>
+                                <rect key="frame" x="0.0" y="194" width="414" height="619"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="detailViewTableViewCell" rowHeight="294" id="kJf-Se-usf" customClass="DetailExploreViewTableViewCell" customModule="fastbnb" customModuleProvider="target">
@@ -298,23 +298,24 @@
                                     <outlet property="delegate" destination="nmP-Cf-n8Y" id="860-rW-PVx"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="AZK-cN-ygy">
+                            <searchBar contentMode="redraw" placeholder="Try 마포구" translatesAutoresizingMaskIntoConstraints="NO" id="AZK-cN-ygy">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <stackView opaque="NO" contentMode="left" distribution="fillProportionally" alignment="lastBaseline" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-ib-1qt">
-                                <rect key="frame" x="16" y="144" width="119" height="30"/>
+                            <stackView opaque="NO" contentMode="left" distribution="equalSpacing" alignment="lastBaseline" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oL2-ib-1qt">
+                                <rect key="frame" x="10" y="154" width="147" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GqO-vw-neJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
-                                        <state key="normal" title="Guests"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
+                                        <state key="normal" title="   Guests   "/>
                                         <connections>
                                             <action selector="didTapCalendarViewController:" destination="nmP-Cf-n8Y" eventType="touchUpInside" id="6dc-Oq-HG1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27n-dP-cYB">
-                                        <rect key="frame" x="79" y="0.0" width="40" height="30"/>
-                                        <state key="normal" title="Dates"/>
+                                        <rect key="frame" x="83" y="0.0" width="64" height="30"/>
+                                        <state key="normal" title="   Dates   "/>
                                         <connections>
                                             <action selector="didTapGestViewController:" destination="nmP-Cf-n8Y" eventType="touchUpInside" id="tZr-b1-TzW"/>
                                         </connections>
@@ -322,23 +323,25 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="oL2-ib-1qt" firstAttribute="top" secondItem="AZK-cN-ygy" secondAttribute="bottom" id="1nC-W6-pDK"/>
-                            <constraint firstItem="oL2-ib-1qt" firstAttribute="top" secondItem="AZK-cN-ygy" secondAttribute="bottom" id="66I-LQ-XdS"/>
+                            <constraint firstItem="oL2-ib-1qt" firstAttribute="top" secondItem="AZK-cN-ygy" secondAttribute="bottom" constant="10" id="66I-LQ-XdS"/>
                             <constraint firstItem="hIW-mG-F53" firstAttribute="leading" secondItem="SKc-VN-FMh" secondAttribute="leading" id="Etj-xX-rUD"/>
-                            <constraint firstItem="hIW-mG-F53" firstAttribute="top" secondItem="oL2-ib-1qt" secondAttribute="bottom" id="HO0-lp-0kF"/>
+                            <constraint firstItem="hIW-mG-F53" firstAttribute="top" secondItem="oL2-ib-1qt" secondAttribute="bottom" constant="10" id="HO0-lp-0kF"/>
                             <constraint firstItem="AZK-cN-ygy" firstAttribute="top" secondItem="SKc-VN-FMh" secondAttribute="top" id="HWg-Dj-lh2"/>
                             <constraint firstItem="hIW-mG-F53" firstAttribute="bottom" secondItem="SKc-VN-FMh" secondAttribute="bottom" id="Vjp-q8-m9M"/>
                             <constraint firstItem="hIW-mG-F53" firstAttribute="trailing" secondItem="SKc-VN-FMh" secondAttribute="trailing" id="ZvO-jS-zZV"/>
-                            <constraint firstItem="oL2-ib-1qt" firstAttribute="leading" secondItem="SKc-VN-FMh" secondAttribute="leading" constant="16" id="ekS-F6-4se"/>
+                            <constraint firstItem="oL2-ib-1qt" firstAttribute="leading" secondItem="SKc-VN-FMh" secondAttribute="leading" constant="10" id="ekS-F6-4se"/>
                             <constraint firstItem="AZK-cN-ygy" firstAttribute="leading" secondItem="SKc-VN-FMh" secondAttribute="leading" id="ryC-St-EQS"/>
                             <constraint firstItem="AZK-cN-ygy" firstAttribute="trailing" secondItem="SKc-VN-FMh" secondAttribute="trailing" id="w7q-V3-yai"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SKc-VN-FMh"/>
                     </view>
                     <connections>
+                        <outlet property="datesButton" destination="27n-dP-cYB" id="fYj-Wd-kXT"/>
+                        <outlet property="guestButton" destination="GqO-vw-neJ" id="Vvv-yI-Nrt"/>
                         <outlet property="searchBarForDetailVC" destination="AZK-cN-ygy" id="zut-xH-DyH"/>
+                        <outlet property="searchBarOutlet" destination="AZK-cN-ygy" id="h4w-CC-hwq"/>
                         <outlet property="tableView" destination="hIW-mG-F53" id="H8W-2U-xMg"/>
                     </connections>
                 </viewController>
@@ -1049,24 +1052,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBR-vq-W7d" userLabel="searchBarView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="85"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="105"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="r9P-8t-9wW">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                    <searchBar contentMode="redraw" placeholder="Try Seoul" translatesAutoresizingMaskIntoConstraints="NO" id="r9P-8t-9wW">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                        <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
                                     </searchBar>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-rZ-Lrn">
-                                        <rect key="frame" x="0.0" y="55" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Dates"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-rZ-Lrn">
+                                        <rect key="frame" x="10" y="65" width="64" height="30"/>
+                                        <state key="normal" title="   Dates   "/>
                                         <connections>
                                             <action selector="didTapCalendarViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GVu-J8-thD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRt-OO-qCk">
-                                        <rect key="frame" x="80" y="54" width="72" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Guests"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRt-OO-qCk">
+                                        <rect key="frame" x="84" y="65" width="73" height="30"/>
+                                        <state key="normal" title="   Guests   "/>
                                         <connections>
                                             <action selector="didTapGestViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SU2-OB-7p2"/>
                                         </connections>
@@ -1076,12 +1083,17 @@
                                 <constraints>
                                     <constraint firstItem="r9P-8t-9wW" firstAttribute="leading" secondItem="JBR-vq-W7d" secondAttribute="leading" id="1J8-0V-F3y"/>
                                     <constraint firstAttribute="trailing" secondItem="r9P-8t-9wW" secondAttribute="trailing" id="3Zc-ba-L7s"/>
-                                    <constraint firstAttribute="height" constant="85" id="BfR-og-2YO"/>
+                                    <constraint firstAttribute="height" constant="105" id="BfR-og-2YO"/>
+                                    <constraint firstItem="FRt-OO-qCk" firstAttribute="leading" secondItem="YAT-rZ-Lrn" secondAttribute="trailing" constant="10" id="VFo-ud-nqV"/>
+                                    <constraint firstItem="FRt-OO-qCk" firstAttribute="centerY" secondItem="YAT-rZ-Lrn" secondAttribute="centerY" id="dj0-av-vmh"/>
+                                    <constraint firstItem="YAT-rZ-Lrn" firstAttribute="top" secondItem="r9P-8t-9wW" secondAttribute="bottom" constant="10" id="iEF-Jf-iXI"/>
+                                    <constraint firstItem="YAT-rZ-Lrn" firstAttribute="leading" secondItem="JBR-vq-W7d" secondAttribute="leading" constant="10" id="pcp-T4-RKF"/>
                                     <constraint firstItem="r9P-8t-9wW" firstAttribute="top" secondItem="JBR-vq-W7d" secondAttribute="top" id="uOl-w6-IU7"/>
+                                    <constraint firstAttribute="bottom" secondItem="YAT-rZ-Lrn" secondAttribute="bottom" constant="10" id="wH6-2z-cdy"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ly1-s8-mNi">
-                                <rect key="frame" x="0.0" y="173" width="414" height="661"/>
+                                <rect key="frame" x="0.0" y="193" width="414" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h0Z-Ep-asr">
                                     <rect key="frame" x="0.0" y="258" width="414" height="67"/>
@@ -1280,7 +1292,8 @@
                     <navigationItem key="navigationItem" id="NUE-39-U5T"/>
                     <connections>
                         <outlet property="citySearchSliderBar" destination="r9P-8t-9wW" id="qW4-wa-eQX"/>
-                        <outlet property="guestButton" destination="FRt-OO-qCk" id="Qvd-Ao-q4e"/>
+                        <outlet property="datesButtonOutlet" destination="YAT-rZ-Lrn" id="5DB-N6-X4i"/>
+                        <outlet property="guestButtonOutlet" destination="FRt-OO-qCk" id="QZ6-au-nDP"/>
                         <outlet property="tableView" destination="ly1-s8-mNi" id="GBM-UO-hiu"/>
                     </connections>
                 </viewController>

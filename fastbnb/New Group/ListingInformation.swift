@@ -126,21 +126,26 @@ class JSONNull: Codable, Hashable {
 
 
 
-final class ListingData {
-    static let shared = ListingData()
-    var arrayOfCellData: [Result] = []
+    final class ListingData {
+        static let shared = ListingData()
+        var arrayOfCellData: [Result] = []
     
-    func getDataFromServer() { // 서버에서 데이터 가져오는 펑션
-        
-        guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
-        guard let data = try? Data(contentsOf: url) else { return }
-        
-        guard let listingData = try? JSONDecoder().decode(Listing.self, from: data) else { return }
-        arrayOfCellData = listingData.results
     
-        print("\n===============[data received]========================\n")
-        print("Data recevied complete")
+
+    
+        func getDataFromServer() { // 서버에서 데이터 가져오는 펑션
         
-    }
+            guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
+            guard let data = try? Data(contentsOf: url) else { return }
+        
+            guard let listingData = try? JSONDecoder().decode(Listing.self, from: data) else { return }
+            arrayOfCellData = listingData.results
+    
+            print("\n===============[data received]========================\n")
+            print("Data recevied complete")
+        
+   }
     
 }
+
+
