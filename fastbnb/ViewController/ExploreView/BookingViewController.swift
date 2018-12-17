@@ -52,7 +52,7 @@ class BookingViewController: UIViewController {
         
         
         // fake data for arrayOfNumberOfRow. We need 13
-        arrayOfNumberOfRow = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+        arrayOfNumberOfRow = [1,2,3,4,5,6,7,8,9,10,11,12]
         
         
         // roomTitle & roomType for second tableViewCell in BookingViewController
@@ -191,15 +191,32 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             
             let bounds = UIScreen.main.bounds
             let width = bounds.size.width
+            let height = bounds.size.height
+            
+            let mapHeight = height * 0.2 - 0
+            
+//            cell.lableForHeight.font.withSize(mapHeight)
+//
+//            testLabel.font.withSize(testLabel.frame.height * 2/3)
+//            cell.labelHeightConst.constant.native = CGFloat.NativeType(mapHeight)
+            
+            
+            
+//            var contentHeight = cell.contentView.bounds.size.height
+//            contentHeight = mapHeight
+//
+            
             // Create a GMSCameraPosition that tells the map to display the
             // coordinate -33.86,151.20 at zoom level 6.
             let camera = GMSCameraPosition.camera(withLatitude: latitude, longitude: longtitude, zoom: 16.0)
-            let mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0, width: width, height: 150), camera: camera)
+            let mapView = GMSMapView.map(withFrame: CGRect(x: 0, y: 0, width: width, height: mapHeight), camera: camera)
 
             mapView.settings.scrollGestures = false
             
-            
+
             cell.mapViewBase.addSubview(mapView)
+//            cell.mapViewBase.addSubview(mapView)
+            
             
             
             // Creates a marker in the center of the map.
@@ -245,7 +262,7 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
  
             
-        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
+        } else if arrayOfNumberOfRow[indexPath.row] == 10 {
             
             let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
             
@@ -254,7 +271,7 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
      
             
-        } else if arrayOfNumberOfRow[indexPath.row] == 12 {
+        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
             
             let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
             
@@ -263,7 +280,7 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             return cell
             
             
-        }else if arrayOfNumberOfRow[indexPath.row] == 13 {
+        }else if arrayOfNumberOfRow[indexPath.row] == 12 {
             
             let cell = Bundle.main.loadNibNamed("BookingRestTableViewCell", owner: self, options: nil)?.first as! BookingRestTableViewCell
             
@@ -282,81 +299,5 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
         
        
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//
-//
-//        if arrayOfNumberOfRow[indexPath.row] == 1 {
-//
-//            return 150
-//        } else if arrayOfNumberOfRow[indexPath.row] == 2 {
-//
-//
-//
-//            return 50
-//        } else if arrayOfNumberOfRow[indexPath.row] == 3 {
-//
-//
-//            return 50
-//
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 4 {
-//
-//
-//
-//
-//            return 50
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 5 {
-//
-//
-//            return 50
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 6 {
-//
-//
-//            return 150
-//
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 7 {
-//
-//
-//            return 50
-//
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 8 {
-//
-//
-//            return 50
-//
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 9 {
-//
-//
-//            return 50
-//
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 11 {
-//
-//
-//            return 50
-//
-//
-//        } else if arrayOfNumberOfRow[indexPath.row] == 12 {
-//
-//
-//            return 50
-//
-//
-//        }else if arrayOfNumberOfRow[indexPath.row] == 13 {
-//
-//            return 50
-//
-//
-//        } else {
-//
-//
-//            return 50
-//
-//        }
-//    }
+
 }

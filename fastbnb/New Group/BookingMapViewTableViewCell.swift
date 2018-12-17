@@ -12,8 +12,10 @@ import GooglePlaces
 
 
 class BookingMapViewTableViewCell: UITableViewCell {
-
-
+    @IBOutlet weak var lableForHeight: UILabel!
     @IBOutlet weak var mapViewBase: UIView!
+    
+    @IBOutlet weak var labelHeightConst: NSLayoutConstraint!
+    
     
 }

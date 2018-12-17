@@ -57,6 +57,8 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 switch response.result {
                 case .success(let data):
                     do {
+                        print("data has been saved")
+                        
                         print(data)
                     } catch {
                         print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
@@ -82,6 +84,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 switch response.result {
                 case .success(let data):
                     do {
+                        print("data has been deleted")
                         print(data)
                         
                     } catch {

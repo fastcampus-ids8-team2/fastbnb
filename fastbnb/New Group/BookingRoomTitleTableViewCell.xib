@@ -19,26 +19,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Title: this is the room title for the AirBNB" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klS-1u-6zM">
-                        <rect key="frame" x="0.0" y="30" width="310" height="39.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Title: this is the room title for the AirBNB" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klS-1u-6zM">
+                        <rect key="frame" x="20" y="30" width="300" height="57.5"/>
                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-04-RmS">
-                        <rect key="frame" x="0.0" y="11" width="64" height="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Type" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-04-RmS">
+                        <rect key="frame" x="20" y="10" width="63.5" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="klS-1u-6zM" firstAttribute="top" secondItem="t9e-04-RmS" secondAttribute="bottom" constant="4" id="1Jp-qJ-nQZ"/>
-                    <constraint firstItem="t9e-04-RmS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3lp-vN-nbW"/>
-                    <constraint firstAttribute="trailing" secondItem="klS-1u-6zM" secondAttribute="trailing" constant="10" id="AHX-pZ-wh6"/>
-                    <constraint firstItem="t9e-04-RmS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Wcy-Mm-FPk"/>
-                    <constraint firstItem="klS-1u-6zM" firstAttribute="top" secondItem="t9e-04-RmS" secondAttribute="bottom" constant="4" id="ovi-J5-3io"/>
-                    <constraint firstItem="klS-1u-6zM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pRe-Ai-Ohd"/>
+                    <constraint firstItem="t9e-04-RmS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3lp-vN-nbW"/>
+                    <constraint firstItem="klS-1u-6zM" firstAttribute="top" secondItem="t9e-04-RmS" secondAttribute="top" constant="20" id="5SD-bd-7FW"/>
+                    <constraint firstItem="t9e-04-RmS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Wcy-Mm-FPk"/>
+                    <constraint firstItem="klS-1u-6zM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="aeF-d2-m67"/>
+                    <constraint firstAttribute="trailing" secondItem="klS-1u-6zM" secondAttribute="trailing" id="iDj-uJ-H59"/>
+                    <constraint firstAttribute="bottom" secondItem="klS-1u-6zM" secondAttribute="bottom" constant="5" id="iMd-vP-SAa"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
