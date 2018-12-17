@@ -47,7 +47,7 @@
                 <outlet property="hostImageView" destination="k2p-Hl-kaU" id="R6z-Jm-Phr"/>
                 <outlet property="roomAddress" destination="xwy-bc-F2p" id="WkH-5x-O8V"/>
             </connections>
-            <point key="canvasLocation" x="161.59999999999999" y="113.3433283358321"/>
+            <point key="canvasLocation" x="368" y="93"/>
         </tableViewCell>
     </objects>
     <resources>
