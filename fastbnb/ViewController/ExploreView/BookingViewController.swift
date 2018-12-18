@@ -133,13 +133,48 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
         
         
     }
-    
+//    private func adScrollViewConfig() {
+//        // 횡스크롤 배너
+//        view.addSubview(adScrollView)
+//        adScrollView.frame = CGRect(x: view.frame.origin.x, y: 105, width: view.frame.width, height: 150)
+//        adScrollView.showsHorizontalScrollIndicator = false // 횡스크롤바 없음
+//        adScrollView.isPagingEnabled = true
+//
+//        // 횡스크롤 배너에 이미지 넣기
+//        adImagesArray = [UIImage(named: "ad2") , UIImage(named: "ad1"), UIImage(named: "ad3")] as! [UIImage]
+//        for i in 0..<adImagesArray.count {
+//            let adView = UIImageView()
+//            adView.contentMode = .scaleToFill
+//            adView.image = adImagesArray[i]
+//
+//            let xPosition = view.frame.width * CGFloat(i)
+//            adView.frame = CGRect(x: xPosition, y: adScrollView.bounds.origin.y, width: adScrollView.frame.width, height: adScrollView.frame.height)
+//            adScrollView.contentSize.width = adScrollView.frame.width * CGFloat((i + 1))
+//
+//            adScrollView.addSubview(adView)
+//        }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
         if arrayOfNumberOfRow[indexPath.row] == 1 {
             let cell = Bundle.main.loadNibNamed("BookingImageTableViewCell", owner: self, options: nil)?.first as! BookingImageTableViewCell
         
-            cell.setupCell(image: image)
+            
+            // MARK: due tomorrow
+
+            let bookingScrollView = UIScrollView()
+            
+            cell.contentView.addSubview(bookingScrollView)
+            bookingScrollView.frame = CGRect(x: cell.contentView.frame.origin.x, y: cell.contentView.frame.origin.y, width: cell.contentView.frame.width, height: cell.contentView.frame.height)
+            bookingScrollView.showsHorizontalScrollIndicator = false // 횡스크롤바 없음
+            bookingScrollView.isPagingEnabled = true
+            
+            for i in 0..<images.count {
+                let adView = UIImageView()
+                adView.contentMode = .scaleToFill
+                cell.setupCell(image: images[i])
+            }
+            
+//            cell.setupCell(image: image)
             return cell
         } else if arrayOfNumberOfRow[indexPath.row] == 2 {
             

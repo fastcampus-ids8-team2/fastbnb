@@ -275,6 +275,15 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         navigationController?.pushViewController(bookingVC, animated: true)
     
     }
+    // MARK: collectionView new raw has been implemented
+
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.item == arrayOfCellData.count - 1 {
+            ListingData.shared.getNextPageDataFromServer(collectionView)
+            arrayOfCellData = ListingData.shared.arrayOfCellData
+        }
+    }
+    
     
 }
 

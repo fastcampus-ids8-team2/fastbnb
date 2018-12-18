@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 struct Listing: Codable {
@@ -126,25 +127,56 @@ class JSONNull: Codable, Hashable {
 
 
 
-    final class ListingData {
+final class ListingData {
         static let shared = ListingData()
         var arrayOfCellData: [Result] = []
+        var nextPageURL: String? = ""
     
     
 
     
-        func getDataFromServer() { // 서버에서 데이터 가져오는 펑션
+    func getDataFromServer() { // 서버에서 데이터 가져오는 펑션
         
             guard let url = URL(string: "https://backends.xyz/api/home/listings/") else { return }
             guard let data = try? Data(contentsOf: url) else { return }
         
             guard let listingData = try? JSONDecoder().decode(Listing.self, from: data) else { return }
             arrayOfCellData = listingData.results
+            nextPageURL = listingData.next
     
             print("\n===============[data received]========================\n")
             print("Data recevied complete")
         
-   }
+    }
+
+    func getNextPageDataFromServer(_ collectionView: UICollectionView) {
+            // 데이터 페이지네이션 대응 펑션(스크롤 끝에서 데이터 추가받고 리로드 데이터)
+            guard let url = URL(string: nextPageURL ?? "") else
+            {
+                DispatchQueue.main.async {
+                    collectionView.reloadData()
+                }
+                return
+            }
+            
+            URLSession.shared.dataTask(with: url) { (data, response, error) in
+                guard let data = data else { return }
+                let jsonDecoder = JSONDecoder()
+                
+                do {
+                    let arrayData = try jsonDecoder.decode(Listing.self, from: data)
+                    
+                    for i in 0..<arrayData.results.count {
+                        self.arrayOfCellData.append(arrayData.results[i])
+                    }
+                    self.nextPageURL = arrayData.next
+                    DispatchQueue.main.async {
+                        collectionView.reloadData()
+                    }
+                } catch {
+                    print("에러내용: \(error)")
+                }}.resume()
+        }
     
 }
 
