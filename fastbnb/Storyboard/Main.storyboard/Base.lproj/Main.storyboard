@@ -2759,7 +2759,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="title" destination="TYK-ny-hEs" id="UTb-Aq-WFA"/>
+                                            <outlet property="title" destination="TYK-ny-hEs" id="Mj9-Gh-Vnm"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2776,7 +2776,7 @@
                         <viewLayoutGuide key="safeArea" id="zGG-0W-79e"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Bxe-L7-yTE" id="Zgu-OR-8Hh"/>
+                        <outlet property="tableView" destination="Bxe-L7-yTE" id="eLV-DX-MgZ"/>
                         <segue destination="ESk-9r-1u7" kind="show" identifier="Frequently Asked Questions" id="9Wf-L9-rYv"/>
                         <segue destination="y9X-ZQ-5V8" kind="show" identifier="Frequently Asked Questions by Host" id="Xo2-BM-yh5"/>
                         <segue destination="w0l-kW-JAK" kind="show" identifier="Fares and Reserved" id="IRH-D9-N1j"/>
@@ -2818,7 +2818,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="title" destination="rSn-Ib-TzV" id="Vjx-M8-8LV"/>
+                                            <outlet property="title" destination="rSn-Ib-TzV" id="SS0-Y8-VPj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -2835,7 +2835,7 @@
                         <viewLayoutGuide key="safeArea" id="uFE-7p-QBu"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="sAx-vA-cBx" id="P5C-Za-5pI"/>
+                        <outlet property="tableView" destination="sAx-vA-cBx" id="8VB-nT-iBk"/>
                         <segue destination="6tz-Tf-L1P" kind="show" id="Knp-cD-Ium"/>
                         <segue destination="OFV-qP-Cxo" kind="show" id="2zv-Tm-6Dz"/>
                     </connections>
@@ -4428,7 +4428,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="title" destination="Uev-w6-XZR" id="jZU-E2-mxY"/>
+                                            <outlet property="title" destination="Uev-w6-XZR" id="DiC-az-71U"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -4445,7 +4445,7 @@
                         <viewLayoutGuide key="safeArea" id="fPg-Vc-AiH"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Pzu-gz-ygz" id="gRm-Ry-23V"/>
+                        <outlet property="tableView" destination="Pzu-gz-ygz" id="GbY-hE-pAQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hFb-O3-FzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4482,7 +4482,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="title" destination="4Xg-jU-ksX" id="mdg-jy-Nxt"/>
+                                            <outlet property="cell" destination="4Xg-jU-ksX" id="eKW-GB-9sO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -4499,7 +4499,7 @@
                         <viewLayoutGuide key="safeArea" id="YyW-91-3IC"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="uxd-TE-rco" id="fym-rq-EPx"/>
+                        <outlet property="tableView" destination="uxd-TE-rco" id="hvV-O7-Tur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dmy-Jz-DJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -4536,7 +4536,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="title" destination="qJs-BP-KHD" id="rEy-dg-l2c"/>
+                                            <outlet property="title" destination="qJs-BP-KHD" id="Dbb-gA-oaO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -4553,13 +4553,13 @@
                         <viewLayoutGuide key="safeArea" id="dIq-pA-K1N"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="T0M-ie-53v" id="xPL-09-lkL"/>
+                        <outlet property="tableView" destination="T0M-ie-53v" id="354-pW-20c"/>
                         <segue destination="OQM-nb-S8r" kind="show" identifier="How do I change the confirmed reservation as a host?" id="qeT-26-OGu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T9l-L7-GiI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10370" y="3212"/>
+            <point key="canvasLocation" x="10369.565217391306" y="3211.6071428571427"/>
         </scene>
         <!--Add Billing Information View Controller-->
         <scene sceneID="Bta-ZT-akb">
@@ -4591,7 +4591,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="title" destination="Hzm-xF-vxL" id="iZL-iB-1VD"/>
+                                            <outlet property="title" destination="Hzm-xF-vxL" id="EGe-6Q-It2"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -4608,7 +4608,7 @@
                         <viewLayoutGuide key="safeArea" id="EV5-8v-GaB"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="nSO-8w-wML" id="YAQ-RL-1S8"/>
+                        <outlet property="tableView" destination="nSO-8w-wML" id="NOk-L0-GuU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3dp-YN-Vab" userLabel="First Responder" sceneMemberID="firstResponder"/>
