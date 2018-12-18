@@ -63,7 +63,7 @@ struct SavedRoomRoomPhoto: Codable {
     }
 }
 
-class SavedRoomData {
+final class SavedRoomData {
     static let shared = SavedRoomData()
     var arrayOfData: SavedRooms = []
     var selectRow: Int = 0

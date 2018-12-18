@@ -41,6 +41,9 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     // change the image of the saveButton, toggle.
     private func saveHasPressedButton() {
         
+        //reload data from saveRoom
+        SavedRoomData.shared.getDataFromServer()
+        
         if roomHasSavedButton == false {
             
 //            FakeNumber.countNumber.realNumber.toggle()

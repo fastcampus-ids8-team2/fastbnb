@@ -37,6 +37,9 @@ class DetailExploreViewTableViewCell: UITableViewCell {
     
     private func saveHasPressedButton() {
         
+        //reload data from saveRoom
+        SavedRoomData.shared.getDataFromServer()
+        
         if roomHasSavedButton == false {
             print(pk)
             

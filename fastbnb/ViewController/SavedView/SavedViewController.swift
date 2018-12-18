@@ -21,7 +21,7 @@ class SavedViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         // 시점의 문제 나중에 문제가 될수 있음 delegate이나 notification으로 data reload하는게 더 좋은 방법 
-        SavedRoomData.shared.getDataFromServer()
+       
         tableView.reloadData()
         print("is it working?")
     }
