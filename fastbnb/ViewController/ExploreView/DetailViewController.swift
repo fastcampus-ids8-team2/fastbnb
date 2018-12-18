@@ -65,10 +65,13 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchText = searchBar.text ?? ""
+        newArrayOfCellData = []
+        arrayOfCellData = ListingData.shared.arrayOfCellData
+        
         
         for i in 0...arrayOfCellData.count - 1 {
             if self.searchText == arrayOfCellData[i].city {
-                arrayOfCellData.append(self.arrayOfCellData[i])
+                newArrayOfCellData.append(self.arrayOfCellData[i])
         }
         
             DispatchQueue.main.async {
@@ -109,7 +112,12 @@ class DetailViewController: UIViewController, UISearchBarDelegate {
 
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayOfCellData.count
+        if newArrayOfCellData.count == 0 {
+            return arrayOfCellData.count
+            
+        } else {
+            return newArrayOfCellData.count
+        }
         
     }
     
@@ -120,12 +128,23 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
         
       
-        
-        cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
+        if newArrayOfCellData.count == 0 {
+            cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
                            roomPriceInfo: arrayOfCellData[indexPath.row].price,
                            roomTitle: arrayOfCellData[indexPath.row].roomName,
-                           image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
+                           image: arrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)   
+             cell.pk = arrayOfCellData[indexPath.row].pk
+        } else if newArrayOfCellData.count > 0 {
+            cell.setupCell(homeType: newArrayOfCellData[indexPath.row].roomType.rawValue,
+                           city: newArrayOfCellData[indexPath.row].city,
+                           roomPriceInfo: newArrayOfCellData[indexPath.row].price,
+                           roomTitle: newArrayOfCellData[indexPath.row].roomName,
+                           image: newArrayOfCellData[indexPath.row].roomPhotos[0].roomPhoto)
+            
+            print("newarrayNum:", newArrayOfCellData.count)
+             cell.pk = newArrayOfCellData[indexPath.row].pk
+        }
         
         let starRandomNumber = Int.random(in: 3...5)
         
@@ -139,7 +158,7 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         
         let randomNumber = Int.random(in: 0...500)
         cell.numberOfReview.text = "\(randomNumber)"
-        cell.pk = arrayOfCellData[indexPath.row].pk
+       
         
         
         

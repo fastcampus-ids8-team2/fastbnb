@@ -58,7 +58,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-//        newArrayOfCellData = []
+        newArrayOfCellData = []
         arrayOfCellData = ListingData.shared.arrayOfCellData
         self.searchText = searchBar.text ?? ""
         for i in 0..<arrayOfCellData.count {
@@ -98,8 +98,9 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
 
         if newArrayOfCellData.count == 0 {
             detailViewVC.arrayOfCellData = arrayOfCellData
+            navigationController?.pushViewController(detailViewVC, animated: true)
         } else {
-        detailViewVC.arrayOfCellData = newArrayOfCellData
+        detailViewVC.newArrayOfCellData = newArrayOfCellData
         navigationController?.pushViewController(detailViewVC, animated: true)
         }
       }

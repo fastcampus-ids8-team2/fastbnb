@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="BookingImageTableViewCell" image="airbnbImage" translatesAutoresizingMaskIntoConstraints="NO" id="2T8-eg-kJv">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="BookingImageTableViewCell" image="airbnbImage" translatesAutoresizingMaskIntoConstraints="NO" id="2T8-eg-kJv">
                         <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
                     </imageView>
                 </subviews>

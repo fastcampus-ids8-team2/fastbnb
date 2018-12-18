@@ -41,11 +41,15 @@ class BookingViewController: UIViewController {
     
    
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var pricePerNightLabel: UILabel!
     
     
     @IBOutlet weak var checkAvailability: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        // private func to setup Price Label
+        
+        priceLabelSetup()
         // bookingData from tapped Cell
         guard let bookingData = data else { return }
        checkAvailability.layer.cornerRadius = 10
@@ -92,6 +96,13 @@ class BookingViewController: UIViewController {
         print("images:", images)
     }
     
+    private func priceLabelSetup() {
+        guard let bookingData = data else { return }
+        pricePerNightLabel.text = "₩\(bookingData.price) / night"
+        
+    }
+    
+    
     @IBAction func didTapCheckAvailability(_ sender: UIButton) {
         
         if hasDate == false {
@@ -128,10 +139,7 @@ class BookingViewController: UIViewController {
 
 extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return arrayOfNumberOfRow.count
-        
-        
     }
 //    private func adScrollViewConfig() {
 //        // 횡스크롤 배너

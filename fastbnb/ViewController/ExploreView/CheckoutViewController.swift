@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class CheckoutViewController: UIViewController {
     
@@ -37,6 +38,10 @@ class CheckoutViewController: UIViewController {
     var numberOfDaysBooking = 3
 
     
+    // MARK: check In date has to be created
+    let guestNumbers = Int.random(in: 1...6)
+   
+    
     
     @IBOutlet weak var requestToBook: UIButton!
     override func viewDidLoad() {
@@ -55,13 +60,11 @@ class CheckoutViewController: UIViewController {
         roomPrice.text = "₩\(checkingoutData.price) per night"
         setupCell(imageName: checkingoutData.roomPhotos[0].roomPhoto)
         
-        // MARK: check In date has to be created
-        let guestNumbers = Int.random(in: 1...6)
+       
         let pricePerNightInt = checkingoutData.price
         let serviceFeeInt = Int(Double(checkingoutData.price) * 0.18)
         let occupancyTaxInt = Int(Double(checkingoutData.price) * 0.05)
         let totalAmount = pricePerNightInt + serviceFeeInt + occupancyTaxInt
-        
         guestNumber.text = "\(guestNumbers)"
         
         
@@ -152,8 +155,44 @@ class CheckoutViewController: UIViewController {
 //        print("data:",data)
         let bookingConfirmationVC = storyboard?.instantiateViewController(withIdentifier: "BookingConfirmationViewController") as! BookingConfirmationViewController
         
+            bookingToBackEnd()
+        
             present(bookingConfirmationVC, animated: true, completion: nil)
 
+    }
+    
+    private func bookingToBackEnd() {
+    
+        guard let pk = data?.pk else { return }
+        guard let url = URL(string: "https://backends.xyz/api/home/booking/") else { return }
+        
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
+        ]
+        let parameters: Parameters = ["check_in_date": "2018-12-25",
+                                      "check_out_date": "2018-12-28",
+                                      "num_guest": 1,
+                                      "room": pk
+                                     ]
+        
+        Alamofire.request(url, method: .post, parameters: parameters, headers: headers).validate().responseData { (response) in
+            switch response.result {
+            case .success(let datas):
+                do {
+                    print("room has been booked")
+                    
+                    print(datas)
+                } catch {
+                    
+                }
+                
+            case .failure(let error):
+                print ("failed get logs: \(error)")
+                print(pk)
+                
+                
+            }
+        }
     }
     
 }

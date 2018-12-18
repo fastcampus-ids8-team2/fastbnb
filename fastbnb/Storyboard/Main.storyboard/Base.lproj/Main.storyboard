@@ -401,7 +401,7 @@
                                     <constraint firstItem="xzb-Ir-gWS" firstAttribute="leading" secondItem="MK8-Wq-WXi" secondAttribute="leading" constant="29" id="gAU-fl-JIY"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-hy-7VB">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="O0i-hy-7VB">
                                 <rect key="frame" x="0.0" y="88" width="414" height="696"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -442,6 +442,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="checkAvailability" destination="wkZ-li-wic" id="RtW-UT-iK8"/>
+                        <outlet property="pricePerNightLabel" destination="ShI-nl-8VG" id="MuV-QI-rzo"/>
                         <outlet property="tableView" destination="O0i-hy-7VB" id="mLm-9m-5r7"/>
                     </connections>
                 </viewController>

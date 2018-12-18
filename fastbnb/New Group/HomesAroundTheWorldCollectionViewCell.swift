@@ -72,7 +72,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
         } else {
             saveButton.setImage(#imageLiteral(resourceName: "loveUntapped"), for: .normal)
             roomHasSavedButton.toggle()
-            guard let url = URL(string: "https://backends.xyz/api/user/saved_room/") else { return }
+            guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             
             
             let headers: HTTPHeaders = [
