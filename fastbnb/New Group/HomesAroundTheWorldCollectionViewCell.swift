@@ -42,7 +42,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     private func saveHasPressedButton() {
         
         //reload data from saveRoom
-        SavedRoomData.shared.getDataFromServer()
+      
         
         if roomHasSavedButton == false {
             
@@ -50,6 +50,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
             
             saveButton.setImage(#imageLiteral(resourceName: "loveTapped"), for: .normal)
             roomHasSavedButton.toggle()
+            SavedRoomData.shared.getDataFromServer()
             
             guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             

@@ -38,10 +38,12 @@ class DetailExploreViewTableViewCell: UITableViewCell {
     private func saveHasPressedButton() {
         
         //reload data from saveRoom
-        SavedRoomData.shared.getDataFromServer()
+        
         
         if roomHasSavedButton == false {
             print(pk)
+            
+            SavedRoomData.shared.getDataFromServer()
             
             saveButton.setImage(#imageLiteral(resourceName: "loveTapped"), for: .normal)
             roomHasSavedButton.toggle()
@@ -60,7 +62,7 @@ class DetailExploreViewTableViewCell: UITableViewCell {
                         print(data)
                     } catch {
                         print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
-                        
+
                     }
                     
                 case .failure(let error):
