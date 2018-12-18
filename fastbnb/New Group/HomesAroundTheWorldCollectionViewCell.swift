@@ -50,7 +50,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
             
             saveButton.setImage(#imageLiteral(resourceName: "loveTapped"), for: .normal)
             roomHasSavedButton.toggle()
-            SavedRoomData.shared.getDataFromServer()
+          
             
             guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             
@@ -69,7 +69,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 case .success(let data):
                     do {
                         
-                        
+                        SavedRoomData.shared.getDataFromServer()
                         print("data has been saved")
                         
                         
@@ -96,10 +96,16 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
             ]
             let parameters: Parameters = ["room_id": pk]
             
-            Alamofire.request(url, method: .delete, parameters: parameters, headers: headers).validate().responseData { (response) in
+            Alamofire.request(url,
+                              method: .delete,
+                              parameters: parameters,
+                              encoding: JSONEncoding.default ,
+                              headers: headers).validate().responseData { (response) in
                 switch response.result {
                 case .success(let data):
                     do {
+                        
+                        SavedRoomData.shared.getDataFromServer()
                         print("data has been deleted")
                         print(data)
                         

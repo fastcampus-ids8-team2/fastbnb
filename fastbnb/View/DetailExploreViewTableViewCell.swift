@@ -43,7 +43,7 @@ class DetailExploreViewTableViewCell: UITableViewCell {
         if roomHasSavedButton == false {
             print(pk)
             
-            SavedRoomData.shared.getDataFromServer()
+           
             
             saveButton.setImage(#imageLiteral(resourceName: "loveTapped"), for: .normal)
             roomHasSavedButton.toggle()
@@ -60,6 +60,7 @@ class DetailExploreViewTableViewCell: UITableViewCell {
                 case .success(let data):
                     do {
                         print(data)
+                        SavedRoomData.shared.getDataFromServer()
                     } catch {
                         print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
 
@@ -72,7 +73,7 @@ class DetailExploreViewTableViewCell: UITableViewCell {
         } else {
             saveButton.setImage(#imageLiteral(resourceName: "loveUntapped"), for: .normal)
             roomHasSavedButton.toggle()
-            guard let url = URL(string: "https://backends.xyz/api/user/saved_room/") else { return }
+            guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             
             
             let headers: HTTPHeaders = [
@@ -80,12 +81,21 @@ class DetailExploreViewTableViewCell: UITableViewCell {
             ]
             let parameters: Parameters = ["room_id": pk]
             
-            Alamofire.request(url, method: .delete, parameters: parameters, headers: headers).validate().responseData { (response) in
+            Alamofire.request(url,
+                              method: .delete,
+                              parameters: parameters,
+                              encoding: JSONEncoding.default ,
+                              headers: headers).validate().responseData { (response) in
+                //          MARK: 응답 data 인코딩
+                          let dataa = response.request?.httpBody
+                          let tempp = String(data: dataa!, encoding: .utf8)
+                          print("httpBody", tempp ?? "nil")
                 switch response.result {
                 case .success(let data):
                     do {
                         print(data)
-                        
+                        print("success")
+                        SavedRoomData.shared.getDataFromServer()
                     } catch {
                         print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
                     }

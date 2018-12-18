@@ -20,7 +20,7 @@ class SavedViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        SavedRoomData.shared.getDataFromServer()
+
         tableView.reloadData()
         print("is it working?")
     }
