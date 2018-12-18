@@ -1,5 +1,5 @@
 //
-//  HelpCell.swift
+//  AddBillingInformationCell.swift
 //  fastbnb
 //
 //  Created by wonsik on 18/12/2018.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class HelpCell: UITableViewCell {
+class AddBillingInformationCell: UITableViewCell {
 
     @IBOutlet weak var title: UILabel!
-   
+    
 
 }

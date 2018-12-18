@@ -1,5 +1,5 @@
 //
-//  HelpViewController.swift
+//  ReservationcancellationViewController.swift
 //  fastbnb
 //
 //  Created by wonsik on 18/12/2018.
@@ -8,22 +8,22 @@
 
 import UIKit
 
-class HelpViewController: UIViewController {
+class ReservationcancellationViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         tableView.rowHeight = 70
         self.tableView.tableFooterView = UIView(frame: .zero)
     }
-    let data = HelpData()
+    let data = ReservationcancellationData()
 }
-extension HelpViewController: UITableViewDelegate, UITableViewDataSource{
+extension ReservationcancellationViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HelpCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ReservationcancellationCell
         let list = self.data.list[indexPath.row]
         cell.title?.text = list.title
         return cell
@@ -34,11 +34,7 @@ extension HelpViewController: UITableViewDelegate, UITableViewDataSource{
         NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
         
         switch indexPath.row {
-        case 0: self.performSegue(withIdentifier: "Frequently Asked Questions", sender: nil)
-        case 1: self.performSegue(withIdentifier: "Frequently Asked Questions by Host", sender: nil)
-        case 2: self.performSegue(withIdentifier: "Fares and Reserved", sender: nil)
-        case 3: self.performSegue(withIdentifier: "Reservation cancellation", sender: nil)
-        case 4: self.performSegue(withIdentifier: "Add Billing Information", sender: nil)
+        case 0: self.performSegue(withIdentifier: "How do I change the confirmed reservation as a host?", sender: nil)
         default:
             return
         }
