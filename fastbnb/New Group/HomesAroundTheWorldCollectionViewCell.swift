@@ -43,6 +43,8 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
         
         if roomHasSavedButton == false {
             
+//            FakeNumber.countNumber.realNumber.toggle()
+            
             saveButton.setImage(#imageLiteral(resourceName: "loveTapped"), for: .normal)
             roomHasSavedButton.toggle()
             
@@ -52,14 +54,23 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
                 "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
             ]
             let parameters: Parameters = ["room_id": pk]
+
+  
+            
+//            SavedViewController
+//             let guestViewVC = storyboard?.instantiateViewController(withIdentifier: "guestViewController") as! GuestViewController
             
             Alamofire.request(url, method: .post, parameters: parameters, headers: headers).validate().responseData { (response) in
                 switch response.result {
                 case .success(let data):
                     do {
+                        
+                        
                         print("data has been saved")
                         
+                        
                         print(data)
+                        
                     } catch {
                         print("error has caught in saveButton Look at HomesAroundtheWorldViewCell")
                         
@@ -71,6 +82,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
             }
         } else {
             saveButton.setImage(#imageLiteral(resourceName: "loveUntapped"), for: .normal)
+//            FakeNumber.countNumber.realNumber.toggle()
             roomHasSavedButton.toggle()
             guard let url = URL(string: "https://backends.xyz/api/user/save_room/") else { return }
             

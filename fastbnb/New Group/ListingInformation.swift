@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+struct FakeNumber {
+    static var countNumber = FakeNumber()
+    var realNumber = false
+    
+    
+}
 
 struct Listing: Codable {
     let count: Int

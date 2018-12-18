@@ -67,6 +67,8 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
                 print("print City:", arrayOfCellData[i].city)
                 print("Hello")
             }
+            
+            
         }
         
      
@@ -213,7 +215,6 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         // Todo - get your data model...
         
         
-
         if newArrayOfCellData.count == 0 {
             cell.setupCell(homeType: arrayOfCellData[indexPath.row].roomType.rawValue,
                            city: arrayOfCellData[indexPath.row].city,
