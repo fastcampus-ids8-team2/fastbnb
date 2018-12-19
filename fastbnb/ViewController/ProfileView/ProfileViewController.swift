@@ -61,7 +61,7 @@ extension ProfileViewController: UITableViewDataSource, UITableViewDelegate {
         case 6: self.performSegue(withIdentifier: "Help", sender: nil)
         case 7: self.performSegue(withIdentifier: "LearnAboutHosting", sender: nil)
         case 8: self.performSegue(withIdentifier: "RegisteringAccommodation", sender: nil)
-//        case 9: self.performSegue(withIdentifier: "LeaveFeedback", sender: nil)
+        case 9: self.performSegue(withIdentifier: "Feedback", sender: nil)
             
         default:
             return

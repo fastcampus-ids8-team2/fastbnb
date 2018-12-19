@@ -11,6 +11,9 @@ import UIKit
 class SelectCurrencyViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func checkbox(_ sender: UIButton) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
