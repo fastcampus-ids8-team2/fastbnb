@@ -39,7 +39,7 @@ class CheckoutViewController: UIViewController {
 
     
     // MARK: check In date has to be created
-    let guestNumbers = Int.random(in: 1...6)
+    let guestNumbers = Int.random(in: 1...3)
    
     
     
@@ -169,19 +169,24 @@ class CheckoutViewController: UIViewController {
         let headers: HTTPHeaders = [
             "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
         ]
-        let parameters: Parameters = ["check_in_date": "2018-12-25",
-                                      "check_out_date": "2018-12-28",
+        let parameters: Parameters = ["check_in_date": "2018-12-29",
+                                      "check_out_date": "2018-12-30",
                                       "num_guest": 1,
                                       "room": pk
                                      ]
         
-        Alamofire.request(url, method: .post, parameters: parameters, headers: headers).validate().responseData { (response) in
+        Alamofire.request(url,
+                          method: .post,
+                          parameters: parameters,
+                          encoding: JSONEncoding.default,
+                          headers: headers).validate().responseData { (response) in
             switch response.result {
             case .success(let datas):
                 do {
                     print("room has been booked")
+                    print(pk)
+                    TripRoomData.shared.getDataFromServer()
                     
-                    print(datas)
                 } catch {
                     
                 }

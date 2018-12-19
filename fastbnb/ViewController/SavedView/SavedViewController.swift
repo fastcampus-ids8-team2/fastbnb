@@ -22,7 +22,7 @@ class SavedViewController: UIViewController {
         super.viewDidAppear(animated)
 
         tableView.reloadData()
-        print("is it working?")
+        print("we are in SavedView")
     }
 }
 

@@ -16,6 +16,15 @@ class TripsViewController: UIViewController {
         super.viewDidLoad()
         tableView.rowHeight = 260
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        tableView.reloadData()
+        print("we are in TripView")
+    }
+    
+    
 }
 
 extension TripsViewController: UITableViewDataSource {
