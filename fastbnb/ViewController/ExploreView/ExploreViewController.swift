@@ -38,10 +38,10 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         setButton()
         
         
-        ListingData.shared.getUpdatedtDataFromServer(searchText: "울산")
-        print(arrayOfCellData.count)
-        arrayOfCellData = ListingData.shared.arrayOfCellData
-        print(arrayOfCellData.count)
+//        ListingData.shared.getUpdatedtDataFromServer(searchText: "울산")
+//        print(arrayOfCellData.count)
+//        arrayOfCellData = ListingData.shared.arrayOfCellData
+//        print(arrayOfCellData.count)
         
         }
     
@@ -64,7 +64,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         newArrayOfCellData = []
-            newArrayOfCellData = ListingData.shared.arrayOfCellData
+            arrayOfCellData = ListingData.shared.arrayOfCellData
      
         self.searchText = searchBar.text ?? ""
         // then get the filtered data from the back end
