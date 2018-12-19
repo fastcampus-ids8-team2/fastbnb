@@ -37,7 +37,7 @@ extension SavedViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: SavedItemCell.identifier, for: indexPath) as! SavedItemCell
         cell.cityImageView.kf.setImage(with: URL(string: room.roomPhotos[0].roomPhoto))  
         cell.nameLabel.text = "\(room.roomName)"
-        cell.countLabel.text = "\(room.personCapacity) home"
+//        cell.countLabel.text = "\(room.personCapacity) home"
         return cell
     }
 }
