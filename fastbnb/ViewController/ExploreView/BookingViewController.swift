@@ -184,20 +184,30 @@ extension BookingViewController: UITableViewDataSource, UITableViewDelegate {
             
             // MARK: due tomorrow
 
-            let bookingScrollView = UIScrollView()
-            
-            cell.contentView.addSubview(bookingScrollView)
-            bookingScrollView.frame = CGRect(x: cell.contentView.frame.origin.x, y: cell.contentView.frame.origin.y, width: cell.contentView.frame.width, height: cell.contentView.frame.height)
-            bookingScrollView.showsHorizontalScrollIndicator = false // 횡스크롤바 없음
-            bookingScrollView.isPagingEnabled = true
-            
-            for i in 0..<images.count {
-                let adView = UIImageView()
-                adView.contentMode = .scaleToFill
-                cell.setupCell(image: images[i])
-            }
-            
+//            let bookingScrollView = UIScrollView()
+//
+//            cell.contentView.addSubview(bookingScrollView)
+//            bookingScrollView.frame = CGRect(x: cell.contentView.frame.origin.x, y: cell.contentView.frame.origin.y, width: cell.contentView.frame.width, height: cell.contentView.frame.height)
+//            bookingScrollView.showsHorizontalScrollIndicator = false // 횡스크롤바 없음
+//            bookingScrollView.isPagingEnabled = true
+//
+//            for i in 0..<images.count {
+//                let adView = UIImageView()
+//                adView.contentMode = .scaleToFill
+//                cell.setupCell(image: images[i])
+//            }
 //            cell.setupCell(image: image)
+            
+           
+            cell.scrollView.auk.show(url: images[0])
+            cell.scrollView.auk.show(url: images[1])
+            cell.scrollView.auk.show(url: images[2])
+            cell.scrollView.auk.show(url: images[3])
+            cell.scrollView.auk.show(url: images[4])
+            cell.scrollView.auk.settings.contentMode = .scaleToFill
+           
+            
+            
             return cell
         } else if arrayOfNumberOfRow[indexPath.row] == 2 {
             

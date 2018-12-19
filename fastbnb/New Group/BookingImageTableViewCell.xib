@@ -19,25 +19,32 @@
                 <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="BookingImageTableViewCell" image="airbnbImage" translatesAutoresizingMaskIntoConstraints="NO" id="2T8-eg-kJv">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlk-uc-seP" userLabel="SizeMaster">
                         <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
-                    </imageView>
+                        <fontDescription key="fontDescription" type="system" pointSize="150"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBO-nL-FYd">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="115.5"/>
+                    </scrollView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="2T8-eg-kJv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2UH-z0-ArZ"/>
-                    <constraint firstAttribute="trailing" secondItem="2T8-eg-kJv" secondAttribute="trailing" id="9jP-i3-yrp"/>
-                    <constraint firstAttribute="bottom" secondItem="2T8-eg-kJv" secondAttribute="bottom" id="Mjw-Kz-M2M"/>
-                    <constraint firstItem="2T8-eg-kJv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aVF-NE-yhz"/>
+                    <constraint firstItem="Zlk-uc-seP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4uu-wo-6nz"/>
+                    <constraint firstItem="YBO-nL-FYd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5Fq-dc-3zJ"/>
+                    <constraint firstItem="YBO-nL-FYd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FcU-eF-xba"/>
+                    <constraint firstAttribute="bottom" secondItem="YBO-nL-FYd" secondAttribute="bottom" id="OaN-w3-vFm"/>
+                    <constraint firstAttribute="trailing" secondItem="Zlk-uc-seP" secondAttribute="trailing" id="SLJ-7F-9M7"/>
+                    <constraint firstAttribute="bottom" secondItem="Zlk-uc-seP" secondAttribute="bottom" id="gy7-Qg-Rqq"/>
+                    <constraint firstItem="Zlk-uc-seP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lxD-zM-RA6"/>
+                    <constraint firstAttribute="trailing" secondItem="YBO-nL-FYd" secondAttribute="trailing" id="nUK-8n-Ua3"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="mainImage" destination="2T8-eg-kJv" id="ycS-IA-F0r"/>
+                <outlet property="scrollView" destination="YBO-nL-FYd" id="iz3-uu-EuC"/>
             </connections>
-            <point key="canvasLocation" x="90.400000000000006" y="107.94602698650675"/>
+            <point key="canvasLocation" x="162" y="144"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="airbnbImage" width="1500" height="844"/>
-    </resources>
 </document>

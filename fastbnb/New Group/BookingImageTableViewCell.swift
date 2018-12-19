@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Auk
+
+
 
 class BookingImageTableViewCell: UITableViewCell {
    
     @IBOutlet weak var mainImage: UIImageView!
+    @IBOutlet weak var scrollView: UIScrollView!
     
-  
     
     func setupCell(image: String) {
         
