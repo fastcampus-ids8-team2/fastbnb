@@ -8,6 +8,8 @@
 
 import Foundation
 import UIKit
+import Alamofire
+
 
 struct FakeNumber {
     static var countNumber = FakeNumber()
@@ -139,6 +141,8 @@ final class ListingData {
         var nextPageURL: String? = ""
     
     
+    
+    
 
     
     func getDataFromServer() { // 서버에서 데이터 가져오는 펑션
@@ -154,36 +158,34 @@ final class ListingData {
             print("Data recevied complete")
         
     }
-
-    func getNextPageDataFromServer(_ collectionView: UICollectionView) {
-            // 데이터 페이지네이션 대응 펑션(스크롤 끝에서 데이터 추가받고 리로드 데이터)
-            guard let url = URL(string: nextPageURL ?? "") else
-            {
-                DispatchQueue.main.async {
-                    collectionView.reloadData()
+    
+    func getUpdatedtDataFromServer(searchText: String) {
+        guard let url = URL(string: "https://backends.xyz/api/home/listings/?city__contains=\(searchText)") else { return }
+        
+//        let parameters: Parameters = 
+        
+        Alamofire.request(url,
+                          method: .get).validate().responseData { (response) in
+            switch response.result {
+            case .success(let data):
+                do {
+                    let listingData = try JSONDecoder().decode(Listing.self, from: data)
+                    self.arrayOfCellData = listingData.results
+                    print("new data has been received")
+                } catch {
+                    print("[[\(error.localizedDescription)]]")
+                    self.arrayOfCellData = []
                 }
-                return
+                
+            case .failure(let error):
+                print ("failed get logs: \(error)")
             }
             
-            URLSession.shared.dataTask(with: url) { (data, response, error) in
-                guard let data = data else { return }
-                let jsonDecoder = JSONDecoder()
-                
-                do {
-                    let arrayData = try jsonDecoder.decode(Listing.self, from: data)
-                    
-                    for i in 0..<arrayData.results.count {
-                        self.arrayOfCellData.append(arrayData.results[i])
-                    }
-                    self.nextPageURL = arrayData.next
-                    DispatchQueue.main.async {
-                        collectionView.reloadData()
-                    }
-                } catch {
-                    print("에러내용: \(error)")
-                }}.resume()
+            
         }
+    }
     
+
 }
 
 

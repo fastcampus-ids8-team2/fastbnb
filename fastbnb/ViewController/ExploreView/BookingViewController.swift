@@ -37,6 +37,8 @@ class BookingViewController: UIViewController {
     
     var hasDate = false
     
+    var savedDate: [String] = []
+    
     
     
    
@@ -109,6 +111,8 @@ class BookingViewController: UIViewController {
         
         let checkAvailabilityVC = storyboard?.instantiateViewController(withIdentifier: "CheckAvailabilityViewController") as! CheckAvailabilityViewController
         
+            checkAvailabilityVC.checkAvailabilityDateDelegate = (self as! SavedDateDelegate)
+            
         
         present(checkAvailabilityVC, animated: true, completion: nil)
             hasDate.toggle()
@@ -121,7 +125,10 @@ class BookingViewController: UIViewController {
             let checkoutVC = storyboard?.instantiateViewController(withIdentifier: "CheckoutViewController") as! CheckoutViewController
             
             checkoutVC.data = data
-            
+        
+            // savedDate has been received from checkavailability Calendar
+//            print(savedDate)
+            checkoutVC.bookingSavedDate = savedDate
             present(checkoutVC, animated: true, completion: nil)
 
             hasDate.toggle()
@@ -135,6 +142,14 @@ class BookingViewController: UIViewController {
 
 
  
+}
+
+extension BookingViewController: SavedDateDelegate {
+    func savedDate(dates: [String]) {
+        savedDate = dates
+    }
+    
+    
 }
 
 extension BookingViewController: UITableViewDataSource, UITableViewDelegate {

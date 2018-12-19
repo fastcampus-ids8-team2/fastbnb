@@ -34,8 +34,9 @@ class CheckoutViewController: UIViewController {
     
     var data: Result?
     //MARK: default is 3, it should be 0 and need to have calendar value
-
-    var numberOfDaysBooking = 3
+    var bookingSavedDate: [String] = []
+    var numberOfDaysBooking = 0
+    
 
     
     // MARK: check In date has to be created
@@ -49,7 +50,8 @@ class CheckoutViewController: UIViewController {
         
         setViewData()
         setupInitialButton()
-        
+        print("from checkoutView",bookingSavedDate)
+       
     }
   
 
@@ -60,21 +62,36 @@ class CheckoutViewController: UIViewController {
         roomPrice.text = "₩\(checkingoutData.price) per night"
         setupCell(imageName: checkingoutData.roomPhotos[0].roomPhoto)
         
-       
+        // MARK: booking number of days
+        numberOfDaysBooking = bookingSavedDate.count
+        
         let pricePerNightInt = checkingoutData.price
+        let totalPerNIghtInt = pricePerNightInt * numberOfDaysBooking
         let serviceFeeInt = Int(Double(checkingoutData.price) * 0.18)
         let occupancyTaxInt = Int(Double(checkingoutData.price) * 0.05)
-        let totalAmount = pricePerNightInt + serviceFeeInt + occupancyTaxInt
+        let totalAmount = totalPerNIghtInt + serviceFeeInt + occupancyTaxInt
         guestNumber.text = "\(guestNumbers)"
-        
         
         // MARK: fees & tax details
         pricePerNightAndNight.text = "₩\(pricePerNightInt) X \(numberOfDaysBooking) nights"
-        pricePerNight.text = "₩\(pricePerNightInt)"
+        pricePerNight.text = "₩\(totalPerNIghtInt)"
         serviceFee.text = "₩\(serviceFeeInt)"
         occupancyTax.text = "₩\(occupancyTaxInt)"
         totalCost.text = "₩\(totalAmount)"
         
+      
+        
+        // MARK: checkin and checkout
+        
+        guard let checkIndateString = bookingSavedDate.first else { return }
+        guard let checkOutdateString = bookingSavedDate.last else { return }
+        
+        checkInDate.text = checkIndateString
+        checkOutDate.text = checkOutdateString
+        
+
+        
+
 
 
     }
@@ -169,9 +186,13 @@ class CheckoutViewController: UIViewController {
         let headers: HTTPHeaders = [
             "Authorization": "Bearer 59efca27a9ce387ae5b042e70a6677b7cf508f63"
         ]
-        let parameters: Parameters = ["check_in_date": "2018-12-29",
-                                      "check_out_date": "2018-12-30",
-                                      "num_guest": 1,
+        guard let checkIndateString = bookingSavedDate.first else { return }
+        guard let checkOutdateString = bookingSavedDate.last else { return }
+        
+        
+        let parameters: Parameters = ["check_in_date": checkIndateString,
+                                      "check_out_date": checkOutdateString,
+                                      "num_guest": guestNumbers,
                                       "room": pk
                                      ]
         
@@ -181,7 +202,7 @@ class CheckoutViewController: UIViewController {
                           encoding: JSONEncoding.default,
                           headers: headers).validate().responseData { (response) in
             switch response.result {
-            case .success(let datas):
+            case .success(_):
                 do {
                     print("room has been booked")
                     print(pk)

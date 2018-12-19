@@ -38,6 +38,11 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         setButton()
         
         
+        ListingData.shared.getUpdatedtDataFromServer(searchText: "울산")
+        print(arrayOfCellData.count)
+        arrayOfCellData = ListingData.shared.arrayOfCellData
+        print(arrayOfCellData.count)
+        
         }
     
     private func setButton() {
@@ -59,21 +64,31 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         newArrayOfCellData = []
-        arrayOfCellData = ListingData.shared.arrayOfCellData
+            newArrayOfCellData = ListingData.shared.arrayOfCellData
+     
         self.searchText = searchBar.text ?? ""
+        // then get the filtered data from the back end
+//        ListingData.shared.getUpdatedtDataFromServer(searchText: self.searchText!)
+//        print(arrayOfCellData.count)
+//        arrayOfCellData = ListingData.shared.arrayOfCellData
+//        print(arrayOfCellData.count)
+        // reload the data
+   
+        
+        // run the for loop to append new array
         for i in 0..<arrayOfCellData.count {
             if self.searchText == arrayOfCellData[i].city {
                 newArrayOfCellData.append(self.arrayOfCellData[i])
                 print("print City:", arrayOfCellData[i].city)
                 print("Hello")
             }
-            
-            
-        }
+
         
+        }
+//
      
         
-//        print("adultGuestNumber: ", adultGuestNumber)
+        print("adultGuestNumber: ", adultGuestNumber)
         print("searchText:",searchText)
         print("arrayOfCellData: ",newArrayOfCellData.count)
         tableView.reloadData()
@@ -279,12 +294,12 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
     }
     // MARK: collectionView new raw has been implemented
 
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        if indexPath.item == arrayOfCellData.count - 1 {
-            ListingData.shared.getNextPageDataFromServer(collectionView)
-            arrayOfCellData = ListingData.shared.arrayOfCellData
-        }
-    }
+//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+//        if indexPath.item == arrayOfCellData.count - 1 {
+//            ListingData.shared.getNextPageDataFromServer(collectionView)
+//            arrayOfCellData = ListingData.shared.arrayOfCellData
+//        }
+//    }
     
     
 }
