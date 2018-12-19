@@ -26,11 +26,10 @@ class CheckAvailabilityViewController: UIViewController {
        
     }
     @IBAction func didTapSaveButton(_ sender: Any) {
-        guard let bookingViewVC = storyboard?.instantiateViewController(withIdentifier: "BookingViewController") as? BookingViewController else { return }
+//        guard let bookingViewVC = storyboard?.instantiateViewController(withIdentifier: "BookingViewController") as? BookingViewController else { return }
         checkAvailabilityDateDelegate?.savedDate(dates: bookingSavedDate)
         
 
-//        bookinViewVC.checkAvailability.backgroundColor = #colorLiteral(red: 1, green: 0.4932718873, blue: 0.4739984274, alpha: 1)
         
     }
     

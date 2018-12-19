@@ -173,7 +173,12 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate {
         let bookingVC = storyboard?.instantiateViewController(withIdentifier: "BookingViewController") as! BookingViewController
         
         // passing data to the bookingVC
-        bookingVC.data = arrayOfCellData[indexPath.row]
+        if arrayOfCellData.isEmpty == true {
+            bookingVC.data = newArrayOfCellData[indexPath.row]
+            print("detailView:", arrayOfCellData.count)
+        } else {
+            bookingVC.data = arrayOfCellData[indexPath.row]
+        }
         
 //        tableViewSelectDelegate?.indexInformation(indexPath: indexPath)
         //MARK:  네비게이션 컴트롤러가 앞에 있을 때
