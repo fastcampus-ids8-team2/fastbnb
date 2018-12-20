@@ -42,7 +42,9 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
     private func saveHasPressedButton() {
         
         //reload data from saveRoom
+
       
+        SavedRoomData.shared.getDataFromServer()
         
         if roomHasSavedButton == false {
             
