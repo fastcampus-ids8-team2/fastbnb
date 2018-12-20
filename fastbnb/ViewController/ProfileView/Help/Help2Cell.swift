@@ -1,14 +1,15 @@
 //
-//  ReservationcancellationCell.swift
+//  Help2Cell.swift
 //  fastbnb
 //
-//  Created by wonsik on 18/12/2018.
+//  Created by wonsik on 20/12/2018.
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
 import UIKit
 
-class ReservationcancellationCell: UITableViewCell {
+class Help2Cell: UITableViewCell {
+
     @IBOutlet weak var title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

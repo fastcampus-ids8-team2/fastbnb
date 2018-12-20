@@ -1,38 +1,42 @@
 //
-//  FrequentlyAskedQuestionsViewController.swift
+//  FrequentlyAskedQuestions2ViewController.swift
 //  fastbnb
 //
-//  Created by wonsik on 18/12/2018.
+//  Created by wonsik on 20/12/2018.
 //  Copyright © 2018 fastcampus. All rights reserved.
 //
 
 import UIKit
 
-class FrequentlyAskedQuestionsViewController: UIViewController {
+class FrequentlyAskedQuestions2ViewController: UIViewController {
+
     @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
-        tableView.rowHeight = 70
+        super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 80
         self.tableView.tableFooterView = UIView(frame: .zero)
     }
-    let data = FrequentlyAskedQuestionsData()
+    
+    let data = FrequentlyAskedQuestions2Data()
 }
-extension FrequentlyAskedQuestionsViewController: UITableViewDelegate, UITableViewDataSource{
+
+extension FrequentlyAskedQuestions2ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.data.list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FrequentlyAskedQuestionsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FrequentlyAskedQuestions2Cell
         let list = self.data.list[indexPath.row]
         cell.title?.text = list.title
+        
         return cell
+        
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        NSLog("선택된행은 \(indexPath.row) 번째 행입니다")
-        
         switch indexPath.row {
         case 0: self.performSegue(withIdentifier: "1line", sender: nil)
         case 1: self.performSegue(withIdentifier: "2line", sender: nil)
@@ -44,11 +48,11 @@ extension FrequentlyAskedQuestionsViewController: UITableViewDelegate, UITableVi
         case 7: self.performSegue(withIdentifier: "8line", sender: nil)
         case 8: self.performSegue(withIdentifier: "9line", sender: nil)
         case 9: self.performSegue(withIdentifier: "10line", sender: nil)
+            
         default:
             return
+            
         }
-        
     }
-    
     
 }

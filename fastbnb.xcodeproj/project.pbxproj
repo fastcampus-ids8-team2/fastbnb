@@ -46,7 +46,6 @@
 		6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F221AB999900E641D5 /* TripsViewController.swift */; };
 		6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9374F421AB99CA00E641D5 /* InboxViewController.swift */; };
 		6AA6300D21B7962000E888AD /* DetailExploreViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */; };
-		6AA7DA2C21C62A0800285E23 /* christmas_tree_with_gift_boxes.json in Resources */ = {isa = PBXBuildFile; fileRef = 6AA7DA2B21C62A0700285E23 /* christmas_tree_with_gift_boxes.json */; };
 		6AA7DA2E21C62AAB00285E23 /* BookingConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA7DA2D21C62AAB00285E23 /* BookingConfirmationViewController.swift */; };
 		6ACC563A21C380AA00A0EFE9 /* HomesInBusanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC563921C380AA00A0EFE9 /* HomesInBusanTableViewCell.swift */; };
 		6ACC563C21C3B29800A0EFE9 /* CheckAvailabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACC563B21C3B29800A0EFE9 /* CheckAvailabilityViewController.swift */; };
@@ -64,14 +63,7 @@
 		6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F421BA562900E42797 /* TestScrollViewController.swift */; };
 		6AFF38F721BA572700E42797 /* RecommendMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */; };
 		6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */; };
-
-		7E0756E821C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756E721C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift */; };
-		7E0756F421C845FD000A8DCA /* FaresandReservedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F321C845FD000A8DCA /* FaresandReservedCell.swift */; };
-		7E0756F821C84623000A8DCA /* ReservationcancellationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756F721C84623000A8DCA /* ReservationcancellationViewController.swift */; };
-		7E0756FE21C84646000A8DCA /* AddBillingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0756FD21C84646000A8DCA /* AddBillingInformationViewController.swift */; };
-		7E07570221C84691000A8DCA /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07570121C84691000A8DCA /* HelpCell.swift */; };
-		7E07570421C8469B000A8DCA /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E07570321C8469B000A8DCA /* HelpViewController.swift */; };
-
+		7E07E86621CA9F66006FE444 /* christmas_tree_with_gift_boxes.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E07E86521CA9F66006FE444 /* christmas_tree_with_gift_boxes.json */; };
 		7E0B58F521C08BD200321F10 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F421C08BD200321F10 /* NotificationViewController.swift */; };
 		7E0B58F721C08BDF00321F10 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F621C08BDF00321F10 /* NotificationCell.swift */; };
 		7E0B58F921C08BE700321F10 /* NotificationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0B58F821C08BE700321F10 /* NotificationList.swift */; };
@@ -101,25 +93,25 @@
 		7E1CDEDA21C2676C003B0A37 /* SelectCurrencyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1CDED921C2676C003B0A37 /* SelectCurrencyList.swift */; };
 		7E1CDEDC21C26777003B0A37 /* SelectCurrencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1CDEDB21C26777003B0A37 /* SelectCurrencyViewController.swift */; };
 		7E1CDEDE21C26782003B0A37 /* SelectCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1CDEDD21C26782003B0A37 /* SelectCurrencyCell.swift */; };
+		7E3D03EF21CADD90007F440C /* Help2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03EE21CADD90007F440C /* Help2List.swift */; };
+		7E3D03F121CADD9C007F440C /* Help2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03F021CADD9C007F440C /* Help2Cell.swift */; };
+		7E3D03F321CADDA8007F440C /* Help2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03F221CADDA8007F440C /* Help2ViewController.swift */; };
+		7E3D03F621CAE32C007F440C /* FrequentlyAskedQuestions2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03F521CAE32C007F440C /* FrequentlyAskedQuestions2ViewController.swift */; };
+		7E3D03F821CAE34B007F440C /* FrequentlyAskedQuestions2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03F721CAE34B007F440C /* FrequentlyAskedQuestions2Cell.swift */; };
+		7E3D03FA21CAE353007F440C /* FrequentlyAskedQuestions2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03F921CAE353007F440C /* FrequentlyAskedQuestions2List.swift */; };
+		7E3D03FD21CAEE92007F440C /* FrequentlyAskedQuestionsbyHost2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03FC21CAEE92007F440C /* FrequentlyAskedQuestionsbyHost2List.swift */; };
+		7E3D03FF21CAEE9B007F440C /* FrequentlyAskedQuestionsbyHost2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D03FE21CAEE9B007F440C /* FrequentlyAskedQuestionsbyHost2Cell.swift */; };
+		7E3D040121CAEEA8007F440C /* FrequentlyAskedQuestionsbyHost2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D040021CAEEA8007F440C /* FrequentlyAskedQuestionsbyHost2ViewController.swift */; };
+		7E565B7C21CAF62F0016715D /* FaresandReserved2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B7B21CAF62F0016715D /* FaresandReserved2ViewController.swift */; };
+		7E565B7E21CAF63C0016715D /* FaresandReserved2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B7D21CAF63C0016715D /* FaresandReserved2Cell.swift */; };
+		7E565B8021CAF64E0016715D /* FaresandReserved2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B7F21CAF64E0016715D /* FaresandReserved2List.swift */; };
+		7E565B8321CAFA550016715D /* Reservationcancellation2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B8221CAFA550016715D /* Reservationcancellation2List.swift */; };
+		7E565B8521CAFA680016715D /* Reservationcancellation2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B8421CAFA680016715D /* Reservationcancellation2Cell.swift */; };
+		7E565B8721CAFA920016715D /* Reservationcancellation2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B8621CAFA920016715D /* Reservationcancellation2ViewController.swift */; };
+		7E565B8A21CAFFB10016715D /* AddBillingInformation2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B8921CAFFB10016715D /* AddBillingInformation2ViewController.swift */; };
+		7E565B8C21CAFFC00016715D /* AddBillingInformation2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B8B21CAFFC00016715D /* AddBillingInformation2Cell.swift */; };
+		7E565B8E21CAFFCB0016715D /* AddBillingInformation2List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E565B8D21CAFFCB0016715D /* AddBillingInformation2List.swift */; };
 		7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E830CEB21ABA3130061C816 /* ProfileViewController.swift */; };
-		7EBD5FA121C8C82900F21693 /* FrequentlyAskedQuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FA021C8C82900F21693 /* FrequentlyAskedQuestionsList.swift */; };
-		7EBD5FA321C8C83300F21693 /* FrequentlyAskedQuestionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FA221C8C83300F21693 /* FrequentlyAskedQuestionsCell.swift */; };
-		7EBD5FA521C8C84000F21693 /* FrequentlyAskedQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FA421C8C84000F21693 /* FrequentlyAskedQuestionsViewController.swift */; };
-		7EBD5FA921C8C86300F21693 /* FrequentlyAskedQuestionsbyHostList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FA821C8C86300F21693 /* FrequentlyAskedQuestionsbyHostList.swift */; };
-		7EBD5FAB21C8C87400F21693 /* FrequentlyAskedQuestionsbyHostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FAA21C8C87300F21693 /* FrequentlyAskedQuestionsbyHostViewController.swift */; };
-		7EBD5FAD21C8C88500F21693 /* FrequentlyAskedQuestionsbyHostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FAC21C8C88500F21693 /* FrequentlyAskedQuestionsbyHostCell.swift */; };
-		7EBD5FAF21C8C8CA00F21693 /* FaresandReservedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FAE21C8C8CA00F21693 /* FaresandReservedCell.swift */; };
-		7EBD5FB121C8C8D900F21693 /* FaresandReservedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FB021C8C8D900F21693 /* FaresandReservedViewController.swift */; };
-		7EBD5FB321C8C8E100F21693 /* FaresandReservedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FB221C8C8E100F21693 /* FaresandReservedList.swift */; };
-		7EBD5FB521C8C8FA00F21693 /* ReservationcancellationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FB421C8C8FA00F21693 /* ReservationcancellationList.swift */; };
-		7EBD5FB721C8C90500F21693 /* ReservationcancellationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FB621C8C90500F21693 /* ReservationcancellationViewController.swift */; };
-		7EBD5FB921C8C91000F21693 /* ReservationcancellationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FB821C8C91000F21693 /* ReservationcancellationCell.swift */; };
-		7EBD5FBB21C8C92300F21693 /* AddBillingInformationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FBA21C8C92300F21693 /* AddBillingInformationList.swift */; };
-		7EBD5FBD21C8C92E00F21693 /* AddBillingInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FBC21C8C92E00F21693 /* AddBillingInformationCell.swift */; };
-		7EBD5FBF21C8C93F00F21693 /* AddBillingInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FBE21C8C93F00F21693 /* AddBillingInformationViewController.swift */; };
-		7EBD5FC121C8CA3700F21693 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FC021C8CA3700F21693 /* HelpViewController.swift */; };
-		7EBD5FC321C8CA4500F21693 /* HelpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FC221C8CA4500F21693 /* HelpCell.swift */; };
-		7EBD5FC921C8D06200F21693 /* HelpList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EBD5FC821C8D06200F21693 /* HelpList.swift */; };
 		8317A8E6FEAF1CF8548E15D4 /* Pods_fastbnb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */; };
 /* End PBXBuildFile section */
 
@@ -165,7 +157,6 @@
 		6A9374F221AB999900E641D5 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 		6A9374F421AB99CA00E641D5 /* InboxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		6AA6300C21B7962000E888AD /* DetailExploreViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExploreViewTableViewCell.swift; sourceTree = "<group>"; };
-		6AA7DA2B21C62A0700285E23 /* christmas_tree_with_gift_boxes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = christmas_tree_with_gift_boxes.json; path = ../../../../Downloads/christmas_tree_with_gift_boxes.json; sourceTree = "<group>"; };
 		6AA7DA2D21C62AAB00285E23 /* BookingConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmationViewController.swift; sourceTree = "<group>"; };
 		6ACC563921C380AA00A0EFE9 /* HomesInBusanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesInBusanTableViewCell.swift; sourceTree = "<group>"; };
 		6ACC563B21C3B29800A0EFE9 /* CheckAvailabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAvailabilityViewController.swift; sourceTree = "<group>"; };
@@ -183,14 +174,7 @@
 		6AFF38F421BA562900E42797 /* TestScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScrollViewController.swift; sourceTree = "<group>"; };
 		6AFF38F621BA572700E42797 /* RecommendMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuViewCell.swift; sourceTree = "<group>"; };
 		6AFF38F821BA57B800E42797 /* RecommendMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendMenuView.swift; sourceTree = "<group>"; };
-
-		7E0756E721C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsViewController.swift; sourceTree = "<group>"; };
-		7E0756F321C845FD000A8DCA /* FaresandReservedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReservedCell.swift; sourceTree = "<group>"; };
-		7E0756F721C84623000A8DCA /* ReservationcancellationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationcancellationViewController.swift; sourceTree = "<group>"; };
-		7E0756FD21C84646000A8DCA /* AddBillingInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformationViewController.swift; sourceTree = "<group>"; };
-		7E07570121C84691000A8DCA /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
-		7E07570321C8469B000A8DCA /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-
+		7E07E86521CA9F66006FE444 /* christmas_tree_with_gift_boxes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = christmas_tree_with_gift_boxes.json; sourceTree = SOURCE_ROOT; };
 		7E0B58F421C08BD200321F10 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		7E0B58F621C08BDF00321F10 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		7E0B58F821C08BE700321F10 /* NotificationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationList.swift; sourceTree = "<group>"; };
@@ -220,25 +204,25 @@
 		7E1CDED921C2676C003B0A37 /* SelectCurrencyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyList.swift; sourceTree = "<group>"; };
 		7E1CDEDB21C26777003B0A37 /* SelectCurrencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyViewController.swift; sourceTree = "<group>"; };
 		7E1CDEDD21C26782003B0A37 /* SelectCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCurrencyCell.swift; sourceTree = "<group>"; };
+		7E3D03EE21CADD90007F440C /* Help2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help2List.swift; sourceTree = "<group>"; };
+		7E3D03F021CADD9C007F440C /* Help2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help2Cell.swift; sourceTree = "<group>"; };
+		7E3D03F221CADDA8007F440C /* Help2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Help2ViewController.swift; sourceTree = "<group>"; };
+		7E3D03F521CAE32C007F440C /* FrequentlyAskedQuestions2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestions2ViewController.swift; sourceTree = "<group>"; };
+		7E3D03F721CAE34B007F440C /* FrequentlyAskedQuestions2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestions2Cell.swift; sourceTree = "<group>"; };
+		7E3D03F921CAE353007F440C /* FrequentlyAskedQuestions2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestions2List.swift; sourceTree = "<group>"; };
+		7E3D03FC21CAEE92007F440C /* FrequentlyAskedQuestionsbyHost2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsbyHost2List.swift; sourceTree = "<group>"; };
+		7E3D03FE21CAEE9B007F440C /* FrequentlyAskedQuestionsbyHost2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsbyHost2Cell.swift; sourceTree = "<group>"; };
+		7E3D040021CAEEA8007F440C /* FrequentlyAskedQuestionsbyHost2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsbyHost2ViewController.swift; sourceTree = "<group>"; };
+		7E565B7B21CAF62F0016715D /* FaresandReserved2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReserved2ViewController.swift; sourceTree = "<group>"; };
+		7E565B7D21CAF63C0016715D /* FaresandReserved2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReserved2Cell.swift; sourceTree = "<group>"; };
+		7E565B7F21CAF64E0016715D /* FaresandReserved2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReserved2List.swift; sourceTree = "<group>"; };
+		7E565B8221CAFA550016715D /* Reservationcancellation2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservationcancellation2List.swift; sourceTree = "<group>"; };
+		7E565B8421CAFA680016715D /* Reservationcancellation2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservationcancellation2Cell.swift; sourceTree = "<group>"; };
+		7E565B8621CAFA920016715D /* Reservationcancellation2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservationcancellation2ViewController.swift; sourceTree = "<group>"; };
+		7E565B8921CAFFB10016715D /* AddBillingInformation2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformation2ViewController.swift; sourceTree = "<group>"; };
+		7E565B8B21CAFFC00016715D /* AddBillingInformation2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformation2Cell.swift; sourceTree = "<group>"; };
+		7E565B8D21CAFFCB0016715D /* AddBillingInformation2List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformation2List.swift; sourceTree = "<group>"; };
 		7E830CEB21ABA3130061C816 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		7EBD5FA021C8C82900F21693 /* FrequentlyAskedQuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsList.swift; sourceTree = "<group>"; };
-		7EBD5FA221C8C83300F21693 /* FrequentlyAskedQuestionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsCell.swift; sourceTree = "<group>"; };
-		7EBD5FA421C8C84000F21693 /* FrequentlyAskedQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsViewController.swift; sourceTree = "<group>"; };
-		7EBD5FA821C8C86300F21693 /* FrequentlyAskedQuestionsbyHostList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsbyHostList.swift; sourceTree = "<group>"; };
-		7EBD5FAA21C8C87300F21693 /* FrequentlyAskedQuestionsbyHostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsbyHostViewController.swift; sourceTree = "<group>"; };
-		7EBD5FAC21C8C88500F21693 /* FrequentlyAskedQuestionsbyHostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentlyAskedQuestionsbyHostCell.swift; sourceTree = "<group>"; };
-		7EBD5FAE21C8C8CA00F21693 /* FaresandReservedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReservedCell.swift; sourceTree = "<group>"; };
-		7EBD5FB021C8C8D900F21693 /* FaresandReservedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReservedViewController.swift; sourceTree = "<group>"; };
-		7EBD5FB221C8C8E100F21693 /* FaresandReservedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaresandReservedList.swift; sourceTree = "<group>"; };
-		7EBD5FB421C8C8FA00F21693 /* ReservationcancellationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationcancellationList.swift; sourceTree = "<group>"; };
-		7EBD5FB621C8C90500F21693 /* ReservationcancellationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationcancellationViewController.swift; sourceTree = "<group>"; };
-		7EBD5FB821C8C91000F21693 /* ReservationcancellationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationcancellationCell.swift; sourceTree = "<group>"; };
-		7EBD5FBA21C8C92300F21693 /* AddBillingInformationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformationList.swift; sourceTree = "<group>"; };
-		7EBD5FBC21C8C92E00F21693 /* AddBillingInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformationCell.swift; sourceTree = "<group>"; };
-		7EBD5FBE21C8C93F00F21693 /* AddBillingInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillingInformationViewController.swift; sourceTree = "<group>"; };
-		7EBD5FC021C8CA3700F21693 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		7EBD5FC221C8CA4500F21693 /* HelpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCell.swift; sourceTree = "<group>"; };
-		7EBD5FC821C8D06200F21693 /* HelpList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpList.swift; sourceTree = "<group>"; };
 		8ABFD09ECB81A9AB7476F7C1 /* Pods_fastbnb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fastbnb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5C4E984271A7185E8CD76C /* Pods-fastbnb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.release.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.release.xcconfig"; sourceTree = "<group>"; };
 		ED7426005778A4C3FE77BCDC /* Pods-fastbnb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fastbnb.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fastbnb/Pods-fastbnb.debug.xcconfig"; sourceTree = "<group>"; };
@@ -279,7 +263,7 @@
 			children = (
 				2E63C55721AAD31B00D869DF /* AppDelegate.swift */,
 				2E63C55E21AAD31B00D869DF /* Assets.xcassets */,
-				6AA7DA2B21C62A0700285E23 /* christmas_tree_with_gift_boxes.json */,
+				7E07E86521CA9F66006FE444 /* christmas_tree_with_gift_boxes.json */,
 				2E63C56321AAD31B00D869DF /* Info.plist */,
 				2E63C56021AAD31B00D869DF /* LaunchScreen.storyboard */,
 				6A01658221ABC6FF00F69171 /* Model */,
@@ -460,68 +444,18 @@
 		7E0756DC21C844D0000A8DCA /* Help */ = {
 			isa = PBXGroup;
 			children = (
-				7E0756E121C8452D000A8DCA /* Add_Billing_Information */,
-				7E0756DF21C8450A000A8DCA /* Fares_and_Reserved */,
-				7E0756DD21C844E6000A8DCA /* Frequently_Asked_Questions */,
-				7E0756DE21C844F6000A8DCA /* Frequently_Asked_Questions_by_Host */,
-				7E0756E021C8451E000A8DCA /* Reservation_cancellation */,
-				7E07570121C84691000A8DCA /* HelpCell.swift */,
-				7E07570321C8469B000A8DCA /* HelpViewController.swift */,
-
-				7EBD5F9F21C8C80000F21693 /* AddBillingInformation */,
-				7EBD5F9D21C8C7EB00F21693 /* Fares and Reserved */,
-				7EBD5F9B21C8C7CF00F21693 /* FrequentlyAskedQuestions */,
-				7EBD5F9C21C8C7DF00F21693 /* FrequentlyAskedQuestionsbyHost */,
-				7EBD5FC221C8CA4500F21693 /* HelpCell.swift */,
-				7EBD5FC821C8D06200F21693 /* HelpList.swift */,
-				7EBD5FC021C8CA3700F21693 /* HelpViewController.swift */,
-				7EBD5F9E21C8C7F500F21693 /* Reservationcancellation */,
-
+				7E565B8821CAFF8E0016715D /* AddBillingInformation2 */,
+				7E565B8121CAFA470016715D /* Reservationcancellation2 */,
+				7E565B7A21CAF6050016715D /* FaresAndReserved2 */,
+				7E3D03FB21CAEE3D007F440C /* FrequentlyAskedQuestionsbyHost2 */,
+				7E3D03F421CAE31F007F440C /* FrequentlyAskedQuestions2 */,
+				7E3D03EE21CADD90007F440C /* Help2List.swift */,
+				7E3D03F021CADD9C007F440C /* Help2Cell.swift */,
+				7E3D03F221CADDA8007F440C /* Help2ViewController.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
 		};
-
-		7E0756DD21C844E6000A8DCA /* Frequently_Asked_Questions */ = {
-			isa = PBXGroup;
-			children = (
-				7E0756E721C84580000A8DCA /* FrequentlyAskedQuestionsViewController.swift */,
-			);
-			path = Frequently_Asked_Questions;
-			sourceTree = "<group>";
-		};
-		7E0756DE21C844F6000A8DCA /* Frequently_Asked_Questions_by_Host */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Frequently_Asked_Questions_by_Host;
-			sourceTree = "<group>";
-		};
-		7E0756DF21C8450A000A8DCA /* Fares_and_Reserved */ = {
-			isa = PBXGroup;
-			children = (
-				7E0756F321C845FD000A8DCA /* FaresandReservedCell.swift */,
-			);
-			path = Fares_and_Reserved;
-			sourceTree = "<group>";
-		};
-		7E0756E021C8451E000A8DCA /* Reservation_cancellation */ = {
-			isa = PBXGroup;
-			children = (
-				7E0756F721C84623000A8DCA /* ReservationcancellationViewController.swift */,
-			);
-			path = Reservation_cancellation;
-			sourceTree = "<group>";
-		};
-		7E0756E121C8452D000A8DCA /* Add_Billing_Information */ = {
-			isa = PBXGroup;
-			children = (
-				7E0756FD21C84646000A8DCA /* AddBillingInformationViewController.swift */,
-			);
-			path = Add_Billing_Information;
-			sourceTree = "<group>";
-		};
-
 		7E0B58F321C08A3800321F10 /* Notification */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,54 +539,54 @@
 			path = SelectCurrency;
 			sourceTree = "<group>";
 		};
-		7EBD5F9B21C8C7CF00F21693 /* FrequentlyAskedQuestions */ = {
+		7E3D03F421CAE31F007F440C /* FrequentlyAskedQuestions2 */ = {
 			isa = PBXGroup;
 			children = (
-				7EBD5FA221C8C83300F21693 /* FrequentlyAskedQuestionsCell.swift */,
-				7EBD5FA021C8C82900F21693 /* FrequentlyAskedQuestionsList.swift */,
-				7EBD5FA421C8C84000F21693 /* FrequentlyAskedQuestionsViewController.swift */,
+				7E3D03F521CAE32C007F440C /* FrequentlyAskedQuestions2ViewController.swift */,
+				7E3D03F721CAE34B007F440C /* FrequentlyAskedQuestions2Cell.swift */,
+				7E3D03F921CAE353007F440C /* FrequentlyAskedQuestions2List.swift */,
 			);
-			path = FrequentlyAskedQuestions;
+			path = FrequentlyAskedQuestions2;
 			sourceTree = "<group>";
 		};
-		7EBD5F9C21C8C7DF00F21693 /* FrequentlyAskedQuestionsbyHost */ = {
+		7E3D03FB21CAEE3D007F440C /* FrequentlyAskedQuestionsbyHost2 */ = {
 			isa = PBXGroup;
 			children = (
-				7EBD5FAC21C8C88500F21693 /* FrequentlyAskedQuestionsbyHostCell.swift */,
-				7EBD5FA821C8C86300F21693 /* FrequentlyAskedQuestionsbyHostList.swift */,
-				7EBD5FAA21C8C87300F21693 /* FrequentlyAskedQuestionsbyHostViewController.swift */,
+				7E3D03FC21CAEE92007F440C /* FrequentlyAskedQuestionsbyHost2List.swift */,
+				7E3D03FE21CAEE9B007F440C /* FrequentlyAskedQuestionsbyHost2Cell.swift */,
+				7E3D040021CAEEA8007F440C /* FrequentlyAskedQuestionsbyHost2ViewController.swift */,
 			);
-			path = FrequentlyAskedQuestionsbyHost;
+			path = FrequentlyAskedQuestionsbyHost2;
 			sourceTree = "<group>";
 		};
-		7EBD5F9D21C8C7EB00F21693 /* Fares and Reserved */ = {
+		7E565B7A21CAF6050016715D /* FaresAndReserved2 */ = {
 			isa = PBXGroup;
 			children = (
-				7EBD5FAE21C8C8CA00F21693 /* FaresandReservedCell.swift */,
-				7EBD5FB221C8C8E100F21693 /* FaresandReservedList.swift */,
-				7EBD5FB021C8C8D900F21693 /* FaresandReservedViewController.swift */,
+				7E565B7B21CAF62F0016715D /* FaresandReserved2ViewController.swift */,
+				7E565B7D21CAF63C0016715D /* FaresandReserved2Cell.swift */,
+				7E565B7F21CAF64E0016715D /* FaresandReserved2List.swift */,
 			);
-			path = "Fares and Reserved";
+			path = FaresAndReserved2;
 			sourceTree = "<group>";
 		};
-		7EBD5F9E21C8C7F500F21693 /* Reservationcancellation */ = {
+		7E565B8121CAFA470016715D /* Reservationcancellation2 */ = {
 			isa = PBXGroup;
 			children = (
-				7EBD5FB821C8C91000F21693 /* ReservationcancellationCell.swift */,
-				7EBD5FB421C8C8FA00F21693 /* ReservationcancellationList.swift */,
-				7EBD5FB621C8C90500F21693 /* ReservationcancellationViewController.swift */,
+				7E565B8221CAFA550016715D /* Reservationcancellation2List.swift */,
+				7E565B8421CAFA680016715D /* Reservationcancellation2Cell.swift */,
+				7E565B8621CAFA920016715D /* Reservationcancellation2ViewController.swift */,
 			);
-			path = Reservationcancellation;
+			path = Reservationcancellation2;
 			sourceTree = "<group>";
 		};
-		7EBD5F9F21C8C80000F21693 /* AddBillingInformation */ = {
+		7E565B8821CAFF8E0016715D /* AddBillingInformation2 */ = {
 			isa = PBXGroup;
 			children = (
-				7EBD5FBC21C8C92E00F21693 /* AddBillingInformationCell.swift */,
-				7EBD5FBA21C8C92300F21693 /* AddBillingInformationList.swift */,
-				7EBD5FBE21C8C93F00F21693 /* AddBillingInformationViewController.swift */,
+				7E565B8921CAFFB10016715D /* AddBillingInformation2ViewController.swift */,
+				7E565B8B21CAFFC00016715D /* AddBillingInformation2Cell.swift */,
+				7E565B8D21CAFFCB0016715D /* AddBillingInformation2List.swift */,
 			);
-			path = AddBillingInformation;
+			path = AddBillingInformation2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -718,7 +652,7 @@
 			files = (
 				2E63C56C21AADA7300D869DF /* Login.storyboard in Resources */,
 				6A7F7E1321BFB91200285571 /* BookingImageTableViewCell.xib in Resources */,
-				6AA7DA2C21C62A0800285E23 /* christmas_tree_with_gift_boxes.json in Resources */,
+				7E07E86621CA9F66006FE444 /* christmas_tree_with_gift_boxes.json in Resources */,
 				6AFE6C5021C102EE0058B7CF /* BookingMinimumStayTableViewCell.xib in Resources */,
 				6A6E6CDA21C21BF600EDAD2A /* BookingRestTableViewCell.xib in Resources */,
 				6AFE6C4C21C0E7260058B7CF /* BookingAmenityTableViewCell.xib in Resources */,
@@ -847,11 +781,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACC563C21C3B29800A0EFE9 /* CheckAvailabilityViewController.swift in Sources */,
-				7EBD5FB921C8C91000F21693 /* ReservationcancellationCell.swift in Sources */,
 				6AFF2E3221B7872200CADD5D /* TestViewController.swift in Sources */,
 				2E63C57921AD3A6D00D869DF /* SignInViewController.swift in Sources */,
+				7E3D03EF21CADD90007F440C /* Help2List.swift in Sources */,
+				7E3D03F121CADD9C007F440C /* Help2Cell.swift in Sources */,
+				7E565B8E21CAFFCB0016715D /* AddBillingInformation2List.swift in Sources */,
 				6AFF2E3021B77DDE00CADD5D /* DetailViewController.swift in Sources */,
-				7EBD5FB321C8C8E100F21693 /* FaresandReservedList.swift in Sources */,
 				6A6E6CC621C1F9E300EDAD2A /* BookingMapViewTableViewCell.swift in Sources */,
 				6AE2373321C4BFD700C26B7E /* CheckoutViewController.swift in Sources */,
 				7E0D2AB321C06D2000D9E10C /* IncomeList.swift in Sources */,
@@ -861,73 +796,72 @@
 				6A6E6CD921C21BF600EDAD2A /* BookingRestTableViewCell.swift in Sources */,
 				2EE2E29821C243A200B48DDA /* TripDetailViewController.swift in Sources */,
 				6AFCCF5821AE666B004D5997 /* HomesAroundTheWorldTableViewCell.swift in Sources */,
-				7EBD5FBB21C8C92300F21693 /* AddBillingInformationList.swift in Sources */,
 				2E63C57D21AE29E400D869DF /* SocialLoginTextField.swift in Sources */,
 				7E0E29B921B711AF00AA44F6 /* InviteFriendViewController.swift in Sources */,
-				7EBD5FBD21C8C92E00F21693 /* AddBillingInformationCell.swift in Sources */,
 				6AA7DA2E21C62AAB00285E23 /* BookingConfirmationViewController.swift in Sources */,
 				7E0B58FC21C091E600321F10 /* FeedbackList.swift in Sources */,
 				7E19C6A221B06E4200684D18 /* ProfileButton.swift in Sources */,
+				7E565B8521CAFA680016715D /* Reservationcancellation2Cell.swift in Sources */,
 				7E0D2ABC21C076B500D9E10C /* PaymentList.swift in Sources */,
 				6AFF38F921BA57B800E42797 /* RecommendMenuView.swift in Sources */,
 				7E1CDEDA21C2676C003B0A37 /* SelectCurrencyList.swift in Sources */,
+				7E565B7C21CAF62F0016715D /* FaresandReserved2ViewController.swift in Sources */,
+				7E3D03FA21CAE353007F440C /* FrequentlyAskedQuestions2List.swift in Sources */,
 				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
-				7EBD5FA121C8C82900F21693 /* FrequentlyAskedQuestionsList.swift in Sources */,
 				7E1CDEDA21C2676C003B0A37 /* SelectCurrencyList.swift in Sources */,
 				2E95B70D21BA4FF7002C7EA4 /* SavedInformation.swift in Sources */,
-				7EBD5FA321C8C83300F21693 /* FrequentlyAskedQuestionsCell.swift in Sources */,
 				6A01658421ABC73600F69171 /* SavedItemCell.swift in Sources */,
 				7E0E29BB21B711C900AA44F6 /* InviteFriendCell.swift in Sources */,
-				7EBD5FA521C8C84000F21693 /* FrequentlyAskedQuestionsViewController.swift in Sources */,
-				7EBD5FC321C8CA4500F21693 /* HelpCell.swift in Sources */,
+				7E3D03F821CAE34B007F440C /* FrequentlyAskedQuestions2Cell.swift in Sources */,
 				6AFE6C4F21C102EE0058B7CF /* BookingMinimumStayTableViewCell.swift in Sources */,
 				6AFF38F521BA562900E42797 /* TestScrollViewController.swift in Sources */,
-				7EBD5FBF21C8C93F00F21693 /* AddBillingInformationViewController.swift in Sources */,
 				6A021DA421AD39D80094A298 /* CalenderViewController.swift in Sources */,
-				7EBD5FAD21C8C88500F21693 /* FrequentlyAskedQuestionsbyHostCell.swift in Sources */,
 				6AFE6C4B21C0E7260058B7CF /* BookingAmenityTableViewCell.swift in Sources */,
+				7E565B8021CAF64E0016715D /* FaresandReserved2List.swift in Sources */,
 				7E1CDEDC21C26777003B0A37 /* SelectCurrencyViewController.swift in Sources */,
-				7EBD5FAB21C8C87400F21693 /* FrequentlyAskedQuestionsbyHostViewController.swift in Sources */,
+				7E3D03FD21CAEE92007F440C /* FrequentlyAskedQuestionsbyHost2List.swift in Sources */,
 				6A9374F121AB995D00E641D5 /* ExploreViewController.swift in Sources */,
 				6A00BAE721B8AEA400DE07AC /* ExploreViewStoryBoard.swift in Sources */,
+				7E565B7E21CAF63C0016715D /* FaresandReserved2Cell.swift in Sources */,
 				2EE2E29221BE311D00B48DDA /* SavedDetailViewController.swift in Sources */,
 				7E0E29C421B714EA00AA44F6 /* RecommendHostsList.swift in Sources */,
+				7E565B8A21CAFFB10016715D /* AddBillingInformation2ViewController.swift in Sources */,
+				7E565B8321CAFA550016715D /* Reservationcancellation2List.swift in Sources */,
 				6A9374F521AB99CA00E641D5 /* InboxViewController.swift in Sources */,
 				6A7F7E1221BFB91200285571 /* BookingImageTableViewCell.swift in Sources */,
 				2EE2E29621C2413000B48DDA /* TripItemCell.swift in Sources */,
 				7E0D2AB121C06D1500D9E10C /* IncomeViewController.swift in Sources */,
+				7E3D040121CAEEA8007F440C /* FrequentlyAskedQuestionsbyHost2ViewController.swift in Sources */,
+				7E3D03FF21CAEE9B007F440C /* FrequentlyAskedQuestionsbyHost2Cell.swift in Sources */,
 				7E0D2AB821C0703400D9E10C /* PaymentViewController.swift in Sources */,
+				7E3D03F321CADDA8007F440C /* Help2ViewController.swift in Sources */,
 				6A9374EF21AB98EF00E641D5 /* SavedViewController.swift in Sources */,
-				7EBD5FC121C8CA3700F21693 /* HelpViewController.swift in Sources */,
 				7E0E29C021B714D400AA44F6 /* RecommendHostsViewController.swift in Sources */,
 				7E0B58FE21C091F000321F10 /* FeedbackCell.swift in Sources */,
 				6A6E6CCA21C20D8200EDAD2A /* SocialLoginButton.swift in Sources */,
 				7E10272F21BDBBDF00EB33A7 /* TopProfileList.swift in Sources */,
 				6AFE6C4721C0996F0058B7CF /* BookingRoomTitleTableViewCell.swift in Sources */,
 				7E10273121BDBC4200EB33A7 /* TopProfileCell.swift in Sources */,
-				7EBD5FB721C8C90500F21693 /* ReservationcancellationViewController.swift in Sources */,
-				7EBD5FA921C8C86300F21693 /* FrequentlyAskedQuestionsbyHostList.swift in Sources */,
 				6A021DA721AD3D6E0094A298 /* GuestViewController.swift in Sources */,
-				7EBD5FB521C8C8FA00F21693 /* ReservationcancellationList.swift in Sources */,
 				2EE2E29421C2411E00B48DDA /* TripInformation.swift in Sources */,
 				7E19C65621B01A2100684D18 /* ProfileList.swift in Sources */,
 				7E0D2ABE21C0858100D9E10C /* SettingList.swift in Sources */,
 				2E46FE0C21B4BD4F0046E5E7 /* InboxTableViewCell.swift in Sources */,
 				6A6C3C1621AE6EB80080AE7D /* HomesAroundTheWorldCollectionViewCell.swift in Sources */,
 				7E0E690721C0863B00E5124E /* SettingCell.swift in Sources */,
+				7E565B8C21CAFFC00016715D /* AddBillingInformation2Cell.swift in Sources */,
 				6AFAE88E21BF591A003DA76E /* BookingViewController.swift in Sources */,
+				7E565B8721CAFA920016715D /* Reservationcancellation2ViewController.swift in Sources */,
 				2E46FE0A21AFCF8B0046E5E7 /* InboxDetailViewController.swift in Sources */,
 				7E0B590021C091FF00321F10 /* FeedbackViewController.swift in Sources */,
-				7EBD5FC921C8D06200F21693 /* HelpList.swift in Sources */,
 				6A08BC9C21AF79A200266A58 /* ListingInformation.swift in Sources */,
 				7E0E690921C0865900E5124E /* SettingTableViewController.swift in Sources */,
 				2E63C55A21AAD31B00D869DF /* LoginViewController.swift in Sources */,
 				7E830CEC21ABA3130061C816 /* ProfileViewController.swift in Sources */,
-				7E07570221C84691000A8DCA /* HelpCell.swift in Sources */,
 				7E1CDEDE21C26782003B0A37 /* SelectCurrencyCell.swift in Sources */,
-				7EBD5FB121C8C8D900F21693 /* FaresandReservedViewController.swift in Sources */,
 				7E0B58F521C08BD200321F10 /* NotificationViewController.swift in Sources */,
 				7E0B58F921C08BE700321F10 /* NotificationList.swift in Sources */,
+				7E3D03F621CAE32C007F440C /* FrequentlyAskedQuestions2ViewController.swift in Sources */,
 				7E0D2AB521C06D3300D9E10C /* IncomeCell.swift in Sources */,
 				7E0E29BD21B711DE00AA44F6 /* InviteFriendList.swift in Sources */,
 				6A28088821C245CB001F86A3 /* BookingRoomHostInfoTableViewCell.swift in Sources */,
@@ -940,7 +874,6 @@
 				7E10283121C043AF00EB33A7 /* ProfileCell.swift in Sources */,
 				7E0E29C221B714DE00AA44F6 /* RecommendHostsCell.swift in Sources */,
 				6A9374F321AB999900E641D5 /* TripsViewController.swift in Sources */,
-				7EBD5FAF21C8C8CA00F21693 /* FaresandReservedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
