@@ -161,7 +161,7 @@ final class ListingData {
         
     }
     
-    func getUpdatedtDataFromServer(searchText: String) {
+    func getUpdatedtDataFromServer(searchText: String, completion: @escaping ([Result]) -> ()) {
        
         print("\n===============[getUpdatedDatastarted]========================\n")
         
@@ -178,9 +178,10 @@ final class ListingData {
             case .success(let data):
                 do {
                     let searchRoomData = try JSONDecoder().decode(Listing.self, from: data)
-                    print(searchRoomData)
+//                    print(searchRoomData)
                     self.searchedData = searchRoomData.results
-                    print(searchRoomData.results)
+                    completion(self.searchedData)
+//                    print(searchRoomData.results)
 //                    print(self.searchedData)
                 } catch {
                     print(error.localizedDescription)

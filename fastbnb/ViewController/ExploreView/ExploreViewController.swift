@@ -67,30 +67,68 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
        self.searchText = searchBar.text ?? "" 
 
         
-        ListingData.shared.getUpdatedtDataFromServer(searchText: searchText!)
-        searchedData = ListingData.shared.searchedData
+        ListingData.shared.getUpdatedtDataFromServer(searchText: searchText!, completion: { (searchTextData) in
+            
+            print("Second line of code executed")
+//            print(searchTextData)
+            print(searchTextData.count)
+            if searchTextData.count == 0 {
+                for i in 0..<self.arrayOfCellData.count {
+//                    if self.searchText == self.arrayOfCellData[i].city {
+                        self.newArrayOfCellData.append(self.arrayOfCellData[i])
+                        print("print City:", self.arrayOfCellData[i].city)
+                        print("Hello")
+                        
+//                    }
+                   
+                   
+                }
+                
+            } else {
+                
+                self.arrayOfCellData = searchTextData
+                for i in 0..<self.arrayOfCellData.count {
+//                    if self.searchText == self.arrayOfCellData[i].city {
+                        self.newArrayOfCellData.append(self.arrayOfCellData[i])
+                        print("print City:", self.arrayOfCellData[i].city)
+                        print("Hello")
+                        
+//                    }
+                }
+               
+            }
+            self.tableView.reloadData()
+            self.citySearchSliderBar.resignFirstResponder()
+            
+        })
+        
+        
+//        searchedData = ListingData.shared.searchedData
         print("\n===============[searchedData Info]========================\n")
-        print("searchData:", searchedData.first)
-        print("searchData Count:," ,searchedData.count)
+//        print("searchData:", searchedData.first)
+//        print("searchData Count:," ,searchedData.count)
+//        print("searchText:", searchedData)
+//        
+        
         
         // run the for loop to append new array
-        for i in 0..<arrayOfCellData.count {
-            if self.searchText == arrayOfCellData[i].city {
-                newArrayOfCellData.append(self.arrayOfCellData[i])
-                print("print City:", arrayOfCellData[i].city)
-                print("Hello")
-            }
-
-        
-        }
+//        for i in 0..<arrayOfCellData.count {
+//            if self.searchText == arrayOfCellData[i].city {
+//                newArrayOfCellData.append(self.arrayOfCellData[i])
+//                print("print City:", arrayOfCellData[i].city)
+//                print("Hello")
+//            }
+//        }
 //
      
         
         print("adultGuestNumber: ", adultGuestNumber)
         print("searchText:",searchText)
         print("arrayOfCellData: ",newArrayOfCellData.count)
-        tableView.reloadData()
-        citySearchSliderBar.resignFirstResponder()
+      
+    
+        
+        
     }
     
     // guest number select method
@@ -166,20 +204,13 @@ extension ExploreViewController: UITableViewDataSource, UITableViewDelegate {
         
         
         if cityArray[indexPath.row] == 1 {
-//            if let cell = cell as? HomesAroundTheWorldTableViewCell {
-            
-//                cell.collectionView.dataSource = self
             cell!.collectionView.reloadData()
             cell!.collectionView.isScrollEnabled = true
-//                cell.collectionView.delegate = self
-                
-                
+            
         } else if cityArray[indexPath.row] == 2 {
-//            if let cell = cell as? HomesAroundTheWorldTableViewCell {
-//                cell.collectionView.dataSource = self
             cell!.collectionView.reloadData()
             cell!.collectionView.isScrollEnabled = false
-//                cell.collectionView.delegate = self
+
                 
                 
             }
@@ -222,10 +253,8 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         
-//        if cityArray[indexPath.row] == 1 {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.homeAroundTheWorldCellImage, for: indexPath) as! HomesAroundTheWorldCollectionViewCell
-        
-        // Todo - get your data model...
+
         
         
         if newArrayOfCellData.count == 0 {
@@ -290,15 +319,7 @@ extension ExploreViewController: UICollectionViewDataSource, UICollectionViewDel
         navigationController?.pushViewController(bookingVC, animated: true)
     
     }
-    // MARK: collectionView new raw has been implemented
 
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        if indexPath.item == arrayOfCellData.count - 1 {
-//            ListingData.shared.getNextPageDataFromServer(collectionView)
-//            arrayOfCellData = ListingData.shared.arrayOfCellData
-//        }
-//    }
-    
     
 }
 
