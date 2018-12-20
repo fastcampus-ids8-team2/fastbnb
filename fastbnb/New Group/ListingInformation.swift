@@ -139,6 +139,7 @@ final class ListingData {
         static let shared = ListingData()
         var arrayOfCellData: [Result] = []
         var nextPageURL: String? = ""
+        var searchedData: [Result] = []
     
     
     
@@ -160,21 +161,23 @@ final class ListingData {
     }
     
     func getUpdatedtDataFromServer(searchText: String) {
-        guard let url = URL(string: "https://backends.xyz/api/home/listings/?city__contains=\(searchText)") else { return }
+       
+        print("\n===============[getUpdatedDatastarted]========================\n")
         
-//        let parameters: Parameters = 
+        let urlString = "https://backends.xyz/api/home/listings/?public_address__contains=\(searchText)"
+        guard let encoded = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
+        guard let url = URL(string: encoded) else { return }
         
-        Alamofire.request(url,
-                          method: .get).validate().responseData { (response) in
+        Alamofire.request(url, method: .get).validate().responseJSON { (response) in
             switch response.result {
             case .success(let data):
                 do {
-                    let listingData = try JSONDecoder().decode(Listing.self, from: data)
-                    self.arrayOfCellData = listingData.results
-                    print("new data has been received")
+//                    let searchRoomData = try JSONDecoder().decode(Listing.self, from: data)
+//                    self.searchedData = searchRoomData.results
+                    print(data)
                 } catch {
-                    print("[[\(error.localizedDescription)]]")
-                    self.arrayOfCellData = []
+//                    print("[[\(error.localizedDescription)]]")
+//                    self.searchedData = []
                 }
                 
             case .failure(let error):
@@ -183,6 +186,8 @@ final class ListingData {
             
             
         }
+     
+        
     }
     
 

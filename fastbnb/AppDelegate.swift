@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ListingData.shared.getDataFromServer()
         SavedRoomData.shared.getDataFromServer()
         TripRoomData.shared.getDataFromServer()
+      
+        
         
         return true
     }

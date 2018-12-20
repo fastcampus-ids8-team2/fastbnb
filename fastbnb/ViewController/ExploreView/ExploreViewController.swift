@@ -21,6 +21,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     var newArrayOfCellData: [Result] = []
     var searchText: String?
     var adultGuestNumber = 0
+    var searchedData: [Result] = []
     
     var cityArray = [Int]()
     
@@ -37,11 +38,7 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
         cityArray = [1,2,3,4,5]
         setButton()
         
-        
-//        ListingData.shared.getUpdatedtDataFromServer(searchText: "울산")
-//        print(arrayOfCellData.count)
-//        arrayOfCellData = ListingData.shared.arrayOfCellData
-//        print(arrayOfCellData.count)
+
         
         }
     
@@ -64,16 +61,17 @@ class ExploreViewController: UIViewController, UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         newArrayOfCellData = []
+        searchedData = []
             arrayOfCellData = ListingData.shared.arrayOfCellData
      
-        self.searchText = searchBar.text ?? ""
-        // then get the filtered data from the back end
-//        ListingData.shared.getUpdatedtDataFromServer(searchText: self.searchText!)
-//        print(arrayOfCellData.count)
-//        arrayOfCellData = ListingData.shared.arrayOfCellData
-//        print(arrayOfCellData.count)
-        // reload the data
-   
+       self.searchText = searchBar.text ?? "" 
+
+        
+        ListingData.shared.getUpdatedtDataFromServer(searchText: searchText!)
+        searchedData = ListingData.shared.searchedData
+        print("\n===============[searchedData Info]========================\n")
+        print("searchData:", searchedData.first)
+        print("searchData Count:," ,searchedData.count)
         
         // run the for loop to append new array
         for i in 0..<arrayOfCellData.count {
