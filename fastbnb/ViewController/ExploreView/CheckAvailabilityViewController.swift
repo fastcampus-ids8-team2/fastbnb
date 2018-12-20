@@ -26,7 +26,7 @@ class CheckAvailabilityViewController: UIViewController {
        
     }
     @IBAction func didTapSaveButton(_ sender: Any) {
-//        guard let bookingViewVC = storyboard?.instantiateViewController(withIdentifier: "BookingViewController") as? BookingViewController else { return }
+
         checkAvailabilityDateDelegate?.savedDate(dates: bookingSavedDate)
         
 
@@ -43,12 +43,7 @@ extension CheckAvailabilityViewController: FSCalendarDelegate {
         let dateString = dataFormatter.string(from: date)
         bookingSavedDate.append(dateString)
         print(bookingSavedDate)
-//        if initialBookingSavedDate.count == 0 {
-//            bookingSavedDate == initialBookingSavedDate
-//        } else {
-//        bookingSavedDate = initialBookingSavedDate.filter{ $0 != dateString }
-//        }
-      
+
         
     }
     

@@ -103,6 +103,7 @@ struct RoomPhoto: Codable {
 
 enum RoomType: String, Codable {
     case 개인실 = "개인실"
+    case 다인실 = "다인실"
     case 집전체 = "집 전체"
 }
 
@@ -168,16 +169,21 @@ final class ListingData {
         guard let encoded = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return }
         guard let url = URL(string: encoded) else { return }
         
-        Alamofire.request(url, method: .get).validate().responseJSON { (response) in
+        
+        print(urlString)
+        print(url)
+        
+        Alamofire.request(url, method: .get).validate().responseData { (response) in
             switch response.result {
             case .success(let data):
                 do {
-//                    let searchRoomData = try JSONDecoder().decode(Listing.self, from: data)
-//                    self.searchedData = searchRoomData.results
-                    print(data)
+                    let searchRoomData = try JSONDecoder().decode(Listing.self, from: data)
+                    print(searchRoomData)
+                    self.searchedData = searchRoomData.results
+                    print(searchRoomData.results)
+//                    print(self.searchedData)
                 } catch {
-//                    print("[[\(error.localizedDescription)]]")
-//                    self.searchedData = []
+                    print(error.localizedDescription)
                 }
                 
             case .failure(let error):
