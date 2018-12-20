@@ -100,7 +100,7 @@ class BookingViewController: UIViewController {
     
     private func priceLabelSetup() {
         guard let bookingData = data else { return }
-        pricePerNightLabel.text = "₩\(bookingData.price) / night"
+        pricePerNightLabel.text = "₩\(bookingData.price.withComma) / night"
         
     }
     

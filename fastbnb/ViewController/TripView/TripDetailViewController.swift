@@ -35,7 +35,7 @@ class TripDetailViewController: UIViewController {
         label2.text = room.publicAddress
         label4.text = "\(room.bathrooms) bathrooms, \(room.bedrooms) bedrooms, \(room.beds) beds"
         label5.text = room.roomName
-        label6.text = "₩\(room.price) per night"
+        label6.text = "₩\(room.price.withComma) per night"
         label7.text = "\(String(repeating: "⭐️", count: Int.random(in: 1...5))) \(Int.random(in: 1...1000)) \(Bool.random() ? "Superhost" : "")"
         for item in room.roomPhotos {
             scrollView.auk.show(url: item.roomPhoto)

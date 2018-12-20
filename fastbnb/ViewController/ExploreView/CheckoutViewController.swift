@@ -59,7 +59,7 @@ class CheckoutViewController: UIViewController {
     private func setViewData() {
         guard let checkingoutData = data else { return }
         homeTypeAndCity.text = checkingoutData.roomAndPropertyType + " in " + checkingoutData.city
-        roomPrice.text = "₩\(checkingoutData.price) per night"
+        roomPrice.text = "₩\(checkingoutData.price.withComma) per night"
         setupCell(imageName: checkingoutData.roomPhotos[0].roomPhoto)
         
         // MARK: booking number of days
@@ -73,11 +73,11 @@ class CheckoutViewController: UIViewController {
         guestNumber.text = "\(guestNumbers)"
         
         // MARK: fees & tax details
-        pricePerNightAndNight.text = "₩\(pricePerNightInt) X \(numberOfDaysBooking) nights"
-        pricePerNight.text = "₩\(totalPerNIghtInt)"
-        serviceFee.text = "₩\(serviceFeeInt)"
-        occupancyTax.text = "₩\(occupancyTaxInt)"
-        totalCost.text = "₩\(totalAmount)"
+        pricePerNightAndNight.text = "₩\(pricePerNightInt.withComma) X \(numberOfDaysBooking) nights"
+        pricePerNight.text = "₩\(totalPerNIghtInt.withComma)"
+        serviceFee.text = "₩\(serviceFeeInt.withComma)"
+        occupancyTax.text = "₩\(occupancyTaxInt.withComma)"
+        totalCost.text = "₩\(totalAmount.withComma)"
         
       
         

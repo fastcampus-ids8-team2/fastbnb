@@ -131,7 +131,7 @@ class HomesAroundTheWorldCollectionViewCell: UICollectionViewCell {
         typeOfHome.text = homeType
         cityName.text = city
         roomName.text = roomTitle
-        roomPrice.text = "\(roomPriceInfo) per night. Free cancellation"
+        roomPrice.text = "₩\(roomPriceInfo.withComma) per night. Free cancellation"
         
 
         
