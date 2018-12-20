@@ -17,10 +17,10 @@ struct ProfileList {
 
 struct ProfileData {
     let list = [
-        ProfileList(title: "알림", explain: "", icon: "ProfileBell2.png"),
+        ProfileList(title: "알림", explain: "", icon: "profilebell3.png"),
         ProfileList(title: "친구를 초대하세요", explain: "", icon: "profilegiftbox.png"),
         ProfileList(title: "호스트 추천하기", explain: "", icon: "profilegiftbox.png"),
-        ProfileList(title: "여행 크레딧과 쿠폰", explain: "", icon: "profileMedal.png"),
+        ProfileList(title: "여행 크레딧과 쿠폰", explain: "", icon: "profileMedal2.png"),
         ProfileList(title: "결제", explain: "", icon: "profileCard.png"),
         ProfileList(title: "설정", explain: "", icon: "profileSetting.png"),
         ProfileList(title: "도움말", explain: "", icon: "profileQuestion.png"),
