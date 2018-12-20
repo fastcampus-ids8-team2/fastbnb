@@ -206,39 +206,39 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zi4-8b-cxp">
-                                                    <rect key="frame" x="8" y="211" width="367" height="82.666666666666686"/>
+                                                    <rect key="frame" x="8" y="211" width="367" height="72.666666666666686"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bhs-aP-QQC">
-                                                            <rect key="frame" x="0.0" y="0.0" width="129" height="20.333333333333332"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="170" height="18"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Type " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-fo-DOd">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="90.666666666666671" height="20.333333333333332"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="300" verticalHuggingPriority="251" text="Room Type " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5f-fo-DOd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="81" height="18"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfl-tI-wmU">
-                                                                    <rect key="frame" x="98.666666666666671" y="0.0" width="30.333333333333329" height="20.333333333333332"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfl-tI-wmU">
+                                                                    <rect key="frame" x="89" y="0.0" width="81" height="18"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Room Name/ Home Nmae" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNy-Zn-nAX">
-                                                            <rect key="frame" x="0.0" y="21.333333333333343" width="198.33333333333334" height="20.333333333333329"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Room Name/ Home Nmae" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNy-Zn-nAX">
+                                                            <rect key="frame" x="0.0" y="19" width="208.33333333333334" height="20.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="room price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl2-jw-GOs">
-                                                            <rect key="frame" x="0.0" y="42.666666666666657" width="82.333333333333329" height="27"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="room price" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl2-jw-GOs">
+                                                            <rect key="frame" x="0.0" y="40.333333333333343" width="69.666666666666671" height="19.333333333333329"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="jRC-7q-KY2">
-                                                            <rect key="frame" x="0.0" y="70.666666666666686" width="106.66666666666667" height="12"/>
+                                                            <rect key="frame" x="0.0" y="60.666666666666686" width="106.66666666666667" height="12"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="★★★★★" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exi-gq-vS0">
                                                                     <rect key="frame" x="0.0" y="0.0" width="35.666666666666664" height="12"/>
@@ -273,7 +273,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="Zi4-8b-cxp" secondAttribute="trailing" id="OmB-57-3ke"/>
                                                 <constraint firstAttribute="trailing" secondItem="zFP-tM-Dcx" secondAttribute="trailing" id="T0x-Tn-Nh0"/>
                                                 <constraint firstItem="Zi4-8b-cxp" firstAttribute="top" secondItem="zFP-tM-Dcx" secondAttribute="bottom" constant="11" id="Twv-Cn-eq1"/>
-                                                <constraint firstAttribute="bottom" secondItem="Zi4-8b-cxp" secondAttribute="bottom" id="Zij-OL-nAp"/>
+                                                <constraint firstAttribute="bottom" secondItem="Zi4-8b-cxp" secondAttribute="bottom" constant="10" id="Zij-OL-nAp"/>
                                                 <constraint firstItem="zFP-tM-Dcx" firstAttribute="top" secondItem="jcj-9o-fMz" secondAttribute="top" id="dmP-9m-Vyu"/>
                                                 <constraint firstItem="waJ-YK-cNK" firstAttribute="top" secondItem="jcj-9o-fMz" secondAttribute="topMargin" id="hPs-z2-FfD"/>
                                                 <constraint firstItem="waJ-YK-cNK" firstAttribute="trailing" secondItem="jcj-9o-fMz" secondAttribute="trailingMargin" id="kbw-Hl-i5f"/>
@@ -1140,10 +1140,10 @@
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airbnbProtypeHome" translatesAutoresizingMaskIntoConstraints="NO" id="iXS-JS-UdE">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="126"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="116"/>
                                                                     </imageView>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="LrS-zq-s0x">
-                                                                        <rect key="frame" x="0.0" y="128" width="128" height="52"/>
+                                                                        <rect key="frame" x="0.0" y="118" width="128" height="52"/>
                                                                         <subviews>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7wU-34-7nJ">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="117.33333333333333" height="12"/>
@@ -1229,7 +1229,7 @@
                                                             </view>
                                                             <constraints>
                                                                 <constraint firstAttribute="trailing" secondItem="LrS-zq-s0x" secondAttribute="trailing" id="6VM-uv-xsN"/>
-                                                                <constraint firstAttribute="bottom" secondItem="LrS-zq-s0x" secondAttribute="bottom" id="8Wf-4D-wna"/>
+                                                                <constraint firstAttribute="bottom" secondItem="LrS-zq-s0x" secondAttribute="bottom" constant="10" id="8Wf-4D-wna"/>
                                                                 <constraint firstItem="vA5-nu-Hyr" firstAttribute="top" secondItem="Nyw-Zy-926" secondAttribute="top" id="AJ1-Ws-9J1"/>
                                                                 <constraint firstItem="iXS-JS-UdE" firstAttribute="top" secondItem="Nyw-Zy-926" secondAttribute="top" id="AKT-cf-i8G"/>
                                                                 <constraint firstAttribute="trailing" secondItem="vA5-nu-Hyr" secondAttribute="trailing" id="AsB-A2-dYW"/>
